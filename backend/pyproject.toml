@@ -1,0 +1,60 @@
+[project]
+name = "internetstore"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "fastapi>=0.119.1",
+    "pydantic>=2.12.3",
+    "pydantic-settings>=2.11.0",
+    "sqlalchemy>=2.0.44",
+    "uvicorn>=0.38.0",
+    "yarl>=1.22.0",
+]
+
+[tool.pyright]
+pythonVersion = "3.12"
+venvPath = "."
+venv = ".venv"
+
+include = ["."]
+exclude = [
+    ".venv",
+    "venv",
+]
+
+reportMissingImports = "error"
+reportUnusedImport = "error"
+reportUnusedVariable = "error"
+
+reportUnusedFunction = "warning"
+reportUnusedClass = "warning"
+
+
+[tool.ruff]
+line-length = 59
+target-version = "py312"
+
+exclude = []
+
+[tool.ruff.lint]
+# Здесь выберите только те правила, которые вам нужны, без дублирования.
+# `E` и `F` — это стандарт.
+# `I` — для сортировки импортов.
+# `FA` — для FastAPI.
+# `B` — для поиска багов.
+# `S` — для безопасности.
+# `Q` — для цитат.
+# Добавьте, если нужно:
+# `TID252` — для запрета относительных импортов
+# `TID` - Tidy
+# `UP` - Upgrade
+select = ["E", "F", "I", "B", "S", "Q"]
+
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
