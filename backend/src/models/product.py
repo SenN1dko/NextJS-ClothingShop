@@ -2,7 +2,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from core import Base
 
 
-class Products(Base):
+class Product(Base):
     name: Mapped[str]
     description: Mapped[str]
 
