@@ -4,7 +4,7 @@ from fastapi import FastAPI
 
 from contextlib import asynccontextmanager
 
-from core.setting import settings
+from core.settings import settings
 from routes import v1_router
 from core.db import db_lifetime
 

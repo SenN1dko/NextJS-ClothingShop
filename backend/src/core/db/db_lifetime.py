@@ -4,7 +4,7 @@ from sqlalchemy.ext.asyncio import (
 )
 from fastapi import FastAPI
 
-from core.setting import settings
+from core.settings import settings
 
 
 async def setup_db(app: FastAPI) -> None:

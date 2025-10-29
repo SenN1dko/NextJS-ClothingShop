@@ -1,6 +1,6 @@
 from functools import lru_cache
 from yarl import URL
-from pydantic import BaseModel
+from pydantic import BaseModel, SecretStr
 from pydantic_settings import (
     BaseSettings,
     SettingsConfigDict,
@@ -10,7 +10,7 @@ ENVFILE = "dev.env"
 
 
 class DBSettings(BaseModel):
-    host: str = "postgress"
+    host: str = "localhost"
     port: int = 5432
     user: str = "user"
     password: str = "password"
@@ -22,7 +22,7 @@ class DBSettings(BaseModel):
     def url(self) -> URL:
         return URL.build(
             user=self.user,
-            password=self.password,
+            password=str(self.password),
             host=self.host,
             port=self.port,
             scheme="postgresql+asyncpg",
@@ -41,6 +41,7 @@ class Settings(BaseSettings):
         env_file=ENVFILE,
         case_sensitive=False,
         env_nested_delimiter="__",
+        extra="ignore",
     )
     db: DBSettings = DBSettings()
 
@@ -52,4 +53,4 @@ def get_settings():
 
 settings = get_settings()
 
-print(settings.db.url)
+print(settings.model_dump())
