@@ -9,6 +9,18 @@ from pydantic_settings import (
 ENVFILE = "dev.env"
 
 
+class APIv1Prefix:
+    prefix: str = "/v1"
+    users: str = "/users"
+    products: str = "/products"
+
+
+class APIPrefix:
+    prefix: str = "/api"
+
+    v1: APIv1Prefix = APIv1Prefix()
+
+
 class DBSettings(BaseModel):
     host: str = "localhost"
     port: int = 5432
@@ -52,6 +64,8 @@ class Settings(BaseSettings):
         extra="ignore",
     )
     db: DBSettings = DBSettings()
+
+    api: APIPrefix = APIPrefix()
 
 
 @lru_cache()

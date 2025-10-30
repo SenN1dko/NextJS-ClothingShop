@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 
 from core.settings import settings
-from routes import v1_router
+from api import router as api_router
 from core.db import db_lifetime
 
 
@@ -21,7 +21,7 @@ async def lifespan(
 
 
 app = FastAPI(lifespan=lifespan)
-app.include_router(v1_router)
+app.include_router(api_router)
 
 
 if __name__ == "__main__":
