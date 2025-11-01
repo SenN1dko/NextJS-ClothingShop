@@ -1,21 +1,33 @@
+// components/ThemeSwitcher.js
 'use client';
-import { useThemeStore } from '@/store/ThemeStore';
+
+import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 
 export function ThemeSwitcher() {
-  const { theme, toggleTheme } = useThemeStore();
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className="w-8 h-8 p-2" />;
+  }
+
+  const isDark = theme === 'dark';
+  const IconComponent = isDark ? Sun : Moon;
+  const toggle = () => setTheme(isDark ? 'light' : 'dark');
 
   return (
     <button
-      onClick={toggleTheme}
-      className="p-2 cursor-pointer rounded-full flex shadow-sm dark:shadow-none shadow-gray-800/50 items-center bg-[var(--color-l-primary)] dark:bg-[#393939] transition-colors"
+      onClick={toggle}
+      className="p-2 cursor-pointer rounded-full flex items-center shadow-sm dark:shadow-none bg-gray-200 dark:bg-gray-700 transition-colors"
       title="Toggle theme"
     >
-      {theme === 'dark' ? (
-        <Sun className="fill-white text-white w-8 h-8" />
-      ) : (
-        <Moon className="fill-black text-black w-8 h-8" />
-      )}
+      <IconComponent className="w-8 h-8 fill-current" />
     </button>
   );
 }

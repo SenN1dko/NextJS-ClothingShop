@@ -1,11 +1,14 @@
-'use client'; // 👈 Обязательно Client Component
+'use client';
 
 import { ThemeProvider } from 'next-themes';
+import { LazyMotion, domAnimation } from 'framer-motion';
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    // attribute="class" говорит next-themes прописать класс 'dark' или 'light'
-    // на теге <html>
-    <div></div>
+    <LazyMotion features={domAnimation}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        {children}
+      </ThemeProvider>
+    </LazyMotion>
   );
 }
