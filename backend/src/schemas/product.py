@@ -1,5 +1,4 @@
 from pydantic import BaseModel
-from pydantic.v1.networks import int_domain_regex
 
 
 class BaseProduct(BaseModel):
