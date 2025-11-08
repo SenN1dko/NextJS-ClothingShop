@@ -1,0 +1,3 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/SenN1dko/NextJS-ClothingShop.git
