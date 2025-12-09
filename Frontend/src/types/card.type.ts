@@ -1,9 +1,8 @@
 export interface IProducts {
   id: string;
-  title: string;
-  description: string;
+  name: string;
   price: number;
-  imageUrl: string;
+  image_url: string;
 }
 
 export interface IApiError {

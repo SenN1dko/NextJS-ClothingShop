@@ -1,0 +1,14162 @@
+module.exports = [
+"[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+else {
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    else {
+        if ("TURBOPACK compile-time truthy", 1) {
+            if ("TURBOPACK compile-time truthy", 1) {
+                module.exports = __turbopack_context__.r("[externals]/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-page-turbo.runtime.dev.js, cjs)");
+            } else //TURBOPACK unreachable
+            ;
+        } else //TURBOPACK unreachable
+        ;
+    }
+} //# sourceMappingURL=module.compiled.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['react-ssr'].ReactJsxDevRuntime; //# sourceMappingURL=react-jsx-dev-runtime.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['react-ssr'].React; //# sourceMappingURL=react.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['react-ssr'].ReactJsxRuntime; //# sourceMappingURL=react-jsx-runtime.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "QueryClientContext",
+    ()=>QueryClientContext,
+    "QueryClientProvider",
+    ()=>QueryClientProvider,
+    "useQueryClient",
+    ()=>useQueryClient
+]);
+// src/QueryClientProvider.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+var QueryClientContext = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"](void 0);
+var useQueryClient = (queryClient)=>{
+    const client = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](QueryClientContext);
+    if (queryClient) {
+        return queryClient;
+    }
+    if (!client) {
+        throw new Error("No QueryClient set, use QueryClientProvider to set one");
+    }
+    return client;
+};
+var QueryClientProvider = ({ client, children })=>{
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        client.mount();
+        return ()=>{
+            client.unmount();
+        };
+    }, [
+        client
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(QueryClientContext.Provider, {
+        value: client,
+        children
+    });
+};
+;
+ //# sourceMappingURL=QueryClientProvider.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/timeoutManager.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/timeoutManager.ts
+__turbopack_context__.s([
+    "TimeoutManager",
+    ()=>TimeoutManager,
+    "defaultTimeoutProvider",
+    ()=>defaultTimeoutProvider,
+    "systemSetTimeoutZero",
+    ()=>systemSetTimeoutZero,
+    "timeoutManager",
+    ()=>timeoutManager
+]);
+var defaultTimeoutProvider = {
+    // We need the wrapper function syntax below instead of direct references to
+    // global setTimeout etc.
+    //
+    // BAD: `setTimeout: setTimeout`
+    // GOOD: `setTimeout: (cb, delay) => setTimeout(cb, delay)`
+    //
+    // If we use direct references here, then anything that wants to spy on or
+    // replace the global setTimeout (like tests) won't work since we'll already
+    // have a hard reference to the original implementation at the time when this
+    // file was imported.
+    setTimeout: (callback, delay)=>setTimeout(callback, delay),
+    clearTimeout: (timeoutId)=>clearTimeout(timeoutId),
+    setInterval: (callback, delay)=>setInterval(callback, delay),
+    clearInterval: (intervalId)=>clearInterval(intervalId)
+};
+var TimeoutManager = class {
+    // We cannot have TimeoutManager<T> as we must instantiate it with a concrete
+    // type at app boot; and if we leave that type, then any new timer provider
+    // would need to support ReturnType<typeof setTimeout>, which is infeasible.
+    //
+    // We settle for type safety for the TimeoutProvider type, and accept that
+    // this class is unsafe internally to allow for extension.
+    #provider = defaultTimeoutProvider;
+    #providerCalled = false;
+    setTimeoutProvider(provider) {
+        if ("TURBOPACK compile-time truthy", 1) {
+            if (this.#providerCalled && provider !== this.#provider) {
+                console.error(`[timeoutManager]: Switching provider after calls to previous provider might result in unexpected behavior.`, {
+                    previous: this.#provider,
+                    provider
+                });
+            }
+        }
+        this.#provider = provider;
+        if (("TURBOPACK compile-time value", "development") !== "production") {
+            this.#providerCalled = false;
+        }
+    }
+    setTimeout(callback, delay) {
+        if (("TURBOPACK compile-time value", "development") !== "production") {
+            this.#providerCalled = true;
+        }
+        return this.#provider.setTimeout(callback, delay);
+    }
+    clearTimeout(timeoutId) {
+        this.#provider.clearTimeout(timeoutId);
+    }
+    setInterval(callback, delay) {
+        if (("TURBOPACK compile-time value", "development") !== "production") {
+            this.#providerCalled = true;
+        }
+        return this.#provider.setInterval(callback, delay);
+    }
+    clearInterval(intervalId) {
+        this.#provider.clearInterval(intervalId);
+    }
+};
+var timeoutManager = new TimeoutManager();
+function systemSetTimeoutZero(callback) {
+    setTimeout(callback, 0);
+}
+;
+ //# sourceMappingURL=timeoutManager.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/utils.ts
+__turbopack_context__.s([
+    "addToEnd",
+    ()=>addToEnd,
+    "addToStart",
+    ()=>addToStart,
+    "ensureQueryFn",
+    ()=>ensureQueryFn,
+    "functionalUpdate",
+    ()=>functionalUpdate,
+    "hashKey",
+    ()=>hashKey,
+    "hashQueryKeyByOptions",
+    ()=>hashQueryKeyByOptions,
+    "isPlainArray",
+    ()=>isPlainArray,
+    "isPlainObject",
+    ()=>isPlainObject,
+    "isServer",
+    ()=>isServer,
+    "isValidTimeout",
+    ()=>isValidTimeout,
+    "keepPreviousData",
+    ()=>keepPreviousData,
+    "matchMutation",
+    ()=>matchMutation,
+    "matchQuery",
+    ()=>matchQuery,
+    "noop",
+    ()=>noop,
+    "partialMatchKey",
+    ()=>partialMatchKey,
+    "replaceData",
+    ()=>replaceData,
+    "replaceEqualDeep",
+    ()=>replaceEqualDeep,
+    "resolveEnabled",
+    ()=>resolveEnabled,
+    "resolveStaleTime",
+    ()=>resolveStaleTime,
+    "shallowEqualObjects",
+    ()=>shallowEqualObjects,
+    "shouldThrowError",
+    ()=>shouldThrowError,
+    "skipToken",
+    ()=>skipToken,
+    "sleep",
+    ()=>sleep,
+    "timeUntilStale",
+    ()=>timeUntilStale
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$timeoutManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/timeoutManager.js [app-ssr] (ecmascript)");
+;
+var isServer = ("TURBOPACK compile-time value", "undefined") === "undefined" || "Deno" in globalThis;
+function noop() {}
+function functionalUpdate(updater, input) {
+    return typeof updater === "function" ? updater(input) : updater;
+}
+function isValidTimeout(value) {
+    return typeof value === "number" && value >= 0 && value !== Infinity;
+}
+function timeUntilStale(updatedAt, staleTime) {
+    return Math.max(updatedAt + (staleTime || 0) - Date.now(), 0);
+}
+function resolveStaleTime(staleTime, query) {
+    return typeof staleTime === "function" ? staleTime(query) : staleTime;
+}
+function resolveEnabled(enabled, query) {
+    return typeof enabled === "function" ? enabled(query) : enabled;
+}
+function matchQuery(filters, query) {
+    const { type = "all", exact, fetchStatus, predicate, queryKey, stale } = filters;
+    if (queryKey) {
+        if (exact) {
+            if (query.queryHash !== hashQueryKeyByOptions(queryKey, query.options)) {
+                return false;
+            }
+        } else if (!partialMatchKey(query.queryKey, queryKey)) {
+            return false;
+        }
+    }
+    if (type !== "all") {
+        const isActive = query.isActive();
+        if (type === "active" && !isActive) {
+            return false;
+        }
+        if (type === "inactive" && isActive) {
+            return false;
+        }
+    }
+    if (typeof stale === "boolean" && query.isStale() !== stale) {
+        return false;
+    }
+    if (fetchStatus && fetchStatus !== query.state.fetchStatus) {
+        return false;
+    }
+    if (predicate && !predicate(query)) {
+        return false;
+    }
+    return true;
+}
+function matchMutation(filters, mutation) {
+    const { exact, status, predicate, mutationKey } = filters;
+    if (mutationKey) {
+        if (!mutation.options.mutationKey) {
+            return false;
+        }
+        if (exact) {
+            if (hashKey(mutation.options.mutationKey) !== hashKey(mutationKey)) {
+                return false;
+            }
+        } else if (!partialMatchKey(mutation.options.mutationKey, mutationKey)) {
+            return false;
+        }
+    }
+    if (status && mutation.state.status !== status) {
+        return false;
+    }
+    if (predicate && !predicate(mutation)) {
+        return false;
+    }
+    return true;
+}
+function hashQueryKeyByOptions(queryKey, options) {
+    const hashFn = options?.queryKeyHashFn || hashKey;
+    return hashFn(queryKey);
+}
+function hashKey(queryKey) {
+    return JSON.stringify(queryKey, (_, val)=>isPlainObject(val) ? Object.keys(val).sort().reduce((result, key)=>{
+            result[key] = val[key];
+            return result;
+        }, {}) : val);
+}
+function partialMatchKey(a, b) {
+    if (a === b) {
+        return true;
+    }
+    if (typeof a !== typeof b) {
+        return false;
+    }
+    if (a && b && typeof a === "object" && typeof b === "object") {
+        return Object.keys(b).every((key)=>partialMatchKey(a[key], b[key]));
+    }
+    return false;
+}
+var hasOwn = Object.prototype.hasOwnProperty;
+function replaceEqualDeep(a, b) {
+    if (a === b) {
+        return a;
+    }
+    const array = isPlainArray(a) && isPlainArray(b);
+    if (!array && !(isPlainObject(a) && isPlainObject(b))) return b;
+    const aItems = array ? a : Object.keys(a);
+    const aSize = aItems.length;
+    const bItems = array ? b : Object.keys(b);
+    const bSize = bItems.length;
+    const copy = array ? new Array(bSize) : {};
+    let equalItems = 0;
+    for(let i = 0; i < bSize; i++){
+        const key = array ? i : bItems[i];
+        const aItem = a[key];
+        const bItem = b[key];
+        if (aItem === bItem) {
+            copy[key] = aItem;
+            if (array ? i < aSize : hasOwn.call(a, key)) equalItems++;
+            continue;
+        }
+        if (aItem === null || bItem === null || typeof aItem !== "object" || typeof bItem !== "object") {
+            copy[key] = bItem;
+            continue;
+        }
+        const v = replaceEqualDeep(aItem, bItem);
+        copy[key] = v;
+        if (v === aItem) equalItems++;
+    }
+    return aSize === bSize && equalItems === aSize ? a : copy;
+}
+function shallowEqualObjects(a, b) {
+    if (!b || Object.keys(a).length !== Object.keys(b).length) {
+        return false;
+    }
+    for(const key in a){
+        if (a[key] !== b[key]) {
+            return false;
+        }
+    }
+    return true;
+}
+function isPlainArray(value) {
+    return Array.isArray(value) && value.length === Object.keys(value).length;
+}
+function isPlainObject(o) {
+    if (!hasObjectPrototype(o)) {
+        return false;
+    }
+    const ctor = o.constructor;
+    if (ctor === void 0) {
+        return true;
+    }
+    const prot = ctor.prototype;
+    if (!hasObjectPrototype(prot)) {
+        return false;
+    }
+    if (!prot.hasOwnProperty("isPrototypeOf")) {
+        return false;
+    }
+    if (Object.getPrototypeOf(o) !== Object.prototype) {
+        return false;
+    }
+    return true;
+}
+function hasObjectPrototype(o) {
+    return Object.prototype.toString.call(o) === "[object Object]";
+}
+function sleep(timeout) {
+    return new Promise((resolve)=>{
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$timeoutManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["timeoutManager"].setTimeout(resolve, timeout);
+    });
+}
+function replaceData(prevData, data, options) {
+    if (typeof options.structuralSharing === "function") {
+        return options.structuralSharing(prevData, data);
+    } else if (options.structuralSharing !== false) {
+        if ("TURBOPACK compile-time truthy", 1) {
+            try {
+                return replaceEqualDeep(prevData, data);
+            } catch (error) {
+                console.error(`Structural sharing requires data to be JSON serializable. To fix this, turn off structuralSharing or return JSON-serializable data from your queryFn. [${options.queryHash}]: ${error}`);
+                throw error;
+            }
+        }
+        return replaceEqualDeep(prevData, data);
+    }
+    return data;
+}
+function keepPreviousData(previousData) {
+    return previousData;
+}
+function addToEnd(items, item, max = 0) {
+    const newItems = [
+        ...items,
+        item
+    ];
+    return max && newItems.length > max ? newItems.slice(1) : newItems;
+}
+function addToStart(items, item, max = 0) {
+    const newItems = [
+        item,
+        ...items
+    ];
+    return max && newItems.length > max ? newItems.slice(0, -1) : newItems;
+}
+var skipToken = Symbol();
+function ensureQueryFn(options, fetchOptions) {
+    if ("TURBOPACK compile-time truthy", 1) {
+        if (options.queryFn === skipToken) {
+            console.error(`Attempted to invoke queryFn when set to skipToken. This is likely a configuration error. Query hash: '${options.queryHash}'`);
+        }
+    }
+    if (!options.queryFn && fetchOptions?.initialPromise) {
+        return ()=>fetchOptions.initialPromise;
+    }
+    if (!options.queryFn || options.queryFn === skipToken) {
+        return ()=>Promise.reject(new Error(`Missing queryFn: '${options.queryHash}'`));
+    }
+    return options.queryFn;
+}
+function shouldThrowError(throwOnError, params) {
+    if (typeof throwOnError === "function") {
+        return throwOnError(...params);
+    }
+    return !!throwOnError;
+}
+;
+ //# sourceMappingURL=utils.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/notifyManager.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/notifyManager.ts
+__turbopack_context__.s([
+    "createNotifyManager",
+    ()=>createNotifyManager,
+    "defaultScheduler",
+    ()=>defaultScheduler,
+    "notifyManager",
+    ()=>notifyManager
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$timeoutManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/timeoutManager.js [app-ssr] (ecmascript)");
+;
+var defaultScheduler = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$timeoutManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["systemSetTimeoutZero"];
+function createNotifyManager() {
+    let queue = [];
+    let transactions = 0;
+    let notifyFn = (callback)=>{
+        callback();
+    };
+    let batchNotifyFn = (callback)=>{
+        callback();
+    };
+    let scheduleFn = defaultScheduler;
+    const schedule = (callback)=>{
+        if (transactions) {
+            queue.push(callback);
+        } else {
+            scheduleFn(()=>{
+                notifyFn(callback);
+            });
+        }
+    };
+    const flush = ()=>{
+        const originalQueue = queue;
+        queue = [];
+        if (originalQueue.length) {
+            scheduleFn(()=>{
+                batchNotifyFn(()=>{
+                    originalQueue.forEach((callback)=>{
+                        notifyFn(callback);
+                    });
+                });
+            });
+        }
+    };
+    return {
+        batch: (callback)=>{
+            let result;
+            transactions++;
+            try {
+                result = callback();
+            } finally{
+                transactions--;
+                if (!transactions) {
+                    flush();
+                }
+            }
+            return result;
+        },
+        /**
+     * All calls to the wrapped function will be batched.
+     */ batchCalls: (callback)=>{
+            return (...args)=>{
+                schedule(()=>{
+                    callback(...args);
+                });
+            };
+        },
+        schedule,
+        /**
+     * Use this method to set a custom notify function.
+     * This can be used to for example wrap notifications with `React.act` while running tests.
+     */ setNotifyFunction: (fn)=>{
+            notifyFn = fn;
+        },
+        /**
+     * Use this method to set a custom function to batch notifications together into a single tick.
+     * By default React Query will use the batch function provided by ReactDOM or React Native.
+     */ setBatchNotifyFunction: (fn)=>{
+            batchNotifyFn = fn;
+        },
+        setScheduler: (fn)=>{
+            scheduleFn = fn;
+        }
+    };
+}
+var notifyManager = createNotifyManager();
+;
+ //# sourceMappingURL=notifyManager.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/subscribable.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/subscribable.ts
+__turbopack_context__.s([
+    "Subscribable",
+    ()=>Subscribable
+]);
+var Subscribable = class {
+    constructor(){
+        this.listeners = /* @__PURE__ */ new Set();
+        this.subscribe = this.subscribe.bind(this);
+    }
+    subscribe(listener) {
+        this.listeners.add(listener);
+        this.onSubscribe();
+        return ()=>{
+            this.listeners.delete(listener);
+            this.onUnsubscribe();
+        };
+    }
+    hasListeners() {
+        return this.listeners.size > 0;
+    }
+    onSubscribe() {}
+    onUnsubscribe() {}
+};
+;
+ //# sourceMappingURL=subscribable.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/focusManager.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/focusManager.ts
+__turbopack_context__.s([
+    "FocusManager",
+    ()=>FocusManager,
+    "focusManager",
+    ()=>focusManager
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/subscribable.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+;
+;
+var FocusManager = class extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Subscribable"] {
+    #focused;
+    #cleanup;
+    #setup;
+    constructor(){
+        super();
+        this.#setup = (onFocus)=>{
+            if (!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isServer"] && window.addEventListener) {
+                const listener = ()=>onFocus();
+                window.addEventListener("visibilitychange", listener, false);
+                return ()=>{
+                    window.removeEventListener("visibilitychange", listener);
+                };
+            }
+            return;
+        };
+    }
+    onSubscribe() {
+        if (!this.#cleanup) {
+            this.setEventListener(this.#setup);
+        }
+    }
+    onUnsubscribe() {
+        if (!this.hasListeners()) {
+            this.#cleanup?.();
+            this.#cleanup = void 0;
+        }
+    }
+    setEventListener(setup) {
+        this.#setup = setup;
+        this.#cleanup?.();
+        this.#cleanup = setup((focused)=>{
+            if (typeof focused === "boolean") {
+                this.setFocused(focused);
+            } else {
+                this.onFocus();
+            }
+        });
+    }
+    setFocused(focused) {
+        const changed = this.#focused !== focused;
+        if (changed) {
+            this.#focused = focused;
+            this.onFocus();
+        }
+    }
+    onFocus() {
+        const isFocused = this.isFocused();
+        this.listeners.forEach((listener)=>{
+            listener(isFocused);
+        });
+    }
+    isFocused() {
+        if (typeof this.#focused === "boolean") {
+            return this.#focused;
+        }
+        return globalThis.document?.visibilityState !== "hidden";
+    }
+};
+var focusManager = new FocusManager();
+;
+ //# sourceMappingURL=focusManager.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/onlineManager.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/onlineManager.ts
+__turbopack_context__.s([
+    "OnlineManager",
+    ()=>OnlineManager,
+    "onlineManager",
+    ()=>onlineManager
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/subscribable.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+;
+;
+var OnlineManager = class extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Subscribable"] {
+    #online = true;
+    #cleanup;
+    #setup;
+    constructor(){
+        super();
+        this.#setup = (onOnline)=>{
+            if (!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isServer"] && window.addEventListener) {
+                const onlineListener = ()=>onOnline(true);
+                const offlineListener = ()=>onOnline(false);
+                window.addEventListener("online", onlineListener, false);
+                window.addEventListener("offline", offlineListener, false);
+                return ()=>{
+                    window.removeEventListener("online", onlineListener);
+                    window.removeEventListener("offline", offlineListener);
+                };
+            }
+            return;
+        };
+    }
+    onSubscribe() {
+        if (!this.#cleanup) {
+            this.setEventListener(this.#setup);
+        }
+    }
+    onUnsubscribe() {
+        if (!this.hasListeners()) {
+            this.#cleanup?.();
+            this.#cleanup = void 0;
+        }
+    }
+    setEventListener(setup) {
+        this.#setup = setup;
+        this.#cleanup?.();
+        this.#cleanup = setup(this.setOnline.bind(this));
+    }
+    setOnline(online) {
+        const changed = this.#online !== online;
+        if (changed) {
+            this.#online = online;
+            this.listeners.forEach((listener)=>{
+                listener(online);
+            });
+        }
+    }
+    isOnline() {
+        return this.#online;
+    }
+};
+var onlineManager = new OnlineManager();
+;
+ //# sourceMappingURL=onlineManager.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/thenable.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/thenable.ts
+__turbopack_context__.s([
+    "pendingThenable",
+    ()=>pendingThenable,
+    "tryResolveSync",
+    ()=>tryResolveSync
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+;
+function pendingThenable() {
+    let resolve;
+    let reject;
+    const thenable = new Promise((_resolve, _reject)=>{
+        resolve = _resolve;
+        reject = _reject;
+    });
+    thenable.status = "pending";
+    thenable.catch(()=>{});
+    function finalize(data) {
+        Object.assign(thenable, data);
+        delete thenable.resolve;
+        delete thenable.reject;
+    }
+    thenable.resolve = (value)=>{
+        finalize({
+            status: "fulfilled",
+            value
+        });
+        resolve(value);
+    };
+    thenable.reject = (reason)=>{
+        finalize({
+            status: "rejected",
+            reason
+        });
+        reject(reason);
+    };
+    return thenable;
+}
+function tryResolveSync(promise) {
+    let data;
+    promise.then((result)=>{
+        data = result;
+        return result;
+    }, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"])?.catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]);
+    if (data !== void 0) {
+        return {
+            data
+        };
+    }
+    return void 0;
+}
+;
+ //# sourceMappingURL=thenable.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/retryer.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/retryer.ts
+__turbopack_context__.s([
+    "CancelledError",
+    ()=>CancelledError,
+    "canFetch",
+    ()=>canFetch,
+    "createRetryer",
+    ()=>createRetryer,
+    "isCancelledError",
+    ()=>isCancelledError
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$focusManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/focusManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/onlineManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$thenable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/thenable.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+function defaultRetryDelay(failureCount) {
+    return Math.min(1e3 * 2 ** failureCount, 3e4);
+}
+function canFetch(networkMode) {
+    return (networkMode ?? "online") === "online" ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["onlineManager"].isOnline() : true;
+}
+var CancelledError = class extends Error {
+    constructor(options){
+        super("CancelledError");
+        this.revert = options?.revert;
+        this.silent = options?.silent;
+    }
+};
+function isCancelledError(value) {
+    return value instanceof CancelledError;
+}
+function createRetryer(config) {
+    let isRetryCancelled = false;
+    let failureCount = 0;
+    let continueFn;
+    const thenable = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$thenable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["pendingThenable"])();
+    const isResolved = ()=>thenable.status !== "pending";
+    const cancel = (cancelOptions)=>{
+        if (!isResolved()) {
+            const error = new CancelledError(cancelOptions);
+            reject(error);
+            config.onCancel?.(error);
+        }
+    };
+    const cancelRetry = ()=>{
+        isRetryCancelled = true;
+    };
+    const continueRetry = ()=>{
+        isRetryCancelled = false;
+    };
+    const canContinue = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$focusManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["focusManager"].isFocused() && (config.networkMode === "always" || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["onlineManager"].isOnline()) && config.canRun();
+    const canStart = ()=>canFetch(config.networkMode) && config.canRun();
+    const resolve = (value)=>{
+        if (!isResolved()) {
+            continueFn?.();
+            thenable.resolve(value);
+        }
+    };
+    const reject = (value)=>{
+        if (!isResolved()) {
+            continueFn?.();
+            thenable.reject(value);
+        }
+    };
+    const pause = ()=>{
+        return new Promise((continueResolve)=>{
+            continueFn = (value)=>{
+                if (isResolved() || canContinue()) {
+                    continueResolve(value);
+                }
+            };
+            config.onPause?.();
+        }).then(()=>{
+            continueFn = void 0;
+            if (!isResolved()) {
+                config.onContinue?.();
+            }
+        });
+    };
+    const run = ()=>{
+        if (isResolved()) {
+            return;
+        }
+        let promiseOrValue;
+        const initialPromise = failureCount === 0 ? config.initialPromise : void 0;
+        try {
+            promiseOrValue = initialPromise ?? config.fn();
+        } catch (error) {
+            promiseOrValue = Promise.reject(error);
+        }
+        Promise.resolve(promiseOrValue).then(resolve).catch((error)=>{
+            if (isResolved()) {
+                return;
+            }
+            const retry = config.retry ?? (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isServer"] ? 0 : 3);
+            const retryDelay = config.retryDelay ?? defaultRetryDelay;
+            const delay = typeof retryDelay === "function" ? retryDelay(failureCount, error) : retryDelay;
+            const shouldRetry = retry === true || typeof retry === "number" && failureCount < retry || typeof retry === "function" && retry(failureCount, error);
+            if (isRetryCancelled || !shouldRetry) {
+                reject(error);
+                return;
+            }
+            failureCount++;
+            config.onFail?.(failureCount, error);
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sleep"])(delay).then(()=>{
+                return canContinue() ? void 0 : pause();
+            }).then(()=>{
+                if (isRetryCancelled) {
+                    reject(error);
+                } else {
+                    run();
+                }
+            });
+        });
+    };
+    return {
+        promise: thenable,
+        status: ()=>thenable.status,
+        cancel,
+        continue: ()=>{
+            continueFn?.();
+            return thenable;
+        },
+        cancelRetry,
+        continueRetry,
+        canStart,
+        start: ()=>{
+            if (canStart()) {
+                run();
+            } else {
+                pause().then(run);
+            }
+            return thenable;
+        }
+    };
+}
+;
+ //# sourceMappingURL=retryer.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/removable.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/removable.ts
+__turbopack_context__.s([
+    "Removable",
+    ()=>Removable
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$timeoutManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/timeoutManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+;
+;
+var Removable = class {
+    #gcTimeout;
+    destroy() {
+        this.clearGcTimeout();
+    }
+    scheduleGc() {
+        this.clearGcTimeout();
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isValidTimeout"])(this.gcTime)) {
+            this.#gcTimeout = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$timeoutManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["timeoutManager"].setTimeout(()=>{
+                this.optionalRemove();
+            }, this.gcTime);
+        }
+    }
+    updateGcTime(newGcTime) {
+        this.gcTime = Math.max(this.gcTime || 0, newGcTime ?? (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isServer"] ? Infinity : 5 * 60 * 1e3));
+    }
+    clearGcTimeout() {
+        if (this.#gcTimeout) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$timeoutManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["timeoutManager"].clearTimeout(this.#gcTimeout);
+            this.#gcTimeout = void 0;
+        }
+    }
+};
+;
+ //# sourceMappingURL=removable.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/query.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/query.ts
+__turbopack_context__.s([
+    "Query",
+    ()=>Query,
+    "fetchState",
+    ()=>fetchState
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/notifyManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$retryer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/retryer.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$removable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/removable.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+var Query = class extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$removable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Removable"] {
+    #initialState;
+    #revertState;
+    #cache;
+    #client;
+    #retryer;
+    #defaultOptions;
+    #abortSignalConsumed;
+    constructor(config){
+        super();
+        this.#abortSignalConsumed = false;
+        this.#defaultOptions = config.defaultOptions;
+        this.setOptions(config.options);
+        this.observers = [];
+        this.#client = config.client;
+        this.#cache = this.#client.getQueryCache();
+        this.queryKey = config.queryKey;
+        this.queryHash = config.queryHash;
+        this.#initialState = getDefaultState(this.options);
+        this.state = config.state ?? this.#initialState;
+        this.scheduleGc();
+    }
+    get meta() {
+        return this.options.meta;
+    }
+    get promise() {
+        return this.#retryer?.promise;
+    }
+    setOptions(options) {
+        this.options = {
+            ...this.#defaultOptions,
+            ...options
+        };
+        this.updateGcTime(this.options.gcTime);
+        if (this.state && this.state.data === void 0) {
+            const defaultState = getDefaultState(this.options);
+            if (defaultState.data !== void 0) {
+                this.setState(successState(defaultState.data, defaultState.dataUpdatedAt));
+                this.#initialState = defaultState;
+            }
+        }
+    }
+    optionalRemove() {
+        if (!this.observers.length && this.state.fetchStatus === "idle") {
+            this.#cache.remove(this);
+        }
+    }
+    setData(newData, options) {
+        const data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["replaceData"])(this.state.data, newData, this.options);
+        this.#dispatch({
+            data,
+            type: "success",
+            dataUpdatedAt: options?.updatedAt,
+            manual: options?.manual
+        });
+        return data;
+    }
+    setState(state, setStateOptions) {
+        this.#dispatch({
+            type: "setState",
+            state,
+            setStateOptions
+        });
+    }
+    cancel(options) {
+        const promise = this.#retryer?.promise;
+        this.#retryer?.cancel(options);
+        return promise ? promise.then(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]).catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]) : Promise.resolve();
+    }
+    destroy() {
+        super.destroy();
+        this.cancel({
+            silent: true
+        });
+    }
+    reset() {
+        this.destroy();
+        this.setState(this.#initialState);
+    }
+    isActive() {
+        return this.observers.some((observer)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveEnabled"])(observer.options.enabled, this) !== false);
+    }
+    isDisabled() {
+        if (this.getObserversCount() > 0) {
+            return !this.isActive();
+        }
+        return this.options.queryFn === __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["skipToken"] || this.state.dataUpdateCount + this.state.errorUpdateCount === 0;
+    }
+    isStatic() {
+        if (this.getObserversCount() > 0) {
+            return this.observers.some((observer)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveStaleTime"])(observer.options.staleTime, this) === "static");
+        }
+        return false;
+    }
+    isStale() {
+        if (this.getObserversCount() > 0) {
+            return this.observers.some((observer)=>observer.getCurrentResult().isStale);
+        }
+        return this.state.data === void 0 || this.state.isInvalidated;
+    }
+    isStaleByTime(staleTime = 0) {
+        if (this.state.data === void 0) {
+            return true;
+        }
+        if (staleTime === "static") {
+            return false;
+        }
+        if (this.state.isInvalidated) {
+            return true;
+        }
+        return !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["timeUntilStale"])(this.state.dataUpdatedAt, staleTime);
+    }
+    onFocus() {
+        const observer = this.observers.find((x)=>x.shouldFetchOnWindowFocus());
+        observer?.refetch({
+            cancelRefetch: false
+        });
+        this.#retryer?.continue();
+    }
+    onOnline() {
+        const observer = this.observers.find((x)=>x.shouldFetchOnReconnect());
+        observer?.refetch({
+            cancelRefetch: false
+        });
+        this.#retryer?.continue();
+    }
+    addObserver(observer) {
+        if (!this.observers.includes(observer)) {
+            this.observers.push(observer);
+            this.clearGcTimeout();
+            this.#cache.notify({
+                type: "observerAdded",
+                query: this,
+                observer
+            });
+        }
+    }
+    removeObserver(observer) {
+        if (this.observers.includes(observer)) {
+            this.observers = this.observers.filter((x)=>x !== observer);
+            if (!this.observers.length) {
+                if (this.#retryer) {
+                    if (this.#abortSignalConsumed) {
+                        this.#retryer.cancel({
+                            revert: true
+                        });
+                    } else {
+                        this.#retryer.cancelRetry();
+                    }
+                }
+                this.scheduleGc();
+            }
+            this.#cache.notify({
+                type: "observerRemoved",
+                query: this,
+                observer
+            });
+        }
+    }
+    getObserversCount() {
+        return this.observers.length;
+    }
+    invalidate() {
+        if (!this.state.isInvalidated) {
+            this.#dispatch({
+                type: "invalidate"
+            });
+        }
+    }
+    async fetch(options, fetchOptions) {
+        if (this.state.fetchStatus !== "idle" && // If the promise in the retyer is already rejected, we have to definitely
+        // re-start the fetch; there is a chance that the query is still in a
+        // pending state when that happens
+        this.#retryer?.status() !== "rejected") {
+            if (this.state.data !== void 0 && fetchOptions?.cancelRefetch) {
+                this.cancel({
+                    silent: true
+                });
+            } else if (this.#retryer) {
+                this.#retryer.continueRetry();
+                return this.#retryer.promise;
+            }
+        }
+        if (options) {
+            this.setOptions(options);
+        }
+        if (!this.options.queryFn) {
+            const observer = this.observers.find((x)=>x.options.queryFn);
+            if (observer) {
+                this.setOptions(observer.options);
+            }
+        }
+        if ("TURBOPACK compile-time truthy", 1) {
+            if (!Array.isArray(this.options.queryKey)) {
+                console.error(`As of v4, queryKey needs to be an Array. If you are using a string like 'repoData', please change it to an Array, e.g. ['repoData']`);
+            }
+        }
+        const abortController = new AbortController();
+        const addSignalProperty = (object)=>{
+            Object.defineProperty(object, "signal", {
+                enumerable: true,
+                get: ()=>{
+                    this.#abortSignalConsumed = true;
+                    return abortController.signal;
+                }
+            });
+        };
+        const fetchFn = ()=>{
+            const queryFn = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ensureQueryFn"])(this.options, fetchOptions);
+            const createQueryFnContext = ()=>{
+                const queryFnContext2 = {
+                    client: this.#client,
+                    queryKey: this.queryKey,
+                    meta: this.meta
+                };
+                addSignalProperty(queryFnContext2);
+                return queryFnContext2;
+            };
+            const queryFnContext = createQueryFnContext();
+            this.#abortSignalConsumed = false;
+            if (this.options.persister) {
+                return this.options.persister(queryFn, queryFnContext, this);
+            }
+            return queryFn(queryFnContext);
+        };
+        const createFetchContext = ()=>{
+            const context2 = {
+                fetchOptions,
+                options: this.options,
+                queryKey: this.queryKey,
+                client: this.#client,
+                state: this.state,
+                fetchFn
+            };
+            addSignalProperty(context2);
+            return context2;
+        };
+        const context = createFetchContext();
+        this.options.behavior?.onFetch(context, this);
+        this.#revertState = this.state;
+        if (this.state.fetchStatus === "idle" || this.state.fetchMeta !== context.fetchOptions?.meta) {
+            this.#dispatch({
+                type: "fetch",
+                meta: context.fetchOptions?.meta
+            });
+        }
+        this.#retryer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$retryer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createRetryer"])({
+            initialPromise: fetchOptions?.initialPromise,
+            fn: context.fetchFn,
+            onCancel: (error)=>{
+                if (error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$retryer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CancelledError"] && error.revert) {
+                    this.setState({
+                        ...this.#revertState,
+                        fetchStatus: "idle"
+                    });
+                }
+                abortController.abort();
+            },
+            onFail: (failureCount, error)=>{
+                this.#dispatch({
+                    type: "failed",
+                    failureCount,
+                    error
+                });
+            },
+            onPause: ()=>{
+                this.#dispatch({
+                    type: "pause"
+                });
+            },
+            onContinue: ()=>{
+                this.#dispatch({
+                    type: "continue"
+                });
+            },
+            retry: context.options.retry,
+            retryDelay: context.options.retryDelay,
+            networkMode: context.options.networkMode,
+            canRun: ()=>true
+        });
+        try {
+            const data = await this.#retryer.start();
+            if (data === void 0) {
+                if ("TURBOPACK compile-time truthy", 1) {
+                    console.error(`Query data cannot be undefined. Please make sure to return a value other than undefined from your query function. Affected query key: ${this.queryHash}`);
+                }
+                throw new Error(`${this.queryHash} data is undefined`);
+            }
+            this.setData(data);
+            this.#cache.config.onSuccess?.(data, this);
+            this.#cache.config.onSettled?.(data, this.state.error, this);
+            return data;
+        } catch (error) {
+            if (error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$retryer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CancelledError"]) {
+                if (error.silent) {
+                    return this.#retryer.promise;
+                } else if (error.revert) {
+                    if (this.state.data === void 0) {
+                        throw error;
+                    }
+                    return this.state.data;
+                }
+            }
+            this.#dispatch({
+                type: "error",
+                error
+            });
+            this.#cache.config.onError?.(error, this);
+            this.#cache.config.onSettled?.(this.state.data, error, this);
+            throw error;
+        } finally{
+            this.scheduleGc();
+        }
+    }
+    #dispatch(action) {
+        const reducer = (state)=>{
+            switch(action.type){
+                case "failed":
+                    return {
+                        ...state,
+                        fetchFailureCount: action.failureCount,
+                        fetchFailureReason: action.error
+                    };
+                case "pause":
+                    return {
+                        ...state,
+                        fetchStatus: "paused"
+                    };
+                case "continue":
+                    return {
+                        ...state,
+                        fetchStatus: "fetching"
+                    };
+                case "fetch":
+                    return {
+                        ...state,
+                        ...fetchState(state.data, this.options),
+                        fetchMeta: action.meta ?? null
+                    };
+                case "success":
+                    const newState = {
+                        ...state,
+                        ...successState(action.data, action.dataUpdatedAt),
+                        dataUpdateCount: state.dataUpdateCount + 1,
+                        ...!action.manual && {
+                            fetchStatus: "idle",
+                            fetchFailureCount: 0,
+                            fetchFailureReason: null
+                        }
+                    };
+                    this.#revertState = action.manual ? newState : void 0;
+                    return newState;
+                case "error":
+                    const error = action.error;
+                    return {
+                        ...state,
+                        error,
+                        errorUpdateCount: state.errorUpdateCount + 1,
+                        errorUpdatedAt: Date.now(),
+                        fetchFailureCount: state.fetchFailureCount + 1,
+                        fetchFailureReason: error,
+                        fetchStatus: "idle",
+                        status: "error"
+                    };
+                case "invalidate":
+                    return {
+                        ...state,
+                        isInvalidated: true
+                    };
+                case "setState":
+                    return {
+                        ...state,
+                        ...action.state
+                    };
+            }
+        };
+        this.state = reducer(this.state);
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.observers.forEach((observer)=>{
+                observer.onQueryUpdate();
+            });
+            this.#cache.notify({
+                query: this,
+                type: "updated",
+                action
+            });
+        });
+    }
+};
+function fetchState(data, options) {
+    return {
+        fetchFailureCount: 0,
+        fetchFailureReason: null,
+        fetchStatus: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$retryer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["canFetch"])(options.networkMode) ? "fetching" : "paused",
+        ...data === void 0 && {
+            error: null,
+            status: "pending"
+        }
+    };
+}
+function successState(data, dataUpdatedAt) {
+    return {
+        data,
+        dataUpdatedAt: dataUpdatedAt ?? Date.now(),
+        error: null,
+        isInvalidated: false,
+        status: "success"
+    };
+}
+function getDefaultState(options) {
+    const data = typeof options.initialData === "function" ? options.initialData() : options.initialData;
+    const hasData = data !== void 0;
+    const initialDataUpdatedAt = hasData ? typeof options.initialDataUpdatedAt === "function" ? options.initialDataUpdatedAt() : options.initialDataUpdatedAt : 0;
+    return {
+        data,
+        dataUpdateCount: 0,
+        dataUpdatedAt: hasData ? initialDataUpdatedAt ?? Date.now() : 0,
+        error: null,
+        errorUpdateCount: 0,
+        errorUpdatedAt: 0,
+        fetchFailureCount: 0,
+        fetchFailureReason: null,
+        fetchMeta: null,
+        isInvalidated: false,
+        status: hasData ? "success" : "pending",
+        fetchStatus: "idle"
+    };
+}
+;
+ //# sourceMappingURL=query.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/queryCache.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/queryCache.ts
+__turbopack_context__.s([
+    "QueryCache",
+    ()=>QueryCache
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$query$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/query.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/notifyManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/subscribable.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+var QueryCache = class extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Subscribable"] {
+    constructor(config = {}){
+        super();
+        this.config = config;
+        this.#queries = /* @__PURE__ */ new Map();
+    }
+    #queries;
+    build(client, options, state) {
+        const queryKey = options.queryKey;
+        const queryHash = options.queryHash ?? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hashQueryKeyByOptions"])(queryKey, options);
+        let query = this.get(queryHash);
+        if (!query) {
+            query = new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$query$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Query"]({
+                client,
+                queryKey,
+                queryHash,
+                options: client.defaultQueryOptions(options),
+                state,
+                defaultOptions: client.getQueryDefaults(queryKey)
+            });
+            this.add(query);
+        }
+        return query;
+    }
+    add(query) {
+        if (!this.#queries.has(query.queryHash)) {
+            this.#queries.set(query.queryHash, query);
+            this.notify({
+                type: "added",
+                query
+            });
+        }
+    }
+    remove(query) {
+        const queryInMap = this.#queries.get(query.queryHash);
+        if (queryInMap) {
+            query.destroy();
+            if (queryInMap === query) {
+                this.#queries.delete(query.queryHash);
+            }
+            this.notify({
+                type: "removed",
+                query
+            });
+        }
+    }
+    clear() {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.getAll().forEach((query)=>{
+                this.remove(query);
+            });
+        });
+    }
+    get(queryHash) {
+        return this.#queries.get(queryHash);
+    }
+    getAll() {
+        return [
+            ...this.#queries.values()
+        ];
+    }
+    find(filters) {
+        const defaultedFilters = {
+            exact: true,
+            ...filters
+        };
+        return this.getAll().find((query)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["matchQuery"])(defaultedFilters, query));
+    }
+    findAll(filters = {}) {
+        const queries = this.getAll();
+        return Object.keys(filters).length > 0 ? queries.filter((query)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["matchQuery"])(filters, query)) : queries;
+    }
+    notify(event) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.listeners.forEach((listener)=>{
+                listener(event);
+            });
+        });
+    }
+    onFocus() {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.getAll().forEach((query)=>{
+                query.onFocus();
+            });
+        });
+    }
+    onOnline() {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.getAll().forEach((query)=>{
+                query.onOnline();
+            });
+        });
+    }
+};
+;
+ //# sourceMappingURL=queryCache.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/mutation.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/mutation.ts
+__turbopack_context__.s([
+    "Mutation",
+    ()=>Mutation,
+    "getDefaultState",
+    ()=>getDefaultState
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/notifyManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$removable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/removable.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$retryer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/retryer.js [app-ssr] (ecmascript)");
+;
+;
+;
+var Mutation = class extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$removable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Removable"] {
+    #client;
+    #observers;
+    #mutationCache;
+    #retryer;
+    constructor(config){
+        super();
+        this.#client = config.client;
+        this.mutationId = config.mutationId;
+        this.#mutationCache = config.mutationCache;
+        this.#observers = [];
+        this.state = config.state || getDefaultState();
+        this.setOptions(config.options);
+        this.scheduleGc();
+    }
+    setOptions(options) {
+        this.options = options;
+        this.updateGcTime(this.options.gcTime);
+    }
+    get meta() {
+        return this.options.meta;
+    }
+    addObserver(observer) {
+        if (!this.#observers.includes(observer)) {
+            this.#observers.push(observer);
+            this.clearGcTimeout();
+            this.#mutationCache.notify({
+                type: "observerAdded",
+                mutation: this,
+                observer
+            });
+        }
+    }
+    removeObserver(observer) {
+        this.#observers = this.#observers.filter((x)=>x !== observer);
+        this.scheduleGc();
+        this.#mutationCache.notify({
+            type: "observerRemoved",
+            mutation: this,
+            observer
+        });
+    }
+    optionalRemove() {
+        if (!this.#observers.length) {
+            if (this.state.status === "pending") {
+                this.scheduleGc();
+            } else {
+                this.#mutationCache.remove(this);
+            }
+        }
+    }
+    continue() {
+        return this.#retryer?.continue() ?? // continuing a mutation assumes that variables are set, mutation must have been dehydrated before
+        this.execute(this.state.variables);
+    }
+    async execute(variables) {
+        const onContinue = ()=>{
+            this.#dispatch({
+                type: "continue"
+            });
+        };
+        const mutationFnContext = {
+            client: this.#client,
+            meta: this.options.meta,
+            mutationKey: this.options.mutationKey
+        };
+        this.#retryer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$retryer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createRetryer"])({
+            fn: ()=>{
+                if (!this.options.mutationFn) {
+                    return Promise.reject(new Error("No mutationFn found"));
+                }
+                return this.options.mutationFn(variables, mutationFnContext);
+            },
+            onFail: (failureCount, error)=>{
+                this.#dispatch({
+                    type: "failed",
+                    failureCount,
+                    error
+                });
+            },
+            onPause: ()=>{
+                this.#dispatch({
+                    type: "pause"
+                });
+            },
+            onContinue,
+            retry: this.options.retry ?? 0,
+            retryDelay: this.options.retryDelay,
+            networkMode: this.options.networkMode,
+            canRun: ()=>this.#mutationCache.canRun(this)
+        });
+        const restored = this.state.status === "pending";
+        const isPaused = !this.#retryer.canStart();
+        try {
+            if (restored) {
+                onContinue();
+            } else {
+                this.#dispatch({
+                    type: "pending",
+                    variables,
+                    isPaused
+                });
+                await this.#mutationCache.config.onMutate?.(variables, this, mutationFnContext);
+                const context = await this.options.onMutate?.(variables, mutationFnContext);
+                if (context !== this.state.context) {
+                    this.#dispatch({
+                        type: "pending",
+                        context,
+                        variables,
+                        isPaused
+                    });
+                }
+            }
+            const data = await this.#retryer.start();
+            await this.#mutationCache.config.onSuccess?.(data, variables, this.state.context, this, mutationFnContext);
+            await this.options.onSuccess?.(data, variables, this.state.context, mutationFnContext);
+            await this.#mutationCache.config.onSettled?.(data, null, this.state.variables, this.state.context, this, mutationFnContext);
+            await this.options.onSettled?.(data, null, variables, this.state.context, mutationFnContext);
+            this.#dispatch({
+                type: "success",
+                data
+            });
+            return data;
+        } catch (error) {
+            try {
+                await this.#mutationCache.config.onError?.(error, variables, this.state.context, this, mutationFnContext);
+                await this.options.onError?.(error, variables, this.state.context, mutationFnContext);
+                await this.#mutationCache.config.onSettled?.(void 0, error, this.state.variables, this.state.context, this, mutationFnContext);
+                await this.options.onSettled?.(void 0, error, variables, this.state.context, mutationFnContext);
+                throw error;
+            } finally{
+                this.#dispatch({
+                    type: "error",
+                    error
+                });
+            }
+        } finally{
+            this.#mutationCache.runNext(this);
+        }
+    }
+    #dispatch(action) {
+        const reducer = (state)=>{
+            switch(action.type){
+                case "failed":
+                    return {
+                        ...state,
+                        failureCount: action.failureCount,
+                        failureReason: action.error
+                    };
+                case "pause":
+                    return {
+                        ...state,
+                        isPaused: true
+                    };
+                case "continue":
+                    return {
+                        ...state,
+                        isPaused: false
+                    };
+                case "pending":
+                    return {
+                        ...state,
+                        context: action.context,
+                        data: void 0,
+                        failureCount: 0,
+                        failureReason: null,
+                        error: null,
+                        isPaused: action.isPaused,
+                        status: "pending",
+                        variables: action.variables,
+                        submittedAt: Date.now()
+                    };
+                case "success":
+                    return {
+                        ...state,
+                        data: action.data,
+                        failureCount: 0,
+                        failureReason: null,
+                        error: null,
+                        status: "success",
+                        isPaused: false
+                    };
+                case "error":
+                    return {
+                        ...state,
+                        data: void 0,
+                        error: action.error,
+                        failureCount: state.failureCount + 1,
+                        failureReason: action.error,
+                        isPaused: false,
+                        status: "error"
+                    };
+            }
+        };
+        this.state = reducer(this.state);
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.#observers.forEach((observer)=>{
+                observer.onMutationUpdate(action);
+            });
+            this.#mutationCache.notify({
+                mutation: this,
+                type: "updated",
+                action
+            });
+        });
+    }
+};
+function getDefaultState() {
+    return {
+        context: void 0,
+        data: void 0,
+        error: null,
+        failureCount: 0,
+        failureReason: null,
+        isPaused: false,
+        status: "idle",
+        variables: void 0,
+        submittedAt: 0
+    };
+}
+;
+ //# sourceMappingURL=mutation.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/mutationCache.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/mutationCache.ts
+__turbopack_context__.s([
+    "MutationCache",
+    ()=>MutationCache
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/notifyManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$mutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/mutation.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/subscribable.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+var MutationCache = class extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$subscribable$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Subscribable"] {
+    constructor(config = {}){
+        super();
+        this.config = config;
+        this.#mutations = /* @__PURE__ */ new Set();
+        this.#scopes = /* @__PURE__ */ new Map();
+        this.#mutationId = 0;
+    }
+    #mutations;
+    #scopes;
+    #mutationId;
+    build(client, options, state) {
+        const mutation = new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$mutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Mutation"]({
+            client,
+            mutationCache: this,
+            mutationId: ++this.#mutationId,
+            options: client.defaultMutationOptions(options),
+            state
+        });
+        this.add(mutation);
+        return mutation;
+    }
+    add(mutation) {
+        this.#mutations.add(mutation);
+        const scope = scopeFor(mutation);
+        if (typeof scope === "string") {
+            const scopedMutations = this.#scopes.get(scope);
+            if (scopedMutations) {
+                scopedMutations.push(mutation);
+            } else {
+                this.#scopes.set(scope, [
+                    mutation
+                ]);
+            }
+        }
+        this.notify({
+            type: "added",
+            mutation
+        });
+    }
+    remove(mutation) {
+        if (this.#mutations.delete(mutation)) {
+            const scope = scopeFor(mutation);
+            if (typeof scope === "string") {
+                const scopedMutations = this.#scopes.get(scope);
+                if (scopedMutations) {
+                    if (scopedMutations.length > 1) {
+                        const index = scopedMutations.indexOf(mutation);
+                        if (index !== -1) {
+                            scopedMutations.splice(index, 1);
+                        }
+                    } else if (scopedMutations[0] === mutation) {
+                        this.#scopes.delete(scope);
+                    }
+                }
+            }
+        }
+        this.notify({
+            type: "removed",
+            mutation
+        });
+    }
+    canRun(mutation) {
+        const scope = scopeFor(mutation);
+        if (typeof scope === "string") {
+            const mutationsWithSameScope = this.#scopes.get(scope);
+            const firstPendingMutation = mutationsWithSameScope?.find((m)=>m.state.status === "pending");
+            return !firstPendingMutation || firstPendingMutation === mutation;
+        } else {
+            return true;
+        }
+    }
+    runNext(mutation) {
+        const scope = scopeFor(mutation);
+        if (typeof scope === "string") {
+            const foundMutation = this.#scopes.get(scope)?.find((m)=>m !== mutation && m.state.isPaused);
+            return foundMutation?.continue() ?? Promise.resolve();
+        } else {
+            return Promise.resolve();
+        }
+    }
+    clear() {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.#mutations.forEach((mutation)=>{
+                this.notify({
+                    type: "removed",
+                    mutation
+                });
+            });
+            this.#mutations.clear();
+            this.#scopes.clear();
+        });
+    }
+    getAll() {
+        return Array.from(this.#mutations);
+    }
+    find(filters) {
+        const defaultedFilters = {
+            exact: true,
+            ...filters
+        };
+        return this.getAll().find((mutation)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["matchMutation"])(defaultedFilters, mutation));
+    }
+    findAll(filters = {}) {
+        return this.getAll().filter((mutation)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["matchMutation"])(filters, mutation));
+    }
+    notify(event) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.listeners.forEach((listener)=>{
+                listener(event);
+            });
+        });
+    }
+    resumePausedMutations() {
+        const pausedMutations = this.getAll().filter((x)=>x.state.isPaused);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>Promise.all(pausedMutations.map((mutation)=>mutation.continue().catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]))));
+    }
+};
+function scopeFor(mutation) {
+    return mutation.options.scope?.id;
+}
+;
+ //# sourceMappingURL=mutationCache.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/infiniteQueryBehavior.ts
+__turbopack_context__.s([
+    "hasNextPage",
+    ()=>hasNextPage,
+    "hasPreviousPage",
+    ()=>hasPreviousPage,
+    "infiniteQueryBehavior",
+    ()=>infiniteQueryBehavior
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+;
+function infiniteQueryBehavior(pages) {
+    return {
+        onFetch: (context, query)=>{
+            const options = context.options;
+            const direction = context.fetchOptions?.meta?.fetchMore?.direction;
+            const oldPages = context.state.data?.pages || [];
+            const oldPageParams = context.state.data?.pageParams || [];
+            let result = {
+                pages: [],
+                pageParams: []
+            };
+            let currentPage = 0;
+            const fetchFn = async ()=>{
+                let cancelled = false;
+                const addSignalProperty = (object)=>{
+                    Object.defineProperty(object, "signal", {
+                        enumerable: true,
+                        get: ()=>{
+                            if (context.signal.aborted) {
+                                cancelled = true;
+                            } else {
+                                context.signal.addEventListener("abort", ()=>{
+                                    cancelled = true;
+                                });
+                            }
+                            return context.signal;
+                        }
+                    });
+                };
+                const queryFn = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ensureQueryFn"])(context.options, context.fetchOptions);
+                const fetchPage = async (data, param, previous)=>{
+                    if (cancelled) {
+                        return Promise.reject();
+                    }
+                    if (param == null && data.pages.length) {
+                        return Promise.resolve(data);
+                    }
+                    const createQueryFnContext = ()=>{
+                        const queryFnContext2 = {
+                            client: context.client,
+                            queryKey: context.queryKey,
+                            pageParam: param,
+                            direction: previous ? "backward" : "forward",
+                            meta: context.options.meta
+                        };
+                        addSignalProperty(queryFnContext2);
+                        return queryFnContext2;
+                    };
+                    const queryFnContext = createQueryFnContext();
+                    const page = await queryFn(queryFnContext);
+                    const { maxPages } = context.options;
+                    const addTo = previous ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addToStart"] : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addToEnd"];
+                    return {
+                        pages: addTo(data.pages, page, maxPages),
+                        pageParams: addTo(data.pageParams, param, maxPages)
+                    };
+                };
+                if (direction && oldPages.length) {
+                    const previous = direction === "backward";
+                    const pageParamFn = previous ? getPreviousPageParam : getNextPageParam;
+                    const oldData = {
+                        pages: oldPages,
+                        pageParams: oldPageParams
+                    };
+                    const param = pageParamFn(options, oldData);
+                    result = await fetchPage(oldData, param, previous);
+                } else {
+                    const remainingPages = pages ?? oldPages.length;
+                    do {
+                        const param = currentPage === 0 ? oldPageParams[0] ?? options.initialPageParam : getNextPageParam(options, result);
+                        if (currentPage > 0 && param == null) {
+                            break;
+                        }
+                        result = await fetchPage(result, param);
+                        currentPage++;
+                    }while (currentPage < remainingPages)
+                }
+                return result;
+            };
+            if (context.options.persister) {
+                context.fetchFn = ()=>{
+                    return context.options.persister?.(fetchFn, {
+                        client: context.client,
+                        queryKey: context.queryKey,
+                        meta: context.options.meta,
+                        signal: context.signal
+                    }, query);
+                };
+            } else {
+                context.fetchFn = fetchFn;
+            }
+        }
+    };
+}
+function getNextPageParam(options, { pages, pageParams }) {
+    const lastIndex = pages.length - 1;
+    return pages.length > 0 ? options.getNextPageParam(pages[lastIndex], pages, pageParams[lastIndex], pageParams) : void 0;
+}
+function getPreviousPageParam(options, { pages, pageParams }) {
+    return pages.length > 0 ? options.getPreviousPageParam?.(pages[0], pages, pageParams[0], pageParams) : void 0;
+}
+function hasNextPage(options, data) {
+    if (!data) return false;
+    return getNextPageParam(options, data) != null;
+}
+function hasPreviousPage(options, data) {
+    if (!data || !options.getPreviousPageParam) return false;
+    return getPreviousPageParam(options, data) != null;
+}
+;
+ //# sourceMappingURL=infiniteQueryBehavior.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/queryClient.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// src/queryClient.ts
+__turbopack_context__.s([
+    "QueryClient",
+    ()=>QueryClient
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/utils.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$queryCache$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/queryCache.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$mutationCache$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/mutationCache.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$focusManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/focusManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/onlineManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/notifyManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$infiniteQueryBehavior$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+var QueryClient = class {
+    #queryCache;
+    #mutationCache;
+    #defaultOptions;
+    #queryDefaults;
+    #mutationDefaults;
+    #mountCount;
+    #unsubscribeFocus;
+    #unsubscribeOnline;
+    constructor(config = {}){
+        this.#queryCache = config.queryCache || new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$queryCache$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["QueryCache"]();
+        this.#mutationCache = config.mutationCache || new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$mutationCache$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MutationCache"]();
+        this.#defaultOptions = config.defaultOptions || {};
+        this.#queryDefaults = /* @__PURE__ */ new Map();
+        this.#mutationDefaults = /* @__PURE__ */ new Map();
+        this.#mountCount = 0;
+    }
+    mount() {
+        this.#mountCount++;
+        if (this.#mountCount !== 1) return;
+        this.#unsubscribeFocus = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$focusManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["focusManager"].subscribe(async (focused)=>{
+            if (focused) {
+                await this.resumePausedMutations();
+                this.#queryCache.onFocus();
+            }
+        });
+        this.#unsubscribeOnline = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["onlineManager"].subscribe(async (online)=>{
+            if (online) {
+                await this.resumePausedMutations();
+                this.#queryCache.onOnline();
+            }
+        });
+    }
+    unmount() {
+        this.#mountCount--;
+        if (this.#mountCount !== 0) return;
+        this.#unsubscribeFocus?.();
+        this.#unsubscribeFocus = void 0;
+        this.#unsubscribeOnline?.();
+        this.#unsubscribeOnline = void 0;
+    }
+    isFetching(filters) {
+        return this.#queryCache.findAll({
+            ...filters,
+            fetchStatus: "fetching"
+        }).length;
+    }
+    isMutating(filters) {
+        return this.#mutationCache.findAll({
+            ...filters,
+            status: "pending"
+        }).length;
+    }
+    /**
+   * Imperative (non-reactive) way to retrieve data for a QueryKey.
+   * Should only be used in callbacks or functions where reading the latest data is necessary, e.g. for optimistic updates.
+   *
+   * Hint: Do not use this function inside a component, because it won't receive updates.
+   * Use `useQuery` to create a `QueryObserver` that subscribes to changes.
+   */ getQueryData(queryKey) {
+        const options = this.defaultQueryOptions({
+            queryKey
+        });
+        return this.#queryCache.get(options.queryHash)?.state.data;
+    }
+    ensureQueryData(options) {
+        const defaultedOptions = this.defaultQueryOptions(options);
+        const query = this.#queryCache.build(this, defaultedOptions);
+        const cachedData = query.state.data;
+        if (cachedData === void 0) {
+            return this.fetchQuery(options);
+        }
+        if (options.revalidateIfStale && query.isStaleByTime((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveStaleTime"])(defaultedOptions.staleTime, query))) {
+            void this.prefetchQuery(defaultedOptions);
+        }
+        return Promise.resolve(cachedData);
+    }
+    getQueriesData(filters) {
+        return this.#queryCache.findAll(filters).map(({ queryKey, state })=>{
+            const data = state.data;
+            return [
+                queryKey,
+                data
+            ];
+        });
+    }
+    setQueryData(queryKey, updater, options) {
+        const defaultedOptions = this.defaultQueryOptions({
+            queryKey
+        });
+        const query = this.#queryCache.get(defaultedOptions.queryHash);
+        const prevData = query?.state.data;
+        const data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["functionalUpdate"])(updater, prevData);
+        if (data === void 0) {
+            return void 0;
+        }
+        return this.#queryCache.build(this, defaultedOptions).setData(data, {
+            ...options,
+            manual: true
+        });
+    }
+    setQueriesData(filters, updater, options) {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>this.#queryCache.findAll(filters).map(({ queryKey })=>[
+                    queryKey,
+                    this.setQueryData(queryKey, updater, options)
+                ]));
+    }
+    getQueryState(queryKey) {
+        const options = this.defaultQueryOptions({
+            queryKey
+        });
+        return this.#queryCache.get(options.queryHash)?.state;
+    }
+    removeQueries(filters) {
+        const queryCache = this.#queryCache;
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            queryCache.findAll(filters).forEach((query)=>{
+                queryCache.remove(query);
+            });
+        });
+    }
+    resetQueries(filters, options) {
+        const queryCache = this.#queryCache;
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            queryCache.findAll(filters).forEach((query)=>{
+                query.reset();
+            });
+            return this.refetchQueries({
+                type: "active",
+                ...filters
+            }, options);
+        });
+    }
+    cancelQueries(filters, cancelOptions = {}) {
+        const defaultedCancelOptions = {
+            revert: true,
+            ...cancelOptions
+        };
+        const promises = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>this.#queryCache.findAll(filters).map((query)=>query.cancel(defaultedCancelOptions)));
+        return Promise.all(promises).then(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]).catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]);
+    }
+    invalidateQueries(filters, options = {}) {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>{
+            this.#queryCache.findAll(filters).forEach((query)=>{
+                query.invalidate();
+            });
+            if (filters?.refetchType === "none") {
+                return Promise.resolve();
+            }
+            return this.refetchQueries({
+                ...filters,
+                type: filters?.refetchType ?? filters?.type ?? "active"
+            }, options);
+        });
+    }
+    refetchQueries(filters, options = {}) {
+        const fetchOptions = {
+            ...options,
+            cancelRefetch: options.cancelRefetch ?? true
+        };
+        const promises = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$notifyManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notifyManager"].batch(()=>this.#queryCache.findAll(filters).filter((query)=>!query.isDisabled() && !query.isStatic()).map((query)=>{
+                let promise = query.fetch(void 0, fetchOptions);
+                if (!fetchOptions.throwOnError) {
+                    promise = promise.catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]);
+                }
+                return query.state.fetchStatus === "paused" ? Promise.resolve() : promise;
+            }));
+        return Promise.all(promises).then(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]);
+    }
+    fetchQuery(options) {
+        const defaultedOptions = this.defaultQueryOptions(options);
+        if (defaultedOptions.retry === void 0) {
+            defaultedOptions.retry = false;
+        }
+        const query = this.#queryCache.build(this, defaultedOptions);
+        return query.isStaleByTime((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveStaleTime"])(defaultedOptions.staleTime, query)) ? query.fetch(defaultedOptions) : Promise.resolve(query.state.data);
+    }
+    prefetchQuery(options) {
+        return this.fetchQuery(options).then(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]).catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]);
+    }
+    fetchInfiniteQuery(options) {
+        options.behavior = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$infiniteQueryBehavior$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["infiniteQueryBehavior"])(options.pages);
+        return this.fetchQuery(options);
+    }
+    prefetchInfiniteQuery(options) {
+        return this.fetchInfiniteQuery(options).then(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]).catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]);
+    }
+    ensureInfiniteQueryData(options) {
+        options.behavior = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$infiniteQueryBehavior$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["infiniteQueryBehavior"])(options.pages);
+        return this.ensureQueryData(options);
+    }
+    resumePausedMutations() {
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["onlineManager"].isOnline()) {
+            return this.#mutationCache.resumePausedMutations();
+        }
+        return Promise.resolve();
+    }
+    getQueryCache() {
+        return this.#queryCache;
+    }
+    getMutationCache() {
+        return this.#mutationCache;
+    }
+    getDefaultOptions() {
+        return this.#defaultOptions;
+    }
+    setDefaultOptions(options) {
+        this.#defaultOptions = options;
+    }
+    setQueryDefaults(queryKey, options) {
+        this.#queryDefaults.set((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hashKey"])(queryKey), {
+            queryKey,
+            defaultOptions: options
+        });
+    }
+    getQueryDefaults(queryKey) {
+        const defaults = [
+            ...this.#queryDefaults.values()
+        ];
+        const result = {};
+        defaults.forEach((queryDefault)=>{
+            if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["partialMatchKey"])(queryKey, queryDefault.queryKey)) {
+                Object.assign(result, queryDefault.defaultOptions);
+            }
+        });
+        return result;
+    }
+    setMutationDefaults(mutationKey, options) {
+        this.#mutationDefaults.set((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hashKey"])(mutationKey), {
+            mutationKey,
+            defaultOptions: options
+        });
+    }
+    getMutationDefaults(mutationKey) {
+        const defaults = [
+            ...this.#mutationDefaults.values()
+        ];
+        const result = {};
+        defaults.forEach((queryDefault)=>{
+            if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["partialMatchKey"])(mutationKey, queryDefault.mutationKey)) {
+                Object.assign(result, queryDefault.defaultOptions);
+            }
+        });
+        return result;
+    }
+    defaultQueryOptions(options) {
+        if (options._defaulted) {
+            return options;
+        }
+        const defaultedOptions = {
+            ...this.#defaultOptions.queries,
+            ...this.getQueryDefaults(options.queryKey),
+            ...options,
+            _defaulted: true
+        };
+        if (!defaultedOptions.queryHash) {
+            defaultedOptions.queryHash = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hashQueryKeyByOptions"])(defaultedOptions.queryKey, defaultedOptions);
+        }
+        if (defaultedOptions.refetchOnReconnect === void 0) {
+            defaultedOptions.refetchOnReconnect = defaultedOptions.networkMode !== "always";
+        }
+        if (defaultedOptions.throwOnError === void 0) {
+            defaultedOptions.throwOnError = !!defaultedOptions.suspense;
+        }
+        if (!defaultedOptions.networkMode && defaultedOptions.persister) {
+            defaultedOptions.networkMode = "offlineFirst";
+        }
+        if (defaultedOptions.queryFn === __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["skipToken"]) {
+            defaultedOptions.enabled = false;
+        }
+        return defaultedOptions;
+    }
+    defaultMutationOptions(options) {
+        if (options?._defaulted) {
+            return options;
+        }
+        return {
+            ...this.#defaultOptions.mutations,
+            ...options?.mutationKey && this.getMutationDefaults(options.mutationKey),
+            ...options,
+            _defaulted: true
+        };
+    }
+    clear() {
+        this.#queryCache.clear();
+        this.#mutationCache.clear();
+    }
+};
+;
+ //# sourceMappingURL=queryClient.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/next-themes/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ThemeProvider",
+    ()=>J,
+    "useTheme",
+    ()=>z
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+"use client";
+;
+var M = (e, i, s, u, m, a, l, h)=>{
+    let d = document.documentElement, w = [
+        "light",
+        "dark"
+    ];
+    function p(n) {
+        (Array.isArray(e) ? e : [
+            e
+        ]).forEach((y)=>{
+            let k = y === "class", S = k && a ? m.map((f)=>a[f] || f) : m;
+            k ? (d.classList.remove(...S), d.classList.add(a && a[n] ? a[n] : n)) : d.setAttribute(y, n);
+        }), R(n);
+    }
+    function R(n) {
+        h && w.includes(n) && (d.style.colorScheme = n);
+    }
+    function c() {
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    if (u) p(u);
+    else try {
+        let n = localStorage.getItem(i) || s, y = l && n === "system" ? c() : n;
+        p(y);
+    } catch (n) {}
+};
+var b = [
+    "light",
+    "dark"
+], I = "(prefers-color-scheme: dark)", O = ("TURBOPACK compile-time value", "undefined") == "undefined", x = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"](void 0), U = {
+    setTheme: (e)=>{},
+    themes: []
+}, z = ()=>{
+    var e;
+    return (e = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](x)) != null ? e : U;
+}, J = (e)=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](x) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], null, e.children) : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](V, {
+        ...e
+    }), N = [
+    "light",
+    "dark"
+], V = ({ forcedTheme: e, disableTransitionOnChange: i = !1, enableSystem: s = !0, enableColorScheme: u = !0, storageKey: m = "theme", themes: a = N, defaultTheme: l = s ? "system" : "light", attribute: h = "data-theme", value: d, children: w, nonce: p, scriptProps: R })=>{
+    let [c, n] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](()=>H(m, l)), [T, y] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](()=>c === "system" ? E() : c), k = d ? Object.values(d) : a, S = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((o)=>{
+        let r = o;
+        if (!r) return;
+        o === "system" && s && (r = E());
+        let v = d ? d[r] : r, C = i ? W(p) : null, P = document.documentElement, L = (g)=>{
+            g === "class" ? (P.classList.remove(...k), v && P.classList.add(v)) : g.startsWith("data-") && (v ? P.setAttribute(g, v) : P.removeAttribute(g));
+        };
+        if (Array.isArray(h) ? h.forEach(L) : L(h), u) {
+            let g = b.includes(l) ? l : null, D = b.includes(r) ? r : g;
+            P.style.colorScheme = D;
+        }
+        C == null || C();
+    }, [
+        p
+    ]), f = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((o)=>{
+        let r = typeof o == "function" ? o(c) : o;
+        n(r);
+        try {
+            localStorage.setItem(m, r);
+        } catch (v) {}
+    }, [
+        c
+    ]), A = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((o)=>{
+        let r = E(o);
+        y(r), c === "system" && s && !e && S("system");
+    }, [
+        c,
+        e
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        let o = window.matchMedia(I);
+        return o.addListener(A), A(o), ()=>o.removeListener(A);
+    }, [
+        A
+    ]), __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        let o = (r)=>{
+            r.key === m && (r.newValue ? n(r.newValue) : f(l));
+        };
+        return window.addEventListener("storage", o), ()=>window.removeEventListener("storage", o);
+    }, [
+        f
+    ]), __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        S(e != null ? e : c);
+    }, [
+        e,
+        c
+    ]);
+    let Q = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>({
+            theme: c,
+            setTheme: f,
+            forcedTheme: e,
+            resolvedTheme: c === "system" ? T : c,
+            themes: s ? [
+                ...a,
+                "system"
+            ] : a,
+            systemTheme: s ? T : void 0
+        }), [
+        c,
+        f,
+        e,
+        T,
+        s,
+        a
+    ]);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](x.Provider, {
+        value: Q
+    }, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](_, {
+        forcedTheme: e,
+        storageKey: m,
+        attribute: h,
+        enableSystem: s,
+        enableColorScheme: u,
+        defaultTheme: l,
+        value: d,
+        themes: a,
+        nonce: p,
+        scriptProps: R
+    }), w);
+}, _ = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memo"](({ forcedTheme: e, storageKey: i, attribute: s, enableSystem: u, enableColorScheme: m, defaultTheme: a, value: l, themes: h, nonce: d, scriptProps: w })=>{
+    let p = JSON.stringify([
+        s,
+        i,
+        a,
+        e,
+        h,
+        l,
+        u,
+        m
+    ]).slice(1, -1);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"]("script", {
+        ...w,
+        suppressHydrationWarning: !0,
+        nonce: ("TURBOPACK compile-time truthy", 1) ? d : "TURBOPACK unreachable",
+        dangerouslySetInnerHTML: {
+            __html: `(${M.toString()})(${p})`
+        }
+    });
+}), H = (e, i)=>{
+    if ("TURBOPACK compile-time truthy", 1) return;
+    //TURBOPACK unreachable
+    ;
+    let s;
+}, W = (e)=>{
+    let i = document.createElement("style");
+    return e && i.setAttribute("nonce", e), i.appendChild(document.createTextNode("*,*::before,*::after{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}")), document.head.appendChild(i), ()=>{
+        window.getComputedStyle(document.body), setTimeout(()=>{
+            document.head.removeChild(i);
+        }, 1);
+    };
+}, E = (e)=>(e || (e = window.matchMedia(I)), e.matches ? "dark" : "light");
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/context/LazyContext.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "LazyContext",
+    ()=>LazyContext
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+"use client";
+;
+const LazyContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])({
+    strict: false
+});
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/definitions.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "featureDefinitions",
+    ()=>featureDefinitions
+]);
+const featureProps = {
+    animation: [
+        "animate",
+        "variants",
+        "whileHover",
+        "whileTap",
+        "exit",
+        "whileInView",
+        "whileFocus",
+        "whileDrag"
+    ],
+    exit: [
+        "exit"
+    ],
+    drag: [
+        "drag",
+        "dragControls"
+    ],
+    focus: [
+        "whileFocus"
+    ],
+    hover: [
+        "whileHover",
+        "onHoverStart",
+        "onHoverEnd"
+    ],
+    tap: [
+        "whileTap",
+        "onTap",
+        "onTapStart",
+        "onTapCancel"
+    ],
+    pan: [
+        "onPan",
+        "onPanStart",
+        "onPanSessionStart",
+        "onPanEnd"
+    ],
+    inView: [
+        "whileInView",
+        "onViewportEnter",
+        "onViewportLeave"
+    ],
+    layout: [
+        "layout",
+        "layoutId"
+    ]
+};
+const featureDefinitions = {};
+for(const key in featureProps){
+    featureDefinitions[key] = {
+        isEnabled: (props)=>featureProps[key].some((name)=>!!props[name])
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/load-features.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "loadFeatures",
+    ()=>loadFeatures
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$definitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/definitions.mjs [app-ssr] (ecmascript)");
+;
+function loadFeatures(features) {
+    for(const key in features){
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$definitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["featureDefinitions"][key] = {
+            ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$definitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["featureDefinitions"][key],
+            ...features[key]
+        };
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/components/LazyMotion/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "LazyMotion",
+    ()=>LazyMotion
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$context$2f$LazyContext$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/context/LazyContext.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$load$2d$features$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/load-features.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+/**
+ * Used in conjunction with the `m` component to reduce bundle size.
+ *
+ * `m` is a version of the `motion` component that only loads functionality
+ * critical for the initial render.
+ *
+ * `LazyMotion` can then be used to either synchronously or asynchronously
+ * load animation and gesture support.
+ *
+ * ```jsx
+ * // Synchronous loading
+ * import { LazyMotion, m, domAnimation } from "framer-motion"
+ *
+ * function App() {
+ *   return (
+ *     <LazyMotion features={domAnimation}>
+ *       <m.div animate={{ scale: 2 }} />
+ *     </LazyMotion>
+ *   )
+ * }
+ *
+ * // Asynchronous loading
+ * import { LazyMotion, m } from "framer-motion"
+ *
+ * function App() {
+ *   return (
+ *     <LazyMotion features={() => import('./path/to/domAnimation')}>
+ *       <m.div animate={{ scale: 2 }} />
+ *     </LazyMotion>
+ *   )
+ * }
+ * ```
+ *
+ * @public
+ */ function LazyMotion({ children, features, strict = false }) {
+    const [, setIsLoaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(!isLazyBundle(features));
+    const loadedRenderer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(undefined);
+    /**
+     * If this is a synchronous load, load features immediately
+     */ if (!isLazyBundle(features)) {
+        const { renderer, ...loadedFeatures } = features;
+        loadedRenderer.current = renderer;
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$load$2d$features$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loadFeatures"])(loadedFeatures);
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (isLazyBundle(features)) {
+            features().then(({ renderer, ...loadedFeatures })=>{
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$load$2d$features$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loadFeatures"])(loadedFeatures);
+                loadedRenderer.current = renderer;
+                setIsLoaded(true);
+            });
+        }
+    }, []);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$context$2f$LazyContext$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LazyContext"].Provider, {
+        value: {
+            renderer: loadedRenderer.current,
+            strict
+        },
+        children: children
+    });
+}
+function isLazyBundle(features) {
+    return typeof features === "function";
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-animation-controls.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isAnimationControls",
+    ()=>isAnimationControls
+]);
+function isAnimationControls(v) {
+    return v !== null && typeof v === "object" && typeof v.start === "function";
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-variants.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "resolveVariantFromProps",
+    ()=>resolveVariantFromProps
+]);
+function getValueState(visualElement) {
+    const state = [
+        {},
+        {}
+    ];
+    visualElement?.values.forEach((value, key)=>{
+        state[0][key] = value.get();
+        state[1][key] = value.getVelocity();
+    });
+    return state;
+}
+function resolveVariantFromProps(props, definition, custom, visualElement) {
+    /**
+     * If the variant definition is a function, resolve.
+     */ if (typeof definition === "function") {
+        const [current, velocity] = getValueState(visualElement);
+        definition = definition(custom !== undefined ? custom : props.custom, current, velocity);
+    }
+    /**
+     * If the variant definition is a variant label, or
+     * the function returned a variant label, resolve.
+     */ if (typeof definition === "string") {
+        definition = props.variants && props.variants[definition];
+    }
+    /**
+     * At this point we've resolved both functions and variant labels,
+     * but the resolved variant label might itself have been a function.
+     * If so, resolve. This can only have returned a valid target object.
+     */ if (typeof definition === "function") {
+        const [current, velocity] = getValueState(visualElement);
+        definition = definition(custom !== undefined ? custom : props.custom, current, velocity);
+    }
+    return definition;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-dynamic-variants.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "resolveVariant",
+    ()=>resolveVariant
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-variants.mjs [app-ssr] (ecmascript)");
+;
+function resolveVariant(visualElement, definition, custom) {
+    const props = visualElement.getProps();
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariantFromProps"])(props, definition, custom !== undefined ? custom : props.custom, visualElement);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/get-value-transition.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getValueTransition",
+    ()=>getValueTransition
+]);
+function getValueTransition(transition, key) {
+    return transition?.[key] ?? transition?.["default"] ?? transition;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "noop",
+    ()=>noop
+]);
+const noop = (any)=>any;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "MotionGlobalConfig",
+    ()=>MotionGlobalConfig
+]);
+const MotionGlobalConfig = {};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/order.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "stepsOrder",
+    ()=>stepsOrder
+]);
+const stepsOrder = [
+    "setup",
+    "read",
+    "resolveKeyframes",
+    "preUpdate",
+    "update",
+    "preRender",
+    "render",
+    "postRender"
+];
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/stats/buffer.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "statsBuffer",
+    ()=>statsBuffer
+]);
+const statsBuffer = {
+    value: null,
+    addProjectionMetrics: null
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/render-step.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createRenderStep",
+    ()=>createRenderStep
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/stats/buffer.mjs [app-ssr] (ecmascript)");
+;
+function createRenderStep(runNextFrame, stepName) {
+    /**
+     * We create and reuse two queues, one to queue jobs for the current frame
+     * and one for the next. We reuse to avoid triggering GC after x frames.
+     */ let thisFrame = new Set();
+    let nextFrame = new Set();
+    /**
+     * Track whether we're currently processing jobs in this step. This way
+     * we can decide whether to schedule new jobs for this frame or next.
+     */ let isProcessing = false;
+    let flushNextFrame = false;
+    /**
+     * A set of processes which were marked keepAlive when scheduled.
+     */ const toKeepAlive = new WeakSet();
+    let latestFrameData = {
+        delta: 0.0,
+        timestamp: 0.0,
+        isProcessing: false
+    };
+    let numCalls = 0;
+    function triggerCallback(callback) {
+        if (toKeepAlive.has(callback)) {
+            step.schedule(callback);
+            runNextFrame();
+        }
+        numCalls++;
+        callback(latestFrameData);
+    }
+    const step = {
+        /**
+         * Schedule a process to run on the next frame.
+         */ schedule: (callback, keepAlive = false, immediate = false)=>{
+            const addToCurrentFrame = immediate && isProcessing;
+            const queue = addToCurrentFrame ? thisFrame : nextFrame;
+            if (keepAlive) toKeepAlive.add(callback);
+            if (!queue.has(callback)) queue.add(callback);
+            return callback;
+        },
+        /**
+         * Cancel the provided callback from running on the next frame.
+         */ cancel: (callback)=>{
+            nextFrame.delete(callback);
+            toKeepAlive.delete(callback);
+        },
+        /**
+         * Execute all schedule callbacks.
+         */ process: (frameData)=>{
+            latestFrameData = frameData;
+            /**
+             * If we're already processing we've probably been triggered by a flushSync
+             * inside an existing process. Instead of executing, mark flushNextFrame
+             * as true and ensure we flush the following frame at the end of this one.
+             */ if (isProcessing) {
+                flushNextFrame = true;
+                return;
+            }
+            isProcessing = true;
+            [thisFrame, nextFrame] = [
+                nextFrame,
+                thisFrame
+            ];
+            // Execute this frame
+            thisFrame.forEach(triggerCallback);
+            /**
+             * If we're recording stats then
+             */ if (stepName && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["statsBuffer"].value) {
+                __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["statsBuffer"].value.frameloop[stepName].push(numCalls);
+            }
+            numCalls = 0;
+            // Clear the frame so no callbacks remain. This is to avoid
+            // memory leaks should this render step not run for a while.
+            thisFrame.clear();
+            isProcessing = false;
+            if (flushNextFrame) {
+                flushNextFrame = false;
+                step.process(frameData);
+            }
+        }
+    };
+    return step;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/batcher.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createRenderBatcher",
+    ()=>createRenderBatcher
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$order$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/order.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$render$2d$step$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/render-step.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+const maxElapsed = 40;
+function createRenderBatcher(scheduleNextBatch, allowKeepAlive) {
+    let runNextFrame = false;
+    let useDefaultElapsed = true;
+    const state = {
+        delta: 0.0,
+        timestamp: 0.0,
+        isProcessing: false
+    };
+    const flagRunNextFrame = ()=>runNextFrame = true;
+    const steps = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$order$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["stepsOrder"].reduce((acc, key)=>{
+        acc[key] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$render$2d$step$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createRenderStep"])(flagRunNextFrame, allowKeepAlive ? key : undefined);
+        return acc;
+    }, {});
+    const { setup, read, resolveKeyframes, preUpdate, update, preRender, render, postRender } = steps;
+    const processBatch = ()=>{
+        const timestamp = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].useManualTiming ? state.timestamp : performance.now();
+        runNextFrame = false;
+        if (!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].useManualTiming) {
+            state.delta = useDefaultElapsed ? 1000 / 60 : Math.max(Math.min(timestamp - state.timestamp, maxElapsed), 1);
+        }
+        state.timestamp = timestamp;
+        state.isProcessing = true;
+        // Unrolled render loop for better per-frame performance
+        setup.process(state);
+        read.process(state);
+        resolveKeyframes.process(state);
+        preUpdate.process(state);
+        update.process(state);
+        preRender.process(state);
+        render.process(state);
+        postRender.process(state);
+        state.isProcessing = false;
+        if (runNextFrame && allowKeepAlive) {
+            useDefaultElapsed = false;
+            scheduleNextBatch(processBatch);
+        }
+    };
+    const wake = ()=>{
+        runNextFrame = true;
+        useDefaultElapsed = true;
+        if (!state.isProcessing) {
+            scheduleNextBatch(processBatch);
+        }
+    };
+    const schedule = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$order$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["stepsOrder"].reduce((acc, key)=>{
+        const step = steps[key];
+        acc[key] = (process, keepAlive = false, immediate = false)=>{
+            if (!runNextFrame) wake();
+            return step.schedule(process, keepAlive, immediate);
+        };
+        return acc;
+    }, {});
+    const cancel = (process)=>{
+        for(let i = 0; i < __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$order$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["stepsOrder"].length; i++){
+            steps[__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$order$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["stepsOrder"][i]].cancel(process);
+        }
+    };
+    return {
+        schedule,
+        cancel,
+        state,
+        steps
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cancelFrame",
+    ()=>cancelFrame,
+    "frame",
+    ()=>frame,
+    "frameData",
+    ()=>frameData,
+    "frameSteps",
+    ()=>frameSteps
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$batcher$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/batcher.mjs [app-ssr] (ecmascript)");
+;
+;
+const { schedule: frame, cancel: cancelFrame, state: frameData, steps: frameSteps } = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$batcher$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createRenderBatcher"])(typeof requestAnimationFrame !== "undefined" ? requestAnimationFrame : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"], true);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Generate a list of every possible transform key.
+ */ __turbopack_context__.s([
+    "transformPropOrder",
+    ()=>transformPropOrder,
+    "transformProps",
+    ()=>transformProps
+]);
+const transformPropOrder = [
+    "transformPerspective",
+    "x",
+    "y",
+    "z",
+    "translateX",
+    "translateY",
+    "translateZ",
+    "scale",
+    "scaleX",
+    "scaleY",
+    "rotate",
+    "rotateX",
+    "rotateY",
+    "rotateZ",
+    "skew",
+    "skewX",
+    "skewY"
+];
+/**
+ * A quick lookup for transform props.
+ */ const transformProps = /*@__PURE__*/ (()=>new Set(transformPropOrder))();
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-position.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "positionalKeys",
+    ()=>positionalKeys
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+;
+const positionalKeys = new Set([
+    "width",
+    "height",
+    "top",
+    "left",
+    "right",
+    "bottom",
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformPropOrder"]
+]);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/format-error-message.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "formatErrorMessage",
+    ()=>formatErrorMessage
+]);
+function formatErrorMessage(message, errorCode) {
+    return errorCode ? `${message}. For more information and steps for solving, visit https://motion.dev/troubleshooting/${errorCode}` : message;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/warn-once.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "hasWarned",
+    ()=>hasWarned,
+    "warnOnce",
+    ()=>warnOnce
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/format-error-message.mjs [app-ssr] (ecmascript)");
+;
+const warned = new Set();
+function hasWarned(message) {
+    return warned.has(message);
+}
+function warnOnce(condition, message, errorCode) {
+    if (condition || warned.has(message)) return;
+    console.warn((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatErrorMessage"])(message, errorCode));
+    warned.add(message);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/array.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "addUniqueItem",
+    ()=>addUniqueItem,
+    "moveItem",
+    ()=>moveItem,
+    "removeItem",
+    ()=>removeItem
+]);
+function addUniqueItem(arr, item) {
+    if (arr.indexOf(item) === -1) arr.push(item);
+}
+function removeItem(arr, item) {
+    const index = arr.indexOf(item);
+    if (index > -1) arr.splice(index, 1);
+}
+// Adapted from array-move
+function moveItem([...arr], fromIndex, toIndex) {
+    const startIndex = fromIndex < 0 ? arr.length + fromIndex : fromIndex;
+    if (startIndex >= 0 && startIndex < arr.length) {
+        const endIndex = toIndex < 0 ? arr.length + toIndex : toIndex;
+        const [item] = arr.splice(fromIndex, 1);
+        arr.splice(endIndex, 0, item);
+    }
+    return arr;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/subscription-manager.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "SubscriptionManager",
+    ()=>SubscriptionManager
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/array.mjs [app-ssr] (ecmascript)");
+;
+class SubscriptionManager {
+    constructor(){
+        this.subscriptions = [];
+    }
+    add(handler) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addUniqueItem"])(this.subscriptions, handler);
+        return ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["removeItem"])(this.subscriptions, handler);
+    }
+    notify(a, b, c) {
+        const numSubscriptions = this.subscriptions.length;
+        if (!numSubscriptions) return;
+        if (numSubscriptions === 1) {
+            /**
+             * If there's only a single handler we can just call it without invoking a loop.
+             */ this.subscriptions[0](a, b, c);
+        } else {
+            for(let i = 0; i < numSubscriptions; i++){
+                /**
+                 * Check whether the handler exists before firing as it's possible
+                 * the subscriptions were modified during this loop running.
+                 */ const handler = this.subscriptions[i];
+                handler && handler(a, b, c);
+            }
+        }
+    }
+    getSize() {
+        return this.subscriptions.length;
+    }
+    clear() {
+        this.subscriptions.length = 0;
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*
+  Convert velocity into velocity per second
+
+  @param [number]: Unit per frame
+  @param [number]: Frame duration in ms
+*/ __turbopack_context__.s([
+    "velocityPerSecond",
+    ()=>velocityPerSecond
+]);
+function velocityPerSecond(velocity, frameDuration) {
+    return frameDuration ? velocity * (1000 / frameDuration) : 0;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "time",
+    ()=>time
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+;
+;
+let now;
+function clearTime() {
+    now = undefined;
+}
+/**
+ * An eventloop-synchronous alternative to performance.now().
+ *
+ * Ensures that time measurements remain consistent within a synchronous context.
+ * Usually calling performance.now() twice within the same synchronous context
+ * will return different values which isn't useful for animations when we're usually
+ * trying to sync animations to the same frame.
+ */ const time = {
+    now: ()=>{
+        if (now === undefined) {
+            time.set(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frameData"].isProcessing || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].useManualTiming ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frameData"].timestamp : performance.now());
+        }
+        return now;
+    },
+    set: (newTime)=>{
+        now = newTime;
+        queueMicrotask(clearTime);
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "MotionValue",
+    ()=>MotionValue,
+    "collectMotionValues",
+    ()=>collectMotionValues,
+    "motionValue",
+    ()=>motionValue
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/warn-once.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$subscription$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/subscription-manager.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+/**
+ * Maximum time between the value of two frames, beyond which we
+ * assume the velocity has since been 0.
+ */ const MAX_VELOCITY_DELTA = 30;
+const isFloat = (value)=>{
+    return !isNaN(parseFloat(value));
+};
+const collectMotionValues = {
+    current: undefined
+};
+/**
+ * `MotionValue` is used to track the state and velocity of motion values.
+ *
+ * @public
+ */ class MotionValue {
+    /**
+     * @param init - The initiating value
+     * @param config - Optional configuration options
+     *
+     * -  `transformer`: A function to transform incoming values with.
+     */ constructor(init, options = {}){
+        /**
+         * Tracks whether this value can output a velocity. Currently this is only true
+         * if the value is numerical, but we might be able to widen the scope here and support
+         * other value types.
+         *
+         * @internal
+         */ this.canTrackVelocity = null;
+        /**
+         * An object containing a SubscriptionManager for each active event.
+         */ this.events = {};
+        this.updateAndNotify = (v)=>{
+            const currentTime = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now();
+            /**
+             * If we're updating the value during another frame or eventloop
+             * than the previous frame, then the we set the previous frame value
+             * to current.
+             */ if (this.updatedAt !== currentTime) {
+                this.setPrevFrameValue();
+            }
+            this.prev = this.current;
+            this.setCurrent(v);
+            // Update update subscribers
+            if (this.current !== this.prev) {
+                this.events.change?.notify(this.current);
+                if (this.dependents) {
+                    for (const dependent of this.dependents){
+                        dependent.dirty();
+                    }
+                }
+            }
+        };
+        this.hasAnimated = false;
+        this.setCurrent(init);
+        this.owner = options.owner;
+    }
+    setCurrent(current) {
+        this.current = current;
+        this.updatedAt = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now();
+        if (this.canTrackVelocity === null && current !== undefined) {
+            this.canTrackVelocity = isFloat(this.current);
+        }
+    }
+    setPrevFrameValue(prevFrameValue = this.current) {
+        this.prevFrameValue = prevFrameValue;
+        this.prevUpdatedAt = this.updatedAt;
+    }
+    /**
+     * Adds a function that will be notified when the `MotionValue` is updated.
+     *
+     * It returns a function that, when called, will cancel the subscription.
+     *
+     * When calling `onChange` inside a React component, it should be wrapped with the
+     * `useEffect` hook. As it returns an unsubscribe function, this should be returned
+     * from the `useEffect` function to ensure you don't add duplicate subscribers..
+     *
+     * ```jsx
+     * export const MyComponent = () => {
+     *   const x = useMotionValue(0)
+     *   const y = useMotionValue(0)
+     *   const opacity = useMotionValue(1)
+     *
+     *   useEffect(() => {
+     *     function updateOpacity() {
+     *       const maxXY = Math.max(x.get(), y.get())
+     *       const newOpacity = transform(maxXY, [0, 100], [1, 0])
+     *       opacity.set(newOpacity)
+     *     }
+     *
+     *     const unsubscribeX = x.on("change", updateOpacity)
+     *     const unsubscribeY = y.on("change", updateOpacity)
+     *
+     *     return () => {
+     *       unsubscribeX()
+     *       unsubscribeY()
+     *     }
+     *   }, [])
+     *
+     *   return <motion.div style={{ x }} />
+     * }
+     * ```
+     *
+     * @param subscriber - A function that receives the latest value.
+     * @returns A function that, when called, will cancel this subscription.
+     *
+     * @deprecated
+     */ onChange(subscription) {
+        if ("TURBOPACK compile-time truthy", 1) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warnOnce"])(false, `value.onChange(callback) is deprecated. Switch to value.on("change", callback).`);
+        }
+        return this.on("change", subscription);
+    }
+    on(eventName, callback) {
+        if (!this.events[eventName]) {
+            this.events[eventName] = new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$subscription$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SubscriptionManager"]();
+        }
+        const unsubscribe = this.events[eventName].add(callback);
+        if (eventName === "change") {
+            return ()=>{
+                unsubscribe();
+                /**
+                 * If we have no more change listeners by the start
+                 * of the next frame, stop active animations.
+                 */ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].read(()=>{
+                    if (!this.events.change.getSize()) {
+                        this.stop();
+                    }
+                });
+            };
+        }
+        return unsubscribe;
+    }
+    clearListeners() {
+        for(const eventManagers in this.events){
+            this.events[eventManagers].clear();
+        }
+    }
+    /**
+     * Attaches a passive effect to the `MotionValue`.
+     */ attach(passiveEffect, stopPassiveEffect) {
+        this.passiveEffect = passiveEffect;
+        this.stopPassiveEffect = stopPassiveEffect;
+    }
+    /**
+     * Sets the state of the `MotionValue`.
+     *
+     * @remarks
+     *
+     * ```jsx
+     * const x = useMotionValue(0)
+     * x.set(10)
+     * ```
+     *
+     * @param latest - Latest value to set.
+     * @param render - Whether to notify render subscribers. Defaults to `true`
+     *
+     * @public
+     */ set(v) {
+        if (!this.passiveEffect) {
+            this.updateAndNotify(v);
+        } else {
+            this.passiveEffect(v, this.updateAndNotify);
+        }
+    }
+    setWithVelocity(prev, current, delta) {
+        this.set(current);
+        this.prev = undefined;
+        this.prevFrameValue = prev;
+        this.prevUpdatedAt = this.updatedAt - delta;
+    }
+    /**
+     * Set the state of the `MotionValue`, stopping any active animations,
+     * effects, and resets velocity to `0`.
+     */ jump(v, endAnimation = true) {
+        this.updateAndNotify(v);
+        this.prev = v;
+        this.prevUpdatedAt = this.prevFrameValue = undefined;
+        endAnimation && this.stop();
+        if (this.stopPassiveEffect) this.stopPassiveEffect();
+    }
+    dirty() {
+        this.events.change?.notify(this.current);
+    }
+    addDependent(dependent) {
+        if (!this.dependents) {
+            this.dependents = new Set();
+        }
+        this.dependents.add(dependent);
+    }
+    removeDependent(dependent) {
+        if (this.dependents) {
+            this.dependents.delete(dependent);
+        }
+    }
+    /**
+     * Returns the latest state of `MotionValue`
+     *
+     * @returns - The latest state of `MotionValue`
+     *
+     * @public
+     */ get() {
+        if (collectMotionValues.current) {
+            collectMotionValues.current.push(this);
+        }
+        return this.current;
+    }
+    /**
+     * @public
+     */ getPrevious() {
+        return this.prev;
+    }
+    /**
+     * Returns the latest velocity of `MotionValue`
+     *
+     * @returns - The latest velocity of `MotionValue`. Returns `0` if the state is non-numerical.
+     *
+     * @public
+     */ getVelocity() {
+        const currentTime = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now();
+        if (!this.canTrackVelocity || this.prevFrameValue === undefined || currentTime - this.updatedAt > MAX_VELOCITY_DELTA) {
+            return 0;
+        }
+        const delta = Math.min(this.updatedAt - this.prevUpdatedAt, MAX_VELOCITY_DELTA);
+        // Casts because of parseFloat's poor typing
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["velocityPerSecond"])(parseFloat(this.current) - parseFloat(this.prevFrameValue), delta);
+    }
+    /**
+     * Registers a new animation to control this `MotionValue`. Only one
+     * animation can drive a `MotionValue` at one time.
+     *
+     * ```jsx
+     * value.start()
+     * ```
+     *
+     * @param animation - A function that starts the provided animation
+     */ start(startAnimation) {
+        this.stop();
+        return new Promise((resolve)=>{
+            this.hasAnimated = true;
+            this.animation = startAnimation(resolve);
+            if (this.events.animationStart) {
+                this.events.animationStart.notify();
+            }
+        }).then(()=>{
+            if (this.events.animationComplete) {
+                this.events.animationComplete.notify();
+            }
+            this.clearAnimation();
+        });
+    }
+    /**
+     * Stop the currently active animation.
+     *
+     * @public
+     */ stop() {
+        if (this.animation) {
+            this.animation.stop();
+            if (this.events.animationCancel) {
+                this.events.animationCancel.notify();
+            }
+        }
+        this.clearAnimation();
+    }
+    /**
+     * Returns `true` if this value is currently animating.
+     *
+     * @public
+     */ isAnimating() {
+        return !!this.animation;
+    }
+    clearAnimation() {
+        delete this.animation;
+    }
+    /**
+     * Destroy and clean up subscribers to this `MotionValue`.
+     *
+     * The `MotionValue` hooks like `useMotionValue` and `useTransform` automatically
+     * handle the lifecycle of the returned `MotionValue`, so this method is only necessary if you've manually
+     * created a `MotionValue` via the `motionValue` function.
+     *
+     * @public
+     */ destroy() {
+        this.dependents?.clear();
+        this.events.destroy?.notify();
+        this.clearListeners();
+        this.stop();
+        if (this.stopPassiveEffect) {
+            this.stopPassiveEffect();
+        }
+    }
+}
+function motionValue(init, options) {
+    return new MotionValue(init, options);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-keyframes-target.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isKeyframesTarget",
+    ()=>isKeyframesTarget
+]);
+const isKeyframesTarget = (v)=>{
+    return Array.isArray(v);
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/setters.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "setTarget",
+    ()=>setTarget
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$keyframes$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-keyframes-target.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-dynamic-variants.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+/**
+ * Set VisualElement's MotionValue, creating a new MotionValue for it if
+ * it doesn't exist.
+ */ function setMotionValue(visualElement, key, value) {
+    if (visualElement.hasValue(key)) {
+        visualElement.getValue(key).set(value);
+    } else {
+        visualElement.addValue(key, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(value));
+    }
+}
+function resolveFinalValueInKeyframes(v) {
+    // TODO maybe throw if v.length - 1 is placeholder token?
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$keyframes$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isKeyframesTarget"])(v) ? v[v.length - 1] || 0 : v;
+}
+function setTarget(visualElement, definition) {
+    const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, definition);
+    let { transitionEnd = {}, transition = {}, ...target } = resolved || {};
+    target = {
+        ...target,
+        ...transitionEnd
+    };
+    for(const key in target){
+        const value = resolveFinalValueInKeyframes(target[key]);
+        setMotionValue(visualElement, key, value);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isMotionValue",
+    ()=>isMotionValue
+]);
+const isMotionValue = (value)=>Boolean(value && value.getVelocity);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/value/use-will-change/is.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isWillChangeMotionValue",
+    ()=>isWillChangeMotionValue
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-ssr] (ecmascript)");
+;
+function isWillChangeMotionValue(value) {
+    return Boolean((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(value) && value.add);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/value/use-will-change/add-will-change.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "addValueToWillChange",
+    ()=>addValueToWillChange
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$will$2d$change$2f$is$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/value/use-will-change/is.mjs [app-ssr] (ecmascript)");
+;
+;
+function addValueToWillChange(visualElement, key) {
+    const willChange = visualElement.getValue("willChange");
+    /**
+     * It could be that a user has set willChange to a regular MotionValue,
+     * in which case we can't add the value to it.
+     */ if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$will$2d$change$2f$is$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isWillChangeMotionValue"])(willChange)) {
+        return willChange.add(key);
+    } else if (!willChange && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].WillChange) {
+        const newWillChange = new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].WillChange("auto");
+        visualElement.addValue("willChange", newWillChange);
+        newWillChange.add(key);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/utils/camel-to-dash.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Convert camelCase to dash-case properties.
+ */ __turbopack_context__.s([
+    "camelToDash",
+    ()=>camelToDash
+]);
+const camelToDash = (str)=>str.replace(/([a-z])([A-Z])/gu, "$1-$2").toLowerCase();
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/optimized-appear/data-id.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "optimizedAppearDataAttribute",
+    ()=>optimizedAppearDataAttribute,
+    "optimizedAppearDataId",
+    ()=>optimizedAppearDataId
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/utils/camel-to-dash.mjs [app-ssr] (ecmascript)");
+;
+const optimizedAppearDataId = "framerAppearId";
+const optimizedAppearDataAttribute = "data-" + (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["camelToDash"])(optimizedAppearDataId);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/optimized-appear/get-appear-id.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getOptimisedAppearId",
+    ()=>getOptimisedAppearId
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$optimized$2d$appear$2f$data$2d$id$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/optimized-appear/data-id.mjs [app-ssr] (ecmascript)");
+;
+function getOptimisedAppearId(visualElement) {
+    return visualElement.props[__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$optimized$2d$appear$2f$data$2d$id$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["optimizedAppearDataAttribute"]];
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/make-animation-instant.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "makeAnimationInstant",
+    ()=>makeAnimationInstant
+]);
+function makeAnimationInstant(options) {
+    options.duration = 0;
+    options.type = "keyframes";
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "invariant",
+    ()=>invariant,
+    "warning",
+    ()=>warning
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/format-error-message.mjs [app-ssr] (ecmascript)");
+;
+let warning = ()=>{};
+let invariant = ()=>{};
+if ("TURBOPACK compile-time truthy", 1) {
+    warning = (check, message, errorCode)=>{
+        if (!check && typeof console !== "undefined") {
+            console.warn((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatErrorMessage"])(message, errorCode));
+        }
+    };
+    invariant = (check, message, errorCode)=>{
+        if (!check) {
+            throw new Error((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatErrorMessage"])(message, errorCode));
+        }
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/pipe.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Pipe
+ * Compose other transformers to run linearily
+ * pipe(min(20), max(40))
+ * @param  {...functions} transformers
+ * @return {function}
+ */ __turbopack_context__.s([
+    "pipe",
+    ()=>pipe
+]);
+const combineFunctions = (a, b)=>(v)=>b(a(v));
+const pipe = (...transformers)=>transformers.reduce(combineFunctions);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "clamp",
+    ()=>clamp
+]);
+const clamp = (min, max, v)=>{
+    if (v > max) return max;
+    if (v < min) return min;
+    return v;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Converts seconds to milliseconds
+ *
+ * @param seconds - Time in seconds.
+ * @return milliseconds - Converted time in milliseconds.
+ */ /*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "millisecondsToSeconds",
+    ()=>millisecondsToSeconds,
+    "secondsToMilliseconds",
+    ()=>secondsToMilliseconds
+]);
+const secondsToMilliseconds = (seconds)=>seconds * 1000;
+/*#__NO_SIDE_EFFECTS__*/ const millisecondsToSeconds = (milliseconds)=>milliseconds / 1000;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/stats/animation-count.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "activeAnimations",
+    ()=>activeAnimations
+]);
+const activeAnimations = {
+    layout: 0,
+    mainThread: 0,
+    waapi: 0
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isCSSVariableName",
+    ()=>isCSSVariableName,
+    "isCSSVariableToken",
+    ()=>isCSSVariableToken
+]);
+const checkStringStartsWith = (token)=>(key)=>typeof key === "string" && key.startsWith(token);
+const isCSSVariableName = /*@__PURE__*/ checkStringStartsWith("--");
+const startsAsVariableToken = /*@__PURE__*/ checkStringStartsWith("var(--");
+const isCSSVariableToken = (value)=>{
+    const startsWithToken = startsAsVariableToken(value);
+    if (!startsWithToken) return false;
+    // Ensure any comments are stripped from the value as this can harm performance of the regex.
+    return singleCssVariableRegex.test(value.split("/*")[0].trim());
+};
+const singleCssVariableRegex = /var\(--(?:[\w-]+\s*|[\w-]+\s*,(?:\s*[^)(\s]|\s*\((?:[^)(]|\([^)(]*\))*\))+\s*)\)$/iu;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "alpha",
+    ()=>alpha,
+    "number",
+    ()=>number,
+    "scale",
+    ()=>scale
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)");
+;
+const number = {
+    test: (v)=>typeof v === "number",
+    parse: parseFloat,
+    transform: (v)=>v
+};
+const alpha = {
+    ...number,
+    transform: (v)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(0, 1, v)
+};
+const scale = {
+    ...number,
+    default: 1
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/sanitize.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// If this number is a decimal, make it just five decimal places
+// to avoid exponents
+__turbopack_context__.s([
+    "sanitize",
+    ()=>sanitize
+]);
+const sanitize = (v)=>Math.round(v * 100000) / 100000;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/float-regex.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "floatRegex",
+    ()=>floatRegex
+]);
+const floatRegex = /-?(?:\d+(?:\.\d+)?|\.\d+)/gu;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/is-nullish.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isNullish",
+    ()=>isNullish
+]);
+function isNullish(v) {
+    return v == null;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/single-color-regex.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "singleColorRegex",
+    ()=>singleColorRegex
+]);
+const singleColorRegex = /^(?:#[\da-f]{3,8}|(?:rgb|hsl)a?\((?:-?[\d.]+%?[,\s]+){2}-?[\d.]+%?\s*(?:[,/]\s*)?(?:\b\d+(?:\.\d+)?|\.\d+)?%?\))$/iu;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/utils.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isColorString",
+    ()=>isColorString,
+    "splitColor",
+    ()=>splitColor
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/float-regex.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$is$2d$nullish$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/is-nullish.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$single$2d$color$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/single-color-regex.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+/**
+ * Returns true if the provided string is a color, ie rgba(0,0,0,0) or #000,
+ * but false if a number or multiple colors
+ */ const isColorString = (type, testProp)=>(v)=>{
+        return Boolean(typeof v === "string" && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$single$2d$color$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["singleColorRegex"].test(v) && v.startsWith(type) || testProp && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$is$2d$nullish$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isNullish"])(v) && Object.prototype.hasOwnProperty.call(v, testProp));
+    };
+const splitColor = (aName, bName, cName)=>(v)=>{
+        if (typeof v !== "string") return v;
+        const [a, b, c, alpha] = v.match(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["floatRegex"]);
+        return {
+            [aName]: parseFloat(a),
+            [bName]: parseFloat(b),
+            [cName]: parseFloat(c),
+            alpha: alpha !== undefined ? parseFloat(alpha) : 1
+        };
+    };
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/rgba.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "rgbUnit",
+    ()=>rgbUnit,
+    "rgba",
+    ()=>rgba
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/sanitize.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/utils.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const clampRgbUnit = (v)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(0, 255, v);
+const rgbUnit = {
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["number"],
+    transform: (v)=>Math.round(clampRgbUnit(v))
+};
+const rgba = {
+    test: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isColorString"])("rgb", "red"),
+    parse: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["splitColor"])("red", "green", "blue"),
+    transform: ({ red, green, blue, alpha: alpha$1 = 1 })=>"rgba(" + rgbUnit.transform(red) + ", " + rgbUnit.transform(green) + ", " + rgbUnit.transform(blue) + ", " + (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sanitize"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"].transform(alpha$1)) + ")"
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hex.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "hex",
+    ()=>hex
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/rgba.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/utils.mjs [app-ssr] (ecmascript)");
+;
+;
+function parseHex(v) {
+    let r = "";
+    let g = "";
+    let b = "";
+    let a = "";
+    // If we have 6 characters, ie #FF0000
+    if (v.length > 5) {
+        r = v.substring(1, 3);
+        g = v.substring(3, 5);
+        b = v.substring(5, 7);
+        a = v.substring(7, 9);
+    // Or we have 3 characters, ie #F00
+    } else {
+        r = v.substring(1, 2);
+        g = v.substring(2, 3);
+        b = v.substring(3, 4);
+        a = v.substring(4, 5);
+        r += r;
+        g += g;
+        b += b;
+        a += a;
+    }
+    return {
+        red: parseInt(r, 16),
+        green: parseInt(g, 16),
+        blue: parseInt(b, 16),
+        alpha: a ? parseInt(a, 16) / 255 : 1
+    };
+}
+const hex = {
+    test: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isColorString"])("#"),
+    parse: parseHex,
+    transform: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rgba"].transform
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "degrees",
+    ()=>degrees,
+    "percent",
+    ()=>percent,
+    "progressPercentage",
+    ()=>progressPercentage,
+    "px",
+    ()=>px,
+    "vh",
+    ()=>vh,
+    "vw",
+    ()=>vw
+]);
+const createUnitType = (unit)=>({
+        test: (v)=>typeof v === "string" && v.endsWith(unit) && v.split(" ").length === 1,
+        parse: parseFloat,
+        transform: (v)=>`${v}${unit}`
+    });
+const degrees = /*@__PURE__*/ createUnitType("deg");
+const percent = /*@__PURE__*/ createUnitType("%");
+const px = /*@__PURE__*/ createUnitType("px");
+const vh = /*@__PURE__*/ createUnitType("vh");
+const vw = /*@__PURE__*/ createUnitType("vw");
+const progressPercentage = /*@__PURE__*/ (()=>({
+        ...percent,
+        parse: (v)=>percent.parse(v) / 100,
+        transform: (v)=>percent.transform(v * 100)
+    }))();
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hsla.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "hsla",
+    ()=>hsla
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/sanitize.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/utils.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const hsla = {
+    test: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isColorString"])("hsl", "hue"),
+    parse: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["splitColor"])("hue", "saturation", "lightness"),
+    transform: ({ hue, saturation, lightness, alpha: alpha$1 = 1 })=>{
+        return "hsla(" + Math.round(hue) + ", " + __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["percent"].transform((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sanitize"])(saturation)) + ", " + __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["percent"].transform((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sanitize"])(lightness)) + ", " + (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sanitize"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"].transform(alpha$1)) + ")";
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "color",
+    ()=>color
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hex.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hsla.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/rgba.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+const color = {
+    test: (v)=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rgba"].test(v) || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hex"].test(v) || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hsla"].test(v),
+    parse: (v)=>{
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rgba"].test(v)) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rgba"].parse(v);
+        } else if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hsla"].test(v)) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hsla"].parse(v);
+        } else {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hex"].parse(v);
+        }
+    },
+    transform: (v)=>{
+        return typeof v === "string" ? v : v.hasOwnProperty("red") ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rgba"].transform(v) : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hsla"].transform(v);
+    },
+    getAnimatableNone: (v)=>{
+        const parsed = color.parse(v);
+        parsed.alpha = 0;
+        return color.transform(parsed);
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/color-regex.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "colorRegex",
+    ()=>colorRegex
+]);
+const colorRegex = /(?:#[\da-f]{3,8}|(?:rgb|hsl)a?\((?:-?[\d.]+%?[,\s]+){2}-?[\d.]+%?\s*(?:[,/]\s*)?(?:\b\d+(?:\.\d+)?|\.\d+)?%?\))/giu;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "analyseComplexValue",
+    ()=>analyseComplexValue,
+    "complex",
+    ()=>complex
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$color$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/color-regex.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/float-regex.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/sanitize.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+function test(v) {
+    return isNaN(v) && typeof v === "string" && (v.match(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["floatRegex"])?.length || 0) + (v.match(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$color$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["colorRegex"])?.length || 0) > 0;
+}
+const NUMBER_TOKEN = "number";
+const COLOR_TOKEN = "color";
+const VAR_TOKEN = "var";
+const VAR_FUNCTION_TOKEN = "var(";
+const SPLIT_TOKEN = "${}";
+// this regex consists of the `singleCssVariableRegex|rgbHSLValueRegex|digitRegex`
+const complexRegex = /var\s*\(\s*--(?:[\w-]+\s*|[\w-]+\s*,(?:\s*[^)(\s]|\s*\((?:[^)(]|\([^)(]*\))*\))+\s*)\)|#[\da-f]{3,8}|(?:rgb|hsl)a?\((?:-?[\d.]+%?[,\s]+){2}-?[\d.]+%?\s*(?:[,/]\s*)?(?:\b\d+(?:\.\d+)?|\.\d+)?%?\)|-?(?:\d+(?:\.\d+)?|\.\d+)/giu;
+function analyseComplexValue(value) {
+    const originalValue = value.toString();
+    const values = [];
+    const indexes = {
+        color: [],
+        number: [],
+        var: []
+    };
+    const types = [];
+    let i = 0;
+    const tokenised = originalValue.replace(complexRegex, (parsedValue)=>{
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"].test(parsedValue)) {
+            indexes.color.push(i);
+            types.push(COLOR_TOKEN);
+            values.push(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"].parse(parsedValue));
+        } else if (parsedValue.startsWith(VAR_FUNCTION_TOKEN)) {
+            indexes.var.push(i);
+            types.push(VAR_TOKEN);
+            values.push(parsedValue);
+        } else {
+            indexes.number.push(i);
+            types.push(NUMBER_TOKEN);
+            values.push(parseFloat(parsedValue));
+        }
+        ++i;
+        return SPLIT_TOKEN;
+    });
+    const split = tokenised.split(SPLIT_TOKEN);
+    return {
+        values,
+        split,
+        indexes,
+        types
+    };
+}
+function parseComplexValue(v) {
+    return analyseComplexValue(v).values;
+}
+function createTransformer(source) {
+    const { split, types } = analyseComplexValue(source);
+    const numSections = split.length;
+    return (v)=>{
+        let output = "";
+        for(let i = 0; i < numSections; i++){
+            output += split[i];
+            if (v[i] !== undefined) {
+                const type = types[i];
+                if (type === NUMBER_TOKEN) {
+                    output += (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sanitize"])(v[i]);
+                } else if (type === COLOR_TOKEN) {
+                    output += __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"].transform(v[i]);
+                } else {
+                    output += v[i];
+                }
+            }
+        }
+        return output;
+    };
+}
+const convertNumbersToZero = (v)=>typeof v === "number" ? 0 : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"].test(v) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"].getAnimatableNone(v) : v;
+function getAnimatableNone(v) {
+    const parsed = parseComplexValue(v);
+    const transformer = createTransformer(v);
+    return transformer(parsed.map(convertNumbersToZero));
+}
+const complex = {
+    test,
+    parse: parseComplexValue,
+    createTransformer,
+    getAnimatableNone
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hsla-to-rgba.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// Adapted from https://gist.github.com/mjackson/5311256
+__turbopack_context__.s([
+    "hslaToRgba",
+    ()=>hslaToRgba
+]);
+function hueToRgb(p, q, t) {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+}
+function hslaToRgba({ hue, saturation, lightness, alpha }) {
+    hue /= 360;
+    saturation /= 100;
+    lightness /= 100;
+    let red = 0;
+    let green = 0;
+    let blue = 0;
+    if (!saturation) {
+        red = green = blue = lightness;
+    } else {
+        const q = lightness < 0.5 ? lightness * (1 + saturation) : lightness + saturation - lightness * saturation;
+        const p = 2 * lightness - q;
+        red = hueToRgb(p, q, hue + 1 / 3);
+        green = hueToRgb(p, q, hue);
+        blue = hueToRgb(p, q, hue - 1 / 3);
+    }
+    return {
+        red: Math.round(red * 255),
+        green: Math.round(green * 255),
+        blue: Math.round(blue * 255),
+        alpha
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/immediate.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "mixImmediate",
+    ()=>mixImmediate
+]);
+function mixImmediate(a, b) {
+    return (p)=>p > 0 ? b : a;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*
+  Value in range from progress
+
+  Given a lower limit and an upper limit, we return the value within
+  that range as expressed by progress (usually a number from 0 to 1)
+
+  So progress = 0.5 would change
+
+  from -------- to
+
+  to
+
+  from ---- to
+
+  E.g. from = 10, to = 20, progress = 0.5 => 15
+
+  @param [number]: Lower limit of range
+  @param [number]: Upper limit of range
+  @param [number]: The progress between lower and upper limits expressed 0-1
+  @return [number]: Value as calculated from progress within range (not limited within range)
+*/ __turbopack_context__.s([
+    "mixNumber",
+    ()=>mixNumber
+]);
+const mixNumber = (from, to, progress)=>{
+    return from + (to - from) * progress;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/color.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "mixColor",
+    ()=>mixColor,
+    "mixLinearColor",
+    ()=>mixLinearColor
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hex.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hsla.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2d$to$2d$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/hsla-to-rgba.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/rgba.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$immediate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/immediate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+// Linear color space blending
+// Explained https://www.youtube.com/watch?v=LKnqECcg6Gw
+// Demonstrated http://codepen.io/osublake/pen/xGVVaN
+const mixLinearColor = (from, to, v)=>{
+    const fromExpo = from * from;
+    const expo = v * (to * to - fromExpo) + fromExpo;
+    return expo < 0 ? 0 : Math.sqrt(expo);
+};
+const colorTypes = [
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hex"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rgba"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hsla"]
+];
+const getColorType = (v)=>colorTypes.find((type)=>type.test(v));
+function asRGBA(color) {
+    const type = getColorType(color);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warning"])(Boolean(type), `'${color}' is not an animatable color. Use the equivalent color code instead.`, "color-not-animatable");
+    if (!Boolean(type)) return false;
+    let model = type.parse(color);
+    if (type === __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hsla"]) {
+        // TODO Remove this cast - needed since Motion's stricter typing
+        model = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2d$to$2d$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hslaToRgba"])(model);
+    }
+    return model;
+}
+const mixColor = (from, to)=>{
+    const fromRGBA = asRGBA(from);
+    const toRGBA = asRGBA(to);
+    if (!fromRGBA || !toRGBA) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$immediate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixImmediate"])(from, to);
+    }
+    const blended = {
+        ...fromRGBA
+    };
+    return (v)=>{
+        blended.red = mixLinearColor(fromRGBA.red, toRGBA.red, v);
+        blended.green = mixLinearColor(fromRGBA.green, toRGBA.green, v);
+        blended.blue = mixLinearColor(fromRGBA.blue, toRGBA.blue, v);
+        blended.alpha = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixNumber"])(fromRGBA.alpha, toRGBA.alpha, v);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["rgba"].transform(blended);
+    };
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/visibility.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "invisibleValues",
+    ()=>invisibleValues,
+    "mixVisibility",
+    ()=>mixVisibility
+]);
+const invisibleValues = new Set([
+    "none",
+    "hidden"
+]);
+/**
+ * Returns a function that, when provided a progress value between 0 and 1,
+ * will return the "none" or "hidden" string only when the progress is that of
+ * the origin or target.
+ */ function mixVisibility(origin, target) {
+    if (invisibleValues.has(origin)) {
+        return (p)=>p <= 0 ? origin : target;
+    } else {
+        return (p)=>p >= 1 ? target : origin;
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/complex.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getMixer",
+    ()=>getMixer,
+    "mixArray",
+    ()=>mixArray,
+    "mixComplex",
+    ()=>mixComplex,
+    "mixObject",
+    ()=>mixObject
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/pipe.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$color$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/color.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$immediate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/immediate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$visibility$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/visibility.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+function mixNumber(a, b) {
+    return (p)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixNumber"])(a, b, p);
+}
+function getMixer(a) {
+    if (typeof a === "number") {
+        return mixNumber;
+    } else if (typeof a === "string") {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isCSSVariableToken"])(a) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$immediate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixImmediate"] : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"].test(a) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$color$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixColor"] : mixComplex;
+    } else if (Array.isArray(a)) {
+        return mixArray;
+    } else if (typeof a === "object") {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"].test(a) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$color$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixColor"] : mixObject;
+    }
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$immediate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixImmediate"];
+}
+function mixArray(a, b) {
+    const output = [
+        ...a
+    ];
+    const numValues = output.length;
+    const blendValue = a.map((v, i)=>getMixer(v)(v, b[i]));
+    return (p)=>{
+        for(let i = 0; i < numValues; i++){
+            output[i] = blendValue[i](p);
+        }
+        return output;
+    };
+}
+function mixObject(a, b) {
+    const output = {
+        ...a,
+        ...b
+    };
+    const blendValue = {};
+    for(const key in output){
+        if (a[key] !== undefined && b[key] !== undefined) {
+            blendValue[key] = getMixer(a[key])(a[key], b[key]);
+        }
+    }
+    return (v)=>{
+        for(const key in blendValue){
+            output[key] = blendValue[key](v);
+        }
+        return output;
+    };
+}
+function matchOrder(origin, target) {
+    const orderedOrigin = [];
+    const pointers = {
+        color: 0,
+        var: 0,
+        number: 0
+    };
+    for(let i = 0; i < target.values.length; i++){
+        const type = target.types[i];
+        const originIndex = origin.indexes[type][pointers[type]];
+        const originValue = origin.values[originIndex] ?? 0;
+        orderedOrigin[i] = originValue;
+        pointers[type]++;
+    }
+    return orderedOrigin;
+}
+const mixComplex = (origin, target)=>{
+    const template = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["complex"].createTransformer(target);
+    const originStats = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analyseComplexValue"])(origin);
+    const targetStats = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analyseComplexValue"])(target);
+    const canInterpolate = originStats.indexes.var.length === targetStats.indexes.var.length && originStats.indexes.color.length === targetStats.indexes.color.length && originStats.indexes.number.length >= targetStats.indexes.number.length;
+    if (canInterpolate) {
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$visibility$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invisibleValues"].has(origin) && !targetStats.values.length || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$visibility$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invisibleValues"].has(target) && !originStats.values.length) {
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$visibility$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixVisibility"])(origin, target);
+        }
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["pipe"])(mixArray(matchOrder(originStats, targetStats), targetStats.values), template);
+    } else {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warning"])(true, `Complex values '${origin}' and '${target}' too different to mix. Ensure all colors are of the same type, and that each contains the same quantity of number and color values. Falling back to instant transition.`, "complex-values-different");
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$immediate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixImmediate"])(origin, target);
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "mix",
+    ()=>mix
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$complex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/complex.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-ssr] (ecmascript)");
+;
+;
+function mix(from, to, p) {
+    if (typeof from === "number" && typeof to === "number" && typeof p === "number") {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixNumber"])(from, to, p);
+    }
+    const mixer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$complex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getMixer"])(from);
+    return mixer(from, to);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/drivers/frame.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "frameloopDriver",
+    ()=>frameloopDriver
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+;
+;
+const frameloopDriver = (update)=>{
+    const passTimestamp = ({ timestamp })=>update(timestamp);
+    return {
+        start: (keepAlive = true)=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].update(passTimestamp, keepAlive),
+        stop: ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cancelFrame"])(passTimestamp),
+        /**
+         * If we're processing this frame we can use the
+         * framelocked timestamp to keep things in sync.
+         */ now: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frameData"].isProcessing ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frameData"].timestamp : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now()
+    };
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/utils/linear.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "generateLinearEasing",
+    ()=>generateLinearEasing
+]);
+const generateLinearEasing = (easing, duration, resolution = 10 // as milliseconds
+)=>{
+    let points = "";
+    const numPoints = Math.max(Math.round(duration / resolution), 2);
+    for(let i = 0; i < numPoints; i++){
+        points += Math.round(easing(i / (numPoints - 1)) * 10000) / 10000 + ", ";
+    }
+    return `linear(${points.substring(0, points.length - 2)})`;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/calc-duration.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Implement a practical max duration for keyframe generation
+ * to prevent infinite loops
+ */ __turbopack_context__.s([
+    "calcGeneratorDuration",
+    ()=>calcGeneratorDuration,
+    "maxGeneratorDuration",
+    ()=>maxGeneratorDuration
+]);
+const maxGeneratorDuration = 20000;
+function calcGeneratorDuration(generator) {
+    let duration = 0;
+    const timeStep = 50;
+    let state = generator.next(duration);
+    while(!state.done && duration < maxGeneratorDuration){
+        duration += timeStep;
+        state = generator.next(duration);
+    }
+    return duration >= maxGeneratorDuration ? Infinity : duration;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/create-generator-easing.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createGeneratorEasing",
+    ()=>createGeneratorEasing
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/calc-duration.mjs [app-ssr] (ecmascript)");
+;
+;
+/**
+ * Create a progress => progress easing function from a generator.
+ */ function createGeneratorEasing(options, scale = 100, createGenerator) {
+    const generator = createGenerator({
+        ...options,
+        keyframes: [
+            0,
+            scale
+        ]
+    });
+    const duration = Math.min((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcGeneratorDuration"])(generator), __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["maxGeneratorDuration"]);
+    return {
+        type: "keyframes",
+        ease: (progress)=>{
+            return generator.next(duration * progress).value / scale;
+        },
+        duration: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(duration)
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/velocity.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "calcGeneratorVelocity",
+    ()=>calcGeneratorVelocity
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-ssr] (ecmascript)");
+;
+const velocitySampleDuration = 5; // ms
+function calcGeneratorVelocity(resolveValue, t, current) {
+    const prevT = Math.max(t - velocitySampleDuration, 0);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["velocityPerSecond"])(current - resolveValue(prevT), t - prevT);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/defaults.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "springDefaults",
+    ()=>springDefaults
+]);
+const springDefaults = {
+    // Default spring physics
+    stiffness: 100,
+    damping: 10,
+    mass: 1.0,
+    velocity: 0.0,
+    // Default duration/bounce-based options
+    duration: 800,
+    bounce: 0.3,
+    visualDuration: 0.3,
+    // Rest thresholds
+    restSpeed: {
+        granular: 0.01,
+        default: 2
+    },
+    restDelta: {
+        granular: 0.005,
+        default: 0.5
+    },
+    // Limits
+    minDuration: 0.01,
+    maxDuration: 10.0,
+    minDamping: 0.05,
+    maxDamping: 1
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/find.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "calcAngularFreq",
+    ()=>calcAngularFreq,
+    "findSpring",
+    ()=>findSpring
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/defaults.mjs [app-ssr] (ecmascript)");
+;
+;
+const safeMin = 0.001;
+function findSpring({ duration = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].duration, bounce = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].bounce, velocity = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].velocity, mass = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].mass }) {
+    let envelope;
+    let derivative;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warning"])(duration <= (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].maxDuration), "Spring duration must be 10 seconds or less", "spring-duration-limit");
+    let dampingRatio = 1 - bounce;
+    /**
+     * Restrict dampingRatio and duration to within acceptable ranges.
+     */ dampingRatio = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].minDamping, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].maxDamping, dampingRatio);
+    duration = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].minDuration, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].maxDuration, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(duration));
+    if (dampingRatio < 1) {
+        /**
+         * Underdamped spring
+         */ envelope = (undampedFreq)=>{
+            const exponentialDecay = undampedFreq * dampingRatio;
+            const delta = exponentialDecay * duration;
+            const a = exponentialDecay - velocity;
+            const b = calcAngularFreq(undampedFreq, dampingRatio);
+            const c = Math.exp(-delta);
+            return safeMin - a / b * c;
+        };
+        derivative = (undampedFreq)=>{
+            const exponentialDecay = undampedFreq * dampingRatio;
+            const delta = exponentialDecay * duration;
+            const d = delta * velocity + velocity;
+            const e = Math.pow(dampingRatio, 2) * Math.pow(undampedFreq, 2) * duration;
+            const f = Math.exp(-delta);
+            const g = calcAngularFreq(Math.pow(undampedFreq, 2), dampingRatio);
+            const factor = -envelope(undampedFreq) + safeMin > 0 ? -1 : 1;
+            return factor * ((d - e) * f) / g;
+        };
+    } else {
+        /**
+         * Critically-damped spring
+         */ envelope = (undampedFreq)=>{
+            const a = Math.exp(-undampedFreq * duration);
+            const b = (undampedFreq - velocity) * duration + 1;
+            return -safeMin + a * b;
+        };
+        derivative = (undampedFreq)=>{
+            const a = Math.exp(-undampedFreq * duration);
+            const b = (velocity - undampedFreq) * (duration * duration);
+            return a * b;
+        };
+    }
+    const initialGuess = 5 / duration;
+    const undampedFreq = approximateRoot(envelope, derivative, initialGuess);
+    duration = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(duration);
+    if (isNaN(undampedFreq)) {
+        return {
+            stiffness: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].stiffness,
+            damping: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].damping,
+            duration
+        };
+    } else {
+        const stiffness = Math.pow(undampedFreq, 2) * mass;
+        return {
+            stiffness,
+            damping: dampingRatio * 2 * Math.sqrt(mass * stiffness),
+            duration
+        };
+    }
+}
+const rootIterations = 12;
+function approximateRoot(envelope, derivative, initialGuess) {
+    let result = initialGuess;
+    for(let i = 1; i < rootIterations; i++){
+        result = result - envelope(result) / derivative(result);
+    }
+    return result;
+}
+function calcAngularFreq(undampedFreq, dampingRatio) {
+    return undampedFreq * Math.sqrt(1 - dampingRatio * dampingRatio);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "spring",
+    ()=>spring
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$linear$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/utils/linear.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/calc-duration.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$create$2d$generator$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/create-generator-easing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$velocity$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/velocity.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/defaults.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$find$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/find.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+const durationKeys = [
+    "duration",
+    "bounce"
+];
+const physicsKeys = [
+    "stiffness",
+    "damping",
+    "mass"
+];
+function isSpringType(options, keys) {
+    return keys.some((key)=>options[key] !== undefined);
+}
+function getSpringOptions(options) {
+    let springOptions = {
+        velocity: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].velocity,
+        stiffness: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].stiffness,
+        damping: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].damping,
+        mass: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].mass,
+        isResolvedFromDuration: false,
+        ...options
+    };
+    // stiffness/damping/mass overrides duration/bounce
+    if (!isSpringType(options, physicsKeys) && isSpringType(options, durationKeys)) {
+        if (options.visualDuration) {
+            const visualDuration = options.visualDuration;
+            const root = 2 * Math.PI / (visualDuration * 1.2);
+            const stiffness = root * root;
+            const damping = 2 * (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(0.05, 1, 1 - (options.bounce || 0)) * Math.sqrt(stiffness);
+            springOptions = {
+                ...springOptions,
+                mass: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].mass,
+                stiffness,
+                damping
+            };
+        } else {
+            const derived = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$find$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSpring"])(options);
+            springOptions = {
+                ...springOptions,
+                ...derived,
+                mass: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].mass
+            };
+            springOptions.isResolvedFromDuration = true;
+        }
+    }
+    return springOptions;
+}
+function spring(optionsOrVisualDuration = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].visualDuration, bounce = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].bounce) {
+    const options = typeof optionsOrVisualDuration !== "object" ? {
+        visualDuration: optionsOrVisualDuration,
+        keyframes: [
+            0,
+            1
+        ],
+        bounce
+    } : optionsOrVisualDuration;
+    let { restSpeed, restDelta } = options;
+    const origin = options.keyframes[0];
+    const target = options.keyframes[options.keyframes.length - 1];
+    /**
+     * This is the Iterator-spec return value. We ensure it's mutable rather than using a generator
+     * to reduce GC during animation.
+     */ const state = {
+        done: false,
+        value: origin
+    };
+    const { stiffness, damping, mass, duration, velocity, isResolvedFromDuration } = getSpringOptions({
+        ...options,
+        velocity: -(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(options.velocity || 0)
+    });
+    const initialVelocity = velocity || 0.0;
+    const dampingRatio = damping / (2 * Math.sqrt(stiffness * mass));
+    const initialDelta = target - origin;
+    const undampedAngularFreq = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(Math.sqrt(stiffness / mass));
+    /**
+     * If we're working on a granular scale, use smaller defaults for determining
+     * when the spring is finished.
+     *
+     * These defaults have been selected emprically based on what strikes a good
+     * ratio between feeling good and finishing as soon as changes are imperceptible.
+     */ const isGranularScale = Math.abs(initialDelta) < 5;
+    restSpeed || (restSpeed = isGranularScale ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].restSpeed.granular : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].restSpeed.default);
+    restDelta || (restDelta = isGranularScale ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].restDelta.granular : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["springDefaults"].restDelta.default);
+    let resolveSpring;
+    if (dampingRatio < 1) {
+        const angularFreq = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$find$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcAngularFreq"])(undampedAngularFreq, dampingRatio);
+        // Underdamped spring
+        resolveSpring = (t)=>{
+            const envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+            return target - envelope * ((initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) / angularFreq * Math.sin(angularFreq * t) + initialDelta * Math.cos(angularFreq * t));
+        };
+    } else if (dampingRatio === 1) {
+        // Critically damped spring
+        resolveSpring = (t)=>target - Math.exp(-undampedAngularFreq * t) * (initialDelta + (initialVelocity + undampedAngularFreq * initialDelta) * t);
+    } else {
+        // Overdamped spring
+        const dampedAngularFreq = undampedAngularFreq * Math.sqrt(dampingRatio * dampingRatio - 1);
+        resolveSpring = (t)=>{
+            const envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+            // When performing sinh or cosh values can hit Infinity so we cap them here
+            const freqForT = Math.min(dampedAngularFreq * t, 300);
+            return target - envelope * ((initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) * Math.sinh(freqForT) + dampedAngularFreq * initialDelta * Math.cosh(freqForT)) / dampedAngularFreq;
+        };
+    }
+    const generator = {
+        calculatedDuration: isResolvedFromDuration ? duration || null : null,
+        next: (t)=>{
+            const current = resolveSpring(t);
+            if (!isResolvedFromDuration) {
+                let currentVelocity = t === 0 ? initialVelocity : 0.0;
+                /**
+                 * We only need to calculate velocity for under-damped springs
+                 * as over- and critically-damped springs can't overshoot, so
+                 * checking only for displacement is enough.
+                 */ if (dampingRatio < 1) {
+                    currentVelocity = t === 0 ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(initialVelocity) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$velocity$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcGeneratorVelocity"])(resolveSpring, t, current);
+                }
+                const isBelowVelocityThreshold = Math.abs(currentVelocity) <= restSpeed;
+                const isBelowDisplacementThreshold = Math.abs(target - current) <= restDelta;
+                state.done = isBelowVelocityThreshold && isBelowDisplacementThreshold;
+            } else {
+                state.done = t >= duration;
+            }
+            state.value = state.done ? target : current;
+            return state;
+        },
+        toString: ()=>{
+            const calculatedDuration = Math.min((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcGeneratorDuration"])(generator), __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["maxGeneratorDuration"]);
+            const easing = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$linear$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["generateLinearEasing"])((progress)=>generator.next(calculatedDuration * progress).value, calculatedDuration, 30);
+            return calculatedDuration + "ms " + easing;
+        },
+        toTransition: ()=>{}
+    };
+    return generator;
+}
+spring.applyToOptions = (options)=>{
+    const generatorOptions = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$create$2d$generator$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createGeneratorEasing"])(options, 100, spring);
+    options.ease = generatorOptions.ease;
+    options.duration = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(generatorOptions.duration);
+    options.type = "keyframes";
+    return options;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/inertia.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "inertia",
+    ()=>inertia
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$velocity$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/velocity.mjs [app-ssr] (ecmascript)");
+;
+;
+function inertia({ keyframes, velocity = 0.0, power = 0.8, timeConstant = 325, bounceDamping = 10, bounceStiffness = 500, modifyTarget, min, max, restDelta = 0.5, restSpeed }) {
+    const origin = keyframes[0];
+    const state = {
+        done: false,
+        value: origin
+    };
+    const isOutOfBounds = (v)=>min !== undefined && v < min || max !== undefined && v > max;
+    const nearestBoundary = (v)=>{
+        if (min === undefined) return max;
+        if (max === undefined) return min;
+        return Math.abs(min - v) < Math.abs(max - v) ? min : max;
+    };
+    let amplitude = power * velocity;
+    const ideal = origin + amplitude;
+    const target = modifyTarget === undefined ? ideal : modifyTarget(ideal);
+    /**
+     * If the target has changed we need to re-calculate the amplitude, otherwise
+     * the animation will start from the wrong position.
+     */ if (target !== ideal) amplitude = target - origin;
+    const calcDelta = (t)=>-amplitude * Math.exp(-t / timeConstant);
+    const calcLatest = (t)=>target + calcDelta(t);
+    const applyFriction = (t)=>{
+        const delta = calcDelta(t);
+        const latest = calcLatest(t);
+        state.done = Math.abs(delta) <= restDelta;
+        state.value = state.done ? target : latest;
+    };
+    /**
+     * Ideally this would resolve for t in a stateless way, we could
+     * do that by always precalculating the animation but as we know
+     * this will be done anyway we can assume that spring will
+     * be discovered during that.
+     */ let timeReachedBoundary;
+    let spring$1;
+    const checkCatchBoundary = (t)=>{
+        if (!isOutOfBounds(state.value)) return;
+        timeReachedBoundary = t;
+        spring$1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["spring"])({
+            keyframes: [
+                state.value,
+                nearestBoundary(state.value)
+            ],
+            velocity: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$velocity$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcGeneratorVelocity"])(calcLatest, t, state.value),
+            damping: bounceDamping,
+            stiffness: bounceStiffness,
+            restDelta,
+            restSpeed
+        });
+    };
+    checkCatchBoundary(0);
+    return {
+        calculatedDuration: null,
+        next: (t)=>{
+            /**
+             * We need to resolve the friction to figure out if we need a
+             * spring but we don't want to do this twice per frame. So here
+             * we flag if we updated for this frame and later if we did
+             * we can skip doing it again.
+             */ let hasUpdatedFrame = false;
+            if (!spring$1 && timeReachedBoundary === undefined) {
+                hasUpdatedFrame = true;
+                applyFriction(t);
+                checkCatchBoundary(t);
+            }
+            /**
+             * If we have a spring and the provided t is beyond the moment the friction
+             * animation crossed the min/max boundary, use the spring.
+             */ if (timeReachedBoundary !== undefined && t >= timeReachedBoundary) {
+                return spring$1.next(t - timeReachedBoundary);
+            } else {
+                !hasUpdatedFrame && applyFriction(t);
+                return state;
+            }
+        }
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cubicBezier",
+    ()=>cubicBezier
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+;
+/*
+  Bezier function generator
+  This has been modified from Gaëtan Renaudeau's BezierEasing
+  https://github.com/gre/bezier-easing/blob/master/src/index.js
+  https://github.com/gre/bezier-easing/blob/master/LICENSE
+  
+  I've removed the newtonRaphsonIterate algo because in benchmarking it
+  wasn't noticeably faster than binarySubdivision, indeed removing it
+  usually improved times, depending on the curve.
+  I also removed the lookup table, as for the added bundle size and loop we're
+  only cutting ~4 or so subdivision iterations. I bumped the max iterations up
+  to 12 to compensate and this still tended to be faster for no perceivable
+  loss in accuracy.
+  Usage
+    const easeOut = cubicBezier(.17,.67,.83,.67);
+    const x = easeOut(0.5); // returns 0.627...
+*/ // Returns x(t) given t, x1, and x2, or y(t) given t, y1, and y2.
+const calcBezier = (t, a1, a2)=>(((1.0 - 3.0 * a2 + 3.0 * a1) * t + (3.0 * a2 - 6.0 * a1)) * t + 3.0 * a1) * t;
+const subdivisionPrecision = 0.0000001;
+const subdivisionMaxIterations = 12;
+function binarySubdivide(x, lowerBound, upperBound, mX1, mX2) {
+    let currentX;
+    let currentT;
+    let i = 0;
+    do {
+        currentT = lowerBound + (upperBound - lowerBound) / 2.0;
+        currentX = calcBezier(currentT, mX1, mX2) - x;
+        if (currentX > 0.0) {
+            upperBound = currentT;
+        } else {
+            lowerBound = currentT;
+        }
+    }while (Math.abs(currentX) > subdivisionPrecision && ++i < subdivisionMaxIterations)
+    return currentT;
+}
+function cubicBezier(mX1, mY1, mX2, mY2) {
+    // If this is a linear gradient, return linear easing
+    if (mX1 === mY1 && mX2 === mY2) return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"];
+    const getTForX = (aX)=>binarySubdivide(aX, 0, 1, mX1, mX2);
+    // If animation is at start/end, return t without easing
+    return (t)=>t === 0 || t === 1 ? t : calcBezier(getTForX(t), mY1, mY2);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/ease.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "easeIn",
+    ()=>easeIn,
+    "easeInOut",
+    ()=>easeInOut,
+    "easeOut",
+    ()=>easeOut
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+;
+const easeIn = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0.42, 0, 1, 1);
+const easeOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0, 0, 0.58, 1);
+const easeInOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0.42, 0, 0.58, 1);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/utils/is-easing-array.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isEasingArray",
+    ()=>isEasingArray
+]);
+const isEasingArray = (ease)=>{
+    return Array.isArray(ease) && typeof ease[0] !== "number";
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/modifiers/mirror.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// Accepts an easing function and returns a new one that outputs mirrored values for
+// the second half of the animation. Turns easeIn into easeInOut.
+__turbopack_context__.s([
+    "mirrorEasing",
+    ()=>mirrorEasing
+]);
+const mirrorEasing = (easing)=>(p)=>p <= 0.5 ? easing(2 * p) / 2 : (2 - easing(2 * (1 - p))) / 2;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/modifiers/reverse.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// Accepts an easing function and returns a new one that outputs reversed values.
+// Turns easeIn into easeOut.
+__turbopack_context__.s([
+    "reverseEasing",
+    ()=>reverseEasing
+]);
+const reverseEasing = (easing)=>(p)=>1 - easing(1 - p);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/back.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "backIn",
+    ()=>backIn,
+    "backInOut",
+    ()=>backInOut,
+    "backOut",
+    ()=>backOut
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/modifiers/mirror.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/modifiers/reverse.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+const backOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0.33, 1.53, 0.69, 0.99);
+const backIn = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["reverseEasing"])(backOut);
+const backInOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mirrorEasing"])(backIn);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/anticipate.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "anticipate",
+    ()=>anticipate
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/back.mjs [app-ssr] (ecmascript)");
+;
+const anticipate = (p)=>(p *= 2) < 1 ? 0.5 * (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backIn"])(p) : 0.5 * (2 - Math.pow(2, -10 * (p - 1)));
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/circ.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "circIn",
+    ()=>circIn,
+    "circInOut",
+    ()=>circInOut,
+    "circOut",
+    ()=>circOut
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/modifiers/mirror.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/modifiers/reverse.mjs [app-ssr] (ecmascript)");
+;
+;
+const circIn = (p)=>1 - Math.sin(Math.acos(p));
+const circOut = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["reverseEasing"])(circIn);
+const circInOut = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mirrorEasing"])(circIn);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/utils/is-bezier-definition.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isBezierDefinition",
+    ()=>isBezierDefinition
+]);
+const isBezierDefinition = (easing)=>Array.isArray(easing) && typeof easing[0] === "number";
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/utils/map.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "easingDefinitionToFunction",
+    ()=>easingDefinitionToFunction
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$anticipate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/anticipate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/back.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/circ.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/ease.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$bezier$2d$definition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/utils/is-bezier-definition.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+const easingLookup = {
+    linear: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"],
+    easeIn: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easeIn"],
+    easeInOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easeInOut"],
+    easeOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easeOut"],
+    circIn: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["circIn"],
+    circInOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["circInOut"],
+    circOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["circOut"],
+    backIn: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backIn"],
+    backInOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backInOut"],
+    backOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backOut"],
+    anticipate: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$anticipate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["anticipate"]
+};
+const isValidEasing = (easing)=>{
+    return typeof easing === "string";
+};
+const easingDefinitionToFunction = (definition)=>{
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$bezier$2d$definition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isBezierDefinition"])(definition)) {
+        // If cubic bezier definition, create bezier curve
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(definition.length === 4, `Cubic bezier arrays must contain four numerical values.`, "cubic-bezier-length");
+        const [x1, y1, x2, y2] = definition;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(x1, y1, x2, y2);
+    } else if (isValidEasing(definition)) {
+        // Else lookup from table
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(easingLookup[definition] !== undefined, `Invalid easing type '${definition}'`, "invalid-easing-type");
+        return easingLookup[definition];
+    }
+    return definition;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/progress.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*
+  Progress within given range
+
+  Given a lower limit and an upper limit, we return the progress
+  (expressed as a number 0-1) represented by the given value, and
+  limit that progress to within 0-1.
+
+  @param [number]: Lower limit
+  @param [number]: Upper limit
+  @param [number]: Value to find progress within given range
+  @return [number]: Progress of value within range as expressed 0-1
+*/ /*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "progress",
+    ()=>progress
+]);
+const progress = (from, to, value)=>{
+    const toFromDifference = to - from;
+    return toFromDifference === 0 ? 1 : (value - from) / toFromDifference;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/interpolate.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "interpolate",
+    ()=>interpolate
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/pipe.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/progress.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/index.mjs [app-ssr] (ecmascript)");
+;
+;
+function createMixers(output, ease, customMixer) {
+    const mixers = [];
+    const mixerFactory = customMixer || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].mix || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mix"];
+    const numMixers = output.length - 1;
+    for(let i = 0; i < numMixers; i++){
+        let mixer = mixerFactory(output[i], output[i + 1]);
+        if (ease) {
+            const easingFunction = Array.isArray(ease) ? ease[i] || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"] : ease;
+            mixer = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["pipe"])(easingFunction, mixer);
+        }
+        mixers.push(mixer);
+    }
+    return mixers;
+}
+/**
+ * Create a function that maps from a numerical input array to a generic output array.
+ *
+ * Accepts:
+ *   - Numbers
+ *   - Colors (hex, hsl, hsla, rgb, rgba)
+ *   - Complex (combinations of one or more numbers or strings)
+ *
+ * ```jsx
+ * const mixColor = interpolate([0, 1], ['#fff', '#000'])
+ *
+ * mixColor(0.5) // 'rgba(128, 128, 128, 1)'
+ * ```
+ *
+ * TODO Revisit this approach once we've moved to data models for values,
+ * probably not needed to pregenerate mixer functions.
+ *
+ * @public
+ */ function interpolate(input, output, { clamp: isClamp = true, ease, mixer } = {}) {
+    const inputLength = input.length;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(inputLength === output.length, "Both input and output ranges must be the same length", "range-length");
+    /**
+     * If we're only provided a single input, we can just make a function
+     * that returns the output.
+     */ if (inputLength === 1) return ()=>output[0];
+    if (inputLength === 2 && output[0] === output[1]) return ()=>output[1];
+    const isZeroDeltaRange = input[0] === input[1];
+    // If input runs highest -> lowest, reverse both arrays
+    if (input[0] > input[inputLength - 1]) {
+        input = [
+            ...input
+        ].reverse();
+        output = [
+            ...output
+        ].reverse();
+    }
+    const mixers = createMixers(output, ease, mixer);
+    const numMixers = mixers.length;
+    const interpolator = (v)=>{
+        if (isZeroDeltaRange && v < input[0]) return output[0];
+        let i = 0;
+        if (numMixers > 1) {
+            for(; i < input.length - 2; i++){
+                if (v < input[i + 1]) break;
+            }
+        }
+        const progressInRange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["progress"])(input[i], input[i + 1], v);
+        return mixers[i](progressInRange);
+    };
+    return isClamp ? (v)=>interpolator((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(input[0], input[inputLength - 1], v)) : interpolator;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/offsets/fill.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "fillOffset",
+    ()=>fillOffset
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/progress.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-ssr] (ecmascript)");
+;
+;
+function fillOffset(offset, remaining) {
+    const min = offset[offset.length - 1];
+    for(let i = 1; i <= remaining; i++){
+        const offsetProgress = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["progress"])(0, remaining, i);
+        offset.push((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixNumber"])(min, 1, offsetProgress));
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/offsets/default.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "defaultOffset",
+    ()=>defaultOffset
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$fill$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/offsets/fill.mjs [app-ssr] (ecmascript)");
+;
+function defaultOffset(arr) {
+    const offset = [
+        0
+    ];
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$fill$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fillOffset"])(offset, arr.length - 1);
+    return offset;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/offsets/time.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "convertOffsetToTimes",
+    ()=>convertOffsetToTimes
+]);
+function convertOffsetToTimes(offset, duration) {
+    return offset.map((o)=>o * duration);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "defaultEasing",
+    ()=>defaultEasing,
+    "keyframes",
+    ()=>keyframes
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/ease.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$easing$2d$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/utils/is-easing-array.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$map$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/utils/map.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/interpolate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$default$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/offsets/default.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/offsets/time.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+function defaultEasing(values, easing) {
+    return values.map(()=>easing || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easeInOut"]).splice(0, values.length - 1);
+}
+function keyframes({ duration = 300, keyframes: keyframeValues, times, ease = "easeInOut" }) {
+    /**
+     * Easing functions can be externally defined as strings. Here we convert them
+     * into actual functions.
+     */ const easingFunctions = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$easing$2d$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isEasingArray"])(ease) ? ease.map(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$map$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easingDefinitionToFunction"]) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$map$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easingDefinitionToFunction"])(ease);
+    /**
+     * This is the Iterator-spec return value. We ensure it's mutable rather than using a generator
+     * to reduce GC during animation.
+     */ const state = {
+        done: false,
+        value: keyframeValues[0]
+    };
+    /**
+     * Create a times array based on the provided 0-1 offsets
+     */ const absoluteTimes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["convertOffsetToTimes"])(// Only use the provided offsets if they're the correct length
+    // TODO Maybe we should warn here if there's a length mismatch
+    times && times.length === keyframeValues.length ? times : (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$default$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["defaultOffset"])(keyframeValues), duration);
+    const mapTimeToKeyframe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["interpolate"])(absoluteTimes, keyframeValues, {
+        ease: Array.isArray(easingFunctions) ? easingFunctions : defaultEasing(keyframeValues, easingFunctions)
+    });
+    return {
+        calculatedDuration: duration,
+        next: (t)=>{
+            state.value = mapTimeToKeyframe(t);
+            state.done = t >= duration;
+            return state;
+        }
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/get-final.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getFinalKeyframe",
+    ()=>getFinalKeyframe
+]);
+const isNotNull = (value)=>value !== null;
+function getFinalKeyframe(keyframes, { repeat, repeatType = "loop" }, finalKeyframe, speed = 1) {
+    const resolvedKeyframes = keyframes.filter(isNotNull);
+    const useFirstKeyframe = speed < 0 || repeat && repeatType !== "loop" && repeat % 2 === 1;
+    const index = useFirstKeyframe ? 0 : resolvedKeyframes.length - 1;
+    return !index || finalKeyframe === undefined ? resolvedKeyframes[index] : finalKeyframe;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/replace-transition-type.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "replaceTransitionType",
+    ()=>replaceTransitionType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$inertia$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/inertia.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/spring/index.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+const transitionTypeMap = {
+    decay: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$inertia$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["inertia"],
+    inertia: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$inertia$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["inertia"],
+    tween: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["keyframes"],
+    keyframes: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["keyframes"],
+    spring: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["spring"]
+};
+function replaceTransitionType(transition) {
+    if (typeof transition.type === "string") {
+        transition.type = transitionTypeMap[transition.type];
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/WithPromise.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "WithPromise",
+    ()=>WithPromise
+]);
+class WithPromise {
+    constructor(){
+        this.updateFinished();
+    }
+    get finished() {
+        return this._finished;
+    }
+    updateFinished() {
+        this._finished = new Promise((resolve)=>{
+            this.resolve = resolve;
+        });
+    }
+    notifyFinished() {
+        this.resolve();
+    }
+    /**
+     * Allows the animation to be awaited.
+     *
+     * @deprecated Use `finished` instead.
+     */ then(onResolve, onReject) {
+        return this.finished.then(onResolve, onReject);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/JSAnimation.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "JSAnimation",
+    ()=>JSAnimation,
+    "animateValue",
+    ()=>animateValue
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/pipe.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/stats/animation-count.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$drivers$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/drivers/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$inertia$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/inertia.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/calc-duration.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/get-final.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$replace$2d$transition$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/replace-transition-type.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/WithPromise.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const percentToProgress = (percent)=>percent / 100;
+class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WithPromise"] {
+    constructor(options){
+        super();
+        this.state = "idle";
+        this.startTime = null;
+        this.isStopped = false;
+        /**
+         * The current time of the animation.
+         */ this.currentTime = 0;
+        /**
+         * The time at which the animation was paused.
+         */ this.holdTime = null;
+        /**
+         * Playback speed as a factor. 0 would be stopped, -1 reverse and 2 double speed.
+         */ this.playbackSpeed = 1;
+        /**
+         * This method is bound to the instance to fix a pattern where
+         * animation.stop is returned as a reference from a useEffect.
+         */ this.stop = ()=>{
+            const { motionValue } = this.options;
+            if (motionValue && motionValue.updatedAt !== __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now()) {
+                this.tick(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now());
+            }
+            this.isStopped = true;
+            if (this.state === "idle") return;
+            this.teardown();
+            this.options.onStop?.();
+        };
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["activeAnimations"].mainThread++;
+        this.options = options;
+        this.initAnimation();
+        this.play();
+        if (options.autoplay === false) this.pause();
+    }
+    initAnimation() {
+        const { options } = this;
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$replace$2d$transition$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["replaceTransitionType"])(options);
+        const { type = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["keyframes"], repeat = 0, repeatDelay = 0, repeatType, velocity = 0 } = options;
+        let { keyframes: keyframes$1 } = options;
+        const generatorFactory = type || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["keyframes"];
+        if (("TURBOPACK compile-time value", "development") !== "production" && generatorFactory !== __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["keyframes"]) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(keyframes$1.length <= 2, `Only two keyframes currently supported with spring and inertia animations. Trying to animate ${keyframes$1}`, "spring-two-frames");
+        }
+        if (generatorFactory !== __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["keyframes"] && typeof keyframes$1[0] !== "number") {
+            this.mixKeyframes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["pipe"])(percentToProgress, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mix"])(keyframes$1[0], keyframes$1[1]));
+            keyframes$1 = [
+                0,
+                100
+            ];
+        }
+        const generator = generatorFactory({
+            ...options,
+            keyframes: keyframes$1
+        });
+        /**
+         * If we have a mirror repeat type we need to create a second generator that outputs the
+         * mirrored (not reversed) animation and later ping pong between the two generators.
+         */ if (repeatType === "mirror") {
+            this.mirroredGenerator = generatorFactory({
+                ...options,
+                keyframes: [
+                    ...keyframes$1
+                ].reverse(),
+                velocity: -velocity
+            });
+        }
+        /**
+         * If duration is undefined and we have repeat options,
+         * we need to calculate a duration from the generator.
+         *
+         * We set it to the generator itself to cache the duration.
+         * Any timeline resolver will need to have already precalculated
+         * the duration by this step.
+         */ if (generator.calculatedDuration === null) {
+            generator.calculatedDuration = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcGeneratorDuration"])(generator);
+        }
+        const { calculatedDuration } = generator;
+        this.calculatedDuration = calculatedDuration;
+        this.resolvedDuration = calculatedDuration + repeatDelay;
+        this.totalDuration = this.resolvedDuration * (repeat + 1) - repeatDelay;
+        this.generator = generator;
+    }
+    updateTime(timestamp) {
+        const animationTime = Math.round(timestamp - this.startTime) * this.playbackSpeed;
+        // Update currentTime
+        if (this.holdTime !== null) {
+            this.currentTime = this.holdTime;
+        } else {
+            // Rounding the time because floating point arithmetic is not always accurate, e.g. 3000.367 - 1000.367 =
+            // 2000.0000000000002. This is a problem when we are comparing the currentTime with the duration, for
+            // example.
+            this.currentTime = animationTime;
+        }
+    }
+    tick(timestamp, sample = false) {
+        const { generator, totalDuration, mixKeyframes, mirroredGenerator, resolvedDuration, calculatedDuration } = this;
+        if (this.startTime === null) return generator.next(0);
+        const { delay = 0, keyframes, repeat, repeatType, repeatDelay, type, onUpdate, finalKeyframe } = this.options;
+        /**
+         * requestAnimationFrame timestamps can come through as lower than
+         * the startTime as set by performance.now(). Here we prevent this,
+         * though in the future it could be possible to make setting startTime
+         * a pending operation that gets resolved here.
+         */ if (this.speed > 0) {
+            this.startTime = Math.min(this.startTime, timestamp);
+        } else if (this.speed < 0) {
+            this.startTime = Math.min(timestamp - totalDuration / this.speed, this.startTime);
+        }
+        if (sample) {
+            this.currentTime = timestamp;
+        } else {
+            this.updateTime(timestamp);
+        }
+        // Rebase on delay
+        const timeWithoutDelay = this.currentTime - delay * (this.playbackSpeed >= 0 ? 1 : -1);
+        const isInDelayPhase = this.playbackSpeed >= 0 ? timeWithoutDelay < 0 : timeWithoutDelay > totalDuration;
+        this.currentTime = Math.max(timeWithoutDelay, 0);
+        // If this animation has finished, set the current time  to the total duration.
+        if (this.state === "finished" && this.holdTime === null) {
+            this.currentTime = totalDuration;
+        }
+        let elapsed = this.currentTime;
+        let frameGenerator = generator;
+        if (repeat) {
+            /**
+             * Get the current progress (0-1) of the animation. If t is >
+             * than duration we'll get values like 2.5 (midway through the
+             * third iteration)
+             */ const progress = Math.min(this.currentTime, totalDuration) / resolvedDuration;
+            /**
+             * Get the current iteration (0 indexed). For instance the floor of
+             * 2.5 is 2.
+             */ let currentIteration = Math.floor(progress);
+            /**
+             * Get the current progress of the iteration by taking the remainder
+             * so 2.5 is 0.5 through iteration 2
+             */ let iterationProgress = progress % 1.0;
+            /**
+             * If iteration progress is 1 we count that as the end
+             * of the previous iteration.
+             */ if (!iterationProgress && progress >= 1) {
+                iterationProgress = 1;
+            }
+            iterationProgress === 1 && currentIteration--;
+            currentIteration = Math.min(currentIteration, repeat + 1);
+            /**
+             * Reverse progress if we're not running in "normal" direction
+             */ const isOddIteration = Boolean(currentIteration % 2);
+            if (isOddIteration) {
+                if (repeatType === "reverse") {
+                    iterationProgress = 1 - iterationProgress;
+                    if (repeatDelay) {
+                        iterationProgress -= repeatDelay / resolvedDuration;
+                    }
+                } else if (repeatType === "mirror") {
+                    frameGenerator = mirroredGenerator;
+                }
+            }
+            elapsed = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clamp"])(0, 1, iterationProgress) * resolvedDuration;
+        }
+        /**
+         * If we're in negative time, set state as the initial keyframe.
+         * This prevents delay: x, duration: 0 animations from finishing
+         * instantly.
+         */ const state = isInDelayPhase ? {
+            done: false,
+            value: keyframes[0]
+        } : frameGenerator.next(elapsed);
+        if (mixKeyframes) {
+            state.value = mixKeyframes(state.value);
+        }
+        let { done } = state;
+        if (!isInDelayPhase && calculatedDuration !== null) {
+            done = this.playbackSpeed >= 0 ? this.currentTime >= totalDuration : this.currentTime <= 0;
+        }
+        const isAnimationFinished = this.holdTime === null && (this.state === "finished" || this.state === "running" && done);
+        // TODO: The exception for inertia could be cleaner here
+        if (isAnimationFinished && type !== __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$inertia$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["inertia"]) {
+            state.value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(keyframes, this.options, finalKeyframe, this.speed);
+        }
+        if (onUpdate) {
+            onUpdate(state.value);
+        }
+        if (isAnimationFinished) {
+            this.finish();
+        }
+        return state;
+    }
+    /**
+     * Allows the returned animation to be awaited or promise-chained. Currently
+     * resolves when the animation finishes at all but in a future update could/should
+     * reject if its cancels.
+     */ then(resolve, reject) {
+        return this.finished.then(resolve, reject);
+    }
+    get duration() {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(this.calculatedDuration);
+    }
+    get iterationDuration() {
+        const { delay = 0 } = this.options || {};
+        return this.duration + (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(delay);
+    }
+    get time() {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(this.currentTime);
+    }
+    set time(newTime) {
+        newTime = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(newTime);
+        this.currentTime = newTime;
+        if (this.startTime === null || this.holdTime !== null || this.playbackSpeed === 0) {
+            this.holdTime = newTime;
+        } else if (this.driver) {
+            this.startTime = this.driver.now() - newTime / this.playbackSpeed;
+        }
+        this.driver?.start(false);
+    }
+    get speed() {
+        return this.playbackSpeed;
+    }
+    set speed(newSpeed) {
+        this.updateTime(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now());
+        const hasChanged = this.playbackSpeed !== newSpeed;
+        this.playbackSpeed = newSpeed;
+        if (hasChanged) {
+            this.time = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(this.currentTime);
+        }
+    }
+    play() {
+        if (this.isStopped) return;
+        const { driver = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$drivers$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frameloopDriver"], startTime } = this.options;
+        if (!this.driver) {
+            this.driver = driver((timestamp)=>this.tick(timestamp));
+        }
+        this.options.onPlay?.();
+        const now = this.driver.now();
+        if (this.state === "finished") {
+            this.updateFinished();
+            this.startTime = now;
+        } else if (this.holdTime !== null) {
+            this.startTime = now - this.holdTime;
+        } else if (!this.startTime) {
+            this.startTime = startTime ?? now;
+        }
+        if (this.state === "finished" && this.speed < 0) {
+            this.startTime += this.calculatedDuration;
+        }
+        this.holdTime = null;
+        /**
+         * Set playState to running only after we've used it in
+         * the previous logic.
+         */ this.state = "running";
+        this.driver.start();
+    }
+    pause() {
+        this.state = "paused";
+        this.updateTime(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now());
+        this.holdTime = this.currentTime;
+    }
+    complete() {
+        if (this.state !== "running") {
+            this.play();
+        }
+        this.state = "finished";
+        this.holdTime = null;
+    }
+    finish() {
+        this.notifyFinished();
+        this.teardown();
+        this.state = "finished";
+        this.options.onComplete?.();
+    }
+    cancel() {
+        this.holdTime = null;
+        this.startTime = 0;
+        this.tick(0);
+        this.teardown();
+        this.options.onCancel?.();
+    }
+    teardown() {
+        this.state = "idle";
+        this.stopDriver();
+        this.startTime = this.holdTime = null;
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["activeAnimations"].mainThread--;
+    }
+    stopDriver() {
+        if (!this.driver) return;
+        this.driver.stop();
+        this.driver = undefined;
+    }
+    sample(sampleTime) {
+        this.startTime = 0;
+        return this.tick(sampleTime, true);
+    }
+    attachTimeline(timeline) {
+        if (this.options.allowFlatten) {
+            this.options.type = "keyframes";
+            this.options.ease = "linear";
+            this.initAnimation();
+        }
+        this.driver?.stop();
+        return timeline.observe(this);
+    }
+}
+// Legacy function support
+function animateValue(options) {
+    return new JSAnimation(options);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/fill-wildcards.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "fillWildcards",
+    ()=>fillWildcards
+]);
+function fillWildcards(keyframes) {
+    for(let i = 1; i < keyframes.length; i++){
+        keyframes[i] ?? (keyframes[i] = keyframes[i - 1]);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/dom/parse-transform.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "defaultTransformValue",
+    ()=>defaultTransformValue,
+    "parseValueFromTransform",
+    ()=>parseValueFromTransform,
+    "readTransformValue",
+    ()=>readTransformValue
+]);
+const radToDeg = (rad)=>rad * 180 / Math.PI;
+const rotate = (v)=>{
+    const angle = radToDeg(Math.atan2(v[1], v[0]));
+    return rebaseAngle(angle);
+};
+const matrix2dParsers = {
+    x: 4,
+    y: 5,
+    translateX: 4,
+    translateY: 5,
+    scaleX: 0,
+    scaleY: 3,
+    scale: (v)=>(Math.abs(v[0]) + Math.abs(v[3])) / 2,
+    rotate,
+    rotateZ: rotate,
+    skewX: (v)=>radToDeg(Math.atan(v[1])),
+    skewY: (v)=>radToDeg(Math.atan(v[2])),
+    skew: (v)=>(Math.abs(v[1]) + Math.abs(v[2])) / 2
+};
+const rebaseAngle = (angle)=>{
+    angle = angle % 360;
+    if (angle < 0) angle += 360;
+    return angle;
+};
+const rotateZ = rotate;
+const scaleX = (v)=>Math.sqrt(v[0] * v[0] + v[1] * v[1]);
+const scaleY = (v)=>Math.sqrt(v[4] * v[4] + v[5] * v[5]);
+const matrix3dParsers = {
+    x: 12,
+    y: 13,
+    z: 14,
+    translateX: 12,
+    translateY: 13,
+    translateZ: 14,
+    scaleX,
+    scaleY,
+    scale: (v)=>(scaleX(v) + scaleY(v)) / 2,
+    rotateX: (v)=>rebaseAngle(radToDeg(Math.atan2(v[6], v[5]))),
+    rotateY: (v)=>rebaseAngle(radToDeg(Math.atan2(-v[2], v[0]))),
+    rotateZ,
+    rotate: rotateZ,
+    skewX: (v)=>radToDeg(Math.atan(v[4])),
+    skewY: (v)=>radToDeg(Math.atan(v[1])),
+    skew: (v)=>(Math.abs(v[1]) + Math.abs(v[4])) / 2
+};
+function defaultTransformValue(name) {
+    return name.includes("scale") ? 1 : 0;
+}
+function parseValueFromTransform(transform, name) {
+    if (!transform || transform === "none") {
+        return defaultTransformValue(name);
+    }
+    const matrix3dMatch = transform.match(/^matrix3d\(([-\d.e\s,]+)\)$/u);
+    let parsers;
+    let match;
+    if (matrix3dMatch) {
+        parsers = matrix3dParsers;
+        match = matrix3dMatch;
+    } else {
+        const matrix2dMatch = transform.match(/^matrix\(([-\d.e\s,]+)\)$/u);
+        parsers = matrix2dParsers;
+        match = matrix2dMatch;
+    }
+    if (!match) {
+        return defaultTransformValue(name);
+    }
+    const valueParser = parsers[name];
+    const values = match[1].split(",").map(convertTransformToNumber);
+    return typeof valueParser === "function" ? valueParser(values) : values[valueParser];
+}
+const readTransformValue = (instance, name)=>{
+    const { transform = "none" } = getComputedStyle(instance);
+    return parseValueFromTransform(transform, name);
+};
+function convertTransformToNumber(value) {
+    return parseFloat(value.trim());
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/unit-conversion.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isNumOrPxType",
+    ()=>isNumOrPxType,
+    "positionalValues",
+    ()=>positionalValues,
+    "removeNonTranslationalTransform",
+    ()=>removeNonTranslationalTransform
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/dom/parse-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const isNumOrPxType = (v)=>v === __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["number"] || v === __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"];
+const transformKeys = new Set([
+    "x",
+    "y",
+    "z"
+]);
+const nonTranslationalTransformKeys = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformPropOrder"].filter((key)=>!transformKeys.has(key));
+function removeNonTranslationalTransform(visualElement) {
+    const removedTransforms = [];
+    nonTranslationalTransformKeys.forEach((key)=>{
+        const value = visualElement.getValue(key);
+        if (value !== undefined) {
+            removedTransforms.push([
+                key,
+                value.get()
+            ]);
+            value.set(key.startsWith("scale") ? 1 : 0);
+        }
+    });
+    return removedTransforms;
+}
+const positionalValues = {
+    // Dimensions
+    width: ({ x }, { paddingLeft = "0", paddingRight = "0" })=>x.max - x.min - parseFloat(paddingLeft) - parseFloat(paddingRight),
+    height: ({ y }, { paddingTop = "0", paddingBottom = "0" })=>y.max - y.min - parseFloat(paddingTop) - parseFloat(paddingBottom),
+    top: (_bbox, { top })=>parseFloat(top),
+    left: (_bbox, { left })=>parseFloat(left),
+    bottom: ({ y }, { top })=>parseFloat(top) + (y.max - y.min),
+    right: ({ x }, { left })=>parseFloat(left) + (x.max - x.min),
+    // Transform
+    x: (_bbox, { transform })=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["parseValueFromTransform"])(transform, "x"),
+    y: (_bbox, { transform })=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["parseValueFromTransform"])(transform, "y")
+};
+// Alias translate longform names
+positionalValues.translateX = positionalValues.x;
+positionalValues.translateY = positionalValues.y;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "KeyframeResolver",
+    ()=>KeyframeResolver,
+    "flushKeyframeResolvers",
+    ()=>flushKeyframeResolvers
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$fill$2d$wildcards$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/fill-wildcards.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/unit-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+const toResolve = new Set();
+let isScheduled = false;
+let anyNeedsMeasurement = false;
+let isForced = false;
+function measureAllKeyframes() {
+    if (anyNeedsMeasurement) {
+        const resolversToMeasure = Array.from(toResolve).filter((resolver)=>resolver.needsMeasurement);
+        const elementsToMeasure = new Set(resolversToMeasure.map((resolver)=>resolver.element));
+        const transformsToRestore = new Map();
+        /**
+         * Write pass
+         * If we're measuring elements we want to remove bounding box-changing transforms.
+         */ elementsToMeasure.forEach((element)=>{
+            const removedTransforms = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["removeNonTranslationalTransform"])(element);
+            if (!removedTransforms.length) return;
+            transformsToRestore.set(element, removedTransforms);
+            element.render();
+        });
+        // Read
+        resolversToMeasure.forEach((resolver)=>resolver.measureInitialState());
+        // Write
+        elementsToMeasure.forEach((element)=>{
+            element.render();
+            const restore = transformsToRestore.get(element);
+            if (restore) {
+                restore.forEach(([key, value])=>{
+                    element.getValue(key)?.set(value);
+                });
+            }
+        });
+        // Read
+        resolversToMeasure.forEach((resolver)=>resolver.measureEndState());
+        // Write
+        resolversToMeasure.forEach((resolver)=>{
+            if (resolver.suspendedScrollY !== undefined) {
+                window.scrollTo(0, resolver.suspendedScrollY);
+            }
+        });
+    }
+    anyNeedsMeasurement = false;
+    isScheduled = false;
+    toResolve.forEach((resolver)=>resolver.complete(isForced));
+    toResolve.clear();
+}
+function readAllKeyframes() {
+    toResolve.forEach((resolver)=>{
+        resolver.readKeyframes();
+        if (resolver.needsMeasurement) {
+            anyNeedsMeasurement = true;
+        }
+    });
+}
+function flushKeyframeResolvers() {
+    isForced = true;
+    readAllKeyframes();
+    measureAllKeyframes();
+    isForced = false;
+}
+class KeyframeResolver {
+    constructor(unresolvedKeyframes, onComplete, name, motionValue, element, isAsync = false){
+        this.state = "pending";
+        /**
+         * Track whether this resolver is async. If it is, it'll be added to the
+         * resolver queue and flushed in the next frame. Resolvers that aren't going
+         * to trigger read/write thrashing don't need to be async.
+         */ this.isAsync = false;
+        /**
+         * Track whether this resolver needs to perform a measurement
+         * to resolve its keyframes.
+         */ this.needsMeasurement = false;
+        this.unresolvedKeyframes = [
+            ...unresolvedKeyframes
+        ];
+        this.onComplete = onComplete;
+        this.name = name;
+        this.motionValue = motionValue;
+        this.element = element;
+        this.isAsync = isAsync;
+    }
+    scheduleResolve() {
+        this.state = "scheduled";
+        if (this.isAsync) {
+            toResolve.add(this);
+            if (!isScheduled) {
+                isScheduled = true;
+                __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].read(readAllKeyframes);
+                __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].resolveKeyframes(measureAllKeyframes);
+            }
+        } else {
+            this.readKeyframes();
+            this.complete();
+        }
+    }
+    readKeyframes() {
+        const { unresolvedKeyframes, name, element, motionValue } = this;
+        // If initial keyframe is null we need to read it from the DOM
+        if (unresolvedKeyframes[0] === null) {
+            const currentValue = motionValue?.get();
+            // TODO: This doesn't work if the final keyframe is a wildcard
+            const finalKeyframe = unresolvedKeyframes[unresolvedKeyframes.length - 1];
+            if (currentValue !== undefined) {
+                unresolvedKeyframes[0] = currentValue;
+            } else if (element && name) {
+                const valueAsRead = element.readValue(name, finalKeyframe);
+                if (valueAsRead !== undefined && valueAsRead !== null) {
+                    unresolvedKeyframes[0] = valueAsRead;
+                }
+            }
+            if (unresolvedKeyframes[0] === undefined) {
+                unresolvedKeyframes[0] = finalKeyframe;
+            }
+            if (motionValue && currentValue === undefined) {
+                motionValue.set(unresolvedKeyframes[0]);
+            }
+        }
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$fill$2d$wildcards$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fillWildcards"])(unresolvedKeyframes);
+    }
+    setFinalKeyframe() {}
+    measureInitialState() {}
+    renderEndStyles() {}
+    measureEndState() {}
+    complete(isForcedComplete = false) {
+        this.state = "complete";
+        this.onComplete(this.unresolvedKeyframes, this.finalKeyframe, isForcedComplete);
+        toResolve.delete(this);
+    }
+    cancel() {
+        if (this.state === "scheduled") {
+            toResolve.delete(this);
+            this.state = "pending";
+        }
+    }
+    resume() {
+        if (this.state === "pending") this.scheduleResolve();
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/dom/is-css-var.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isCSSVar",
+    ()=>isCSSVar
+]);
+const isCSSVar = (name)=>name.startsWith("--");
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/dom/style-set.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "setStyle",
+    ()=>setStyle
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$is$2d$css$2d$var$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/dom/is-css-var.mjs [app-ssr] (ecmascript)");
+;
+function setStyle(element, name, value) {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$is$2d$css$2d$var$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isCSSVar"])(name) ? element.style.setProperty(name, value) : element.style[name] = value;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/memo.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "memo",
+    ()=>memo
+]);
+function memo(callback) {
+    let result;
+    return ()=>{
+        if (result === undefined) result = callback();
+        return result;
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/scroll-timeline.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "supportsScrollTimeline",
+    ()=>supportsScrollTimeline
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/memo.mjs [app-ssr] (ecmascript)");
+;
+const supportsScrollTimeline = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memo"])(()=>window.ScrollTimeline !== undefined);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/flags.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Add the ability for test suites to manually set support flags
+ * to better test more environments.
+ */ __turbopack_context__.s([
+    "supportsFlags",
+    ()=>supportsFlags
+]);
+const supportsFlags = {};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/memo.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "memoSupports",
+    ()=>memoSupports
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/memo.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$flags$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/flags.mjs [app-ssr] (ecmascript)");
+;
+;
+function memoSupports(callback, supportsFlag) {
+    const memoized = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memo"])(callback);
+    return ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$flags$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supportsFlags"][supportsFlag] ?? memoized();
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/linear-easing.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "supportsLinearEasing",
+    ()=>supportsLinearEasing
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/memo.mjs [app-ssr] (ecmascript)");
+;
+const supportsLinearEasing = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memoSupports"])(()=>{
+    try {
+        document.createElement("div").animate({
+            opacity: 0
+        }, {
+            easing: "linear(0, 1)"
+        });
+    } catch (e) {
+        return false;
+    }
+    return true;
+}, "linearEasing");
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/easing/cubic-bezier.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cubicBezierAsString",
+    ()=>cubicBezierAsString
+]);
+const cubicBezierAsString = ([a, b, c, d])=>`cubic-bezier(${a}, ${b}, ${c}, ${d})`;
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/easing/supported.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "supportedWaapiEasing",
+    ()=>supportedWaapiEasing
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+;
+const supportedWaapiEasing = {
+    linear: "linear",
+    ease: "ease",
+    easeIn: "ease-in",
+    easeOut: "ease-out",
+    easeInOut: "ease-in-out",
+    circIn: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezierAsString"])([
+        0,
+        0.65,
+        0.55,
+        1
+    ]),
+    circOut: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezierAsString"])([
+        0.55,
+        0,
+        1,
+        0.45
+    ]),
+    backIn: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezierAsString"])([
+        0.31,
+        0.01,
+        0.66,
+        -0.59
+    ]),
+    backOut: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezierAsString"])([
+        0.33,
+        1.53,
+        0.69,
+        0.99
+    ])
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/easing/map-easing.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "mapEasingToNativeEasing",
+    ()=>mapEasingToNativeEasing
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$bezier$2d$definition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/utils/is-bezier-definition.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$linear$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/linear-easing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$linear$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/utils/linear.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$supported$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/easing/supported.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+function mapEasingToNativeEasing(easing, duration) {
+    if (!easing) {
+        return undefined;
+    } else if (typeof easing === "function") {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$linear$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supportsLinearEasing"])() ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$linear$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["generateLinearEasing"])(easing, duration) : "ease-out";
+    } else if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$bezier$2d$definition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isBezierDefinition"])(easing)) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezierAsString"])(easing);
+    } else if (Array.isArray(easing)) {
+        return easing.map((segmentEasing)=>mapEasingToNativeEasing(segmentEasing, duration) || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$supported$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supportedWaapiEasing"].easeOut);
+    } else {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$supported$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supportedWaapiEasing"][easing];
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/start-waapi-animation.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "startWaapiAnimation",
+    ()=>startWaapiAnimation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/stats/animation-count.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/stats/buffer.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$map$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/easing/map-easing.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function startWaapiAnimation(element, valueName, keyframes, { delay = 0, duration = 300, repeat = 0, repeatType = "loop", ease = "easeOut", times } = {}, pseudoElement = undefined) {
+    const keyframeOptions = {
+        [valueName]: keyframes
+    };
+    if (times) keyframeOptions.offset = times;
+    const easing = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$map$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapEasingToNativeEasing"])(ease, duration);
+    /**
+     * If this is an easing array, apply to keyframes, not animation as a whole
+     */ if (Array.isArray(easing)) keyframeOptions.easing = easing;
+    if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["statsBuffer"].value) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["activeAnimations"].waapi++;
+    }
+    const options = {
+        delay,
+        duration,
+        easing: !Array.isArray(easing) ? easing : "linear",
+        fill: "both",
+        iterations: repeat + 1,
+        direction: repeatType === "reverse" ? "alternate" : "normal"
+    };
+    if (pseudoElement) options.pseudoElement = pseudoElement;
+    const animation = element.animate(keyframeOptions, options);
+    if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["statsBuffer"].value) {
+        animation.finished.finally(()=>{
+            __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["activeAnimations"].waapi--;
+        });
+    }
+    return animation;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/is-generator.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isGenerator",
+    ()=>isGenerator
+]);
+function isGenerator(type) {
+    return typeof type === "function" && "applyToOptions" in type;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/utils/apply-generator.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "applyGeneratorOptions",
+    ()=>applyGeneratorOptions
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$linear$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/linear-easing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$is$2d$generator$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/is-generator.mjs [app-ssr] (ecmascript)");
+;
+;
+function applyGeneratorOptions({ type, ...options }) {
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$is$2d$generator$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isGenerator"])(type) && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$linear$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supportsLinearEasing"])()) {
+        return type.applyToOptions(options);
+    } else {
+        options.duration ?? (options.duration = 300);
+        options.ease ?? (options.ease = "easeOut");
+    }
+    return options;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/NativeAnimation.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "NativeAnimation",
+    ()=>NativeAnimation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$style$2d$set$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/dom/style-set.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/supports/scroll-timeline.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/get-final.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/WithPromise.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$start$2d$waapi$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/start-waapi-animation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$apply$2d$generator$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/utils/apply-generator.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+/**
+ * NativeAnimation implements AnimationPlaybackControls for the browser's Web Animations API.
+ */ class NativeAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WithPromise"] {
+    constructor(options){
+        super();
+        this.finishedTime = null;
+        this.isStopped = false;
+        if (!options) return;
+        const { element, name, keyframes, pseudoElement, allowFlatten = false, finalKeyframe, onComplete } = options;
+        this.isPseudoElement = Boolean(pseudoElement);
+        this.allowFlatten = allowFlatten;
+        this.options = options;
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(typeof options.type !== "string", `Mini animate() doesn't support "type" as a string.`, "mini-spring");
+        const transition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$apply$2d$generator$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["applyGeneratorOptions"])(options);
+        this.animation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$start$2d$waapi$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["startWaapiAnimation"])(element, name, keyframes, transition, pseudoElement);
+        if (transition.autoplay === false) {
+            this.animation.pause();
+        }
+        this.animation.onfinish = ()=>{
+            this.finishedTime = this.time;
+            if (!pseudoElement) {
+                const keyframe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(keyframes, this.options, finalKeyframe, this.speed);
+                if (this.updateMotionValue) {
+                    this.updateMotionValue(keyframe);
+                } else {
+                    /**
+                     * If we can, we want to commit the final style as set by the user,
+                     * rather than the computed keyframe value supplied by the animation.
+                     */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$style$2d$set$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setStyle"])(element, name, keyframe);
+                }
+                this.animation.cancel();
+            }
+            onComplete?.();
+            this.notifyFinished();
+        };
+    }
+    play() {
+        if (this.isStopped) return;
+        this.animation.play();
+        if (this.state === "finished") {
+            this.updateFinished();
+        }
+    }
+    pause() {
+        this.animation.pause();
+    }
+    complete() {
+        this.animation.finish?.();
+    }
+    cancel() {
+        try {
+            this.animation.cancel();
+        } catch (e) {}
+    }
+    stop() {
+        if (this.isStopped) return;
+        this.isStopped = true;
+        const { state } = this;
+        if (state === "idle" || state === "finished") {
+            return;
+        }
+        if (this.updateMotionValue) {
+            this.updateMotionValue();
+        } else {
+            this.commitStyles();
+        }
+        if (!this.isPseudoElement) this.cancel();
+    }
+    /**
+     * WAAPI doesn't natively have any interruption capabilities.
+     *
+     * In this method, we commit styles back to the DOM before cancelling
+     * the animation.
+     *
+     * This is designed to be overridden by NativeAnimationExtended, which
+     * will create a renderless JS animation and sample it twice to calculate
+     * its current value, "previous" value, and therefore allow
+     * Motion to also correctly calculate velocity for any subsequent animation
+     * while deferring the commit until the next animation frame.
+     */ commitStyles() {
+        if (!this.isPseudoElement) {
+            this.animation.commitStyles?.();
+        }
+    }
+    get duration() {
+        const duration = this.animation.effect?.getComputedTiming?.().duration || 0;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(Number(duration));
+    }
+    get iterationDuration() {
+        const { delay = 0 } = this.options || {};
+        return this.duration + (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(delay);
+    }
+    get time() {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(Number(this.animation.currentTime) || 0);
+    }
+    set time(newTime) {
+        this.finishedTime = null;
+        this.animation.currentTime = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(newTime);
+    }
+    /**
+     * The playback speed of the animation.
+     * 1 = normal speed, 2 = double speed, 0.5 = half speed.
+     */ get speed() {
+        return this.animation.playbackRate;
+    }
+    set speed(newSpeed) {
+        // Allow backwards playback after finishing
+        if (newSpeed < 0) this.finishedTime = null;
+        this.animation.playbackRate = newSpeed;
+    }
+    get state() {
+        return this.finishedTime !== null ? "finished" : this.animation.playState;
+    }
+    get startTime() {
+        return Number(this.animation.startTime);
+    }
+    set startTime(newStartTime) {
+        this.animation.startTime = newStartTime;
+    }
+    /**
+     * Attaches a timeline to the animation, for instance the `ScrollTimeline`.
+     */ attachTimeline({ timeline, observe }) {
+        if (this.allowFlatten) {
+            this.animation.effect?.updateTiming({
+                easing: "linear"
+            });
+        }
+        this.animation.onfinish = null;
+        if (timeline && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supportsScrollTimeline"])()) {
+            this.animation.timeline = timeline;
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"];
+        } else {
+            return observe(this);
+        }
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/utils/unsupported-easing.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "replaceStringEasing",
+    ()=>replaceStringEasing
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$anticipate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/anticipate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/back.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/easing/circ.mjs [app-ssr] (ecmascript)");
+;
+const unsupportedEasingFunctions = {
+    anticipate: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$anticipate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["anticipate"],
+    backInOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backInOut"],
+    circInOut: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["circInOut"]
+};
+function isUnsupportedEase(key) {
+    return key in unsupportedEasingFunctions;
+}
+function replaceStringEasing(transition) {
+    if (typeof transition.ease === "string" && isUnsupportedEase(transition.ease)) {
+        transition.ease = unsupportedEasingFunctions[transition.ease];
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/NativeAnimationExtended.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "NativeAnimationExtended",
+    ()=>NativeAnimationExtended
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$JSAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/JSAnimation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$NativeAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/NativeAnimation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$replace$2d$transition$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/replace-transition-type.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$unsupported$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/utils/unsupported-easing.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+/**
+ * 10ms is chosen here as it strikes a balance between smooth
+ * results (more than one keyframe per frame at 60fps) and
+ * keyframe quantity.
+ */ const sampleDelta = 10; //ms
+class NativeAnimationExtended extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$NativeAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NativeAnimation"] {
+    constructor(options){
+        /**
+         * The base NativeAnimation function only supports a subset
+         * of Motion easings, and WAAPI also only supports some
+         * easing functions via string/cubic-bezier definitions.
+         *
+         * This function replaces those unsupported easing functions
+         * with a JS easing function. This will later get compiled
+         * to a linear() easing function.
+         */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$unsupported$2d$easing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["replaceStringEasing"])(options);
+        /**
+         * Ensure we replace the transition type with a generator function
+         * before passing to WAAPI.
+         *
+         * TODO: Does this have a better home? It could be shared with
+         * JSAnimation.
+         */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$replace$2d$transition$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["replaceTransitionType"])(options);
+        super(options);
+        if (options.startTime) {
+            this.startTime = options.startTime;
+        }
+        this.options = options;
+    }
+    /**
+     * WAAPI doesn't natively have any interruption capabilities.
+     *
+     * Rather than read commited styles back out of the DOM, we can
+     * create a renderless JS animation and sample it twice to calculate
+     * its current value, "previous" value, and therefore allow
+     * Motion to calculate velocity for any subsequent animation.
+     */ updateMotionValue(value) {
+        const { motionValue, onUpdate, onComplete, element, ...options } = this.options;
+        if (!motionValue) return;
+        if (value !== undefined) {
+            motionValue.set(value);
+            return;
+        }
+        const sampleAnimation = new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$JSAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["JSAnimation"]({
+            ...options,
+            autoplay: false
+        });
+        const sampleTime = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(this.finishedTime ?? this.time);
+        motionValue.setWithVelocity(sampleAnimation.sample(sampleTime - sampleDelta).value, sampleAnimation.sample(sampleTime).value, sampleDelta);
+        sampleAnimation.stop();
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-animatable.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isAnimatable",
+    ()=>isAnimatable
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)");
+;
+/**
+ * Check if a value is animatable. Examples:
+ *
+ * ✅: 100, "100px", "#fff"
+ * ❌: "block", "url(2.jpg)"
+ * @param value
+ *
+ * @internal
+ */ const isAnimatable = (value, name)=>{
+    // If the list of keys that might be non-animatable grows, replace with Set
+    if (name === "zIndex") return false;
+    // If it's a number or a keyframes array, we can animate it. We might at some point
+    // need to do a deep isAnimatable check of keyframes, or let Popmotion handle this,
+    // but for now lets leave it like this for performance reasons
+    if (typeof value === "number" || Array.isArray(value)) return true;
+    if (typeof value === "string" && // It's animatable if we have a string
+    (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["complex"].test(value) || value === "0") && // And it contains numbers and/or colors
+    !value.startsWith("url(") // Unless it starts with "url("
+    ) {
+        return true;
+    }
+    return false;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/can-animate.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "canAnimate",
+    ()=>canAnimate
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$is$2d$generator$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/generators/utils/is-generator.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animatable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-animatable.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function hasKeyframesChanged(keyframes) {
+    const current = keyframes[0];
+    if (keyframes.length === 1) return true;
+    for(let i = 0; i < keyframes.length; i++){
+        if (keyframes[i] !== current) return true;
+    }
+}
+function canAnimate(keyframes, name, type, velocity) {
+    /**
+     * Check if we're able to animate between the start and end keyframes,
+     * and throw a warning if we're attempting to animate between one that's
+     * animatable and another that isn't.
+     */ const originKeyframe = keyframes[0];
+    if (originKeyframe === null) return false;
+    /**
+     * These aren't traditionally animatable but we do support them.
+     * In future we could look into making this more generic or replacing
+     * this function with mix() === mixImmediate
+     */ if (name === "display" || name === "visibility") return true;
+    const targetKeyframe = keyframes[keyframes.length - 1];
+    const isOriginAnimatable = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animatable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAnimatable"])(originKeyframe, name);
+    const isTargetAnimatable = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animatable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAnimatable"])(targetKeyframe, name);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warning"])(isOriginAnimatable === isTargetAnimatable, `You are trying to animate ${name} from "${originKeyframe}" to "${targetKeyframe}". "${isOriginAnimatable ? targetKeyframe : originKeyframe}" is not an animatable value.`, "value-not-animatable");
+    // Always skip if any of these are true
+    if (!isOriginAnimatable || !isTargetAnimatable) {
+        return false;
+    }
+    return hasKeyframesChanged(keyframes) || (type === "spring" || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$is$2d$generator$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isGenerator"])(type)) && velocity;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/supports/waapi.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "supportsBrowserAnimation",
+    ()=>supportsBrowserAnimation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/memo.mjs [app-ssr] (ecmascript)");
+;
+/**
+ * A list of values that can be hardware-accelerated.
+ */ const acceleratedValues = new Set([
+    "opacity",
+    "clipPath",
+    "filter",
+    "transform"
+]);
+const supportsWaapi = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memo"])(()=>Object.hasOwnProperty.call(Element.prototype, "animate"));
+function supportsBrowserAnimation(options) {
+    const { motionValue, name, repeatDelay, repeatType, damping, type } = options;
+    const subject = motionValue?.owner?.current;
+    /**
+     * We use this check instead of isHTMLElement() because we explicitly
+     * **don't** want elements in different timing contexts (i.e. popups)
+     * to be accelerated, as it's not possible to sync these animations
+     * properly with those driven from the main window frameloop.
+     */ if (!(subject instanceof HTMLElement)) {
+        return false;
+    }
+    const { onUpdate, transformTemplate } = motionValue.owner.getProps();
+    return supportsWaapi() && name && acceleratedValues.has(name) && (name !== "transform" || !transformTemplate) && /**
+         * If we're outputting values to onUpdate then we can't use WAAPI as there's
+         * no way to read the value from WAAPI every frame.
+         */ !onUpdate && !repeatDelay && repeatType !== "mirror" && damping !== 0 && type !== "inertia";
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/AsyncMotionValueAnimation.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AsyncMotionValueAnimation",
+    ()=>AsyncMotionValueAnimation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$JSAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/JSAnimation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/get-final.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$NativeAnimationExtended$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/NativeAnimationExtended.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$can$2d$animate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/can-animate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$make$2d$animation$2d$instant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/make-animation-instant.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/WithPromise.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$supports$2f$waapi$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/waapi/supports/waapi.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+/**
+ * Maximum time allowed between an animation being created and it being
+ * resolved for us to use the latter as the start time.
+ *
+ * This is to ensure that while we prefer to "start" an animation as soon
+ * as it's triggered, we also want to avoid a visual jump if there's a big delay
+ * between these two moments.
+ */ const MAX_RESOLVE_DELAY = 40;
+class AsyncMotionValueAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WithPromise"] {
+    constructor({ autoplay = true, delay = 0, type = "keyframes", repeat = 0, repeatDelay = 0, repeatType = "loop", keyframes, name, motionValue, element, ...options }){
+        super();
+        /**
+         * Bound to support return animation.stop pattern
+         */ this.stop = ()=>{
+            if (this._animation) {
+                this._animation.stop();
+                this.stopTimeline?.();
+            }
+            this.keyframeResolver?.cancel();
+        };
+        this.createdAt = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now();
+        const optionsWithDefaults = {
+            autoplay,
+            delay,
+            type,
+            repeat,
+            repeatDelay,
+            repeatType,
+            name,
+            motionValue,
+            element,
+            ...options
+        };
+        const KeyframeResolver$1 = element?.KeyframeResolver || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["KeyframeResolver"];
+        this.keyframeResolver = new KeyframeResolver$1(keyframes, (resolvedKeyframes, finalKeyframe, forced)=>this.onKeyframesResolved(resolvedKeyframes, finalKeyframe, optionsWithDefaults, !forced), name, motionValue, element);
+        this.keyframeResolver?.scheduleResolve();
+    }
+    onKeyframesResolved(keyframes, finalKeyframe, options, sync) {
+        this.keyframeResolver = undefined;
+        const { name, type, velocity, delay, isHandoff, onUpdate } = options;
+        this.resolvedAt = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now();
+        /**
+         * If we can't animate this value with the resolved keyframes
+         * then we should complete it immediately.
+         */ if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$can$2d$animate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["canAnimate"])(keyframes, name, type, velocity)) {
+            if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].instantAnimations || !delay) {
+                onUpdate?.((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(keyframes, options, finalKeyframe));
+            }
+            keyframes[0] = keyframes[keyframes.length - 1];
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$make$2d$animation$2d$instant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["makeAnimationInstant"])(options);
+            options.repeat = 0;
+        }
+        /**
+         * Resolve startTime for the animation.
+         *
+         * This method uses the createdAt and resolvedAt to calculate the
+         * animation startTime. *Ideally*, we would use the createdAt time as t=0
+         * as the following frame would then be the first frame of the animation in
+         * progress, which would feel snappier.
+         *
+         * However, if there's a delay (main thread work) between the creation of
+         * the animation and the first commited frame, we prefer to use resolvedAt
+         * to avoid a sudden jump into the animation.
+         */ const startTime = sync ? !this.resolvedAt ? this.createdAt : this.resolvedAt - this.createdAt > MAX_RESOLVE_DELAY ? this.resolvedAt : this.createdAt : undefined;
+        const resolvedOptions = {
+            startTime,
+            finalKeyframe,
+            ...options,
+            keyframes
+        };
+        /**
+         * Animate via WAAPI if possible. If this is a handoff animation, the optimised animation will be running via
+         * WAAPI. Therefore, this animation must be JS to ensure it runs "under" the
+         * optimised animation.
+         */ const animation = !isHandoff && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$supports$2f$waapi$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["supportsBrowserAnimation"])(resolvedOptions) ? new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$NativeAnimationExtended$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NativeAnimationExtended"]({
+            ...resolvedOptions,
+            element: resolvedOptions.motionValue.owner.current
+        }) : new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$JSAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["JSAnimation"](resolvedOptions);
+        animation.finished.then(()=>this.notifyFinished()).catch(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"]);
+        if (this.pendingTimeline) {
+            this.stopTimeline = animation.attachTimeline(this.pendingTimeline);
+            this.pendingTimeline = undefined;
+        }
+        this._animation = animation;
+    }
+    get finished() {
+        if (!this._animation) {
+            return this._finished;
+        } else {
+            return this.animation.finished;
+        }
+    }
+    then(onResolve, _onReject) {
+        return this.finished.finally(onResolve).then(()=>{});
+    }
+    get animation() {
+        if (!this._animation) {
+            this.keyframeResolver?.resume();
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["flushKeyframeResolvers"])();
+        }
+        return this._animation;
+    }
+    get duration() {
+        return this.animation.duration;
+    }
+    get iterationDuration() {
+        return this.animation.iterationDuration;
+    }
+    get time() {
+        return this.animation.time;
+    }
+    set time(newTime) {
+        this.animation.time = newTime;
+    }
+    get speed() {
+        return this.animation.speed;
+    }
+    get state() {
+        return this.animation.state;
+    }
+    set speed(newSpeed) {
+        this.animation.speed = newSpeed;
+    }
+    get startTime() {
+        return this.animation.startTime;
+    }
+    attachTimeline(timeline) {
+        if (this._animation) {
+            this.stopTimeline = this.animation.attachTimeline(timeline);
+        } else {
+            this.pendingTimeline = timeline;
+        }
+        return ()=>this.stop();
+    }
+    play() {
+        this.animation.play();
+    }
+    pause() {
+        this.animation.pause();
+    }
+    complete() {
+        this.animation.complete();
+    }
+    cancel() {
+        if (this._animation) {
+            this.animation.cancel();
+        }
+        this.keyframeResolver?.cancel();
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/animators/waapi/utils/get-final-keyframe.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getFinalKeyframe",
+    ()=>getFinalKeyframe
+]);
+const isNotNull = (value)=>value !== null;
+function getFinalKeyframe(keyframes, { repeat, repeatType = "loop" }, finalKeyframe) {
+    const resolvedKeyframes = keyframes.filter(isNotNull);
+    const index = repeat && repeatType !== "loop" && repeat % 2 === 1 ? 0 : resolvedKeyframes.length - 1;
+    return !index || finalKeyframe === undefined ? resolvedKeyframes[index] : finalKeyframe;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/default-transitions.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getDefaultTransition",
+    ()=>getDefaultTransition
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+;
+const underDampedSpring = {
+    type: "spring",
+    stiffness: 500,
+    damping: 25,
+    restSpeed: 10
+};
+const criticallyDampedSpring = (target)=>({
+        type: "spring",
+        stiffness: 550,
+        damping: target === 0 ? 2 * Math.sqrt(550) : 30,
+        restSpeed: 10
+    });
+const keyframesTransition = {
+    type: "keyframes",
+    duration: 0.8
+};
+/**
+ * Default easing curve is a slightly shallower version of
+ * the default browser easing curve.
+ */ const ease = {
+    type: "keyframes",
+    ease: [
+        0.25,
+        0.1,
+        0.35,
+        1
+    ],
+    duration: 0.3
+};
+const getDefaultTransition = (valueKey, { keyframes })=>{
+    if (keyframes.length > 2) {
+        return keyframesTransition;
+    } else if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformProps"].has(valueKey)) {
+        return valueKey.startsWith("scale") ? criticallyDampedSpring(keyframes[1]) : underDampedSpring;
+    }
+    return ease;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-transition-defined.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Decide whether a transition is defined on a given Transition.
+ * This filters out orchestration options and returns true
+ * if any options are left.
+ */ __turbopack_context__.s([
+    "isTransitionDefined",
+    ()=>isTransitionDefined
+]);
+function isTransitionDefined({ when, delay: _delay, delayChildren, staggerChildren, staggerDirection, repeat, repeatType, repeatDelay, from, elapsed, ...transition }) {
+    return !!Object.keys(transition).length;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/motion-value.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "animateMotionValue",
+    ()=>animateMotionValue
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$get$2d$value$2d$transition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/get-value-transition.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$make$2d$animation$2d$instant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/make-animation-instant.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$JSAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/JSAnimation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$AsyncMotionValueAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/AsyncMotionValueAnimation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$animators$2f$waapi$2f$utils$2f$get$2d$final$2d$keyframe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/animators/waapi/utils/get-final-keyframe.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$default$2d$transitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/default-transitions.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$transition$2d$defined$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-transition-defined.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+const animateMotionValue = (name, value, target, transition = {}, element, isHandoff)=>(onComplete)=>{
+        const valueTransition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$get$2d$value$2d$transition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getValueTransition"])(transition, name) || {};
+        /**
+     * Most transition values are currently completely overwritten by value-specific
+     * transitions. In the future it'd be nicer to blend these transitions. But for now
+     * delay actually does inherit from the root transition if not value-specific.
+     */ const delay = valueTransition.delay || transition.delay || 0;
+        /**
+     * Elapsed isn't a public transition option but can be passed through from
+     * optimized appear effects in milliseconds.
+     */ let { elapsed = 0 } = transition;
+        elapsed = elapsed - (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(delay);
+        const options = {
+            keyframes: Array.isArray(target) ? target : [
+                null,
+                target
+            ],
+            ease: "easeOut",
+            velocity: value.getVelocity(),
+            ...valueTransition,
+            delay: -elapsed,
+            onUpdate: (v)=>{
+                value.set(v);
+                valueTransition.onUpdate && valueTransition.onUpdate(v);
+            },
+            onComplete: ()=>{
+                onComplete();
+                valueTransition.onComplete && valueTransition.onComplete();
+            },
+            name,
+            motionValue: value,
+            element: isHandoff ? undefined : element
+        };
+        /**
+     * If there's no transition defined for this value, we can generate
+     * unique transition settings for this value.
+     */ if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$transition$2d$defined$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isTransitionDefined"])(valueTransition)) {
+            Object.assign(options, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$default$2d$transitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDefaultTransition"])(name, options));
+        }
+        /**
+     * Both WAAPI and our internal animation functions use durations
+     * as defined by milliseconds, while our external API defines them
+     * as seconds.
+     */ options.duration && (options.duration = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(options.duration));
+        options.repeatDelay && (options.repeatDelay = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(options.repeatDelay));
+        /**
+     * Support deprecated way to set initial value. Prefer keyframe syntax.
+     */ if (options.from !== undefined) {
+            options.keyframes[0] = options.from;
+        }
+        let shouldSkip = false;
+        if (options.type === false || options.duration === 0 && !options.repeatDelay) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$make$2d$animation$2d$instant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["makeAnimationInstant"])(options);
+            if (options.delay === 0) {
+                shouldSkip = true;
+            }
+        }
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].instantAnimations || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].skipAnimations) {
+            shouldSkip = true;
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$make$2d$animation$2d$instant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["makeAnimationInstant"])(options);
+            options.delay = 0;
+        }
+        /**
+     * If the transition type or easing has been explicitly set by the user
+     * then we don't want to allow flattening the animation.
+     */ options.allowFlatten = !valueTransition.type && !valueTransition.ease;
+        /**
+     * If we can or must skip creating the animation, and apply only
+     * the final keyframe, do so. We also check once keyframes are resolved but
+     * this early check prevents the need to create an animation at all.
+     */ if (shouldSkip && !isHandoff && value.get() !== undefined) {
+            const finalKeyframe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$animators$2f$waapi$2f$utils$2f$get$2d$final$2d$keyframe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(options.keyframes, valueTransition);
+            if (finalKeyframe !== undefined) {
+                __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].update(()=>{
+                    options.onUpdate(finalKeyframe);
+                    options.onComplete();
+                });
+                return;
+            }
+        }
+        return valueTransition.isSync ? new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$JSAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["JSAnimation"](options) : new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$AsyncMotionValueAnimation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AsyncMotionValueAnimation"](options);
+    };
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/visual-element-target.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "animateTarget",
+    ()=>animateTarget
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$get$2d$value$2d$transition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/get-value-transition.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$position$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-position.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$setters$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/setters.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$will$2d$change$2f$add$2d$will$2d$change$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/value/use-will-change/add-will-change.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$optimized$2d$appear$2f$get$2d$appear$2d$id$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/optimized-appear/get-appear-id.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/motion-value.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+/**
+ * Decide whether we should block this animation. Previously, we achieved this
+ * just by checking whether the key was listed in protectedKeys, but this
+ * posed problems if an animation was triggered by afterChildren and protectedKeys
+ * had been set to true in the meantime.
+ */ function shouldBlockAnimation({ protectedKeys, needsAnimating }, key) {
+    const shouldBlock = protectedKeys.hasOwnProperty(key) && needsAnimating[key] !== true;
+    needsAnimating[key] = false;
+    return shouldBlock;
+}
+function animateTarget(visualElement, targetAndTransition, { delay = 0, transitionOverride, type } = {}) {
+    let { transition = visualElement.getDefaultTransition(), transitionEnd, ...target } = targetAndTransition;
+    if (transitionOverride) transition = transitionOverride;
+    const animations = [];
+    const animationTypeState = type && visualElement.animationState && visualElement.animationState.getState()[type];
+    for(const key in target){
+        const value = visualElement.getValue(key, visualElement.latestValues[key] ?? null);
+        const valueTarget = target[key];
+        if (valueTarget === undefined || animationTypeState && shouldBlockAnimation(animationTypeState, key)) {
+            continue;
+        }
+        const valueTransition = {
+            delay,
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$get$2d$value$2d$transition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getValueTransition"])(transition || {}, key)
+        };
+        /**
+         * If the value is already at the defined target, skip the animation.
+         */ const currentValue = value.get();
+        if (currentValue !== undefined && !value.isAnimating && !Array.isArray(valueTarget) && valueTarget === currentValue && !valueTransition.velocity) {
+            continue;
+        }
+        /**
+         * If this is the first time a value is being animated, check
+         * to see if we're handling off from an existing animation.
+         */ let isHandoff = false;
+        if (window.MotionHandoffAnimation) {
+            const appearId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$optimized$2d$appear$2f$get$2d$appear$2d$id$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getOptimisedAppearId"])(visualElement);
+            if (appearId) {
+                const startTime = window.MotionHandoffAnimation(appearId, key, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"]);
+                if (startTime !== null) {
+                    valueTransition.startTime = startTime;
+                    isHandoff = true;
+                }
+            }
+        }
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$will$2d$change$2f$add$2d$will$2d$change$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addValueToWillChange"])(visualElement, key);
+        value.start((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animateMotionValue"])(key, value, valueTarget, visualElement.shouldReduceMotion && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$position$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["positionalKeys"].has(key) ? {
+            type: false
+        } : valueTransition, visualElement, isHandoff));
+        const animation = value.animation;
+        if (animation) {
+            animations.push(animation);
+        }
+    }
+    if (transitionEnd) {
+        Promise.all(animations).then(()=>{
+            __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].update(()=>{
+                transitionEnd && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$setters$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setTarget"])(visualElement, transitionEnd);
+            });
+        });
+    }
+    return animations;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/calc-child-stagger.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "calcChildStagger",
+    ()=>calcChildStagger
+]);
+function calcChildStagger(children, child, delayChildren, staggerChildren = 0, staggerDirection = 1) {
+    const index = Array.from(children).sort((a, b)=>a.sortNodePosition(b)).indexOf(child);
+    const numChildren = children.size;
+    const maxStaggerDuration = (numChildren - 1) * staggerChildren;
+    const delayIsFunction = typeof delayChildren === "function";
+    return delayIsFunction ? delayChildren(index, numChildren) : staggerDirection === 1 ? index * staggerChildren : maxStaggerDuration - index * staggerChildren;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/visual-element-variant.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "animateVariant",
+    ()=>animateVariant
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-dynamic-variants.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$calc$2d$child$2d$stagger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/calc-child-stagger.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/visual-element-target.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function animateVariant(visualElement, variant, options = {}) {
+    const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, variant, options.type === "exit" ? visualElement.presenceContext?.custom : undefined);
+    let { transition = visualElement.getDefaultTransition() || {} } = resolved || {};
+    if (options.transitionOverride) {
+        transition = options.transitionOverride;
+    }
+    /**
+     * If we have a variant, create a callback that runs it as an animation.
+     * Otherwise, we resolve a Promise immediately for a composable no-op.
+     */ const getAnimation = resolved ? ()=>Promise.all((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animateTarget"])(visualElement, resolved, options)) : ()=>Promise.resolve();
+    /**
+     * If we have children, create a callback that runs all their animations.
+     * Otherwise, we resolve a Promise immediately for a composable no-op.
+     */ const getChildAnimations = visualElement.variantChildren && visualElement.variantChildren.size ? (forwardDelay = 0)=>{
+        const { delayChildren = 0, staggerChildren, staggerDirection } = transition;
+        return animateChildren(visualElement, variant, forwardDelay, delayChildren, staggerChildren, staggerDirection, options);
+    } : ()=>Promise.resolve();
+    /**
+     * If the transition explicitly defines a "when" option, we need to resolve either
+     * this animation or all children animations before playing the other.
+     */ const { when } = transition;
+    if (when) {
+        const [first, last] = when === "beforeChildren" ? [
+            getAnimation,
+            getChildAnimations
+        ] : [
+            getChildAnimations,
+            getAnimation
+        ];
+        return first().then(()=>last());
+    } else {
+        return Promise.all([
+            getAnimation(),
+            getChildAnimations(options.delay)
+        ]);
+    }
+}
+function animateChildren(visualElement, variant, delay = 0, delayChildren = 0, staggerChildren = 0, staggerDirection = 1, options) {
+    const animations = [];
+    for (const child of visualElement.variantChildren){
+        child.notify("AnimationStart", variant);
+        animations.push(animateVariant(child, variant, {
+            ...options,
+            delay: delay + (typeof delayChildren === "function" ? 0 : delayChildren) + (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$calc$2d$child$2d$stagger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcChildStagger"])(visualElement.variantChildren, child, delayChildren, staggerChildren, staggerDirection)
+        }).then(()=>child.notify("AnimationComplete", variant)));
+    }
+    return Promise.all(animations);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/visual-element.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "animateVisualElement",
+    ()=>animateVisualElement
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-dynamic-variants.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/visual-element-target.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$variant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/visual-element-variant.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function animateVisualElement(visualElement, definition, options = {}) {
+    visualElement.notify("AnimationStart", definition);
+    let animation;
+    if (Array.isArray(definition)) {
+        const animations = definition.map((variant)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$variant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animateVariant"])(visualElement, variant, options));
+        animation = Promise.all(animations);
+    } else if (typeof definition === "string") {
+        animation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$variant$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animateVariant"])(visualElement, definition, options);
+    } else {
+        const resolvedDefinition = typeof definition === "function" ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, definition, options.custom) : definition;
+        animation = Promise.all((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animateTarget"])(visualElement, resolvedDefinition, options));
+    }
+    return animation.then(()=>{
+        visualElement.notify("AnimationComplete", definition);
+    });
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/shallow-compare.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "shallowCompare",
+    ()=>shallowCompare
+]);
+function shallowCompare(next, prev) {
+    if (!Array.isArray(prev)) return false;
+    const prevLength = prev.length;
+    if (prevLength !== next.length) return false;
+    for(let i = 0; i < prevLength; i++){
+        if (prev[i] !== next[i]) return false;
+    }
+    return true;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/is-variant-label.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Decides if the supplied variable is variant label
+ */ __turbopack_context__.s([
+    "isVariantLabel",
+    ()=>isVariantLabel
+]);
+function isVariantLabel(v) {
+    return typeof v === "string" || Array.isArray(v);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/variant-props.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "variantPriorityOrder",
+    ()=>variantPriorityOrder,
+    "variantProps",
+    ()=>variantProps
+]);
+const variantPriorityOrder = [
+    "animate",
+    "whileInView",
+    "whileFocus",
+    "whileHover",
+    "whileTap",
+    "whileDrag",
+    "exit"
+];
+const variantProps = [
+    "initial",
+    ...variantPriorityOrder
+];
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/get-variant-context.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getVariantContext",
+    ()=>getVariantContext
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/is-variant-label.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/variant-props.mjs [app-ssr] (ecmascript)");
+;
+;
+const numVariantProps = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["variantProps"].length;
+function getVariantContext(visualElement) {
+    if (!visualElement) return undefined;
+    if (!visualElement.isControllingVariants) {
+        const context = visualElement.parent ? getVariantContext(visualElement.parent) || {} : {};
+        if (visualElement.props.initial !== undefined) {
+            context.initial = visualElement.props.initial;
+        }
+        return context;
+    }
+    const context = {};
+    for(let i = 0; i < numVariantProps; i++){
+        const name = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["variantProps"][i];
+        const prop = visualElement.props[name];
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isVariantLabel"])(prop) || prop === false) {
+            context[name] = prop;
+        }
+    }
+    return context;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/animation-state.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "checkVariantsDidChange",
+    ()=>checkVariantsDidChange,
+    "createAnimationState",
+    ()=>createAnimationState
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/interfaces/visual-element.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$calc$2d$child$2d$stagger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/calc-child-stagger.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-animation-controls.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$keyframes$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-keyframes-target.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$shallow$2d$compare$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/shallow-compare.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$get$2d$variant$2d$context$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/get-variant-context.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/is-variant-label.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-dynamic-variants.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/variant-props.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const reversePriorityOrder = [
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["variantPriorityOrder"]
+].reverse();
+const numAnimationTypes = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["variantPriorityOrder"].length;
+function animateList(visualElement) {
+    return (animations)=>Promise.all(animations.map(({ animation, options })=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animateVisualElement"])(visualElement, animation, options)));
+}
+function createAnimationState(visualElement) {
+    let animate = animateList(visualElement);
+    let state = createState();
+    let isInitialRender = true;
+    /**
+     * This function will be used to reduce the animation definitions for
+     * each active animation type into an object of resolved values for it.
+     */ const buildResolvedTypeValues = (type)=>(acc, definition)=>{
+            const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, definition, type === "exit" ? visualElement.presenceContext?.custom : undefined);
+            if (resolved) {
+                const { transition, transitionEnd, ...target } = resolved;
+                acc = {
+                    ...acc,
+                    ...target,
+                    ...transitionEnd
+                };
+            }
+            return acc;
+        };
+    /**
+     * This just allows us to inject mocked animation functions
+     * @internal
+     */ function setAnimateFunction(makeAnimator) {
+        animate = makeAnimator(visualElement);
+    }
+    /**
+     * When we receive new props, we need to:
+     * 1. Create a list of protected keys for each type. This is a directory of
+     *    value keys that are currently being "handled" by types of a higher priority
+     *    so that whenever an animation is played of a given type, these values are
+     *    protected from being animated.
+     * 2. Determine if an animation type needs animating.
+     * 3. Determine if any values have been removed from a type and figure out
+     *    what to animate those to.
+     */ function animateChanges(changedActiveType) {
+        const { props } = visualElement;
+        const context = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$get$2d$variant$2d$context$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getVariantContext"])(visualElement.parent) || {};
+        /**
+         * A list of animations that we'll build into as we iterate through the animation
+         * types. This will get executed at the end of the function.
+         */ const animations = [];
+        /**
+         * Keep track of which values have been removed. Then, as we hit lower priority
+         * animation types, we can check if they contain removed values and animate to that.
+         */ const removedKeys = new Set();
+        /**
+         * A dictionary of all encountered keys. This is an object to let us build into and
+         * copy it without iteration. Each time we hit an animation type we set its protected
+         * keys - the keys its not allowed to animate - to the latest version of this object.
+         */ let encounteredKeys = {};
+        /**
+         * If a variant has been removed at a given index, and this component is controlling
+         * variant animations, we want to ensure lower-priority variants are forced to animate.
+         */ let removedVariantIndex = Infinity;
+        /**
+         * Iterate through all animation types in reverse priority order. For each, we want to
+         * detect which values it's handling and whether or not they've changed (and therefore
+         * need to be animated). If any values have been removed, we want to detect those in
+         * lower priority props and flag for animation.
+         */ for(let i = 0; i < numAnimationTypes; i++){
+            const type = reversePriorityOrder[i];
+            const typeState = state[type];
+            const prop = props[type] !== undefined ? props[type] : context[type];
+            const propIsVariant = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isVariantLabel"])(prop);
+            /**
+             * If this type has *just* changed isActive status, set activeDelta
+             * to that status. Otherwise set to null.
+             */ const activeDelta = type === changedActiveType ? typeState.isActive : null;
+            if (activeDelta === false) removedVariantIndex = i;
+            /**
+             * If this prop is an inherited variant, rather than been set directly on the
+             * component itself, we want to make sure we allow the parent to trigger animations.
+             *
+             * TODO: Can probably change this to a !isControllingVariants check
+             */ let isInherited = prop === context[type] && prop !== props[type] && propIsVariant;
+            if (isInherited && isInitialRender && visualElement.manuallyAnimateOnMount) {
+                isInherited = false;
+            }
+            /**
+             * Set all encountered keys so far as the protected keys for this type. This will
+             * be any key that has been animated or otherwise handled by active, higher-priortiy types.
+             */ typeState.protectedKeys = {
+                ...encounteredKeys
+            };
+            // Check if we can skip analysing this prop early
+            if (// If it isn't active and hasn't *just* been set as inactive
+            !typeState.isActive && activeDelta === null || !prop && !typeState.prevProp || // Or if the prop doesn't define an animation
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAnimationControls"])(prop) || typeof prop === "boolean") {
+                continue;
+            }
+            /**
+             * As we go look through the values defined on this type, if we detect
+             * a changed value or a value that was removed in a higher priority, we set
+             * this to true and add this prop to the animation list.
+             */ const variantDidChange = checkVariantsDidChange(typeState.prevProp, prop);
+            let shouldAnimateType = variantDidChange || type === changedActiveType && typeState.isActive && !isInherited && propIsVariant || i > removedVariantIndex && propIsVariant;
+            let handledRemovedValues = false;
+            /**
+             * As animations can be set as variant lists, variants or target objects, we
+             * coerce everything to an array if it isn't one already
+             */ const definitionList = Array.isArray(prop) ? prop : [
+                prop
+            ];
+            /**
+             * Build an object of all the resolved values. We'll use this in the subsequent
+             * animateChanges calls to determine whether a value has changed.
+             */ let resolvedValues = definitionList.reduce(buildResolvedTypeValues(type), {});
+            if (activeDelta === false) resolvedValues = {};
+            /**
+             * Now we need to loop through all the keys in the prev prop and this prop,
+             * and decide:
+             * 1. If the value has changed, and needs animating
+             * 2. If it has been removed, and needs adding to the removedKeys set
+             * 3. If it has been removed in a higher priority type and needs animating
+             * 4. If it hasn't been removed in a higher priority but hasn't changed, and
+             *    needs adding to the type's protectedKeys list.
+             */ const { prevResolvedValues = {} } = typeState;
+            const allKeys = {
+                ...prevResolvedValues,
+                ...resolvedValues
+            };
+            const markToAnimate = (key)=>{
+                shouldAnimateType = true;
+                if (removedKeys.has(key)) {
+                    handledRemovedValues = true;
+                    removedKeys.delete(key);
+                }
+                typeState.needsAnimating[key] = true;
+                const motionValue = visualElement.getValue(key);
+                if (motionValue) motionValue.liveStyle = false;
+            };
+            for(const key in allKeys){
+                const next = resolvedValues[key];
+                const prev = prevResolvedValues[key];
+                // If we've already handled this we can just skip ahead
+                if (encounteredKeys.hasOwnProperty(key)) continue;
+                /**
+                 * If the value has changed, we probably want to animate it.
+                 */ let valueHasChanged = false;
+                if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$keyframes$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isKeyframesTarget"])(next) && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$keyframes$2d$target$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isKeyframesTarget"])(prev)) {
+                    valueHasChanged = !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$shallow$2d$compare$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["shallowCompare"])(next, prev);
+                } else {
+                    valueHasChanged = next !== prev;
+                }
+                if (valueHasChanged) {
+                    if (next !== undefined && next !== null) {
+                        // If next is defined and doesn't equal prev, it needs animating
+                        markToAnimate(key);
+                    } else {
+                        // If it's undefined, it's been removed.
+                        removedKeys.add(key);
+                    }
+                } else if (next !== undefined && removedKeys.has(key)) {
+                    /**
+                     * If next hasn't changed and it isn't undefined, we want to check if it's
+                     * been removed by a higher priority
+                     */ markToAnimate(key);
+                } else {
+                    /**
+                     * If it hasn't changed, we add it to the list of protected values
+                     * to ensure it doesn't get animated.
+                     */ typeState.protectedKeys[key] = true;
+                }
+            }
+            /**
+             * Update the typeState so next time animateChanges is called we can compare the
+             * latest prop and resolvedValues to these.
+             */ typeState.prevProp = prop;
+            typeState.prevResolvedValues = resolvedValues;
+            if (typeState.isActive) {
+                encounteredKeys = {
+                    ...encounteredKeys,
+                    ...resolvedValues
+                };
+            }
+            if (isInitialRender && visualElement.blockInitialAnimation) {
+                shouldAnimateType = false;
+            }
+            /**
+             * If this is an inherited prop we want to skip this animation
+             * unless the inherited variants haven't changed on this render.
+             */ const willAnimateViaParent = isInherited && variantDidChange;
+            const needsAnimating = !willAnimateViaParent || handledRemovedValues;
+            if (shouldAnimateType && needsAnimating) {
+                animations.push(...definitionList.map((animation)=>{
+                    const options = {
+                        type
+                    };
+                    /**
+                     * If we're performing the initial animation, but we're not
+                     * rendering at the same time as the variant-controlling parent,
+                     * we want to use the parent's transition to calculate the stagger.
+                     */ if (typeof animation === "string" && isInitialRender && !willAnimateViaParent && visualElement.manuallyAnimateOnMount && visualElement.parent) {
+                        const { parent } = visualElement;
+                        const parentVariant = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariant"])(parent, animation);
+                        if (parent.enteringChildren && parentVariant) {
+                            const { delayChildren } = parentVariant.transition || {};
+                            options.delay = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$calc$2d$child$2d$stagger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calcChildStagger"])(parent.enteringChildren, visualElement, delayChildren);
+                        }
+                    }
+                    return {
+                        animation: animation,
+                        options
+                    };
+                }));
+            }
+        }
+        /**
+         * If there are some removed value that haven't been dealt with,
+         * we need to create a new animation that falls back either to the value
+         * defined in the style prop, or the last read value.
+         */ if (removedKeys.size) {
+            const fallbackAnimation = {};
+            /**
+             * If the initial prop contains a transition we can use that, otherwise
+             * allow the animation function to use the visual element's default.
+             */ if (typeof props.initial !== "boolean") {
+                const initialTransition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, Array.isArray(props.initial) ? props.initial[0] : props.initial);
+                if (initialTransition && initialTransition.transition) {
+                    fallbackAnimation.transition = initialTransition.transition;
+                }
+            }
+            removedKeys.forEach((key)=>{
+                const fallbackTarget = visualElement.getBaseTarget(key);
+                const motionValue = visualElement.getValue(key);
+                if (motionValue) motionValue.liveStyle = true;
+                // @ts-expect-error - @mattgperry to figure if we should do something here
+                fallbackAnimation[key] = fallbackTarget ?? null;
+            });
+            animations.push({
+                animation: fallbackAnimation
+            });
+        }
+        let shouldAnimate = Boolean(animations.length);
+        if (isInitialRender && (props.initial === false || props.initial === props.animate) && !visualElement.manuallyAnimateOnMount) {
+            shouldAnimate = false;
+        }
+        isInitialRender = false;
+        return shouldAnimate ? animate(animations) : Promise.resolve();
+    }
+    /**
+     * Change whether a certain animation type is active.
+     */ function setActive(type, isActive) {
+        // If the active state hasn't changed, we can safely do nothing here
+        if (state[type].isActive === isActive) return Promise.resolve();
+        // Propagate active change to children
+        visualElement.variantChildren?.forEach((child)=>child.animationState?.setActive(type, isActive));
+        state[type].isActive = isActive;
+        const animations = animateChanges(type);
+        for(const key in state){
+            state[key].protectedKeys = {};
+        }
+        return animations;
+    }
+    return {
+        animateChanges,
+        setActive,
+        setAnimateFunction,
+        getState: ()=>state,
+        reset: ()=>{
+            state = createState();
+        /**
+             * Temporarily disabling resetting this flag as it prevents components
+             * with initial={false} from animating after being remounted, for instance
+             * as the child of an Activity component.
+             */ // isInitialRender = true
+        }
+    };
+}
+function checkVariantsDidChange(prev, next) {
+    if (typeof next === "string") {
+        return next !== prev;
+    } else if (Array.isArray(next)) {
+        return !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$shallow$2d$compare$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["shallowCompare"])(next, prev);
+    }
+    return false;
+}
+function createTypeState(isActive = false) {
+    return {
+        isActive,
+        protectedKeys: {},
+        needsAnimating: {},
+        prevResolvedValues: {}
+    };
+}
+function createState() {
+    return {
+        animate: createTypeState(true),
+        whileInView: createTypeState(),
+        whileHover: createTypeState(),
+        whileTap: createTypeState(),
+        whileDrag: createTypeState(),
+        whileFocus: createTypeState(),
+        exit: createTypeState()
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/Feature.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Feature",
+    ()=>Feature
+]);
+class Feature {
+    constructor(node){
+        this.isMounted = false;
+        this.node = node;
+    }
+    update() {}
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/animation/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AnimationFeature",
+    ()=>AnimationFeature
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-animation-controls.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$animation$2d$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/animation-state.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/Feature.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+class AnimationFeature extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Feature"] {
+    /**
+     * We dynamically generate the AnimationState manager as it contains a reference
+     * to the underlying animation library. We only want to load that if we load this,
+     * so people can optionally code split it out using the `m` component.
+     */ constructor(node){
+        super(node);
+        node.animationState || (node.animationState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$animation$2d$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createAnimationState"])(node));
+    }
+    updateAnimationControlsSubscription() {
+        const { animate } = this.node.getProps();
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAnimationControls"])(animate)) {
+            this.unmountControls = animate.subscribe(this.node);
+        }
+    }
+    /**
+     * Subscribe any provided AnimationControls to the component's VisualElement
+     */ mount() {
+        this.updateAnimationControlsSubscription();
+    }
+    update() {
+        const { animate } = this.node.getProps();
+        const { animate: prevAnimate } = this.node.prevProps || {};
+        if (animate !== prevAnimate) {
+            this.updateAnimationControlsSubscription();
+        }
+    }
+    unmount() {
+        this.node.animationState.reset();
+        this.unmountControls?.();
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/animation/exit.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ExitAnimationFeature",
+    ()=>ExitAnimationFeature
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/Feature.mjs [app-ssr] (ecmascript)");
+;
+let id = 0;
+class ExitAnimationFeature extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Feature"] {
+    constructor(){
+        super(...arguments);
+        this.id = id++;
+    }
+    update() {
+        if (!this.node.presenceContext) return;
+        const { isPresent, onExitComplete } = this.node.presenceContext;
+        const { isPresent: prevIsPresent } = this.node.prevPresenceContext || {};
+        if (!this.node.animationState || isPresent === prevIsPresent) {
+            return;
+        }
+        const exitAnimation = this.node.animationState.setActive("exit", !isPresent);
+        if (onExitComplete && !isPresent) {
+            exitAnimation.then(()=>{
+                onExitComplete(this.id);
+            });
+        }
+    }
+    mount() {
+        const { register, onExitComplete } = this.node.presenceContext || {};
+        if (onExitComplete) {
+            onExitComplete(this.id);
+        }
+        if (register) {
+            this.unmount = register(this.id);
+        }
+    }
+    unmount() {}
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/animations.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "animations",
+    ()=>animations
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$animation$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/animation/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$animation$2f$exit$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/animation/exit.mjs [app-ssr] (ecmascript)");
+;
+;
+const animations = {
+    animation: {
+        Feature: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$animation$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimationFeature"]
+    },
+    exit: {
+        Feature: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$animation$2f$exit$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExitAnimationFeature"]
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/drag/state/is-active.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isDragActive",
+    ()=>isDragActive,
+    "isDragging",
+    ()=>isDragging
+]);
+const isDragging = {
+    x: false,
+    y: false
+};
+function isDragActive() {
+    return isDragging.x || isDragging.y;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/resolve-elements.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "resolveElements",
+    ()=>resolveElements
+]);
+function resolveElements(elementOrSelector, scope, selectorCache) {
+    if (elementOrSelector instanceof EventTarget) {
+        return [
+            elementOrSelector
+        ];
+    } else if (typeof elementOrSelector === "string") {
+        let root = document;
+        if (scope) {
+            root = scope.current;
+        }
+        const elements = selectorCache?.[elementOrSelector] ?? root.querySelectorAll(elementOrSelector);
+        return elements ? Array.from(elements) : [];
+    }
+    return Array.from(elementOrSelector);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/setup.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "setupGesture",
+    ()=>setupGesture
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$resolve$2d$elements$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/resolve-elements.mjs [app-ssr] (ecmascript)");
+;
+function setupGesture(elementOrSelector, options) {
+    const elements = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$resolve$2d$elements$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveElements"])(elementOrSelector);
+    const gestureAbortController = new AbortController();
+    const eventOptions = {
+        passive: true,
+        ...options,
+        signal: gestureAbortController.signal
+    };
+    const cancel = ()=>gestureAbortController.abort();
+    return [
+        elements,
+        eventOptions,
+        cancel
+    ];
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/hover.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "hover",
+    ()=>hover
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$drag$2f$state$2f$is$2d$active$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/drag/state/is-active.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$setup$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/setup.mjs [app-ssr] (ecmascript)");
+;
+;
+function isValidHover(event) {
+    return !(event.pointerType === "touch" || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$drag$2f$state$2f$is$2d$active$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isDragActive"])());
+}
+/**
+ * Create a hover gesture. hover() is different to .addEventListener("pointerenter")
+ * in that it has an easier syntax, filters out polyfilled touch events, interoperates
+ * with drag gestures, and automatically removes the "pointerennd" event listener when the hover ends.
+ *
+ * @public
+ */ function hover(elementOrSelector, onHoverStart, options = {}) {
+    const [elements, eventOptions, cancel] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$setup$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setupGesture"])(elementOrSelector, options);
+    const onPointerEnter = (enterEvent)=>{
+        if (!isValidHover(enterEvent)) return;
+        const { target } = enterEvent;
+        const onHoverEnd = onHoverStart(target, enterEvent);
+        if (typeof onHoverEnd !== "function" || !target) return;
+        const onPointerLeave = (leaveEvent)=>{
+            if (!isValidHover(leaveEvent)) return;
+            onHoverEnd(leaveEvent);
+            target.removeEventListener("pointerleave", onPointerLeave);
+        };
+        target.addEventListener("pointerleave", onPointerLeave, eventOptions);
+    };
+    elements.forEach((element)=>{
+        element.addEventListener("pointerenter", onPointerEnter, eventOptions);
+    });
+    return cancel;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/is-primary-pointer.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isPrimaryPointer",
+    ()=>isPrimaryPointer
+]);
+const isPrimaryPointer = (event)=>{
+    if (event.pointerType === "mouse") {
+        return typeof event.button !== "number" || event.button <= 0;
+    } else {
+        /**
+         * isPrimary is true for all mice buttons, whereas every touch point
+         * is regarded as its own input. So subsequent concurrent touch points
+         * will be false.
+         *
+         * Specifically match against false here as incomplete versions of
+         * PointerEvents in very old browser might have it set as undefined.
+         */ return event.isPrimary !== false;
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/events/event-info.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "addPointerInfo",
+    ()=>addPointerInfo,
+    "extractEventInfo",
+    ()=>extractEventInfo
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$is$2d$primary$2d$pointer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/is-primary-pointer.mjs [app-ssr] (ecmascript)");
+;
+function extractEventInfo(event) {
+    return {
+        point: {
+            x: event.pageX,
+            y: event.pageY
+        }
+    };
+}
+const addPointerInfo = (handler)=>{
+    return (event)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$is$2d$primary$2d$pointer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isPrimaryPointer"])(event) && handler(event, extractEventInfo(event));
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/gestures/hover.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "HoverGesture",
+    ()=>HoverGesture
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$hover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/hover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$events$2f$event$2d$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/events/event-info.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/Feature.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function handleHoverEvent(node, event, lifecycle) {
+    const { props } = node;
+    if (node.animationState && props.whileHover) {
+        node.animationState.setActive("whileHover", lifecycle === "Start");
+    }
+    const eventName = "onHover" + lifecycle;
+    const callback = props[eventName];
+    if (callback) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].postRender(()=>callback(event, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$events$2f$event$2d$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["extractEventInfo"])(event)));
+    }
+}
+class HoverGesture extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Feature"] {
+    mount() {
+        const { current } = this.node;
+        if (!current) return;
+        this.unmount = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$hover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hover"])(current, (_element, startEvent)=>{
+            handleHoverEvent(this.node, startEvent, "Start");
+            return (endEvent)=>handleHoverEvent(this.node, endEvent, "End");
+        });
+    }
+    unmount() {}
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/events/add-dom-event.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "addDomEvent",
+    ()=>addDomEvent
+]);
+function addDomEvent(target, eventName, handler, options = {
+    passive: true
+}) {
+    target.addEventListener(eventName, handler, options);
+    return ()=>target.removeEventListener(eventName, handler);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/gestures/focus.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "FocusGesture",
+    ()=>FocusGesture
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/pipe.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$events$2f$add$2d$dom$2d$event$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/events/add-dom-event.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/Feature.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+class FocusGesture extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Feature"] {
+    constructor(){
+        super(...arguments);
+        this.isActive = false;
+    }
+    onFocus() {
+        let isFocusVisible = false;
+        /**
+         * If this element doesn't match focus-visible then don't
+         * apply whileHover. But, if matches throws that focus-visible
+         * is not a valid selector then in that browser outline styles will be applied
+         * to the element by default and we want to match that behaviour with whileFocus.
+         */ try {
+            isFocusVisible = this.node.current.matches(":focus-visible");
+        } catch (e) {
+            isFocusVisible = true;
+        }
+        if (!isFocusVisible || !this.node.animationState) return;
+        this.node.animationState.setActive("whileFocus", true);
+        this.isActive = true;
+    }
+    onBlur() {
+        if (!this.isActive || !this.node.animationState) return;
+        this.node.animationState.setActive("whileFocus", false);
+        this.isActive = false;
+    }
+    mount() {
+        this.unmount = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["pipe"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$events$2f$add$2d$dom$2d$event$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addDomEvent"])(this.node.current, "focus", ()=>this.onFocus()), (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$events$2f$add$2d$dom$2d$event$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addDomEvent"])(this.node.current, "blur", ()=>this.onBlur()));
+    }
+    unmount() {}
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-object.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isObject",
+    ()=>isObject
+]);
+function isObject(value) {
+    return typeof value === "object" && value !== null;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/is-html-element.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isHTMLElement",
+    ()=>isHTMLElement
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$object$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-object.mjs [app-ssr] (ecmascript)");
+;
+/**
+ * Checks if an element is an HTML element in a way
+ * that works across iframes
+ */ function isHTMLElement(element) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$object$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isObject"])(element) && "offsetHeight" in element;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/is-node-or-child.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Recursively traverse up the tree to check whether the provided child node
+ * is the parent or a descendant of it.
+ *
+ * @param parent - Element to find
+ * @param child - Element to test against parent
+ */ __turbopack_context__.s([
+    "isNodeOrChild",
+    ()=>isNodeOrChild
+]);
+const isNodeOrChild = (parent, child)=>{
+    if (!child) {
+        return false;
+    } else if (parent === child) {
+        return true;
+    } else {
+        return isNodeOrChild(parent, child.parentElement);
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/utils/is-keyboard-accessible.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isElementKeyboardAccessible",
+    ()=>isElementKeyboardAccessible
+]);
+const focusableElements = new Set([
+    "BUTTON",
+    "INPUT",
+    "SELECT",
+    "TEXTAREA",
+    "A"
+]);
+function isElementKeyboardAccessible(element) {
+    return focusableElements.has(element.tagName) || element.tabIndex !== -1;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/utils/state.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isPressing",
+    ()=>isPressing
+]);
+const isPressing = new WeakSet();
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/utils/keyboard.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "enableKeyboardPress",
+    ()=>enableKeyboardPress
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/utils/state.mjs [app-ssr] (ecmascript)");
+;
+/**
+ * Filter out events that are not "Enter" keys.
+ */ function filterEvents(callback) {
+    return (event)=>{
+        if (event.key !== "Enter") return;
+        callback(event);
+    };
+}
+function firePointerEvent(target, type) {
+    target.dispatchEvent(new PointerEvent("pointer" + type, {
+        isPrimary: true,
+        bubbles: true
+    }));
+}
+const enableKeyboardPress = (focusEvent, eventOptions)=>{
+    const element = focusEvent.currentTarget;
+    if (!element) return;
+    const handleKeydown = filterEvents(()=>{
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isPressing"].has(element)) return;
+        firePointerEvent(element, "down");
+        const handleKeyup = filterEvents(()=>{
+            firePointerEvent(element, "up");
+        });
+        const handleBlur = ()=>firePointerEvent(element, "cancel");
+        element.addEventListener("keyup", handleKeyup, eventOptions);
+        element.addEventListener("blur", handleBlur, eventOptions);
+    });
+    element.addEventListener("keydown", handleKeydown, eventOptions);
+    /**
+     * Add an event listener that fires on blur to remove the keydown events.
+     */ element.addEventListener("blur", ()=>element.removeEventListener("keydown", handleKeydown), eventOptions);
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "press",
+    ()=>press
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$html$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/is-html-element.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$drag$2f$state$2f$is$2d$active$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/drag/state/is-active.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$is$2d$node$2d$or$2d$child$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/is-node-or-child.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$is$2d$primary$2d$pointer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/is-primary-pointer.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$setup$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/utils/setup.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$is$2d$keyboard$2d$accessible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/utils/is-keyboard-accessible.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$keyboard$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/utils/keyboard.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/utils/state.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+/**
+ * Filter out events that are not primary pointer events, or are triggering
+ * while a Motion gesture is active.
+ */ function isValidPressEvent(event) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$is$2d$primary$2d$pointer$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isPrimaryPointer"])(event) && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$drag$2f$state$2f$is$2d$active$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isDragActive"])();
+}
+/**
+ * Create a press gesture.
+ *
+ * Press is different to `"pointerdown"`, `"pointerup"` in that it
+ * automatically filters out secondary pointer events like right
+ * click and multitouch.
+ *
+ * It also adds accessibility support for keyboards, where
+ * an element with a press gesture will receive focus and
+ *  trigger on Enter `"keydown"` and `"keyup"` events.
+ *
+ * This is different to a browser's `"click"` event, which does
+ * respond to keyboards but only for the `"click"` itself, rather
+ * than the press start and end/cancel. The element also needs
+ * to be focusable for this to work, whereas a press gesture will
+ * make an element focusable by default.
+ *
+ * @public
+ */ function press(targetOrSelector, onPressStart, options = {}) {
+    const [targets, eventOptions, cancelEvents] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$setup$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setupGesture"])(targetOrSelector, options);
+    const startPress = (startEvent)=>{
+        const target = startEvent.currentTarget;
+        if (!isValidPressEvent(startEvent)) return;
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isPressing"].add(target);
+        const onPressEnd = onPressStart(target, startEvent);
+        const onPointerEnd = (endEvent, success)=>{
+            window.removeEventListener("pointerup", onPointerUp);
+            window.removeEventListener("pointercancel", onPointerCancel);
+            if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isPressing"].has(target)) {
+                __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isPressing"].delete(target);
+            }
+            if (!isValidPressEvent(endEvent)) {
+                return;
+            }
+            if (typeof onPressEnd === "function") {
+                onPressEnd(endEvent, {
+                    success
+                });
+            }
+        };
+        const onPointerUp = (upEvent)=>{
+            onPointerEnd(upEvent, target === window || target === document || options.useGlobalTarget || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$is$2d$node$2d$or$2d$child$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isNodeOrChild"])(target, upEvent.target));
+        };
+        const onPointerCancel = (cancelEvent)=>{
+            onPointerEnd(cancelEvent, false);
+        };
+        window.addEventListener("pointerup", onPointerUp, eventOptions);
+        window.addEventListener("pointercancel", onPointerCancel, eventOptions);
+    };
+    targets.forEach((target)=>{
+        const pointerDownTarget = options.useGlobalTarget ? window : target;
+        pointerDownTarget.addEventListener("pointerdown", startPress, eventOptions);
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$html$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isHTMLElement"])(target)) {
+            target.addEventListener("focus", (event)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$keyboard$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["enableKeyboardPress"])(event, eventOptions));
+            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$is$2d$keyboard$2d$accessible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isElementKeyboardAccessible"])(target) && !target.hasAttribute("tabindex")) {
+                target.tabIndex = 0;
+            }
+        }
+    });
+    return cancelEvents;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/gestures/press.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "PressGesture",
+    ()=>PressGesture
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/gestures/press/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$events$2f$event$2d$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/events/event-info.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/Feature.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function handlePressEvent(node, event, lifecycle) {
+    const { props } = node;
+    if (node.current instanceof HTMLButtonElement && node.current.disabled) {
+        return;
+    }
+    if (node.animationState && props.whileTap) {
+        node.animationState.setActive("whileTap", lifecycle === "Start");
+    }
+    const eventName = "onTap" + (lifecycle === "End" ? "" : lifecycle);
+    const callback = props[eventName];
+    if (callback) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].postRender(()=>callback(event, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$events$2f$event$2d$info$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["extractEventInfo"])(event)));
+    }
+}
+class PressGesture extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Feature"] {
+    mount() {
+        const { current } = this.node;
+        if (!current) return;
+        this.unmount = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["press"])(current, (_element, startEvent)=>{
+            handlePressEvent(this.node, startEvent, "Start");
+            return (endEvent, { success })=>handlePressEvent(this.node, endEvent, success ? "End" : "Cancel");
+        }, {
+            useGlobalTarget: this.node.props.globalTapTarget
+        });
+    }
+    unmount() {}
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Map an IntersectionHandler callback to an element. We only ever make one handler for one
+ * element, so even though these handlers might all be triggered by different
+ * observers, we can keep them in the same map.
+ */ __turbopack_context__.s([
+    "observeIntersection",
+    ()=>observeIntersection
+]);
+const observerCallbacks = new WeakMap();
+/**
+ * Multiple observers can be created for multiple element/document roots. Each with
+ * different settings. So here we store dictionaries of observers to each root,
+ * using serialised settings (threshold/margin) as lookup keys.
+ */ const observers = new WeakMap();
+const fireObserverCallback = (entry)=>{
+    const callback = observerCallbacks.get(entry.target);
+    callback && callback(entry);
+};
+const fireAllObserverCallbacks = (entries)=>{
+    entries.forEach(fireObserverCallback);
+};
+function initIntersectionObserver({ root, ...options }) {
+    const lookupRoot = root || document;
+    /**
+     * If we don't have an observer lookup map for this root, create one.
+     */ if (!observers.has(lookupRoot)) {
+        observers.set(lookupRoot, {});
+    }
+    const rootObservers = observers.get(lookupRoot);
+    const key = JSON.stringify(options);
+    /**
+     * If we don't have an observer for this combination of root and settings,
+     * create one.
+     */ if (!rootObservers[key]) {
+        rootObservers[key] = new IntersectionObserver(fireAllObserverCallbacks, {
+            root,
+            ...options
+        });
+    }
+    return rootObservers[key];
+}
+function observeIntersection(element, options, callback) {
+    const rootInteresectionObserver = initIntersectionObserver(options);
+    observerCallbacks.set(element, callback);
+    rootInteresectionObserver.observe(element);
+    return ()=>{
+        observerCallbacks.delete(element);
+        rootInteresectionObserver.unobserve(element);
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "InViewFeature",
+    ()=>InViewFeature
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/Feature.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$viewport$2f$observers$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/viewport/observers.mjs [app-ssr] (ecmascript)");
+;
+;
+const thresholdNames = {
+    some: 0,
+    all: 1
+};
+class InViewFeature extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$Feature$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Feature"] {
+    constructor(){
+        super(...arguments);
+        this.hasEnteredView = false;
+        this.isInView = false;
+    }
+    startObserver() {
+        this.unmount();
+        const { viewport = {} } = this.node.getProps();
+        const { root, margin: rootMargin, amount = "some", once } = viewport;
+        const options = {
+            root: root ? root.current : undefined,
+            rootMargin,
+            threshold: typeof amount === "number" ? amount : thresholdNames[amount]
+        };
+        const onIntersectionUpdate = (entry)=>{
+            const { isIntersecting } = entry;
+            /**
+             * If there's been no change in the viewport state, early return.
+             */ if (this.isInView === isIntersecting) return;
+            this.isInView = isIntersecting;
+            /**
+             * Handle hasEnteredView. If this is only meant to run once, and
+             * element isn't visible, early return. Otherwise set hasEnteredView to true.
+             */ if (once && !isIntersecting && this.hasEnteredView) {
+                return;
+            } else if (isIntersecting) {
+                this.hasEnteredView = true;
+            }
+            if (this.node.animationState) {
+                this.node.animationState.setActive("whileInView", isIntersecting);
+            }
+            /**
+             * Use the latest committed props rather than the ones in scope
+             * when this observer is created
+             */ const { onViewportEnter, onViewportLeave } = this.node.getProps();
+            const callback = isIntersecting ? onViewportEnter : onViewportLeave;
+            callback && callback(entry);
+        };
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$viewport$2f$observers$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["observeIntersection"])(this.node.current, options, onIntersectionUpdate);
+    }
+    mount() {
+        this.startObserver();
+    }
+    update() {
+        if (typeof IntersectionObserver === "undefined") return;
+        const { props, prevProps } = this.node;
+        const hasOptionsChanged = [
+            "amount",
+            "margin",
+            "root"
+        ].some(hasViewportOptionChanged(props, prevProps));
+        if (hasOptionsChanged) {
+            this.startObserver();
+        }
+    }
+    unmount() {}
+}
+function hasViewportOptionChanged({ viewport = {} }, { viewport: prevViewport = {} } = {}) {
+    return (name)=>viewport[name] !== prevViewport[name];
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/gestures.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "gestureAnimations",
+    ()=>gestureAnimations
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$gestures$2f$hover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/gestures/hover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$gestures$2f$focus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/gestures/focus.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$gestures$2f$press$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/gestures/press.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$viewport$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/viewport/index.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const gestureAnimations = {
+    inView: {
+        Feature: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$viewport$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["InViewFeature"]
+    },
+    tap: {
+        Feature: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$gestures$2f$press$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PressGesture"]
+    },
+    focus: {
+        Feature: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$gestures$2f$focus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FocusGesture"]
+    },
+    hover: {
+        Feature: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$gestures$2f$hover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["HoverGesture"]
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/geometry/conversion.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Bounding boxes tend to be defined as top, left, right, bottom. For various operations
+ * it's easier to consider each axis individually. This function returns a bounding box
+ * as a map of single-axis min/max values.
+ */ __turbopack_context__.s([
+    "convertBoundingBoxToBox",
+    ()=>convertBoundingBoxToBox,
+    "convertBoxToBoundingBox",
+    ()=>convertBoxToBoundingBox,
+    "transformBoxPoints",
+    ()=>transformBoxPoints
+]);
+function convertBoundingBoxToBox({ top, left, right, bottom }) {
+    return {
+        x: {
+            min: left,
+            max: right
+        },
+        y: {
+            min: top,
+            max: bottom
+        }
+    };
+}
+function convertBoxToBoundingBox({ x, y }) {
+    return {
+        top: y.min,
+        right: x.max,
+        bottom: y.max,
+        left: x.min
+    };
+}
+/**
+ * Applies a TransformPoint function to a bounding box. TransformPoint is usually a function
+ * provided by Framer to allow measured points to be corrected for device scaling. This is used
+ * when measuring DOM elements and DOM event points.
+ */ function transformBoxPoints(point, transformPoint) {
+    if (!transformPoint) return point;
+    const topLeft = transformPoint({
+        x: point.left,
+        y: point.top
+    });
+    const bottomRight = transformPoint({
+        x: point.right,
+        y: point.bottom
+    });
+    return {
+        top: topLeft.y,
+        left: topLeft.x,
+        bottom: bottomRight.y,
+        right: bottomRight.x
+    };
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/utils/has-transform.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "has2DTranslate",
+    ()=>has2DTranslate,
+    "hasScale",
+    ()=>hasScale,
+    "hasTransform",
+    ()=>hasTransform
+]);
+function isIdentityScale(scale) {
+    return scale === undefined || scale === 1;
+}
+function hasScale({ scale, scaleX, scaleY }) {
+    return !isIdentityScale(scale) || !isIdentityScale(scaleX) || !isIdentityScale(scaleY);
+}
+function hasTransform(values) {
+    return hasScale(values) || has2DTranslate(values) || values.z || values.rotate || values.rotateX || values.rotateY || values.skewX || values.skewY;
+}
+function has2DTranslate(values) {
+    return is2DTranslate(values.x) || is2DTranslate(values.y);
+}
+function is2DTranslate(value) {
+    return value && value !== "0%";
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/geometry/delta-apply.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "applyAxisDelta",
+    ()=>applyAxisDelta,
+    "applyBoxDelta",
+    ()=>applyBoxDelta,
+    "applyPointDelta",
+    ()=>applyPointDelta,
+    "applyTreeDeltas",
+    ()=>applyTreeDeltas,
+    "scalePoint",
+    ()=>scalePoint,
+    "transformAxis",
+    ()=>transformAxis,
+    "transformBox",
+    ()=>transformBox,
+    "translateAxis",
+    ()=>translateAxis
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$utils$2f$has$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/utils/has-transform.mjs [app-ssr] (ecmascript)");
+;
+;
+/**
+ * Scales a point based on a factor and an originPoint
+ */ function scalePoint(point, scale, originPoint) {
+    const distanceFromOrigin = point - originPoint;
+    const scaled = scale * distanceFromOrigin;
+    return originPoint + scaled;
+}
+/**
+ * Applies a translate/scale delta to a point
+ */ function applyPointDelta(point, translate, scale, originPoint, boxScale) {
+    if (boxScale !== undefined) {
+        point = scalePoint(point, boxScale, originPoint);
+    }
+    return scalePoint(point, scale, originPoint) + translate;
+}
+/**
+ * Applies a translate/scale delta to an axis
+ */ function applyAxisDelta(axis, translate = 0, scale = 1, originPoint, boxScale) {
+    axis.min = applyPointDelta(axis.min, translate, scale, originPoint, boxScale);
+    axis.max = applyPointDelta(axis.max, translate, scale, originPoint, boxScale);
+}
+/**
+ * Applies a translate/scale delta to a box
+ */ function applyBoxDelta(box, { x, y }) {
+    applyAxisDelta(box.x, x.translate, x.scale, x.originPoint);
+    applyAxisDelta(box.y, y.translate, y.scale, y.originPoint);
+}
+const TREE_SCALE_SNAP_MIN = 0.999999999999;
+const TREE_SCALE_SNAP_MAX = 1.0000000000001;
+/**
+ * Apply a tree of deltas to a box. We do this to calculate the effect of all the transforms
+ * in a tree upon our box before then calculating how to project it into our desired viewport-relative box
+ *
+ * This is the final nested loop within updateLayoutDelta for future refactoring
+ */ function applyTreeDeltas(box, treeScale, treePath, isSharedTransition = false) {
+    const treeLength = treePath.length;
+    if (!treeLength) return;
+    // Reset the treeScale
+    treeScale.x = treeScale.y = 1;
+    let node;
+    let delta;
+    for(let i = 0; i < treeLength; i++){
+        node = treePath[i];
+        delta = node.projectionDelta;
+        /**
+         * TODO: Prefer to remove this, but currently we have motion components with
+         * display: contents in Framer.
+         */ const { visualElement } = node.options;
+        if (visualElement && visualElement.props.style && visualElement.props.style.display === "contents") {
+            continue;
+        }
+        if (isSharedTransition && node.options.layoutScroll && node.scroll && node !== node.root) {
+            transformBox(box, {
+                x: -node.scroll.offset.x,
+                y: -node.scroll.offset.y
+            });
+        }
+        if (delta) {
+            // Incoporate each ancestor's scale into a culmulative treeScale for this component
+            treeScale.x *= delta.x.scale;
+            treeScale.y *= delta.y.scale;
+            // Apply each ancestor's calculated delta into this component's recorded layout box
+            applyBoxDelta(box, delta);
+        }
+        if (isSharedTransition && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$utils$2f$has$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hasTransform"])(node.latestValues)) {
+            transformBox(box, node.latestValues);
+        }
+    }
+    /**
+     * Snap tree scale back to 1 if it's within a non-perceivable threshold.
+     * This will help reduce useless scales getting rendered.
+     */ if (treeScale.x < TREE_SCALE_SNAP_MAX && treeScale.x > TREE_SCALE_SNAP_MIN) {
+        treeScale.x = 1.0;
+    }
+    if (treeScale.y < TREE_SCALE_SNAP_MAX && treeScale.y > TREE_SCALE_SNAP_MIN) {
+        treeScale.y = 1.0;
+    }
+}
+function translateAxis(axis, distance) {
+    axis.min = axis.min + distance;
+    axis.max = axis.max + distance;
+}
+/**
+ * Apply a transform to an axis from the latest resolved motion values.
+ * This function basically acts as a bridge between a flat motion value map
+ * and applyAxisDelta
+ */ function transformAxis(axis, axisTranslate, axisScale, boxScale, axisOrigin = 0.5) {
+    const originPoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mixNumber"])(axis.min, axis.max, axisOrigin);
+    // Apply the axis delta to the final axis
+    applyAxisDelta(axis, axisTranslate, axisScale, originPoint, boxScale);
+}
+/**
+ * Apply a transform to a box from the latest resolved motion values.
+ */ function transformBox(box, transform) {
+    transformAxis(box.x, transform.x, transform.scaleX, transform.scale, transform.originX);
+    transformAxis(box.y, transform.y, transform.scaleY, transform.scale, transform.originY);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/utils/measure.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "measurePageBox",
+    ()=>measurePageBox,
+    "measureViewportBox",
+    ()=>measureViewportBox
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/geometry/conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$delta$2d$apply$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/geometry/delta-apply.mjs [app-ssr] (ecmascript)");
+;
+;
+function measureViewportBox(instance, transformPoint) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["convertBoundingBoxToBox"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformBoxPoints"])(instance.getBoundingClientRect(), transformPoint));
+}
+function measurePageBox(element, rootProjectionNode, transformPagePoint) {
+    const viewportBox = measureViewportBox(element, transformPagePoint);
+    const { scroll } = rootProjectionNode;
+    if (scroll) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$delta$2d$apply$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["translateAxis"])(viewportBox.x, scroll.offset.x);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$delta$2d$apply$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["translateAxis"])(viewportBox.y, scroll.offset.y);
+    }
+    return viewportBox;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/auto.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * ValueType for "auto"
+ */ __turbopack_context__.s([
+    "auto",
+    ()=>auto
+]);
+const auto = {
+    test: (v)=>v === "auto",
+    parse: (v)=>v
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/test.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Tests a provided value against a ValueType
+ */ __turbopack_context__.s([
+    "testValueType",
+    ()=>testValueType
+]);
+const testValueType = (v)=>(type)=>type.test(v);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/dimensions.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "dimensionValueTypes",
+    ()=>dimensionValueTypes,
+    "findDimensionValueType",
+    ()=>findDimensionValueType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$auto$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/auto.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$test$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/test.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+/**
+ * A list of value types commonly used for dimensions
+ */ const dimensionValueTypes = [
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["number"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["percent"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["vw"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["vh"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$auto$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auto"]
+];
+/**
+ * Tests a dimensional value against the list of dimension ValueTypes
+ */ const findDimensionValueType = (v)=>dimensionValueTypes.find((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$test$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["testValueType"])(v));
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-numerical-string.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Check if value is a numerical string, ie a string that is purely a number eg "100" or "-100.1"
+ */ __turbopack_context__.s([
+    "isNumericalString",
+    ()=>isNumericalString
+]);
+const isNumericalString = (v)=>/^-?(?:\d+(?:\.\d+)?|\.\d+)$/u.test(v);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/css-variables-conversion.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getVariableValue",
+    ()=>getVariableValue,
+    "parseCSSVariable",
+    ()=>parseCSSVariable
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$numerical$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-numerical-string.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-ssr] (ecmascript)");
+;
+;
+/**
+ * Parse Framer's special CSS variable format into a CSS token and a fallback.
+ *
+ * ```
+ * `var(--foo, #fff)` => [`--foo`, '#fff']
+ * ```
+ *
+ * @param current
+ */ const splitCSSVariableRegex = // eslint-disable-next-line redos-detector/no-unsafe-regex -- false positive, as it can match a lot of words
+/^var\(--(?:([\w-]+)|([\w-]+), ?([a-zA-Z\d ()%#.,-]+))\)/u;
+function parseCSSVariable(current) {
+    const match = splitCSSVariableRegex.exec(current);
+    if (!match) return [
+        , 
+    ];
+    const [, token1, token2, fallback] = match;
+    return [
+        `--${token1 ?? token2}`,
+        fallback
+    ];
+}
+const maxDepth = 4;
+function getVariableValue(current, element, depth = 1) {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(depth <= maxDepth, `Max CSS variable fallback depth detected in property "${current}". This may indicate a circular fallback dependency.`, "max-css-var-depth");
+    const [token, fallback] = parseCSSVariable(current);
+    // No CSS variable detected
+    if (!token) return;
+    // Attempt to read this CSS variable off the element
+    const resolved = window.getComputedStyle(element).getPropertyValue(token);
+    if (resolved) {
+        const trimmed = resolved.trim();
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$numerical$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isNumericalString"])(trimmed) ? parseFloat(trimmed) : trimmed;
+    }
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isCSSVariableToken"])(fallback) ? getVariableValue(fallback, element, depth + 1) : fallback;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-zero-value-string.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Check if the value is a zero value string like "0px" or "0%"
+ */ __turbopack_context__.s([
+    "isZeroValueString",
+    ()=>isZeroValueString
+]);
+const isZeroValueString = (v)=>/^0[^.\s]+$/u.test(v);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/is-none.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isNone",
+    ()=>isNone
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$zero$2d$value$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-zero-value-string.mjs [app-ssr] (ecmascript)");
+;
+function isNone(value) {
+    if (typeof value === "number") {
+        return value === 0;
+    } else if (value !== null) {
+        return value === "none" || value === "0" || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$zero$2d$value$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isZeroValueString"])(value);
+    } else {
+        return true;
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/filter.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "filter",
+    ()=>filter
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/float-regex.mjs [app-ssr] (ecmascript)");
+;
+;
+/**
+ * Properties that should default to 1 or 100%
+ */ const maxDefaults = new Set([
+    "brightness",
+    "contrast",
+    "saturate",
+    "opacity"
+]);
+function applyDefaultFilter(v) {
+    const [name, value] = v.slice(0, -1).split("(");
+    if (name === "drop-shadow") return v;
+    const [number] = value.match(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["floatRegex"]) || [];
+    if (!number) return v;
+    const unit = value.replace(number, "");
+    let defaultValue = maxDefaults.has(name) ? 1 : 0;
+    if (number !== value) defaultValue *= 100;
+    return name + "(" + defaultValue + unit + ")";
+}
+const functionRegex = /\b([a-z-]*)\(.*?\)/gu;
+const filter = {
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["complex"],
+    getAnimatableNone: (v)=>{
+        const functions = v.match(functionRegex);
+        return functions ? functions.map(applyDefaultFilter).join(" ") : v;
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/int.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "int",
+    ()=>int
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)");
+;
+const int = {
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["number"],
+    transform: Math.round
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/transform.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "transformValueTypes",
+    ()=>transformValueTypes
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-ssr] (ecmascript)");
+;
+;
+const transformValueTypes = {
+    rotate: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    rotateX: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    rotateY: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    rotateZ: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    scale: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scale"],
+    scaleX: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scale"],
+    scaleY: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scale"],
+    scaleZ: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scale"],
+    skew: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    skewX: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    skewY: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["degrees"],
+    distance: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    translateX: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    translateY: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    translateZ: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    x: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    y: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    z: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    perspective: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    transformPerspective: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    opacity: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"],
+    originX: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["progressPercentage"],
+    originY: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["progressPercentage"],
+    originZ: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"]
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/number.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "numberValueTypes",
+    ()=>numberValueTypes
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$int$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/int.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/transform.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const numberValueTypes = {
+    // Border props
+    borderWidth: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderTopWidth: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderRightWidth: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderBottomWidth: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderLeftWidth: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderRadius: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    radius: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderTopLeftRadius: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderTopRightRadius: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderBottomRightRadius: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    borderBottomLeftRadius: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    // Positioning props
+    width: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    maxWidth: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    height: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    maxHeight: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    top: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    right: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    bottom: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    left: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    // Spacing props
+    padding: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    paddingTop: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    paddingRight: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    paddingBottom: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    paddingLeft: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    margin: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    marginTop: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    marginRight: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    marginBottom: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    marginLeft: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    // Misc
+    backgroundPositionX: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    backgroundPositionY: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"],
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformValueTypes"],
+    zIndex: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$int$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["int"],
+    // SVG
+    fillOpacity: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"],
+    strokeOpacity: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["alpha"],
+    numOctaves: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$int$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["int"]
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/defaults.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "defaultValueTypes",
+    ()=>defaultValueTypes,
+    "getDefaultValueType",
+    ()=>getDefaultValueType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$filter$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/filter.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/number.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+/**
+ * A map of default value types for common values
+ */ const defaultValueTypes = {
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["numberValueTypes"],
+    // Color props
+    color: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    backgroundColor: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    outlineColor: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    fill: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    stroke: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    // Border props
+    borderColor: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    borderTopColor: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    borderRightColor: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    borderBottomColor: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    borderLeftColor: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    filter: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$filter$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filter"],
+    WebkitFilter: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$filter$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filter"]
+};
+/**
+ * Gets the default ValueType for the provided value key
+ */ const getDefaultValueType = (key)=>defaultValueTypes[key];
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/animatable-none.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getAnimatableNone",
+    ()=>getAnimatableNone
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$filter$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/filter.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/defaults.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function getAnimatableNone(key, value) {
+    let defaultValueType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDefaultValueType"])(key);
+    if (defaultValueType !== __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$filter$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filter"]) defaultValueType = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["complex"];
+    // If value is not recognised as animatable, ie "none", create an animatable version origin based on the target
+    return defaultValueType.getAnimatableNone ? defaultValueType.getAnimatableNone(value) : undefined;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/make-none-animatable.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "makeNoneKeyframesAnimatable",
+    ()=>makeNoneKeyframesAnimatable
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$animatable$2d$none$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/animatable-none.mjs [app-ssr] (ecmascript)");
+;
+;
+/**
+ * If we encounter keyframes like "none" or "0" and we also have keyframes like
+ * "#fff" or "200px 200px" we want to find a keyframe to serve as a template for
+ * the "none" keyframes. In this case "#fff" or "200px 200px" - then these get turned into
+ * zero equivalents, i.e. "#fff0" or "0px 0px".
+ */ const invalidTemplates = new Set([
+    "auto",
+    "none",
+    "0"
+]);
+function makeNoneKeyframesAnimatable(unresolvedKeyframes, noneKeyframeIndexes, name) {
+    let i = 0;
+    let animatableTemplate = undefined;
+    while(i < unresolvedKeyframes.length && !animatableTemplate){
+        const keyframe = unresolvedKeyframes[i];
+        if (typeof keyframe === "string" && !invalidTemplates.has(keyframe) && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["analyseComplexValue"])(keyframe).values.length) {
+            animatableTemplate = unresolvedKeyframes[i];
+        }
+        i++;
+    }
+    if (animatableTemplate && name) {
+        for (const noneIndex of noneKeyframeIndexes){
+            unresolvedKeyframes[noneIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$animatable$2d$none$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAnimatableNone"])(name, animatableTemplate);
+        }
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "DOMKeyframesResolver",
+    ()=>DOMKeyframesResolver
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$position$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-position.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$dimensions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/dimensions.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$css$2d$variables$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/css-variables-conversion.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$is$2d$none$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/is-none.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$make$2d$none$2d$animatable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/make-none-animatable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/utils/unit-conversion.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+class DOMKeyframesResolver extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["KeyframeResolver"] {
+    constructor(unresolvedKeyframes, onComplete, name, motionValue, element){
+        super(unresolvedKeyframes, onComplete, name, motionValue, element, true);
+    }
+    readKeyframes() {
+        const { unresolvedKeyframes, element, name } = this;
+        if (!element || !element.current) return;
+        super.readKeyframes();
+        /**
+         * If any keyframe is a CSS variable, we need to find its value by sampling the element
+         */ for(let i = 0; i < unresolvedKeyframes.length; i++){
+            let keyframe = unresolvedKeyframes[i];
+            if (typeof keyframe === "string") {
+                keyframe = keyframe.trim();
+                if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isCSSVariableToken"])(keyframe)) {
+                    const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$css$2d$variables$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getVariableValue"])(keyframe, element.current);
+                    if (resolved !== undefined) {
+                        unresolvedKeyframes[i] = resolved;
+                    }
+                    if (i === unresolvedKeyframes.length - 1) {
+                        this.finalKeyframe = keyframe;
+                    }
+                }
+            }
+        }
+        /**
+         * Resolve "none" values. We do this potentially twice - once before and once after measuring keyframes.
+         * This could be seen as inefficient but it's a trade-off to avoid measurements in more situations, which
+         * have a far bigger performance impact.
+         */ this.resolveNoneKeyframes();
+        /**
+         * Check to see if unit type has changed. If so schedule jobs that will
+         * temporarily set styles to the destination keyframes.
+         * Skip if we have more than two keyframes or this isn't a positional value.
+         * TODO: We can throw if there are multiple keyframes and the value type changes.
+         */ if (!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$position$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["positionalKeys"].has(name) || unresolvedKeyframes.length !== 2) {
+            return;
+        }
+        const [origin, target] = unresolvedKeyframes;
+        const originType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$dimensions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findDimensionValueType"])(origin);
+        const targetType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$dimensions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findDimensionValueType"])(target);
+        /**
+         * Either we don't recognise these value types or we can animate between them.
+         */ if (originType === targetType) return;
+        /**
+         * If both values are numbers or pixels, we can animate between them by
+         * converting them to numbers.
+         */ if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isNumOrPxType"])(originType) && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isNumOrPxType"])(targetType)) {
+            for(let i = 0; i < unresolvedKeyframes.length; i++){
+                const value = unresolvedKeyframes[i];
+                if (typeof value === "string") {
+                    unresolvedKeyframes[i] = parseFloat(value);
+                }
+            }
+        } else if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["positionalValues"][name]) {
+            /**
+             * Else, the only way to resolve this is by measuring the element.
+             */ this.needsMeasurement = true;
+        }
+    }
+    resolveNoneKeyframes() {
+        const { unresolvedKeyframes, name } = this;
+        const noneKeyframeIndexes = [];
+        for(let i = 0; i < unresolvedKeyframes.length; i++){
+            if (unresolvedKeyframes[i] === null || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$is$2d$none$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isNone"])(unresolvedKeyframes[i])) {
+                noneKeyframeIndexes.push(i);
+            }
+        }
+        if (noneKeyframeIndexes.length) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$make$2d$none$2d$animatable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["makeNoneKeyframesAnimatable"])(unresolvedKeyframes, noneKeyframeIndexes, name);
+        }
+    }
+    measureInitialState() {
+        const { element, unresolvedKeyframes, name } = this;
+        if (!element || !element.current) return;
+        if (name === "height") {
+            this.suspendedScrollY = window.pageYOffset;
+        }
+        this.measuredOrigin = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["positionalValues"][name](element.measureViewportBox(), window.getComputedStyle(element.current));
+        unresolvedKeyframes[0] = this.measuredOrigin;
+        // Set final key frame to measure after next render
+        const measureKeyframe = unresolvedKeyframes[unresolvedKeyframes.length - 1];
+        if (measureKeyframe !== undefined) {
+            element.getValue(name, measureKeyframe).jump(measureKeyframe, false);
+        }
+    }
+    measureEndState() {
+        const { element, name, unresolvedKeyframes } = this;
+        if (!element || !element.current) return;
+        const value = element.getValue(name);
+        value && value.jump(this.measuredOrigin, false);
+        const finalKeyframeIndex = unresolvedKeyframes.length - 1;
+        const finalKeyframe = unresolvedKeyframes[finalKeyframeIndex];
+        unresolvedKeyframes[finalKeyframeIndex] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["positionalValues"][name](element.measureViewportBox(), window.getComputedStyle(element.current));
+        if (finalKeyframe !== null && this.finalKeyframe === undefined) {
+            this.finalKeyframe = finalKeyframe;
+        }
+        // If we removed transform values, reapply them before the next render
+        if (this.removedTransforms?.length) {
+            this.removedTransforms.forEach(([unsetTransformName, unsetTransformValue])=>{
+                element.getValue(unsetTransformName).set(unsetTransformValue);
+            });
+        }
+        this.resolveNoneKeyframes();
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/find.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "findValueType",
+    ()=>findValueType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$dimensions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/dimensions.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$test$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/test.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+/**
+ * A list of all ValueTypes
+ */ const valueTypes = [
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$dimensions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dimensionValueTypes"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["color"],
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["complex"]
+];
+/**
+ * Tests a value against the list of ValueTypes
+ */ const findValueType = (v)=>valueTypes.find((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$test$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["testValueType"])(v));
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/microtask.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cancelMicrotask",
+    ()=>cancelMicrotask,
+    "microtask",
+    ()=>microtask
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$batcher$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/batcher.mjs [app-ssr] (ecmascript)");
+;
+const { schedule: microtask, cancel: cancelMicrotask } = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$batcher$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createRenderBatcher"])(queueMicrotask, false);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/geometry/models.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createAxis",
+    ()=>createAxis,
+    "createAxisDelta",
+    ()=>createAxisDelta,
+    "createBox",
+    ()=>createBox,
+    "createDelta",
+    ()=>createDelta
+]);
+const createAxisDelta = ()=>({
+        translate: 0,
+        scale: 1,
+        origin: 0,
+        originPoint: 0
+    });
+const createDelta = ()=>({
+        x: createAxisDelta(),
+        y: createAxisDelta()
+    });
+const createAxis = ()=>({
+        min: 0,
+        max: 0
+    });
+const createBox = ()=>({
+        x: createAxis(),
+        y: createAxis()
+    });
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/is-browser.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isBrowser",
+    ()=>isBrowser
+]);
+const isBrowser = ("TURBOPACK compile-time value", "undefined") !== "undefined";
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/reduced-motion/state.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// Does this device prefer reduced motion? Returns `null` server-side.
+__turbopack_context__.s([
+    "hasReducedMotionListener",
+    ()=>hasReducedMotionListener,
+    "prefersReducedMotion",
+    ()=>prefersReducedMotion
+]);
+const prefersReducedMotion = {
+    current: null
+};
+const hasReducedMotionListener = {
+    current: false
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/reduced-motion/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "initPrefersReducedMotion",
+    ()=>initPrefersReducedMotion
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$is$2d$browser$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/is-browser.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/reduced-motion/state.mjs [app-ssr] (ecmascript)");
+;
+;
+function initPrefersReducedMotion() {
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hasReducedMotionListener"].current = true;
+    if (!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$is$2d$browser$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isBrowser"]) return;
+    if (window.matchMedia) {
+        const motionMediaQuery = window.matchMedia("(prefers-reduced-motion)");
+        const setReducedMotionPreferences = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["prefersReducedMotion"].current = motionMediaQuery.matches;
+        motionMediaQuery.addEventListener("change", setReducedMotionPreferences);
+        setReducedMotionPreferences();
+    } else {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["prefersReducedMotion"].current = false;
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/store.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "visualElementStore",
+    ()=>visualElementStore
+]);
+const visualElementStore = new WeakMap();
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/is-controlling-variants.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isControllingVariants",
+    ()=>isControllingVariants,
+    "isVariantNode",
+    ()=>isVariantNode
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/animation/utils/is-animation-controls.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/is-variant-label.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/variant-props.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function isControllingVariants(props) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animation$2d$controls$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAnimationControls"])(props.animate) || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["variantProps"].some((name)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isVariantLabel"])(props[name]));
+}
+function isVariantNode(props) {
+    return Boolean(isControllingVariants(props) || props.variants);
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/motion-values.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "updateMotionValuesFromProps",
+    ()=>updateMotionValuesFromProps
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/index.mjs [app-ssr] (ecmascript)");
+;
+function updateMotionValuesFromProps(element, next, prev) {
+    for(const key in next){
+        const nextValue = next[key];
+        const prevValue = prev[key];
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(nextValue)) {
+            /**
+             * If this is a motion value found in props or style, we want to add it
+             * to our visual element's motion value map.
+             */ element.addValue(key, nextValue);
+        } else if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(prevValue)) {
+            /**
+             * If we're swapping from a motion value to a static value,
+             * create a new motion value from that
+             */ element.addValue(key, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(nextValue, {
+                owner: element
+            }));
+        } else if (prevValue !== nextValue) {
+            /**
+             * If this is a flat value that has changed, update the motion value
+             * or create one if it doesn't exist. We only want to do this if we're
+             * not handling the value with our animation state.
+             */ if (element.hasValue(key)) {
+                const existingValue = element.getValue(key);
+                if (existingValue.liveStyle === true) {
+                    existingValue.jump(nextValue);
+                } else if (!existingValue.hasAnimated) {
+                    existingValue.set(nextValue);
+                }
+            } else {
+                const latestValue = element.getStaticValue(key);
+                element.addValue(key, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(latestValue !== undefined ? latestValue : nextValue, {
+                    owner: element
+                }));
+            }
+        }
+    }
+    // Handle removed values
+    for(const key in prev){
+        if (next[key] === undefined) element.removeValue(key);
+    }
+    return next;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/VisualElement.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "VisualElement",
+    ()=>VisualElement
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$find$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/find.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$animatable$2d$none$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/animatable-none.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$microtask$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/frameloop/microtask.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/warn-once.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$numerical$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-numerical-string.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$zero$2d$value$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/is-zero-value-string.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$subscription$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-utils/dist/es/subscription-manager.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$definitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/definitions.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/geometry/models.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/reduced-motion/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/utils/reduced-motion/state.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$store$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/store.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$controlling$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/is-controlling-variants.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/motion-values.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/utils/resolve-variants.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const propEventHandlers = [
+    "AnimationStart",
+    "AnimationComplete",
+    "Update",
+    "BeforeLayoutMeasure",
+    "LayoutMeasure",
+    "LayoutAnimationStart",
+    "LayoutAnimationComplete"
+];
+/**
+ * A VisualElement is an imperative abstraction around UI elements such as
+ * HTMLElement, SVGElement, Three.Object3D etc.
+ */ class VisualElement {
+    /**
+     * This method takes React props and returns found MotionValues. For example, HTML
+     * MotionValues will be found within the style prop, whereas for Three.js within attribute arrays.
+     *
+     * This isn't an abstract method as it needs calling in the constructor, but it is
+     * intended to be one.
+     */ scrapeMotionValuesFromProps(_props, _prevProps, _visualElement) {
+        return {};
+    }
+    constructor({ parent, props, presenceContext, reducedMotionConfig, blockInitialAnimation, visualState }, options = {}){
+        /**
+         * A reference to the current underlying Instance, e.g. a HTMLElement
+         * or Three.Mesh etc.
+         */ this.current = null;
+        /**
+         * A set containing references to this VisualElement's children.
+         */ this.children = new Set();
+        /**
+         * Determine what role this visual element should take in the variant tree.
+         */ this.isVariantNode = false;
+        this.isControllingVariants = false;
+        /**
+         * Decides whether this VisualElement should animate in reduced motion
+         * mode.
+         *
+         * TODO: This is currently set on every individual VisualElement but feels
+         * like it could be set globally.
+         */ this.shouldReduceMotion = null;
+        /**
+         * A map of all motion values attached to this visual element. Motion
+         * values are source of truth for any given animated value. A motion
+         * value might be provided externally by the component via props.
+         */ this.values = new Map();
+        this.KeyframeResolver = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["KeyframeResolver"];
+        /**
+         * Cleanup functions for active features (hover/tap/exit etc)
+         */ this.features = {};
+        /**
+         * A map of every subscription that binds the provided or generated
+         * motion values onChange listeners to this visual element.
+         */ this.valueSubscriptions = new Map();
+        /**
+         * A reference to the previously-provided motion values as returned
+         * from scrapeMotionValuesFromProps. We use the keys in here to determine
+         * if any motion values need to be removed after props are updated.
+         */ this.prevMotionValues = {};
+        /**
+         * An object containing a SubscriptionManager for each active event.
+         */ this.events = {};
+        /**
+         * An object containing an unsubscribe function for each prop event subscription.
+         * For example, every "Update" event can have multiple subscribers via
+         * VisualElement.on(), but only one of those can be defined via the onUpdate prop.
+         */ this.propEventSubscriptions = {};
+        this.notifyUpdate = ()=>this.notify("Update", this.latestValues);
+        this.render = ()=>{
+            if (!this.current) return;
+            this.triggerBuild();
+            this.renderInstance(this.current, this.renderState, this.props.style, this.projection);
+        };
+        this.renderScheduledAt = 0.0;
+        this.scheduleRender = ()=>{
+            const now = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["time"].now();
+            if (this.renderScheduledAt < now) {
+                this.renderScheduledAt = now;
+                __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].render(this.render, false, true);
+            }
+        };
+        const { latestValues, renderState } = visualState;
+        this.latestValues = latestValues;
+        this.baseTarget = {
+            ...latestValues
+        };
+        this.initialValues = props.initial ? {
+            ...latestValues
+        } : {};
+        this.renderState = renderState;
+        this.parent = parent;
+        this.props = props;
+        this.presenceContext = presenceContext;
+        this.depth = parent ? parent.depth + 1 : 0;
+        this.reducedMotionConfig = reducedMotionConfig;
+        this.options = options;
+        this.blockInitialAnimation = Boolean(blockInitialAnimation);
+        this.isControllingVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$controlling$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isControllingVariants"])(props);
+        this.isVariantNode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$controlling$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isVariantNode"])(props);
+        if (this.isVariantNode) {
+            this.variantChildren = new Set();
+        }
+        this.manuallyAnimateOnMount = Boolean(parent && parent.current);
+        /**
+         * Any motion values that are provided to the element when created
+         * aren't yet bound to the element, as this would technically be impure.
+         * However, we iterate through the motion values and set them to the
+         * initial values for this component.
+         *
+         * TODO: This is impure and we should look at changing this to run on mount.
+         * Doing so will break some tests but this isn't necessarily a breaking change,
+         * more a reflection of the test.
+         */ const { willChange, ...initialMotionValues } = this.scrapeMotionValuesFromProps(props, {}, this);
+        for(const key in initialMotionValues){
+            const value = initialMotionValues[key];
+            if (latestValues[key] !== undefined && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(value)) {
+                value.set(latestValues[key]);
+            }
+        }
+    }
+    mount(instance) {
+        this.current = instance;
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$store$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["visualElementStore"].set(instance, this);
+        if (this.projection && !this.projection.instance) {
+            this.projection.mount(instance);
+        }
+        if (this.parent && this.isVariantNode && !this.isControllingVariants) {
+            this.removeFromVariantTree = this.parent.addVariantChild(this);
+        }
+        this.values.forEach((value, key)=>this.bindToMotionValue(key, value));
+        if (!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hasReducedMotionListener"].current) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["initPrefersReducedMotion"])();
+        }
+        this.shouldReduceMotion = this.reducedMotionConfig === "never" ? false : this.reducedMotionConfig === "always" ? true : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["prefersReducedMotion"].current;
+        if ("TURBOPACK compile-time truthy", 1) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warnOnce"])(this.shouldReduceMotion !== true, "You have Reduced Motion enabled on your device. Animations may not appear as expected.", "reduced-motion-disabled");
+        }
+        this.parent?.addChild(this);
+        this.update(this.props, this.presenceContext);
+    }
+    unmount() {
+        this.projection && this.projection.unmount();
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cancelFrame"])(this.notifyUpdate);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cancelFrame"])(this.render);
+        this.valueSubscriptions.forEach((remove)=>remove());
+        this.valueSubscriptions.clear();
+        this.removeFromVariantTree && this.removeFromVariantTree();
+        this.parent?.removeChild(this);
+        for(const key in this.events){
+            this.events[key].clear();
+        }
+        for(const key in this.features){
+            const feature = this.features[key];
+            if (feature) {
+                feature.unmount();
+                feature.isMounted = false;
+            }
+        }
+        this.current = null;
+    }
+    addChild(child) {
+        this.children.add(child);
+        this.enteringChildren ?? (this.enteringChildren = new Set());
+        this.enteringChildren.add(child);
+    }
+    removeChild(child) {
+        this.children.delete(child);
+        this.enteringChildren && this.enteringChildren.delete(child);
+    }
+    bindToMotionValue(key, value) {
+        if (this.valueSubscriptions.has(key)) {
+            this.valueSubscriptions.get(key)();
+        }
+        const valueIsTransform = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformProps"].has(key);
+        if (valueIsTransform && this.onBindTransform) {
+            this.onBindTransform();
+        }
+        const removeOnChange = value.on("change", (latestValue)=>{
+            this.latestValues[key] = latestValue;
+            this.props.onUpdate && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["frame"].preRender(this.notifyUpdate);
+            if (valueIsTransform && this.projection) {
+                this.projection.isTransformDirty = true;
+            }
+            this.scheduleRender();
+        });
+        let removeSyncCheck;
+        if (window.MotionCheckAppearSync) {
+            removeSyncCheck = window.MotionCheckAppearSync(this, key, value);
+        }
+        this.valueSubscriptions.set(key, ()=>{
+            removeOnChange();
+            if (removeSyncCheck) removeSyncCheck();
+            if (value.owner) value.stop();
+        });
+    }
+    sortNodePosition(other) {
+        /**
+         * If these nodes aren't even of the same type we can't compare their depth.
+         */ if (!this.current || !this.sortInstanceNodePosition || this.type !== other.type) {
+            return 0;
+        }
+        return this.sortInstanceNodePosition(this.current, other.current);
+    }
+    updateFeatures() {
+        let key = "animation";
+        for(key in __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$definitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["featureDefinitions"]){
+            const featureDefinition = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$definitions$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["featureDefinitions"][key];
+            if (!featureDefinition) continue;
+            const { isEnabled, Feature: FeatureConstructor } = featureDefinition;
+            /**
+             * If this feature is enabled but not active, make a new instance.
+             */ if (!this.features[key] && FeatureConstructor && isEnabled(this.props)) {
+                this.features[key] = new FeatureConstructor(this);
+            }
+            /**
+             * If we have a feature, mount or update it.
+             */ if (this.features[key]) {
+                const feature = this.features[key];
+                if (feature.isMounted) {
+                    feature.update();
+                } else {
+                    feature.mount();
+                    feature.isMounted = true;
+                }
+            }
+        }
+    }
+    triggerBuild() {
+        this.build(this.renderState, this.latestValues, this.props);
+    }
+    /**
+     * Measure the current viewport box with or without transforms.
+     * Only measures axis-aligned boxes, rotate and skew must be manually
+     * removed with a re-render to work.
+     */ measureViewportBox() {
+        return this.current ? this.measureInstanceViewportBox(this.current, this.props) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createBox"])();
+    }
+    getStaticValue(key) {
+        return this.latestValues[key];
+    }
+    setStaticValue(key, value) {
+        this.latestValues[key] = value;
+    }
+    /**
+     * Update the provided props. Ensure any newly-added motion values are
+     * added to our map, old ones removed, and listeners updated.
+     */ update(props, presenceContext) {
+        if (props.transformTemplate || this.props.transformTemplate) {
+            this.scheduleRender();
+        }
+        this.prevProps = this.props;
+        this.props = props;
+        this.prevPresenceContext = this.presenceContext;
+        this.presenceContext = presenceContext;
+        /**
+         * Update prop event handlers ie onAnimationStart, onAnimationComplete
+         */ for(let i = 0; i < propEventHandlers.length; i++){
+            const key = propEventHandlers[i];
+            if (this.propEventSubscriptions[key]) {
+                this.propEventSubscriptions[key]();
+                delete this.propEventSubscriptions[key];
+            }
+            const listenerName = "on" + key;
+            const listener = props[listenerName];
+            if (listener) {
+                this.propEventSubscriptions[key] = this.on(key, listener);
+            }
+        }
+        this.prevMotionValues = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["updateMotionValuesFromProps"])(this, this.scrapeMotionValuesFromProps(props, this.prevProps, this), this.prevMotionValues);
+        if (this.handleChildMotionValue) {
+            this.handleChildMotionValue();
+        }
+    }
+    getProps() {
+        return this.props;
+    }
+    /**
+     * Returns the variant definition with a given name.
+     */ getVariant(name) {
+        return this.props.variants ? this.props.variants[name] : undefined;
+    }
+    /**
+     * Returns the defined default transition on this component.
+     */ getDefaultTransition() {
+        return this.props.transition;
+    }
+    getTransformPagePoint() {
+        return this.props.transformPagePoint;
+    }
+    getClosestVariantNode() {
+        return this.isVariantNode ? this : this.parent ? this.parent.getClosestVariantNode() : undefined;
+    }
+    /**
+     * Add a child visual element to our set of children.
+     */ addVariantChild(child) {
+        const closestVariantNode = this.getClosestVariantNode();
+        if (closestVariantNode) {
+            closestVariantNode.variantChildren && closestVariantNode.variantChildren.add(child);
+            return ()=>closestVariantNode.variantChildren.delete(child);
+        }
+    }
+    /**
+     * Add a motion value and bind it to this visual element.
+     */ addValue(key, value) {
+        // Remove existing value if it exists
+        const existingValue = this.values.get(key);
+        if (value !== existingValue) {
+            if (existingValue) this.removeValue(key);
+            this.bindToMotionValue(key, value);
+            this.values.set(key, value);
+            this.latestValues[key] = value.get();
+        }
+    }
+    /**
+     * Remove a motion value and unbind any active subscriptions.
+     */ removeValue(key) {
+        this.values.delete(key);
+        const unsubscribe = this.valueSubscriptions.get(key);
+        if (unsubscribe) {
+            unsubscribe();
+            this.valueSubscriptions.delete(key);
+        }
+        delete this.latestValues[key];
+        this.removeValueFromRenderState(key, this.renderState);
+    }
+    /**
+     * Check whether we have a motion value for this key
+     */ hasValue(key) {
+        return this.values.has(key);
+    }
+    getValue(key, defaultValue) {
+        if (this.props.values && this.props.values[key]) {
+            return this.props.values[key];
+        }
+        let value = this.values.get(key);
+        if (value === undefined && defaultValue !== undefined) {
+            value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motionValue"])(defaultValue === null ? undefined : defaultValue, {
+                owner: this
+            });
+            this.addValue(key, value);
+        }
+        return value;
+    }
+    /**
+     * If we're trying to animate to a previously unencountered value,
+     * we need to check for it in our state and as a last resort read it
+     * directly from the instance (which might have performance implications).
+     */ readValue(key, target) {
+        let value = this.latestValues[key] !== undefined || !this.current ? this.latestValues[key] : this.getBaseTargetFromProps(this.props, key) ?? this.readValueFromInstance(this.current, key, this.options);
+        if (value !== undefined && value !== null) {
+            if (typeof value === "string" && ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$numerical$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isNumericalString"])(value) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$zero$2d$value$2d$string$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isZeroValueString"])(value))) {
+                // If this is a number read as a string, ie "0" or "200", convert it to a number
+                value = parseFloat(value);
+            } else if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$find$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findValueType"])(value) && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["complex"].test(target)) {
+                value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$animatable$2d$none$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAnimatableNone"])(key, target);
+            }
+            this.setBaseTarget(key, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(value) ? value.get() : value);
+        }
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(value) ? value.get() : value;
+    }
+    /**
+     * Set the base target to later animate back to. This is currently
+     * only hydrated on creation and when we first read a value.
+     */ setBaseTarget(key, value) {
+        this.baseTarget[key] = value;
+    }
+    /**
+     * Find the base target for a value thats been removed from all animation
+     * props.
+     */ getBaseTarget(key) {
+        const { initial } = this.props;
+        let valueFromInitial;
+        if (typeof initial === "string" || typeof initial === "object") {
+            const variant = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$variants$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["resolveVariantFromProps"])(this.props, initial, this.presenceContext?.custom);
+            if (variant) {
+                valueFromInitial = variant[key];
+            }
+        }
+        /**
+         * If this value still exists in the current initial variant, read that.
+         */ if (initial && valueFromInitial !== undefined) {
+            return valueFromInitial;
+        }
+        /**
+         * Alternatively, if this VisualElement config has defined a getBaseTarget
+         * so we can read the value from an alternative source, try that.
+         */ const target = this.getBaseTargetFromProps(this.props, key);
+        if (target !== undefined && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(target)) return target;
+        /**
+         * If the value was initially defined on initial, but it doesn't any more,
+         * return undefined. Otherwise return the value as initially read from the DOM.
+         */ return this.initialValues[key] !== undefined && valueFromInitial === undefined ? undefined : this.baseTarget[key];
+    }
+    on(eventName, callback) {
+        if (!this.events[eventName]) {
+            this.events[eventName] = new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$subscription$2d$manager$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SubscriptionManager"]();
+        }
+        return this.events[eventName].add(callback);
+    }
+    notify(eventName, ...args) {
+        if (this.events[eventName]) {
+            this.events[eventName].notify(...args);
+        }
+    }
+    scheduleRenderMicrotask() {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$microtask$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["microtask"].render(this.render);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/DOMVisualElement.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "DOMVisualElement",
+    ()=>DOMVisualElement
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$DOMKeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$VisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/VisualElement.mjs [app-ssr] (ecmascript)");
+;
+;
+class DOMVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$VisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["VisualElement"] {
+    constructor(){
+        super(...arguments);
+        this.KeyframeResolver = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$DOMKeyframesResolver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DOMKeyframesResolver"];
+    }
+    sortInstanceNodePosition(a, b) {
+        /**
+         * compareDocumentPosition returns a bitmask, by using the bitwise &
+         * we're returning true if 2 in that bitmask is set to true. 2 is set
+         * to true if b preceeds a.
+         */ return a.compareDocumentPosition(b) & 2 ? 1 : -1;
+    }
+    getBaseTargetFromProps(props, key) {
+        return props.style ? props.style[key] : undefined;
+    }
+    removeValueFromRenderState(key, { vars, style }) {
+        delete vars[key];
+        delete style[key];
+    }
+    handleChildMotionValue() {
+        if (this.childSubscription) {
+            this.childSubscription();
+            delete this.childSubscription;
+        }
+        const { children } = this.props;
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(children)) {
+            this.childSubscription = children.on("change", (latest)=>{
+                if (this.current) {
+                    this.current.textContent = `${latest}`;
+                }
+            });
+        }
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/get-as-type.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Provided a value and a ValueType, returns the value as that value type.
+ */ __turbopack_context__.s([
+    "getValueAsType",
+    ()=>getValueAsType
+]);
+const getValueAsType = (value, type)=>{
+    return type && typeof value === "number" ? type.transform(value) : value;
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/build-transform.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "buildTransform",
+    ()=>buildTransform
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$get$2d$as$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/get-as-type.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/number.mjs [app-ssr] (ecmascript)");
+;
+const translateAlias = {
+    x: "translateX",
+    y: "translateY",
+    z: "translateZ",
+    transformPerspective: "perspective"
+};
+const numTransforms = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformPropOrder"].length;
+/**
+ * Build a CSS transform style from individual x/y/scale etc properties.
+ *
+ * This outputs with a default order of transforms/scales/rotations, this can be customised by
+ * providing a transformTemplate function.
+ */ function buildTransform(latestValues, transform, transformTemplate) {
+    // The transform string we're going to build into.
+    let transformString = "";
+    let transformIsDefault = true;
+    /**
+     * Loop over all possible transforms in order, adding the ones that
+     * are present to the transform string.
+     */ for(let i = 0; i < numTransforms; i++){
+        const key = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformPropOrder"][i];
+        const value = latestValues[key];
+        if (value === undefined) continue;
+        let valueIsDefault = true;
+        if (typeof value === "number") {
+            valueIsDefault = value === (key.startsWith("scale") ? 1 : 0);
+        } else {
+            valueIsDefault = parseFloat(value) === 0;
+        }
+        if (!valueIsDefault || transformTemplate) {
+            const valueAsType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$get$2d$as$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getValueAsType"])(value, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["numberValueTypes"][key]);
+            if (!valueIsDefault) {
+                transformIsDefault = false;
+                const transformName = translateAlias[key] || key;
+                transformString += `${transformName}(${valueAsType}) `;
+            }
+            if (transformTemplate) {
+                transform[key] = valueAsType;
+            }
+        }
+    }
+    transformString = transformString.trim();
+    // If we have a custom `transform` template, pass our transform values and
+    // generated transformString to that before returning
+    if (transformTemplate) {
+        transformString = transformTemplate(transform, transformIsDefault ? "" : transformString);
+    } else if (transformIsDefault) {
+        transformString = "none";
+    }
+    return transformString;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/build-styles.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "buildHTMLStyles",
+    ()=>buildHTMLStyles
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$get$2d$as$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/utils/get-as-type.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/number.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/build-transform.mjs [app-ssr] (ecmascript)");
+;
+;
+function buildHTMLStyles(state, latestValues, transformTemplate) {
+    const { style, vars, transformOrigin } = state;
+    // Track whether we encounter any transform or transformOrigin values.
+    let hasTransform = false;
+    let hasTransformOrigin = false;
+    /**
+     * Loop over all our latest animated values and decide whether to handle them
+     * as a style or CSS variable.
+     *
+     * Transforms and transform origins are kept separately for further processing.
+     */ for(const key in latestValues){
+        const value = latestValues[key];
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformProps"].has(key)) {
+            // If this is a transform, flag to enable further transform processing
+            hasTransform = true;
+            continue;
+        } else if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isCSSVariableName"])(key)) {
+            vars[key] = value;
+            continue;
+        } else {
+            // Convert the value to its default value type, ie 0 -> "0px"
+            const valueAsType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$get$2d$as$2d$type$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getValueAsType"])(value, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["numberValueTypes"][key]);
+            if (key.startsWith("origin")) {
+                // If this is a transform origin, flag and enable further transform-origin processing
+                hasTransformOrigin = true;
+                transformOrigin[key] = valueAsType;
+            } else {
+                style[key] = valueAsType;
+            }
+        }
+    }
+    if (!latestValues.transform) {
+        if (hasTransform || transformTemplate) {
+            style.transform = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildTransform"])(latestValues, state.transform, transformTemplate);
+        } else if (style.transform) {
+            /**
+             * If we have previously created a transform but currently don't have any,
+             * reset transform style to none.
+             */ style.transform = "none";
+        }
+    }
+    /**
+     * Build a transformOrigin style. Uses the same defaults as the browser for
+     * undefined origins.
+     */ if (hasTransformOrigin) {
+        const { originX = "50%", originY = "50%", originZ = 0 } = transformOrigin;
+        style.transformOrigin = `${originX} ${originY} ${originZ}`;
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/render.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "renderHTML",
+    ()=>renderHTML
+]);
+function renderHTML(element, { style, vars }, styleProp, projection) {
+    const elementStyle = element.style;
+    let key;
+    for(key in style){
+        // CSSStyleDeclaration has [index: number]: string; in the types, so we use that as key type.
+        elementStyle[key] = style[key];
+    }
+    // Write projection styles directly to element style
+    projection?.applyProjectionStyles(elementStyle, styleProp);
+    for(key in vars){
+        // Loop over any CSS variables and assign those.
+        // They can only be assigned using `setProperty`.
+        elementStyle.setProperty(key, vars[key]);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/styles/scale-correction.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "addScaleCorrector",
+    ()=>addScaleCorrector,
+    "scaleCorrectors",
+    ()=>scaleCorrectors
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-ssr] (ecmascript)");
+;
+const scaleCorrectors = {};
+function addScaleCorrector(correctors) {
+    for(const key in correctors){
+        scaleCorrectors[key] = correctors[key];
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isCSSVariableName"])(key)) {
+            scaleCorrectors[key].isCSSVariable = true;
+        }
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/utils/is-forced-motion-value.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isForcedMotionValue",
+    ()=>isForcedMotionValue
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$styles$2f$scale$2d$correction$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/styles/scale-correction.mjs [app-ssr] (ecmascript)");
+;
+;
+function isForcedMotionValue(key, { layout, layoutId }) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformProps"].has(key) || key.startsWith("origin") || (layout || layoutId !== undefined) && (!!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$styles$2f$scale$2d$correction$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scaleCorrectors"][key] || key === "opacity");
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/scrape-motion-values.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "scrapeMotionValuesFromProps",
+    ()=>scrapeMotionValuesFromProps
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$utils$2f$is$2d$forced$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/utils/is-forced-motion-value.mjs [app-ssr] (ecmascript)");
+;
+;
+function scrapeMotionValuesFromProps(props, prevProps, visualElement) {
+    const { style } = props;
+    const newValues = {};
+    for(const key in style){
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(style[key]) || prevProps.style && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(prevProps.style[key]) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$utils$2f$is$2d$forced$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isForcedMotionValue"])(key, props) || visualElement?.getValue(key)?.liveStyle !== undefined) {
+            newValues[key] = style[key];
+        }
+    }
+    return newValues;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/HTMLVisualElement.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "HTMLVisualElement",
+    ()=>HTMLVisualElement,
+    "getComputedStyle",
+    ()=>getComputedStyle
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/dom/parse-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$utils$2f$measure$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/utils/measure.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$DOMVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/DOMVisualElement.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$styles$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/build-styles.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$render$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/render.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/scrape-motion-values.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+function getComputedStyle(element) {
+    return window.getComputedStyle(element);
+}
+class HTMLVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$DOMVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DOMVisualElement"] {
+    constructor(){
+        super(...arguments);
+        this.type = "html";
+        this.renderInstance = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$render$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["renderHTML"];
+    }
+    readValueFromInstance(instance, key) {
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformProps"].has(key)) {
+            return this.projection?.isProjecting ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["defaultTransformValue"])(key) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["readTransformValue"])(instance, key);
+        } else {
+            const computedStyle = getComputedStyle(instance);
+            const value = ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isCSSVariableName"])(key) ? computedStyle.getPropertyValue(key) : computedStyle[key]) || 0;
+            return typeof value === "string" ? value.trim() : value;
+        }
+    }
+    measureInstanceViewportBox(instance, { transformPagePoint }) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$utils$2f$measure$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["measureViewportBox"])(instance, transformPagePoint);
+    }
+    build(renderState, latestValues, props) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$styles$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildHTMLStyles"])(renderState, latestValues, props.transformTemplate);
+    }
+    scrapeMotionValuesFromProps(props, prevProps, visualElement) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"])(props, prevProps, visualElement);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/path.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "buildSVGPath",
+    ()=>buildSVGPath
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-ssr] (ecmascript)");
+;
+const dashKeys = {
+    offset: "stroke-dashoffset",
+    array: "stroke-dasharray"
+};
+const camelKeys = {
+    offset: "strokeDashoffset",
+    array: "strokeDasharray"
+};
+/**
+ * Build SVG path properties. Uses the path's measured length to convert
+ * our custom pathLength, pathSpacing and pathOffset into stroke-dashoffset
+ * and stroke-dasharray attributes.
+ *
+ * This function is mutative to reduce per-frame GC.
+ */ function buildSVGPath(attrs, length, spacing = 1, offset = 0, useDashCase = true) {
+    // Normalise path length by setting SVG attribute pathLength to 1
+    attrs.pathLength = 1;
+    // We use dash case when setting attributes directly to the DOM node and camel case
+    // when defining props on a React component.
+    const keys = useDashCase ? dashKeys : camelKeys;
+    // Build the dash offset
+    attrs[keys.offset] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"].transform(-offset);
+    // Build the dash array
+    const pathLength = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"].transform(length);
+    const pathSpacing = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["px"].transform(spacing);
+    attrs[keys.array] = `${pathLength} ${pathSpacing}`;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/build-attrs.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "buildSVGAttrs",
+    ()=>buildSVGAttrs
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$styles$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/build-styles.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$path$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/path.mjs [app-ssr] (ecmascript)");
+;
+;
+/**
+ * Build SVG visual attributes, like cx and style.transform
+ */ function buildSVGAttrs(state, { attrX, attrY, attrScale, pathLength, pathSpacing = 1, pathOffset = 0, // This is object creation, which we try to avoid per-frame.
+...latest }, isSVGTag, transformTemplate, styleProp) {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$styles$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildHTMLStyles"])(state, latest, transformTemplate);
+    /**
+     * For svg tags we just want to make sure viewBox is animatable and treat all the styles
+     * as normal HTML tags.
+     */ if (isSVGTag) {
+        if (state.style.viewBox) {
+            state.attrs.viewBox = state.style.viewBox;
+        }
+        return;
+    }
+    state.attrs = state.style;
+    state.style = {};
+    const { attrs, style } = state;
+    /**
+     * However, we apply transforms as CSS transforms.
+     * So if we detect a transform, transformOrigin we take it from attrs and copy it into style.
+     */ if (attrs.transform) {
+        style.transform = attrs.transform;
+        delete attrs.transform;
+    }
+    if (style.transform || attrs.transformOrigin) {
+        style.transformOrigin = attrs.transformOrigin ?? "50% 50%";
+        delete attrs.transformOrigin;
+    }
+    if (style.transform) {
+        /**
+         * SVG's element transform-origin uses its own median as a reference.
+         * Therefore, transformBox becomes a fill-box
+         */ style.transformBox = styleProp?.transformBox ?? "fill-box";
+        delete attrs.transformBox;
+    }
+    // Render attrX/attrY/attrScale as attributes
+    if (attrX !== undefined) attrs.x = attrX;
+    if (attrY !== undefined) attrs.y = attrY;
+    if (attrScale !== undefined) attrs.scale = attrScale;
+    // Build SVG path if one has been defined
+    if (pathLength !== undefined) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$path$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildSVGPath"])(attrs, pathLength, pathSpacing, pathOffset, false);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/camel-case-attrs.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * A set of attribute names that are always read/written as camel case.
+ */ __turbopack_context__.s([
+    "camelCaseAttributes",
+    ()=>camelCaseAttributes
+]);
+const camelCaseAttributes = new Set([
+    "baseFrequency",
+    "diffuseConstant",
+    "kernelMatrix",
+    "kernelUnitLength",
+    "keySplines",
+    "keyTimes",
+    "limitingConeAngle",
+    "markerHeight",
+    "markerWidth",
+    "numOctaves",
+    "targetX",
+    "targetY",
+    "surfaceScale",
+    "specularConstant",
+    "specularExponent",
+    "stdDeviation",
+    "tableValues",
+    "viewBox",
+    "gradientTransform",
+    "pathLength",
+    "startOffset",
+    "textLength",
+    "lengthAdjust"
+]);
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/is-svg-tag.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isSVGTag",
+    ()=>isSVGTag
+]);
+const isSVGTag = (tag)=>typeof tag === "string" && tag.toLowerCase() === "svg";
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/render.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "renderSVG",
+    ()=>renderSVG
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/utils/camel-to-dash.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$render$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/render.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$camel$2d$case$2d$attrs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/camel-case-attrs.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+function renderSVG(element, renderState, _styleProp, projection) {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$render$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["renderHTML"])(element, renderState, undefined, projection);
+    for(const key in renderState.attrs){
+        element.setAttribute(!__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$camel$2d$case$2d$attrs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["camelCaseAttributes"].has(key) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["camelToDash"])(key) : key, renderState.attrs[key]);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/scrape-motion-values.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "scrapeMotionValuesFromProps",
+    ()=>scrapeMotionValuesFromProps
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/utils/scrape-motion-values.mjs [app-ssr] (ecmascript)");
+;
+;
+function scrapeMotionValuesFromProps(props, prevProps, visualElement) {
+    const newValues = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"])(props, prevProps, visualElement);
+    for(const key in props){
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(props[key]) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMotionValue"])(prevProps[key])) {
+            const targetKey = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformPropOrder"].indexOf(key) !== -1 ? "attr" + key.charAt(0).toUpperCase() + key.substring(1) : key;
+            newValues[targetKey] = props[key];
+        }
+    }
+    return newValues;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/SVGVisualElement.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "SVGVisualElement",
+    ()=>SVGVisualElement
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/motion-dom/dist/es/value/types/maps/defaults.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/projection/geometry/models.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$DOMVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/DOMVisualElement.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/utils/camel-to-dash.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$build$2d$attrs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/build-attrs.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$camel$2d$case$2d$attrs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/camel-case-attrs.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$is$2d$svg$2d$tag$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/is-svg-tag.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$render$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/render.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/utils/scrape-motion-values.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+class SVGVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$DOMVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DOMVisualElement"] {
+    constructor(){
+        super(...arguments);
+        this.type = "svg";
+        this.isSVGTag = false;
+        this.measureInstanceViewportBox = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createBox"];
+    }
+    getBaseTargetFromProps(props, key) {
+        return props[key];
+    }
+    readValueFromInstance(instance, key) {
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["transformProps"].has(key)) {
+            const defaultType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$defaults$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDefaultValueType"])(key);
+            return defaultType ? defaultType.default || 0 : 0;
+        }
+        key = !__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$camel$2d$case$2d$attrs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["camelCaseAttributes"].has(key) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["camelToDash"])(key) : key;
+        return instance.getAttribute(key);
+    }
+    scrapeMotionValuesFromProps(props, prevProps, visualElement) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"])(props, prevProps, visualElement);
+    }
+    build(renderState, latestValues, props) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$build$2d$attrs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildSVGAttrs"])(renderState, latestValues, this.isSVGTag, props.transformTemplate, props.style);
+    }
+    renderInstance(instance, renderState, styleProp, projection) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$render$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["renderSVG"])(instance, renderState, styleProp, projection);
+    }
+    mount(instance) {
+        this.isSVGTag = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$is$2d$svg$2d$tag$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isSVGTag"])(instance.tagName);
+        super.mount(instance);
+    }
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/lowercase-elements.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * We keep these listed separately as we use the lowercase tag names as part
+ * of the runtime bundle to detect SVG components
+ */ __turbopack_context__.s([
+    "lowercaseSVGElements",
+    ()=>lowercaseSVGElements
+]);
+const lowercaseSVGElements = [
+    "animate",
+    "circle",
+    "defs",
+    "desc",
+    "ellipse",
+    "g",
+    "image",
+    "line",
+    "filter",
+    "marker",
+    "mask",
+    "metadata",
+    "path",
+    "pattern",
+    "polygon",
+    "polyline",
+    "rect",
+    "stop",
+    "switch",
+    "symbol",
+    "svg",
+    "text",
+    "tspan",
+    "use",
+    "view"
+];
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/utils/is-svg-component.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isSVGComponent",
+    ()=>isSVGComponent
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$lowercase$2d$elements$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/lowercase-elements.mjs [app-ssr] (ecmascript)");
+;
+function isSVGComponent(Component) {
+    if (/**
+     * If it's not a string, it's a custom React component. Currently we only support
+     * HTML custom React components.
+     */ typeof Component !== "string" || /**
+         * If it contains a dash, the element is a custom HTML webcomponent.
+         */ Component.includes("-")) {
+        return false;
+    } else if (/**
+     * If it's in our list of lowercase SVG tags, it's an SVG component
+     */ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$lowercase$2d$elements$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["lowercaseSVGElements"].indexOf(Component) > -1 || /**
+         * If it contains a capital letter, it's an SVG component
+         */ /[A-Z]/u.test(Component)) {
+        return true;
+    }
+    return false;
+}
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/create-visual-element.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createDomVisualElement",
+    ()=>createDomVisualElement
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$HTMLVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/html/HTMLVisualElement.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$SVGVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/svg/SVGVisualElement.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$is$2d$svg$2d$component$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/utils/is-svg-component.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+const createDomVisualElement = (Component, options)=>{
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$is$2d$svg$2d$component$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isSVGComponent"])(Component) ? new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$svg$2f$SVGVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SVGVisualElement"](options) : new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$html$2f$HTMLVisualElement$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["HTMLVisualElement"](options, {
+        allowProjection: Component !== __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"]
+    });
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/features-animation.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "domAnimation",
+    ()=>domAnimation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$animations$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/animations.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$gestures$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/motion/features/gestures.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$create$2d$visual$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/framer-motion/dist/es/render/dom/create-visual-element.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+/**
+ * @public
+ */ const domAnimation = {
+    renderer: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$create$2d$visual$2d$element$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createDomVisualElement"],
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$animations$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["animations"],
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$motion$2f$features$2f$gestures$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["gestureAnimations"]
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-devtools/build/chunk/CXOMC62J.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// ../../node_modules/.pnpm/solid-js@1.9.7/node_modules/solid-js/dist/solid.js
+__turbopack_context__.s([
+    "$TRACK",
+    ()=>$TRACK,
+    "DEV",
+    ()=>DEV,
+    "Dynamic",
+    ()=>Dynamic,
+    "For",
+    ()=>For,
+    "Index",
+    ()=>Index,
+    "Match",
+    ()=>Match,
+    "Portal",
+    ()=>Portal,
+    "Show",
+    ()=>Show,
+    "Switch",
+    ()=>Switch,
+    "addEventListener",
+    ()=>addEventListener,
+    "batch",
+    ()=>batch,
+    "className",
+    ()=>className,
+    "clearDelegatedEvents",
+    ()=>clearDelegatedEvents,
+    "convertRemToPixels",
+    ()=>convertRemToPixels,
+    "createComponent",
+    ()=>createComponent,
+    "createComputed",
+    ()=>createComputed,
+    "createContext",
+    ()=>createContext,
+    "createEffect",
+    ()=>createEffect,
+    "createMemo",
+    ()=>createMemo,
+    "createRenderEffect",
+    ()=>createRenderEffect,
+    "createRoot",
+    ()=>createRoot,
+    "createSignal",
+    ()=>createSignal,
+    "createUniqueId",
+    ()=>createUniqueId,
+    "delegateEvents",
+    ()=>delegateEvents,
+    "deleteNestedDataByPath",
+    ()=>deleteNestedDataByPath,
+    "displayValue",
+    ()=>displayValue,
+    "getMutationStatusColor",
+    ()=>getMutationStatusColor,
+    "getOwner",
+    ()=>getOwner,
+    "getPreferredColorScheme",
+    ()=>getPreferredColorScheme,
+    "getQueryStatusColor",
+    ()=>getQueryStatusColor,
+    "getQueryStatusColorByLabel",
+    ()=>getQueryStatusColorByLabel,
+    "getQueryStatusLabel",
+    ()=>getQueryStatusLabel,
+    "getSidedProp",
+    ()=>getSidedProp,
+    "insert",
+    ()=>insert,
+    "isServer",
+    ()=>isServer,
+    "lazy",
+    ()=>lazy,
+    "memo",
+    ()=>memo,
+    "mergeProps",
+    ()=>mergeProps,
+    "mutationSortFns",
+    ()=>mutationSortFns,
+    "on",
+    ()=>on,
+    "onCleanup",
+    ()=>onCleanup,
+    "onMount",
+    ()=>onMount,
+    "render",
+    ()=>render,
+    "serialize",
+    ()=>serialize,
+    "setAttribute",
+    ()=>setAttribute,
+    "setupStyleSheet",
+    ()=>setupStyleSheet,
+    "sortFns",
+    ()=>sortFns,
+    "splitProps",
+    ()=>splitProps,
+    "spread",
+    ()=>spread,
+    "stringify",
+    ()=>stringify,
+    "template",
+    ()=>template,
+    "untrack",
+    ()=>untrack,
+    "updateNestedDataByPath",
+    ()=>updateNestedDataByPath,
+    "use",
+    ()=>use,
+    "useContext",
+    ()=>useContext,
+    "useTransition",
+    ()=>useTransition
+]);
+var sharedConfig = {
+    context: void 0,
+    registry: void 0,
+    effects: void 0,
+    done: false,
+    getContextId () {
+        return getContextId(this.context.count);
+    },
+    getNextContextId () {
+        return getContextId(this.context.count++);
+    }
+};
+function getContextId(count) {
+    const num = String(count), len = num.length - 1;
+    return sharedConfig.context.id + (len ? String.fromCharCode(96 + len) : "") + num;
+}
+function setHydrateContext(context) {
+    sharedConfig.context = context;
+}
+function nextHydrateContext() {
+    return {
+        ...sharedConfig.context,
+        id: sharedConfig.getNextContextId(),
+        count: 0
+    };
+}
+var IS_DEV = false;
+var equalFn = (a, b)=>a === b;
+var $PROXY = Symbol("solid-proxy");
+var SUPPORTS_PROXY = typeof Proxy === "function";
+var $TRACK = Symbol("solid-track");
+var signalOptions = {
+    equals: equalFn
+};
+var ERROR = null;
+var runEffects = runQueue;
+var STALE = 1;
+var PENDING = 2;
+var UNOWNED = {
+    owned: null,
+    cleanups: null,
+    context: null,
+    owner: null
+};
+var NO_INIT = {};
+var Owner = null;
+var Transition = null;
+var Scheduler = null;
+var ExternalSourceConfig = null;
+var Listener = null;
+var Updates = null;
+var Effects = null;
+var ExecCount = 0;
+function createRoot(fn, detachedOwner) {
+    const listener = Listener, owner = Owner, unowned = fn.length === 0, current = detachedOwner === void 0 ? owner : detachedOwner, root = unowned ? UNOWNED : {
+        owned: null,
+        cleanups: null,
+        context: current ? current.context : null,
+        owner: current
+    }, updateFn = unowned ? fn : ()=>fn(()=>untrack(()=>cleanNode(root)));
+    Owner = root;
+    Listener = null;
+    try {
+        return runUpdates(updateFn, true);
+    } finally{
+        Listener = listener;
+        Owner = owner;
+    }
+}
+function createSignal(value, options) {
+    options = options ? Object.assign({}, signalOptions, options) : signalOptions;
+    const s = {
+        value,
+        observers: null,
+        observerSlots: null,
+        comparator: options.equals || void 0
+    };
+    const setter = (value2)=>{
+        if (typeof value2 === "function") {
+            if (Transition && Transition.running && Transition.sources.has(s)) value2 = value2(s.tValue);
+            else value2 = value2(s.value);
+        }
+        return writeSignal(s, value2);
+    };
+    return [
+        readSignal.bind(s),
+        setter
+    ];
+}
+function createComputed(fn, value, options) {
+    const c = createComputation(fn, value, true, STALE);
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    else updateComputation(c);
+}
+function createRenderEffect(fn, value, options) {
+    const c = createComputation(fn, value, false, STALE);
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    else updateComputation(c);
+}
+function createEffect(fn, value, options) {
+    runEffects = runUserEffects;
+    const c = createComputation(fn, value, false, STALE), s = SuspenseContext && useContext(SuspenseContext);
+    if (s) c.suspense = s;
+    if (!options || !options.render) c.user = true;
+    Effects ? Effects.push(c) : updateComputation(c);
+}
+function createMemo(fn, value, options) {
+    options = options ? Object.assign({}, signalOptions, options) : signalOptions;
+    const c = createComputation(fn, value, true, 0);
+    c.observers = null;
+    c.observerSlots = null;
+    c.comparator = options.equals || void 0;
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    else updateComputation(c);
+    return readSignal.bind(c);
+}
+function isPromise(v) {
+    return v && typeof v === "object" && "then" in v;
+}
+function createResource(pSource, pFetcher, pOptions) {
+    let source;
+    let fetcher;
+    let options;
+    {
+        source = true;
+        fetcher = pSource;
+        options = {};
+    }
+    let pr = null, initP = NO_INIT, id = null, loadedUnderTransition = false, scheduled = false, resolved = "initialValue" in options, dynamic = typeof source === "function" && createMemo(source);
+    const contexts = /* @__PURE__ */ new Set(), [value, setValue] = (options.storage || createSignal)(options.initialValue), [error, setError] = createSignal(void 0), [track, trigger] = createSignal(void 0, {
+        equals: false
+    }), [state, setState] = createSignal(resolved ? "ready" : "unresolved");
+    if (sharedConfig.context) {
+        id = sharedConfig.getNextContextId();
+        if (options.ssrLoadFrom === "initial") initP = options.initialValue;
+        else if (sharedConfig.load && sharedConfig.has(id)) initP = sharedConfig.load(id);
+    }
+    function loadEnd(p, v, error2, key) {
+        if (pr === p) {
+            pr = null;
+            key !== void 0 && (resolved = true);
+            if ((p === initP || v === initP) && options.onHydrated) queueMicrotask(()=>options.onHydrated(key, {
+                    value: v
+                }));
+            initP = NO_INIT;
+            if (Transition && p && loadedUnderTransition) {
+                Transition.promises.delete(p);
+                loadedUnderTransition = false;
+                runUpdates(()=>{
+                    Transition.running = true;
+                    completeLoad(v, error2);
+                }, false);
+            } else completeLoad(v, error2);
+        }
+        return v;
+    }
+    function completeLoad(v, err) {
+        runUpdates(()=>{
+            if (err === void 0) setValue(()=>v);
+            setState(err !== void 0 ? "errored" : resolved ? "ready" : "unresolved");
+            setError(err);
+            for (const c of contexts.keys())c.decrement();
+            contexts.clear();
+        }, false);
+    }
+    function read() {
+        const c = SuspenseContext && useContext(SuspenseContext), v = value(), err = error();
+        if (err !== void 0 && !pr) throw err;
+        if (Listener && !Listener.user && c) {
+            createComputed(()=>{
+                track();
+                if (pr) {
+                    if (c.resolved && Transition && loadedUnderTransition) Transition.promises.add(pr);
+                    else if (!contexts.has(c)) {
+                        c.increment();
+                        contexts.add(c);
+                    }
+                }
+            });
+        }
+        return v;
+    }
+    function load(refetching = true) {
+        if (refetching !== false && scheduled) return;
+        scheduled = false;
+        const lookup = dynamic ? dynamic() : source;
+        loadedUnderTransition = Transition && Transition.running;
+        if (lookup == null || lookup === false) {
+            loadEnd(pr, untrack(value));
+            return;
+        }
+        if (Transition && pr) Transition.promises.delete(pr);
+        let error2;
+        const p = initP !== NO_INIT ? initP : untrack(()=>{
+            try {
+                return fetcher(lookup, {
+                    value: value(),
+                    refetching
+                });
+            } catch (fetcherError) {
+                error2 = fetcherError;
+            }
+        });
+        if (error2 !== void 0) {
+            loadEnd(pr, void 0, castError(error2), lookup);
+            return;
+        } else if (!isPromise(p)) {
+            loadEnd(pr, p, void 0, lookup);
+            return p;
+        }
+        pr = p;
+        if ("v" in p) {
+            if (p.s === 1) loadEnd(pr, p.v, void 0, lookup);
+            else loadEnd(pr, void 0, castError(p.v), lookup);
+            return p;
+        }
+        scheduled = true;
+        queueMicrotask(()=>scheduled = false);
+        runUpdates(()=>{
+            setState(resolved ? "refreshing" : "pending");
+            trigger();
+        }, false);
+        return p.then((v)=>loadEnd(p, v, void 0, lookup), (e)=>loadEnd(p, void 0, castError(e), lookup));
+    }
+    Object.defineProperties(read, {
+        state: {
+            get: ()=>state()
+        },
+        error: {
+            get: ()=>error()
+        },
+        loading: {
+            get () {
+                const s = state();
+                return s === "pending" || s === "refreshing";
+            }
+        },
+        latest: {
+            get () {
+                if (!resolved) return read();
+                const err = error();
+                if (err && !pr) throw err;
+                return value();
+            }
+        }
+    });
+    let owner = Owner;
+    if (dynamic) createComputed(()=>(owner = Owner, load(false)));
+    else load(false);
+    return [
+        read,
+        {
+            refetch: (info)=>runWithOwner(owner, ()=>load(info)),
+            mutate: setValue
+        }
+    ];
+}
+function batch(fn) {
+    return runUpdates(fn, false);
+}
+function untrack(fn) {
+    if (!ExternalSourceConfig && Listener === null) return fn();
+    const listener = Listener;
+    Listener = null;
+    try {
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+        return fn();
+    } finally{
+        Listener = listener;
+    }
+}
+function on(deps, fn, options) {
+    const isArray3 = Array.isArray(deps);
+    let prevInput;
+    let defer = options && options.defer;
+    return (prevValue)=>{
+        let input;
+        if (isArray3) {
+            input = Array(deps.length);
+            for(let i = 0; i < deps.length; i++)input[i] = deps[i]();
+        } else input = deps();
+        if (defer) {
+            defer = false;
+            return prevValue;
+        }
+        const result = untrack(()=>fn(input, prevInput, prevValue));
+        prevInput = input;
+        return result;
+    };
+}
+function onMount(fn) {
+    createEffect(()=>untrack(fn));
+}
+function onCleanup(fn) {
+    if (Owner === null) ;
+    else if (Owner.cleanups === null) Owner.cleanups = [
+        fn
+    ];
+    else Owner.cleanups.push(fn);
+    return fn;
+}
+function getOwner() {
+    return Owner;
+}
+function runWithOwner(o, fn) {
+    const prev = Owner;
+    const prevListener = Listener;
+    Owner = o;
+    Listener = null;
+    try {
+        return runUpdates(fn, true);
+    } catch (err) {
+        handleError(err);
+    } finally{
+        Owner = prev;
+        Listener = prevListener;
+    }
+}
+function startTransition(fn) {
+    if (Transition && Transition.running) {
+        fn();
+        return Transition.done;
+    }
+    const l = Listener;
+    const o = Owner;
+    return Promise.resolve().then(()=>{
+        Listener = l;
+        Owner = o;
+        let t;
+        if (Scheduler || SuspenseContext) {
+            t = Transition || (Transition = {
+                sources: /* @__PURE__ */ new Set(),
+                effects: [],
+                promises: /* @__PURE__ */ new Set(),
+                disposed: /* @__PURE__ */ new Set(),
+                queue: /* @__PURE__ */ new Set(),
+                running: true
+            });
+            t.done || (t.done = new Promise((res)=>t.resolve = res));
+            t.running = true;
+        }
+        runUpdates(fn, false);
+        Listener = Owner = null;
+        return t ? t.done : void 0;
+    });
+}
+var [transPending, setTransPending] = /* @__PURE__ */ createSignal(false);
+function useTransition() {
+    return [
+        transPending,
+        startTransition
+    ];
+}
+function createContext(defaultValue, options) {
+    const id = Symbol("context");
+    return {
+        id,
+        Provider: createProvider(id),
+        defaultValue
+    };
+}
+function useContext(context) {
+    let value;
+    return Owner && Owner.context && (value = Owner.context[context.id]) !== void 0 ? value : context.defaultValue;
+}
+function children(fn) {
+    const children2 = createMemo(fn);
+    const memo2 = createMemo(()=>resolveChildren(children2()));
+    memo2.toArray = ()=>{
+        const c = memo2();
+        return Array.isArray(c) ? c : c != null ? [
+            c
+        ] : [];
+    };
+    return memo2;
+}
+var SuspenseContext;
+function readSignal() {
+    const runningTransition = Transition && Transition.running;
+    if (this.sources && (runningTransition ? this.tState : this.state)) {
+        if ((runningTransition ? this.tState : this.state) === STALE) updateComputation(this);
+        else {
+            const updates = Updates;
+            Updates = null;
+            runUpdates(()=>lookUpstream(this), false);
+            Updates = updates;
+        }
+    }
+    if (Listener) {
+        const sSlot = this.observers ? this.observers.length : 0;
+        if (!Listener.sources) {
+            Listener.sources = [
+                this
+            ];
+            Listener.sourceSlots = [
+                sSlot
+            ];
+        } else {
+            Listener.sources.push(this);
+            Listener.sourceSlots.push(sSlot);
+        }
+        if (!this.observers) {
+            this.observers = [
+                Listener
+            ];
+            this.observerSlots = [
+                Listener.sources.length - 1
+            ];
+        } else {
+            this.observers.push(Listener);
+            this.observerSlots.push(Listener.sources.length - 1);
+        }
+    }
+    if (runningTransition && Transition.sources.has(this)) return this.tValue;
+    return this.value;
+}
+function writeSignal(node, value, isComp) {
+    let current = Transition && Transition.running && Transition.sources.has(node) ? node.tValue : node.value;
+    if (!node.comparator || !node.comparator(current, value)) {
+        if (Transition) {
+            const TransitionRunning = Transition.running;
+            if (TransitionRunning || !isComp && Transition.sources.has(node)) {
+                Transition.sources.add(node);
+                node.tValue = value;
+            }
+            if (!TransitionRunning) node.value = value;
+        } else node.value = value;
+        if (node.observers && node.observers.length) {
+            runUpdates(()=>{
+                for(let i = 0; i < node.observers.length; i += 1){
+                    const o = node.observers[i];
+                    const TransitionRunning = Transition && Transition.running;
+                    if (TransitionRunning && Transition.disposed.has(o)) continue;
+                    if (TransitionRunning ? !o.tState : !o.state) {
+                        if (o.pure) Updates.push(o);
+                        else Effects.push(o);
+                        if (o.observers) markDownstream(o);
+                    }
+                    if (!TransitionRunning) o.state = STALE;
+                    else o.tState = STALE;
+                }
+                if (Updates.length > 1e6) {
+                    Updates = [];
+                    if (IS_DEV) ;
+                    throw new Error();
+                }
+            }, false);
+        }
+    }
+    return value;
+}
+function updateComputation(node) {
+    if (!node.fn) return;
+    cleanNode(node);
+    const time = ExecCount;
+    runComputation(node, Transition && Transition.running && Transition.sources.has(node) ? node.tValue : node.value, time);
+    if (Transition && !Transition.running && Transition.sources.has(node)) {
+        queueMicrotask(()=>{
+            runUpdates(()=>{
+                Transition && (Transition.running = true);
+                Listener = Owner = node;
+                runComputation(node, node.tValue, time);
+                Listener = Owner = null;
+            }, false);
+        });
+    }
+}
+function runComputation(node, value, time) {
+    let nextValue;
+    const owner = Owner, listener = Listener;
+    Listener = Owner = node;
+    try {
+        nextValue = node.fn(value);
+    } catch (err) {
+        if (node.pure) {
+            if (Transition && Transition.running) {
+                node.tState = STALE;
+                node.tOwned && node.tOwned.forEach(cleanNode);
+                node.tOwned = void 0;
+            } else {
+                node.state = STALE;
+                node.owned && node.owned.forEach(cleanNode);
+                node.owned = null;
+            }
+        }
+        node.updatedAt = time + 1;
+        return handleError(err);
+    } finally{
+        Listener = listener;
+        Owner = owner;
+    }
+    if (!node.updatedAt || node.updatedAt <= time) {
+        if (node.updatedAt != null && "observers" in node) {
+            writeSignal(node, nextValue, true);
+        } else if (Transition && Transition.running && node.pure) {
+            Transition.sources.add(node);
+            node.tValue = nextValue;
+        } else node.value = nextValue;
+        node.updatedAt = time;
+    }
+}
+function createComputation(fn, init, pure, state = STALE, options) {
+    const c = {
+        fn,
+        state,
+        updatedAt: null,
+        owned: null,
+        sources: null,
+        sourceSlots: null,
+        cleanups: null,
+        value: init,
+        owner: Owner,
+        context: Owner ? Owner.context : null,
+        pure
+    };
+    if (Transition && Transition.running) {
+        c.state = 0;
+        c.tState = state;
+    }
+    if (Owner === null) ;
+    else if (Owner !== UNOWNED) {
+        if (Transition && Transition.running && Owner.pure) {
+            if (!Owner.tOwned) Owner.tOwned = [
+                c
+            ];
+            else Owner.tOwned.push(c);
+        } else {
+            if (!Owner.owned) Owner.owned = [
+                c
+            ];
+            else Owner.owned.push(c);
+        }
+    }
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    return c;
+}
+function runTop(node) {
+    const runningTransition = Transition && Transition.running;
+    if ((runningTransition ? node.tState : node.state) === 0) return;
+    if ((runningTransition ? node.tState : node.state) === PENDING) return lookUpstream(node);
+    if (node.suspense && untrack(node.suspense.inFallback)) return node.suspense.effects.push(node);
+    const ancestors = [
+        node
+    ];
+    while((node = node.owner) && (!node.updatedAt || node.updatedAt < ExecCount)){
+        if (runningTransition && Transition.disposed.has(node)) return;
+        if (runningTransition ? node.tState : node.state) ancestors.push(node);
+    }
+    for(let i = ancestors.length - 1; i >= 0; i--){
+        node = ancestors[i];
+        if (runningTransition) {
+            let top = node, prev = ancestors[i + 1];
+            while((top = top.owner) && top !== prev){
+                if (Transition.disposed.has(top)) return;
+            }
+        }
+        if ((runningTransition ? node.tState : node.state) === STALE) {
+            updateComputation(node);
+        } else if ((runningTransition ? node.tState : node.state) === PENDING) {
+            const updates = Updates;
+            Updates = null;
+            runUpdates(()=>lookUpstream(node, ancestors[0]), false);
+            Updates = updates;
+        }
+    }
+}
+function runUpdates(fn, init) {
+    if (Updates) return fn();
+    let wait = false;
+    if (!init) Updates = [];
+    if (Effects) wait = true;
+    else Effects = [];
+    ExecCount++;
+    try {
+        const res = fn();
+        completeUpdates(wait);
+        return res;
+    } catch (err) {
+        if (!wait) Effects = null;
+        Updates = null;
+        handleError(err);
+    }
+}
+function completeUpdates(wait) {
+    if (Updates) {
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+        else runQueue(Updates);
+        Updates = null;
+    }
+    if (wait) return;
+    let res;
+    if (Transition) {
+        if (!Transition.promises.size && !Transition.queue.size) {
+            const sources = Transition.sources;
+            const disposed = Transition.disposed;
+            Effects.push.apply(Effects, Transition.effects);
+            res = Transition.resolve;
+            for (const e2 of Effects){
+                "tState" in e2 && (e2.state = e2.tState);
+                delete e2.tState;
+            }
+            Transition = null;
+            runUpdates(()=>{
+                for (const d of disposed)cleanNode(d);
+                for (const v of sources){
+                    v.value = v.tValue;
+                    if (v.owned) {
+                        for(let i = 0, len = v.owned.length; i < len; i++)cleanNode(v.owned[i]);
+                    }
+                    if (v.tOwned) v.owned = v.tOwned;
+                    delete v.tValue;
+                    delete v.tOwned;
+                    v.tState = 0;
+                }
+                setTransPending(false);
+            }, false);
+        } else if (Transition.running) {
+            Transition.running = false;
+            Transition.effects.push.apply(Transition.effects, Effects);
+            Effects = null;
+            setTransPending(true);
+            return;
+        }
+    }
+    const e = Effects;
+    Effects = null;
+    if (e.length) runUpdates(()=>runEffects(e), false);
+    if (res) res();
+}
+function runQueue(queue) {
+    for(let i = 0; i < queue.length; i++)runTop(queue[i]);
+}
+function scheduleQueue(queue) {
+    for(let i = 0; i < queue.length; i++){
+        const item = queue[i];
+        const tasks = Transition.queue;
+        if (!tasks.has(item)) {
+            tasks.add(item);
+            Scheduler(()=>{
+                tasks.delete(item);
+                runUpdates(()=>{
+                    Transition.running = true;
+                    runTop(item);
+                }, false);
+                Transition && (Transition.running = false);
+            });
+        }
+    }
+}
+function runUserEffects(queue) {
+    let i, userLength = 0;
+    for(i = 0; i < queue.length; i++){
+        const e = queue[i];
+        if (!e.user) runTop(e);
+        else queue[userLength++] = e;
+    }
+    if (sharedConfig.context) {
+        if (sharedConfig.count) {
+            sharedConfig.effects || (sharedConfig.effects = []);
+            sharedConfig.effects.push(...queue.slice(0, userLength));
+            return;
+        }
+        setHydrateContext();
+    }
+    if (sharedConfig.effects && (sharedConfig.done || !sharedConfig.count)) {
+        queue = [
+            ...sharedConfig.effects,
+            ...queue
+        ];
+        userLength += sharedConfig.effects.length;
+        delete sharedConfig.effects;
+    }
+    for(i = 0; i < userLength; i++)runTop(queue[i]);
+}
+function lookUpstream(node, ignore) {
+    const runningTransition = Transition && Transition.running;
+    if (runningTransition) node.tState = 0;
+    else node.state = 0;
+    for(let i = 0; i < node.sources.length; i += 1){
+        const source = node.sources[i];
+        if (source.sources) {
+            const state = runningTransition ? source.tState : source.state;
+            if (state === STALE) {
+                if (source !== ignore && (!source.updatedAt || source.updatedAt < ExecCount)) runTop(source);
+            } else if (state === PENDING) lookUpstream(source, ignore);
+        }
+    }
+}
+function markDownstream(node) {
+    const runningTransition = Transition && Transition.running;
+    for(let i = 0; i < node.observers.length; i += 1){
+        const o = node.observers[i];
+        if (runningTransition ? !o.tState : !o.state) {
+            if (runningTransition) o.tState = PENDING;
+            else o.state = PENDING;
+            if (o.pure) Updates.push(o);
+            else Effects.push(o);
+            o.observers && markDownstream(o);
+        }
+    }
+}
+function cleanNode(node) {
+    let i;
+    if (node.sources) {
+        while(node.sources.length){
+            const source = node.sources.pop(), index = node.sourceSlots.pop(), obs = source.observers;
+            if (obs && obs.length) {
+                const n = obs.pop(), s = source.observerSlots.pop();
+                if (index < obs.length) {
+                    n.sourceSlots[s] = index;
+                    obs[index] = n;
+                    source.observerSlots[index] = s;
+                }
+            }
+        }
+    }
+    if (node.tOwned) {
+        for(i = node.tOwned.length - 1; i >= 0; i--)cleanNode(node.tOwned[i]);
+        delete node.tOwned;
+    }
+    if (Transition && Transition.running && node.pure) {
+        reset(node, true);
+    } else if (node.owned) {
+        for(i = node.owned.length - 1; i >= 0; i--)cleanNode(node.owned[i]);
+        node.owned = null;
+    }
+    if (node.cleanups) {
+        for(i = node.cleanups.length - 1; i >= 0; i--)node.cleanups[i]();
+        node.cleanups = null;
+    }
+    if (Transition && Transition.running) node.tState = 0;
+    else node.state = 0;
+}
+function reset(node, top) {
+    if (!top) {
+        node.tState = 0;
+        Transition.disposed.add(node);
+    }
+    if (node.owned) {
+        for(let i = 0; i < node.owned.length; i++)reset(node.owned[i]);
+    }
+}
+function castError(err) {
+    if (err instanceof Error) return err;
+    return new Error(typeof err === "string" ? err : "Unknown error", {
+        cause: err
+    });
+}
+function runErrors(err, fns, owner) {
+    try {
+        for (const f of fns)f(err);
+    } catch (e) {
+        handleError(e, owner && owner.owner || null);
+    }
+}
+function handleError(err, owner = Owner) {
+    const fns = ERROR && owner && owner.context && owner.context[ERROR];
+    const error = castError(err);
+    if (!fns) throw error;
+    if (Effects) Effects.push({
+        fn () {
+            runErrors(error, fns, owner);
+        },
+        state: STALE
+    });
+    else runErrors(error, fns, owner);
+}
+function resolveChildren(children2) {
+    if (typeof children2 === "function" && !children2.length) return resolveChildren(children2());
+    if (Array.isArray(children2)) {
+        const results = [];
+        for(let i = 0; i < children2.length; i++){
+            const result = resolveChildren(children2[i]);
+            Array.isArray(result) ? results.push.apply(results, result) : results.push(result);
+        }
+        return results;
+    }
+    return children2;
+}
+function createProvider(id, options) {
+    return function provider(props) {
+        let res;
+        createRenderEffect(()=>res = untrack(()=>{
+                Owner.context = {
+                    ...Owner.context,
+                    [id]: props.value
+                };
+                return children(()=>props.children);
+            }), void 0);
+        return res;
+    };
+}
+var FALLBACK = Symbol("fallback");
+function dispose(d) {
+    for(let i = 0; i < d.length; i++)d[i]();
+}
+function mapArray(list, mapFn, options = {}) {
+    let items = [], mapped = [], disposers = [], len = 0, indexes = mapFn.length > 1 ? [] : null;
+    onCleanup(()=>dispose(disposers));
+    return ()=>{
+        let newItems = list() || [], newLen = newItems.length, i, j;
+        newItems[$TRACK];
+        return untrack(()=>{
+            let newIndices, newIndicesNext, temp, tempdisposers, tempIndexes, start, end, newEnd, item;
+            if (newLen === 0) {
+                if (len !== 0) {
+                    dispose(disposers);
+                    disposers = [];
+                    items = [];
+                    mapped = [];
+                    len = 0;
+                    indexes && (indexes = []);
+                }
+                if (options.fallback) {
+                    items = [
+                        FALLBACK
+                    ];
+                    mapped[0] = createRoot((disposer)=>{
+                        disposers[0] = disposer;
+                        return options.fallback();
+                    });
+                    len = 1;
+                }
+            } else if (len === 0) {
+                mapped = new Array(newLen);
+                for(j = 0; j < newLen; j++){
+                    items[j] = newItems[j];
+                    mapped[j] = createRoot(mapper);
+                }
+                len = newLen;
+            } else {
+                temp = new Array(newLen);
+                tempdisposers = new Array(newLen);
+                indexes && (tempIndexes = new Array(newLen));
+                for(start = 0, end = Math.min(len, newLen); start < end && items[start] === newItems[start]; start++);
+                for(end = len - 1, newEnd = newLen - 1; end >= start && newEnd >= start && items[end] === newItems[newEnd]; end--, newEnd--){
+                    temp[newEnd] = mapped[end];
+                    tempdisposers[newEnd] = disposers[end];
+                    indexes && (tempIndexes[newEnd] = indexes[end]);
+                }
+                newIndices = /* @__PURE__ */ new Map();
+                newIndicesNext = new Array(newEnd + 1);
+                for(j = newEnd; j >= start; j--){
+                    item = newItems[j];
+                    i = newIndices.get(item);
+                    newIndicesNext[j] = i === void 0 ? -1 : i;
+                    newIndices.set(item, j);
+                }
+                for(i = start; i <= end; i++){
+                    item = items[i];
+                    j = newIndices.get(item);
+                    if (j !== void 0 && j !== -1) {
+                        temp[j] = mapped[i];
+                        tempdisposers[j] = disposers[i];
+                        indexes && (tempIndexes[j] = indexes[i]);
+                        j = newIndicesNext[j];
+                        newIndices.set(item, j);
+                    } else disposers[i]();
+                }
+                for(j = start; j < newLen; j++){
+                    if (j in temp) {
+                        mapped[j] = temp[j];
+                        disposers[j] = tempdisposers[j];
+                        if (indexes) {
+                            indexes[j] = tempIndexes[j];
+                            indexes[j](j);
+                        }
+                    } else mapped[j] = createRoot(mapper);
+                }
+                mapped = mapped.slice(0, len = newLen);
+                items = newItems.slice(0);
+            }
+            return mapped;
+        });
+        //TURBOPACK unreachable
+        ;
+        function mapper(disposer) {
+            disposers[j] = disposer;
+            if (indexes) {
+                const [s, set] = createSignal(j);
+                indexes[j] = set;
+                return mapFn(newItems[j], s);
+            }
+            return mapFn(newItems[j]);
+        }
+    };
+}
+function indexArray(list, mapFn, options = {}) {
+    let items = [], mapped = [], disposers = [], signals = [], len = 0, i;
+    onCleanup(()=>dispose(disposers));
+    return ()=>{
+        const newItems = list() || [], newLen = newItems.length;
+        newItems[$TRACK];
+        return untrack(()=>{
+            if (newLen === 0) {
+                if (len !== 0) {
+                    dispose(disposers);
+                    disposers = [];
+                    items = [];
+                    mapped = [];
+                    len = 0;
+                    signals = [];
+                }
+                if (options.fallback) {
+                    items = [
+                        FALLBACK
+                    ];
+                    mapped[0] = createRoot((disposer)=>{
+                        disposers[0] = disposer;
+                        return options.fallback();
+                    });
+                    len = 1;
+                }
+                return mapped;
+            }
+            if (items[0] === FALLBACK) {
+                disposers[0]();
+                disposers = [];
+                items = [];
+                mapped = [];
+                len = 0;
+            }
+            for(i = 0; i < newLen; i++){
+                if (i < items.length && items[i] !== newItems[i]) {
+                    signals[i](()=>newItems[i]);
+                } else if (i >= items.length) {
+                    mapped[i] = createRoot(mapper);
+                }
+            }
+            for(; i < items.length; i++){
+                disposers[i]();
+            }
+            len = signals.length = disposers.length = newLen;
+            items = newItems.slice(0);
+            return mapped = mapped.slice(0, len);
+        });
+        //TURBOPACK unreachable
+        ;
+        function mapper(disposer) {
+            disposers[i] = disposer;
+            const [s, set] = createSignal(newItems[i]);
+            signals[i] = set;
+            return mapFn(s, i);
+        }
+    };
+}
+var hydrationEnabled = false;
+function createComponent(Comp, props) {
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    return untrack(()=>Comp(props || {}));
+}
+function trueFn() {
+    return true;
+}
+var propTraps = {
+    get (_, property, receiver) {
+        if (property === $PROXY) return receiver;
+        return _.get(property);
+    },
+    has (_, property) {
+        if (property === $PROXY) return true;
+        return _.has(property);
+    },
+    set: trueFn,
+    deleteProperty: trueFn,
+    getOwnPropertyDescriptor (_, property) {
+        return {
+            configurable: true,
+            enumerable: true,
+            get () {
+                return _.get(property);
+            },
+            set: trueFn,
+            deleteProperty: trueFn
+        };
+    },
+    ownKeys (_) {
+        return _.keys();
+    }
+};
+function resolveSource(s) {
+    return !(s = typeof s === "function" ? s() : s) ? {} : s;
+}
+function resolveSources() {
+    for(let i = 0, length = this.length; i < length; ++i){
+        const v = this[i]();
+        if (v !== void 0) return v;
+    }
+}
+function mergeProps(...sources) {
+    let proxy = false;
+    for(let i = 0; i < sources.length; i++){
+        const s = sources[i];
+        proxy = proxy || !!s && $PROXY in s;
+        sources[i] = typeof s === "function" ? (proxy = true, createMemo(s)) : s;
+    }
+    if (SUPPORTS_PROXY && proxy) {
+        return new Proxy({
+            get (property) {
+                for(let i = sources.length - 1; i >= 0; i--){
+                    const v = resolveSource(sources[i])[property];
+                    if (v !== void 0) return v;
+                }
+            },
+            has (property) {
+                for(let i = sources.length - 1; i >= 0; i--){
+                    if (property in resolveSource(sources[i])) return true;
+                }
+                return false;
+            },
+            keys () {
+                const keys = [];
+                for(let i = 0; i < sources.length; i++)keys.push(...Object.keys(resolveSource(sources[i])));
+                return [
+                    ...new Set(keys)
+                ];
+            }
+        }, propTraps);
+    }
+    const sourcesMap = {};
+    const defined = /* @__PURE__ */ Object.create(null);
+    for(let i = sources.length - 1; i >= 0; i--){
+        const source = sources[i];
+        if (!source) continue;
+        const sourceKeys = Object.getOwnPropertyNames(source);
+        for(let i2 = sourceKeys.length - 1; i2 >= 0; i2--){
+            const key = sourceKeys[i2];
+            if (key === "__proto__" || key === "constructor") continue;
+            const desc = Object.getOwnPropertyDescriptor(source, key);
+            if (!defined[key]) {
+                defined[key] = desc.get ? {
+                    enumerable: true,
+                    configurable: true,
+                    get: resolveSources.bind(sourcesMap[key] = [
+                        desc.get.bind(source)
+                    ])
+                } : desc.value !== void 0 ? desc : void 0;
+            } else {
+                const sources2 = sourcesMap[key];
+                if (sources2) {
+                    if (desc.get) sources2.push(desc.get.bind(source));
+                    else if (desc.value !== void 0) sources2.push(()=>desc.value);
+                }
+            }
+        }
+    }
+    const target = {};
+    const definedKeys = Object.keys(defined);
+    for(let i = definedKeys.length - 1; i >= 0; i--){
+        const key = definedKeys[i], desc = defined[key];
+        if (desc && desc.get) Object.defineProperty(target, key, desc);
+        else target[key] = desc ? desc.value : void 0;
+    }
+    return target;
+}
+function splitProps(props, ...keys) {
+    if (SUPPORTS_PROXY && $PROXY in props) {
+        const blocked = new Set(keys.length > 1 ? keys.flat() : keys[0]);
+        const res = keys.map((k)=>{
+            return new Proxy({
+                get (property) {
+                    return k.includes(property) ? props[property] : void 0;
+                },
+                has (property) {
+                    return k.includes(property) && property in props;
+                },
+                keys () {
+                    return k.filter((property)=>property in props);
+                }
+            }, propTraps);
+        });
+        res.push(new Proxy({
+            get (property) {
+                return blocked.has(property) ? void 0 : props[property];
+            },
+            has (property) {
+                return blocked.has(property) ? false : property in props;
+            },
+            keys () {
+                return Object.keys(props).filter((k)=>!blocked.has(k));
+            }
+        }, propTraps));
+        return res;
+    }
+    const otherObject = {};
+    const objects = keys.map(()=>({}));
+    for (const propName of Object.getOwnPropertyNames(props)){
+        const desc = Object.getOwnPropertyDescriptor(props, propName);
+        const isDefaultDesc = !desc.get && !desc.set && desc.enumerable && desc.writable && desc.configurable;
+        let blocked = false;
+        let objectIndex = 0;
+        for (const k of keys){
+            if (k.includes(propName)) {
+                blocked = true;
+                isDefaultDesc ? objects[objectIndex][propName] = desc.value : Object.defineProperty(objects[objectIndex], propName, desc);
+            }
+            ++objectIndex;
+        }
+        if (!blocked) {
+            isDefaultDesc ? otherObject[propName] = desc.value : Object.defineProperty(otherObject, propName, desc);
+        }
+    }
+    return [
+        ...objects,
+        otherObject
+    ];
+}
+function lazy(fn) {
+    let comp;
+    let p;
+    const wrap = (props)=>{
+        const ctx = sharedConfig.context;
+        if (ctx) {
+            const [s, set] = createSignal();
+            sharedConfig.count || (sharedConfig.count = 0);
+            sharedConfig.count++;
+            (p || (p = fn())).then((mod)=>{
+                !sharedConfig.done && setHydrateContext(ctx);
+                sharedConfig.count--;
+                set(()=>mod.default);
+                setHydrateContext();
+            });
+            comp = s;
+        } else if (!comp) {
+            const [s] = createResource(()=>(p || (p = fn())).then((mod)=>mod.default));
+            comp = s;
+        }
+        let Comp;
+        return createMemo(()=>(Comp = comp()) ? untrack(()=>{
+                if (IS_DEV) ;
+                if (!ctx || sharedConfig.done) return Comp(props);
+                const c = sharedConfig.context;
+                setHydrateContext(ctx);
+                const r = Comp(props);
+                setHydrateContext(c);
+                return r;
+            }) : "");
+    };
+    wrap.preload = ()=>p || ((p = fn()).then((mod)=>comp = ()=>mod.default), p);
+    return wrap;
+}
+var counter = 0;
+function createUniqueId() {
+    const ctx = sharedConfig.context;
+    return ctx ? sharedConfig.getNextContextId() : `cl-${counter++}`;
+}
+var narrowedError = (name)=>`Stale read from <${name}>.`;
+function For(props) {
+    const fallback = "fallback" in props && {
+        fallback: ()=>props.fallback
+    };
+    return createMemo(mapArray(()=>props.each, props.children, fallback || void 0));
+}
+function Index(props) {
+    const fallback = "fallback" in props && {
+        fallback: ()=>props.fallback
+    };
+    return createMemo(indexArray(()=>props.each, props.children, fallback || void 0));
+}
+function Show(props) {
+    const keyed = props.keyed;
+    const conditionValue = createMemo(()=>props.when, void 0, void 0);
+    const condition = keyed ? conditionValue : createMemo(conditionValue, void 0, {
+        equals: (a, b)=>!a === !b
+    });
+    return createMemo(()=>{
+        const c = condition();
+        if (c) {
+            const child = props.children;
+            const fn = typeof child === "function" && child.length > 0;
+            return fn ? untrack(()=>child(keyed ? c : ()=>{
+                    if (!untrack(condition)) throw narrowedError("Show");
+                    return conditionValue();
+                })) : child;
+        }
+        return props.fallback;
+    }, void 0, void 0);
+}
+function Switch(props) {
+    const chs = children(()=>props.children);
+    const switchFunc = createMemo(()=>{
+        const ch = chs();
+        const mps = Array.isArray(ch) ? ch : [
+            ch
+        ];
+        let func = ()=>void 0;
+        for(let i = 0; i < mps.length; i++){
+            const index = i;
+            const mp = mps[i];
+            const prevFunc = func;
+            const conditionValue = createMemo(()=>prevFunc() ? void 0 : mp.when, void 0, void 0);
+            const condition = mp.keyed ? conditionValue : createMemo(conditionValue, void 0, {
+                equals: (a, b)=>!a === !b
+            });
+            func = ()=>prevFunc() || (condition() ? [
+                    index,
+                    conditionValue,
+                    mp
+                ] : void 0);
+        }
+        return func;
+    });
+    return createMemo(()=>{
+        const sel = switchFunc()();
+        if (!sel) return props.fallback;
+        const [index, conditionValue, mp] = sel;
+        const child = mp.children;
+        const fn = typeof child === "function" && child.length > 0;
+        return fn ? untrack(()=>child(mp.keyed ? conditionValue() : ()=>{
+                if (untrack(switchFunc)()?.[0] !== index) throw narrowedError("Match");
+                return conditionValue();
+            })) : child;
+    }, void 0, void 0);
+}
+function Match(props) {
+    return props;
+}
+var DEV = void 0;
+// ../../node_modules/.pnpm/solid-js@1.9.7/node_modules/solid-js/web/dist/web.js
+var booleans = [
+    "allowfullscreen",
+    "async",
+    "autofocus",
+    "autoplay",
+    "checked",
+    "controls",
+    "default",
+    "disabled",
+    "formnovalidate",
+    "hidden",
+    "indeterminate",
+    "inert",
+    "ismap",
+    "loop",
+    "multiple",
+    "muted",
+    "nomodule",
+    "novalidate",
+    "open",
+    "playsinline",
+    "readonly",
+    "required",
+    "reversed",
+    "seamless",
+    "selected"
+];
+var Properties = /* @__PURE__ */ new Set([
+    "className",
+    "value",
+    "readOnly",
+    "noValidate",
+    "formNoValidate",
+    "isMap",
+    "noModule",
+    "playsInline",
+    ...booleans
+]);
+var ChildProperties = /* @__PURE__ */ new Set([
+    "innerHTML",
+    "textContent",
+    "innerText",
+    "children"
+]);
+var Aliases = /* @__PURE__ */ Object.assign(/* @__PURE__ */ Object.create(null), {
+    className: "class",
+    htmlFor: "for"
+});
+var PropAliases = /* @__PURE__ */ Object.assign(/* @__PURE__ */ Object.create(null), {
+    class: "className",
+    novalidate: {
+        $: "noValidate",
+        FORM: 1
+    },
+    formnovalidate: {
+        $: "formNoValidate",
+        BUTTON: 1,
+        INPUT: 1
+    },
+    ismap: {
+        $: "isMap",
+        IMG: 1
+    },
+    nomodule: {
+        $: "noModule",
+        SCRIPT: 1
+    },
+    playsinline: {
+        $: "playsInline",
+        VIDEO: 1
+    },
+    readonly: {
+        $: "readOnly",
+        INPUT: 1,
+        TEXTAREA: 1
+    }
+});
+function getPropAlias(prop, tagName) {
+    const a = PropAliases[prop];
+    return typeof a === "object" ? a[tagName] ? a["$"] : void 0 : a;
+}
+var DelegatedEvents = /* @__PURE__ */ new Set([
+    "beforeinput",
+    "click",
+    "dblclick",
+    "contextmenu",
+    "focusin",
+    "focusout",
+    "input",
+    "keydown",
+    "keyup",
+    "mousedown",
+    "mousemove",
+    "mouseout",
+    "mouseover",
+    "mouseup",
+    "pointerdown",
+    "pointermove",
+    "pointerout",
+    "pointerover",
+    "pointerup",
+    "touchend",
+    "touchmove",
+    "touchstart"
+]);
+var SVGElements = /* @__PURE__ */ new Set([
+    "altGlyph",
+    "altGlyphDef",
+    "altGlyphItem",
+    "animate",
+    "animateColor",
+    "animateMotion",
+    "animateTransform",
+    "circle",
+    "clipPath",
+    "color-profile",
+    "cursor",
+    "defs",
+    "desc",
+    "ellipse",
+    "feBlend",
+    "feColorMatrix",
+    "feComponentTransfer",
+    "feComposite",
+    "feConvolveMatrix",
+    "feDiffuseLighting",
+    "feDisplacementMap",
+    "feDistantLight",
+    "feDropShadow",
+    "feFlood",
+    "feFuncA",
+    "feFuncB",
+    "feFuncG",
+    "feFuncR",
+    "feGaussianBlur",
+    "feImage",
+    "feMerge",
+    "feMergeNode",
+    "feMorphology",
+    "feOffset",
+    "fePointLight",
+    "feSpecularLighting",
+    "feSpotLight",
+    "feTile",
+    "feTurbulence",
+    "filter",
+    "font",
+    "font-face",
+    "font-face-format",
+    "font-face-name",
+    "font-face-src",
+    "font-face-uri",
+    "foreignObject",
+    "g",
+    "glyph",
+    "glyphRef",
+    "hkern",
+    "image",
+    "line",
+    "linearGradient",
+    "marker",
+    "mask",
+    "metadata",
+    "missing-glyph",
+    "mpath",
+    "path",
+    "pattern",
+    "polygon",
+    "polyline",
+    "radialGradient",
+    "rect",
+    "set",
+    "stop",
+    "svg",
+    "switch",
+    "symbol",
+    "text",
+    "textPath",
+    "tref",
+    "tspan",
+    "use",
+    "view",
+    "vkern"
+]);
+var SVGNamespace = {
+    xlink: "http://www.w3.org/1999/xlink",
+    xml: "http://www.w3.org/XML/1998/namespace"
+};
+var memo = (fn)=>createMemo(()=>fn());
+function reconcileArrays(parentNode, a, b) {
+    let bLength = b.length, aEnd = a.length, bEnd = bLength, aStart = 0, bStart = 0, after = a[aEnd - 1].nextSibling, map = null;
+    while(aStart < aEnd || bStart < bEnd){
+        if (a[aStart] === b[bStart]) {
+            aStart++;
+            bStart++;
+            continue;
+        }
+        while(a[aEnd - 1] === b[bEnd - 1]){
+            aEnd--;
+            bEnd--;
+        }
+        if (aEnd === aStart) {
+            const node = bEnd < bLength ? bStart ? b[bStart - 1].nextSibling : b[bEnd - bStart] : after;
+            while(bStart < bEnd)parentNode.insertBefore(b[bStart++], node);
+        } else if (bEnd === bStart) {
+            while(aStart < aEnd){
+                if (!map || !map.has(a[aStart])) a[aStart].remove();
+                aStart++;
+            }
+        } else if (a[aStart] === b[bEnd - 1] && b[bStart] === a[aEnd - 1]) {
+            const node = a[--aEnd].nextSibling;
+            parentNode.insertBefore(b[bStart++], a[aStart++].nextSibling);
+            parentNode.insertBefore(b[--bEnd], node);
+            a[aEnd] = b[bEnd];
+        } else {
+            if (!map) {
+                map = /* @__PURE__ */ new Map();
+                let i = bStart;
+                while(i < bEnd)map.set(b[i], i++);
+            }
+            const index = map.get(a[aStart]);
+            if (index != null) {
+                if (bStart < index && index < bEnd) {
+                    let i = aStart, sequence = 1, t;
+                    while(++i < aEnd && i < bEnd){
+                        if ((t = map.get(a[i])) == null || t !== index + sequence) break;
+                        sequence++;
+                    }
+                    if (sequence > index - bStart) {
+                        const node = a[aStart];
+                        while(bStart < index)parentNode.insertBefore(b[bStart++], node);
+                    } else parentNode.replaceChild(b[bStart++], a[aStart++]);
+                } else aStart++;
+            } else a[aStart++].remove();
+        }
+    }
+}
+var $$EVENTS = "_$DX_DELEGATE";
+function render(code, element, init, options = {}) {
+    let disposer;
+    createRoot((dispose2)=>{
+        disposer = dispose2;
+        element === document ? code() : insert(element, code(), element.firstChild ? null : void 0, init);
+    }, options.owner);
+    return ()=>{
+        disposer();
+        element.textContent = "";
+    };
+}
+function template(html, isImportNode, isSVG, isMathML) {
+    let node;
+    const create = ()=>{
+        const t = isMathML ? document.createElementNS("http://www.w3.org/1998/Math/MathML", "template") : document.createElement("template");
+        t.innerHTML = html;
+        return isSVG ? t.content.firstChild.firstChild : isMathML ? t.firstChild : t.content.firstChild;
+    };
+    const fn = isImportNode ? ()=>untrack(()=>document.importNode(node || (node = create()), true)) : ()=>(node || (node = create())).cloneNode(true);
+    fn.cloneNode = fn;
+    return fn;
+}
+function delegateEvents(eventNames, document2 = window.document) {
+    const e = document2[$$EVENTS] || (document2[$$EVENTS] = /* @__PURE__ */ new Set());
+    for(let i = 0, l = eventNames.length; i < l; i++){
+        const name = eventNames[i];
+        if (!e.has(name)) {
+            e.add(name);
+            document2.addEventListener(name, eventHandler);
+        }
+    }
+}
+function clearDelegatedEvents(document2 = window.document) {
+    if (document2[$$EVENTS]) {
+        for (let name of document2[$$EVENTS].keys())document2.removeEventListener(name, eventHandler);
+        delete document2[$$EVENTS];
+    }
+}
+function setAttribute(node, name, value) {
+    if (isHydrating(node)) return;
+    if (value == null) node.removeAttribute(name);
+    else node.setAttribute(name, value);
+}
+function setAttributeNS(node, namespace, name, value) {
+    if (isHydrating(node)) return;
+    if (value == null) node.removeAttributeNS(namespace, name);
+    else node.setAttributeNS(namespace, name, value);
+}
+function setBoolAttribute(node, name, value) {
+    if (isHydrating(node)) return;
+    value ? node.setAttribute(name, "") : node.removeAttribute(name);
+}
+function className(node, value) {
+    if (isHydrating(node)) return;
+    if (value == null) node.removeAttribute("class");
+    else node.className = value;
+}
+function addEventListener(node, name, handler, delegate) {
+    if (delegate) {
+        if (Array.isArray(handler)) {
+            node[`$$${name}`] = handler[0];
+            node[`$$${name}Data`] = handler[1];
+        } else node[`$$${name}`] = handler;
+    } else if (Array.isArray(handler)) {
+        const handlerFn = handler[0];
+        node.addEventListener(name, handler[0] = (e)=>handlerFn.call(node, handler[1], e));
+    } else node.addEventListener(name, handler, typeof handler !== "function" && handler);
+}
+function classList(node, value, prev = {}) {
+    const classKeys = Object.keys(value || {}), prevKeys = Object.keys(prev);
+    let i, len;
+    for(i = 0, len = prevKeys.length; i < len; i++){
+        const key = prevKeys[i];
+        if (!key || key === "undefined" || value[key]) continue;
+        toggleClassKey(node, key, false);
+        delete prev[key];
+    }
+    for(i = 0, len = classKeys.length; i < len; i++){
+        const key = classKeys[i], classValue = !!value[key];
+        if (!key || key === "undefined" || prev[key] === classValue || !classValue) continue;
+        toggleClassKey(node, key, true);
+        prev[key] = classValue;
+    }
+    return prev;
+}
+function style(node, value, prev) {
+    if (!value) return prev ? setAttribute(node, "style") : value;
+    const nodeStyle = node.style;
+    if (typeof value === "string") return nodeStyle.cssText = value;
+    typeof prev === "string" && (nodeStyle.cssText = prev = void 0);
+    prev || (prev = {});
+    value || (value = {});
+    let v, s;
+    for(s in prev){
+        value[s] == null && nodeStyle.removeProperty(s);
+        delete prev[s];
+    }
+    for(s in value){
+        v = value[s];
+        if (v !== prev[s]) {
+            nodeStyle.setProperty(s, v);
+            prev[s] = v;
+        }
+    }
+    return prev;
+}
+function spread(node, props = {}, isSVG, skipChildren) {
+    const prevProps = {};
+    if (!skipChildren) {
+        createRenderEffect(()=>prevProps.children = insertExpression(node, props.children, prevProps.children));
+    }
+    createRenderEffect(()=>typeof props.ref === "function" && use(props.ref, node));
+    createRenderEffect(()=>assign(node, props, isSVG, true, prevProps, true));
+    return prevProps;
+}
+function use(fn, element, arg) {
+    return untrack(()=>fn(element, arg));
+}
+function insert(parent, accessor, marker, initial) {
+    if (marker !== void 0 && !initial) initial = [];
+    if (typeof accessor !== "function") return insertExpression(parent, accessor, initial, marker);
+    createRenderEffect((current)=>insertExpression(parent, accessor(), current, marker), initial);
+}
+function assign(node, props, isSVG, skipChildren, prevProps = {}, skipRef = false) {
+    props || (props = {});
+    for(const prop in prevProps){
+        if (!(prop in props)) {
+            if (prop === "children") continue;
+            prevProps[prop] = assignProp(node, prop, null, prevProps[prop], isSVG, skipRef, props);
+        }
+    }
+    for(const prop in props){
+        if (prop === "children") {
+            continue;
+        }
+        const value = props[prop];
+        prevProps[prop] = assignProp(node, prop, value, prevProps[prop], isSVG, skipRef, props);
+    }
+}
+function getNextElement(template2) {
+    let node, key, hydrating = isHydrating();
+    if (!hydrating || !(node = sharedConfig.registry.get(key = getHydrationKey()))) {
+        return template2();
+    }
+    if (sharedConfig.completed) sharedConfig.completed.add(node);
+    sharedConfig.registry.delete(key);
+    return node;
+}
+function isHydrating(node) {
+    return !!sharedConfig.context && !sharedConfig.done && (!node || node.isConnected);
+}
+function toPropertyName(name) {
+    return name.toLowerCase().replace(/-([a-z])/g, (_, w)=>w.toUpperCase());
+}
+function toggleClassKey(node, key, value) {
+    const classNames = key.trim().split(/\s+/);
+    for(let i = 0, nameLen = classNames.length; i < nameLen; i++)node.classList.toggle(classNames[i], value);
+}
+function assignProp(node, prop, value, prev, isSVG, skipRef, props) {
+    let isCE, isProp, isChildProp, propAlias, forceProp;
+    if (prop === "style") return style(node, value, prev);
+    if (prop === "classList") return classList(node, value, prev);
+    if (value === prev) return prev;
+    if (prop === "ref") {
+        if (!skipRef) value(node);
+    } else if (prop.slice(0, 3) === "on:") {
+        const e = prop.slice(3);
+        prev && node.removeEventListener(e, prev, typeof prev !== "function" && prev);
+        value && node.addEventListener(e, value, typeof value !== "function" && value);
+    } else if (prop.slice(0, 10) === "oncapture:") {
+        const e = prop.slice(10);
+        prev && node.removeEventListener(e, prev, true);
+        value && node.addEventListener(e, value, true);
+    } else if (prop.slice(0, 2) === "on") {
+        const name = prop.slice(2).toLowerCase();
+        const delegate = DelegatedEvents.has(name);
+        if (!delegate && prev) {
+            const h = Array.isArray(prev) ? prev[0] : prev;
+            node.removeEventListener(name, h);
+        }
+        if (delegate || value) {
+            addEventListener(node, name, value, delegate);
+            delegate && delegateEvents([
+                name
+            ]);
+        }
+    } else if (prop.slice(0, 5) === "attr:") {
+        setAttribute(node, prop.slice(5), value);
+    } else if (prop.slice(0, 5) === "bool:") {
+        setBoolAttribute(node, prop.slice(5), value);
+    } else if ((forceProp = prop.slice(0, 5) === "prop:") || (isChildProp = ChildProperties.has(prop)) || !isSVG && ((propAlias = getPropAlias(prop, node.tagName)) || (isProp = Properties.has(prop))) || (isCE = node.nodeName.includes("-") || "is" in props)) {
+        if (forceProp) {
+            prop = prop.slice(5);
+            isProp = true;
+        } else if (isHydrating(node)) return value;
+        if (prop === "class" || prop === "className") className(node, value);
+        else if (isCE && !isProp && !isChildProp) node[toPropertyName(prop)] = value;
+        else node[propAlias || prop] = value;
+    } else {
+        const ns = isSVG && prop.indexOf(":") > -1 && SVGNamespace[prop.split(":")[0]];
+        if (ns) setAttributeNS(node, ns, prop, value);
+        else setAttribute(node, Aliases[prop] || prop, value);
+    }
+    return value;
+}
+function eventHandler(e) {
+    if (sharedConfig.registry && sharedConfig.events) {
+        if (sharedConfig.events.find(([el, ev])=>ev === e)) return;
+    }
+    let node = e.target;
+    const key = `$$${e.type}`;
+    const oriTarget = e.target;
+    const oriCurrentTarget = e.currentTarget;
+    const retarget = (value)=>Object.defineProperty(e, "target", {
+            configurable: true,
+            value
+        });
+    const handleNode = ()=>{
+        const handler = node[key];
+        if (handler && !node.disabled) {
+            const data = node[`${key}Data`];
+            data !== void 0 ? handler.call(node, data, e) : handler.call(node, e);
+            if (e.cancelBubble) return;
+        }
+        node.host && typeof node.host !== "string" && !node.host._$host && node.contains(e.target) && retarget(node.host);
+        return true;
+    };
+    const walkUpTree = ()=>{
+        while(handleNode() && (node = node._$host || node.parentNode || node.host));
+    };
+    Object.defineProperty(e, "currentTarget", {
+        configurable: true,
+        get () {
+            return node || document;
+        }
+    });
+    if (sharedConfig.registry && !sharedConfig.done) sharedConfig.done = _$HY.done = true;
+    if (e.composedPath) {
+        const path = e.composedPath();
+        retarget(path[0]);
+        for(let i = 0; i < path.length - 2; i++){
+            node = path[i];
+            if (!handleNode()) break;
+            if (node._$host) {
+                node = node._$host;
+                walkUpTree();
+                break;
+            }
+            if (node.parentNode === oriCurrentTarget) {
+                break;
+            }
+        }
+    } else walkUpTree();
+    retarget(oriTarget);
+}
+function insertExpression(parent, value, current, marker, unwrapArray) {
+    const hydrating = isHydrating(parent);
+    if (hydrating) {
+        !current && (current = [
+            ...parent.childNodes
+        ]);
+        let cleaned = [];
+        for(let i = 0; i < current.length; i++){
+            const node = current[i];
+            if (node.nodeType === 8 && node.data.slice(0, 2) === "!$") node.remove();
+            else cleaned.push(node);
+        }
+        current = cleaned;
+    }
+    while(typeof current === "function")current = current();
+    if (value === current) return current;
+    const t = typeof value, multi = marker !== void 0;
+    parent = multi && current[0] && current[0].parentNode || parent;
+    if (t === "string" || t === "number") {
+        if (hydrating) return current;
+        if (t === "number") {
+            value = value.toString();
+            if (value === current) return current;
+        }
+        if (multi) {
+            let node = current[0];
+            if (node && node.nodeType === 3) {
+                node.data !== value && (node.data = value);
+            } else node = document.createTextNode(value);
+            current = cleanChildren(parent, current, marker, node);
+        } else {
+            if (current !== "" && typeof current === "string") {
+                current = parent.firstChild.data = value;
+            } else current = parent.textContent = value;
+        }
+    } else if (value == null || t === "boolean") {
+        if (hydrating) return current;
+        current = cleanChildren(parent, current, marker);
+    } else if (t === "function") {
+        createRenderEffect(()=>{
+            let v = value();
+            while(typeof v === "function")v = v();
+            current = insertExpression(parent, v, current, marker);
+        });
+        return ()=>current;
+    } else if (Array.isArray(value)) {
+        const array = [];
+        const currentArray = current && Array.isArray(current);
+        if (normalizeIncomingArray(array, value, current, unwrapArray)) {
+            createRenderEffect(()=>current = insertExpression(parent, array, current, marker, true));
+            return ()=>current;
+        }
+        if (hydrating) {
+            if (!array.length) return current;
+            if (marker === void 0) return current = [
+                ...parent.childNodes
+            ];
+            let node = array[0];
+            if (node.parentNode !== parent) return current;
+            const nodes = [
+                node
+            ];
+            while((node = node.nextSibling) !== marker)nodes.push(node);
+            return current = nodes;
+        }
+        if (array.length === 0) {
+            current = cleanChildren(parent, current, marker);
+            if (multi) return current;
+        } else if (currentArray) {
+            if (current.length === 0) {
+                appendNodes(parent, array, marker);
+            } else reconcileArrays(parent, current, array);
+        } else {
+            current && cleanChildren(parent);
+            appendNodes(parent, array);
+        }
+        current = array;
+    } else if (value.nodeType) {
+        if (hydrating && value.parentNode) return current = multi ? [
+            value
+        ] : value;
+        if (Array.isArray(current)) {
+            if (multi) return current = cleanChildren(parent, current, marker, value);
+            cleanChildren(parent, current, null, value);
+        } else if (current == null || current === "" || !parent.firstChild) {
+            parent.appendChild(value);
+        } else parent.replaceChild(value, parent.firstChild);
+        current = value;
+    } else ;
+    return current;
+}
+function normalizeIncomingArray(normalized, array, current, unwrap) {
+    let dynamic = false;
+    for(let i = 0, len = array.length; i < len; i++){
+        let item = array[i], prev = current && current[normalized.length], t;
+        if (item == null || item === true || item === false) ;
+        else if ((t = typeof item) === "object" && item.nodeType) {
+            normalized.push(item);
+        } else if (Array.isArray(item)) {
+            dynamic = normalizeIncomingArray(normalized, item, prev) || dynamic;
+        } else if (t === "function") {
+            if (unwrap) {
+                while(typeof item === "function")item = item();
+                dynamic = normalizeIncomingArray(normalized, Array.isArray(item) ? item : [
+                    item
+                ], Array.isArray(prev) ? prev : [
+                    prev
+                ]) || dynamic;
+            } else {
+                normalized.push(item);
+                dynamic = true;
+            }
+        } else {
+            const value = String(item);
+            if (prev && prev.nodeType === 3 && prev.data === value) normalized.push(prev);
+            else normalized.push(document.createTextNode(value));
+        }
+    }
+    return dynamic;
+}
+function appendNodes(parent, array, marker = null) {
+    for(let i = 0, len = array.length; i < len; i++)parent.insertBefore(array[i], marker);
+}
+function cleanChildren(parent, current, marker, replacement) {
+    if (marker === void 0) return parent.textContent = "";
+    const node = replacement || document.createTextNode("");
+    if (current.length) {
+        let inserted = false;
+        for(let i = current.length - 1; i >= 0; i--){
+            const el = current[i];
+            if (node !== el) {
+                const isParent = el.parentNode === parent;
+                if (!inserted && !i) isParent ? parent.replaceChild(node, el) : parent.insertBefore(node, marker);
+                else isParent && el.remove();
+            } else inserted = true;
+        }
+    } else parent.insertBefore(node, marker);
+    return [
+        node
+    ];
+}
+function getHydrationKey() {
+    return sharedConfig.getNextContextId();
+}
+var isServer = false;
+var SVG_NAMESPACE = "http://www.w3.org/2000/svg";
+function createElement(tagName, isSVG = false) {
+    return isSVG ? document.createElementNS(SVG_NAMESPACE, tagName) : document.createElement(tagName);
+}
+function Portal(props) {
+    const { useShadow } = props, marker = document.createTextNode(""), mount = ()=>props.mount || document.body, owner = getOwner();
+    let content;
+    let hydrating = !!sharedConfig.context;
+    createEffect(()=>{
+        if (hydrating) getOwner().user = hydrating = false;
+        content || (content = runWithOwner(owner, ()=>createMemo(()=>props.children)));
+        const el = mount();
+        if (el instanceof HTMLHeadElement) {
+            const [clean, setClean] = createSignal(false);
+            const cleanup = ()=>setClean(true);
+            createRoot((dispose2)=>insert(el, ()=>!clean() ? content() : dispose2(), null));
+            onCleanup(cleanup);
+        } else {
+            const container = createElement(props.isSVG ? "g" : "div", props.isSVG), renderRoot = useShadow && container.attachShadow ? container.attachShadow({
+                mode: "open"
+            }) : container;
+            Object.defineProperty(container, "_$host", {
+                get () {
+                    return marker.parentNode;
+                },
+                configurable: true
+            });
+            insert(renderRoot, content);
+            el.appendChild(container);
+            props.ref && props.ref(container);
+            onCleanup(()=>el.removeChild(container));
+        }
+    }, void 0, {
+        render: !hydrating
+    });
+    return marker;
+}
+function createDynamic(component, props) {
+    const cached = createMemo(component);
+    return createMemo(()=>{
+        const component2 = cached();
+        switch(typeof component2){
+            case "function":
+                return untrack(()=>component2(props));
+            case "string":
+                const isSvg = SVGElements.has(component2);
+                const el = sharedConfig.context ? getNextElement() : createElement(component2, isSvg);
+                spread(el, props, isSvg);
+                return el;
+        }
+    });
+}
+function Dynamic(props) {
+    const [, others] = splitProps(props, [
+        "component"
+    ]);
+    return createDynamic(()=>props.component, others);
+}
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/double-indexed-kv.js
+var DoubleIndexedKV = class {
+    constructor(){
+        this.keyToValue = /* @__PURE__ */ new Map();
+        this.valueToKey = /* @__PURE__ */ new Map();
+    }
+    set(key, value) {
+        this.keyToValue.set(key, value);
+        this.valueToKey.set(value, key);
+    }
+    getByKey(key) {
+        return this.keyToValue.get(key);
+    }
+    getByValue(value) {
+        return this.valueToKey.get(value);
+    }
+    clear() {
+        this.keyToValue.clear();
+        this.valueToKey.clear();
+    }
+};
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/registry.js
+var Registry = class {
+    constructor(generateIdentifier){
+        this.generateIdentifier = generateIdentifier;
+        this.kv = new DoubleIndexedKV();
+    }
+    register(value, identifier) {
+        if (this.kv.getByValue(value)) {
+            return;
+        }
+        if (!identifier) {
+            identifier = this.generateIdentifier(value);
+        }
+        this.kv.set(identifier, value);
+    }
+    clear() {
+        this.kv.clear();
+    }
+    getIdentifier(value) {
+        return this.kv.getByValue(value);
+    }
+    getValue(identifier) {
+        return this.kv.getByKey(identifier);
+    }
+};
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/class-registry.js
+var ClassRegistry = class extends Registry {
+    constructor(){
+        super((c)=>c.name);
+        this.classToAllowedProps = /* @__PURE__ */ new Map();
+    }
+    register(value, options) {
+        if (typeof options === "object") {
+            if (options.allowProps) {
+                this.classToAllowedProps.set(value, options.allowProps);
+            }
+            super.register(value, options.identifier);
+        } else {
+            super.register(value, options);
+        }
+    }
+    getAllowedProps(value) {
+        return this.classToAllowedProps.get(value);
+    }
+};
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/util.js
+function valuesOfObj(record) {
+    if ("values" in Object) {
+        return Object.values(record);
+    }
+    const values = [];
+    for(const key in record){
+        if (record.hasOwnProperty(key)) {
+            values.push(record[key]);
+        }
+    }
+    return values;
+}
+function find(record, predicate) {
+    const values = valuesOfObj(record);
+    if ("find" in values) {
+        return values.find(predicate);
+    }
+    const valuesNotNever = values;
+    for(let i = 0; i < valuesNotNever.length; i++){
+        const value = valuesNotNever[i];
+        if (predicate(value)) {
+            return value;
+        }
+    }
+    return void 0;
+}
+function forEach(record, run) {
+    Object.entries(record).forEach(([key, value])=>run(value, key));
+}
+function includes(arr, value) {
+    return arr.indexOf(value) !== -1;
+}
+function findArr(record, predicate) {
+    for(let i = 0; i < record.length; i++){
+        const value = record[i];
+        if (predicate(value)) {
+            return value;
+        }
+    }
+    return void 0;
+}
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/custom-transformer-registry.js
+var CustomTransformerRegistry = class {
+    constructor(){
+        this.transfomers = {};
+    }
+    register(transformer) {
+        this.transfomers[transformer.name] = transformer;
+    }
+    findApplicable(v) {
+        return find(this.transfomers, (transformer)=>transformer.isApplicable(v));
+    }
+    findByName(name) {
+        return this.transfomers[name];
+    }
+};
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/is.js
+var getType = (payload)=>Object.prototype.toString.call(payload).slice(8, -1);
+var isUndefined = (payload)=>typeof payload === "undefined";
+var isNull = (payload)=>payload === null;
+var isPlainObject = (payload)=>{
+    if (typeof payload !== "object" || payload === null) return false;
+    if (payload === Object.prototype) return false;
+    if (Object.getPrototypeOf(payload) === null) return true;
+    return Object.getPrototypeOf(payload) === Object.prototype;
+};
+var isEmptyObject = (payload)=>isPlainObject(payload) && Object.keys(payload).length === 0;
+var isArray = (payload)=>Array.isArray(payload);
+var isString = (payload)=>typeof payload === "string";
+var isNumber = (payload)=>typeof payload === "number" && !isNaN(payload);
+var isBoolean = (payload)=>typeof payload === "boolean";
+var isRegExp = (payload)=>payload instanceof RegExp;
+var isMap = (payload)=>payload instanceof Map;
+var isSet = (payload)=>payload instanceof Set;
+var isSymbol = (payload)=>getType(payload) === "Symbol";
+var isDate = (payload)=>payload instanceof Date && !isNaN(payload.valueOf());
+var isError = (payload)=>payload instanceof Error;
+var isNaNValue = (payload)=>typeof payload === "number" && isNaN(payload);
+var isPrimitive = (payload)=>isBoolean(payload) || isNull(payload) || isUndefined(payload) || isNumber(payload) || isString(payload) || isSymbol(payload);
+var isBigint = (payload)=>typeof payload === "bigint";
+var isInfinite = (payload)=>payload === Infinity || payload === -Infinity;
+var isTypedArray = (payload)=>ArrayBuffer.isView(payload) && !(payload instanceof DataView);
+var isURL = (payload)=>payload instanceof URL;
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/pathstringifier.js
+var escapeKey = (key)=>key.replace(/\./g, "\\.");
+var stringifyPath = (path)=>path.map(String).map(escapeKey).join(".");
+var parsePath = (string)=>{
+    const result = [];
+    let segment = "";
+    for(let i = 0; i < string.length; i++){
+        let char = string.charAt(i);
+        const isEscapedDot = char === "\\" && string.charAt(i + 1) === ".";
+        if (isEscapedDot) {
+            segment += ".";
+            i++;
+            continue;
+        }
+        const isEndOfSegment = char === ".";
+        if (isEndOfSegment) {
+            result.push(segment);
+            segment = "";
+            continue;
+        }
+        segment += char;
+    }
+    const lastSegment = segment;
+    result.push(lastSegment);
+    return result;
+};
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/transformer.js
+function simpleTransformation(isApplicable, annotation, transform, untransform) {
+    return {
+        isApplicable,
+        annotation,
+        transform,
+        untransform
+    };
+}
+var simpleRules = [
+    simpleTransformation(isUndefined, "undefined", ()=>null, ()=>void 0),
+    simpleTransformation(isBigint, "bigint", (v)=>v.toString(), (v)=>{
+        if (typeof BigInt !== "undefined") {
+            return BigInt(v);
+        }
+        console.error("Please add a BigInt polyfill.");
+        return v;
+    }),
+    simpleTransformation(isDate, "Date", (v)=>v.toISOString(), (v)=>new Date(v)),
+    simpleTransformation(isError, "Error", (v, superJson)=>{
+        const baseError = {
+            name: v.name,
+            message: v.message
+        };
+        superJson.allowedErrorProps.forEach((prop)=>{
+            baseError[prop] = v[prop];
+        });
+        return baseError;
+    }, (v, superJson)=>{
+        const e = new Error(v.message);
+        e.name = v.name;
+        e.stack = v.stack;
+        superJson.allowedErrorProps.forEach((prop)=>{
+            e[prop] = v[prop];
+        });
+        return e;
+    }),
+    simpleTransformation(isRegExp, "regexp", (v)=>"" + v, (regex)=>{
+        const body = regex.slice(1, regex.lastIndexOf("/"));
+        const flags = regex.slice(regex.lastIndexOf("/") + 1);
+        return new RegExp(body, flags);
+    }),
+    simpleTransformation(isSet, "set", // (sets only exist in es6+)
+    // eslint-disable-next-line es5/no-es6-methods
+    (v)=>[
+            ...v.values()
+        ], (v)=>new Set(v)),
+    simpleTransformation(isMap, "map", (v)=>[
+            ...v.entries()
+        ], (v)=>new Map(v)),
+    simpleTransformation((v)=>isNaNValue(v) || isInfinite(v), "number", (v)=>{
+        if (isNaNValue(v)) {
+            return "NaN";
+        }
+        if (v > 0) {
+            return "Infinity";
+        } else {
+            return "-Infinity";
+        }
+    }, Number),
+    simpleTransformation((v)=>v === 0 && 1 / v === -Infinity, "number", ()=>{
+        return "-0";
+    }, Number),
+    simpleTransformation(isURL, "URL", (v)=>v.toString(), (v)=>new URL(v))
+];
+function compositeTransformation(isApplicable, annotation, transform, untransform) {
+    return {
+        isApplicable,
+        annotation,
+        transform,
+        untransform
+    };
+}
+var symbolRule = compositeTransformation((s, superJson)=>{
+    if (isSymbol(s)) {
+        const isRegistered = !!superJson.symbolRegistry.getIdentifier(s);
+        return isRegistered;
+    }
+    return false;
+}, (s, superJson)=>{
+    const identifier = superJson.symbolRegistry.getIdentifier(s);
+    return [
+        "symbol",
+        identifier
+    ];
+}, (v)=>v.description, (_, a, superJson)=>{
+    const value = superJson.symbolRegistry.getValue(a[1]);
+    if (!value) {
+        throw new Error("Trying to deserialize unknown symbol");
+    }
+    return value;
+});
+var constructorToName = [
+    Int8Array,
+    Uint8Array,
+    Int16Array,
+    Uint16Array,
+    Int32Array,
+    Uint32Array,
+    Float32Array,
+    Float64Array,
+    Uint8ClampedArray
+].reduce((obj, ctor)=>{
+    obj[ctor.name] = ctor;
+    return obj;
+}, {});
+var typedArrayRule = compositeTransformation(isTypedArray, (v)=>[
+        "typed-array",
+        v.constructor.name
+    ], (v)=>[
+        ...v
+    ], (v, a)=>{
+    const ctor = constructorToName[a[1]];
+    if (!ctor) {
+        throw new Error("Trying to deserialize unknown typed array");
+    }
+    return new ctor(v);
+});
+function isInstanceOfRegisteredClass(potentialClass, superJson) {
+    if (potentialClass?.constructor) {
+        const isRegistered = !!superJson.classRegistry.getIdentifier(potentialClass.constructor);
+        return isRegistered;
+    }
+    return false;
+}
+var classRule = compositeTransformation(isInstanceOfRegisteredClass, (clazz, superJson)=>{
+    const identifier = superJson.classRegistry.getIdentifier(clazz.constructor);
+    return [
+        "class",
+        identifier
+    ];
+}, (clazz, superJson)=>{
+    const allowedProps = superJson.classRegistry.getAllowedProps(clazz.constructor);
+    if (!allowedProps) {
+        return {
+            ...clazz
+        };
+    }
+    const result = {};
+    allowedProps.forEach((prop)=>{
+        result[prop] = clazz[prop];
+    });
+    return result;
+}, (v, a, superJson)=>{
+    const clazz = superJson.classRegistry.getValue(a[1]);
+    if (!clazz) {
+        throw new Error(`Trying to deserialize unknown class '${a[1]}' - check https://github.com/blitz-js/superjson/issues/116#issuecomment-773996564`);
+    }
+    return Object.assign(Object.create(clazz.prototype), v);
+});
+var customRule = compositeTransformation((value, superJson)=>{
+    return !!superJson.customTransformerRegistry.findApplicable(value);
+}, (value, superJson)=>{
+    const transformer = superJson.customTransformerRegistry.findApplicable(value);
+    return [
+        "custom",
+        transformer.name
+    ];
+}, (value, superJson)=>{
+    const transformer = superJson.customTransformerRegistry.findApplicable(value);
+    return transformer.serialize(value);
+}, (v, a, superJson)=>{
+    const transformer = superJson.customTransformerRegistry.findByName(a[1]);
+    if (!transformer) {
+        throw new Error("Trying to deserialize unknown custom value");
+    }
+    return transformer.deserialize(v);
+});
+var compositeRules = [
+    classRule,
+    symbolRule,
+    customRule,
+    typedArrayRule
+];
+var transformValue = (value, superJson)=>{
+    const applicableCompositeRule = findArr(compositeRules, (rule)=>rule.isApplicable(value, superJson));
+    if (applicableCompositeRule) {
+        return {
+            value: applicableCompositeRule.transform(value, superJson),
+            type: applicableCompositeRule.annotation(value, superJson)
+        };
+    }
+    const applicableSimpleRule = findArr(simpleRules, (rule)=>rule.isApplicable(value, superJson));
+    if (applicableSimpleRule) {
+        return {
+            value: applicableSimpleRule.transform(value, superJson),
+            type: applicableSimpleRule.annotation
+        };
+    }
+    return void 0;
+};
+var simpleRulesByAnnotation = {};
+simpleRules.forEach((rule)=>{
+    simpleRulesByAnnotation[rule.annotation] = rule;
+});
+var untransformValue = (json, type, superJson)=>{
+    if (isArray(type)) {
+        switch(type[0]){
+            case "symbol":
+                return symbolRule.untransform(json, type, superJson);
+            case "class":
+                return classRule.untransform(json, type, superJson);
+            case "custom":
+                return customRule.untransform(json, type, superJson);
+            case "typed-array":
+                return typedArrayRule.untransform(json, type, superJson);
+            default:
+                throw new Error("Unknown transformation: " + type);
+        }
+    } else {
+        const transformation = simpleRulesByAnnotation[type];
+        if (!transformation) {
+            throw new Error("Unknown transformation: " + type);
+        }
+        return transformation.untransform(json, superJson);
+    }
+};
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/accessDeep.js
+var getNthKey = (value, n)=>{
+    if (n > value.size) throw new Error("index out of bounds");
+    const keys = value.keys();
+    while(n > 0){
+        keys.next();
+        n--;
+    }
+    return keys.next().value;
+};
+function validatePath(path) {
+    if (includes(path, "__proto__")) {
+        throw new Error("__proto__ is not allowed as a property");
+    }
+    if (includes(path, "prototype")) {
+        throw new Error("prototype is not allowed as a property");
+    }
+    if (includes(path, "constructor")) {
+        throw new Error("constructor is not allowed as a property");
+    }
+}
+var getDeep = (object, path)=>{
+    validatePath(path);
+    for(let i = 0; i < path.length; i++){
+        const key = path[i];
+        if (isSet(object)) {
+            object = getNthKey(object, +key);
+        } else if (isMap(object)) {
+            const row = +key;
+            const type = +path[++i] === 0 ? "key" : "value";
+            const keyOfRow = getNthKey(object, row);
+            switch(type){
+                case "key":
+                    object = keyOfRow;
+                    break;
+                case "value":
+                    object = object.get(keyOfRow);
+                    break;
+            }
+        } else {
+            object = object[key];
+        }
+    }
+    return object;
+};
+var setDeep = (object, path, mapper)=>{
+    validatePath(path);
+    if (path.length === 0) {
+        return mapper(object);
+    }
+    let parent = object;
+    for(let i = 0; i < path.length - 1; i++){
+        const key = path[i];
+        if (isArray(parent)) {
+            const index = +key;
+            parent = parent[index];
+        } else if (isPlainObject(parent)) {
+            parent = parent[key];
+        } else if (isSet(parent)) {
+            const row = +key;
+            parent = getNthKey(parent, row);
+        } else if (isMap(parent)) {
+            const isEnd = i === path.length - 2;
+            if (isEnd) {
+                break;
+            }
+            const row = +key;
+            const type = +path[++i] === 0 ? "key" : "value";
+            const keyOfRow = getNthKey(parent, row);
+            switch(type){
+                case "key":
+                    parent = keyOfRow;
+                    break;
+                case "value":
+                    parent = parent.get(keyOfRow);
+                    break;
+            }
+        }
+    }
+    const lastKey = path[path.length - 1];
+    if (isArray(parent)) {
+        parent[+lastKey] = mapper(parent[+lastKey]);
+    } else if (isPlainObject(parent)) {
+        parent[lastKey] = mapper(parent[lastKey]);
+    }
+    if (isSet(parent)) {
+        const oldValue = getNthKey(parent, +lastKey);
+        const newValue = mapper(oldValue);
+        if (oldValue !== newValue) {
+            parent.delete(oldValue);
+            parent.add(newValue);
+        }
+    }
+    if (isMap(parent)) {
+        const row = +path[path.length - 2];
+        const keyToRow = getNthKey(parent, row);
+        const type = +lastKey === 0 ? "key" : "value";
+        switch(type){
+            case "key":
+                {
+                    const newKey = mapper(keyToRow);
+                    parent.set(newKey, parent.get(keyToRow));
+                    if (newKey !== keyToRow) {
+                        parent.delete(keyToRow);
+                    }
+                    break;
+                }
+            case "value":
+                {
+                    parent.set(keyToRow, mapper(parent.get(keyToRow)));
+                    break;
+                }
+        }
+    }
+    return object;
+};
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/plainer.js
+function traverse(tree, walker2, origin = []) {
+    if (!tree) {
+        return;
+    }
+    if (!isArray(tree)) {
+        forEach(tree, (subtree, key)=>traverse(subtree, walker2, [
+                ...origin,
+                ...parsePath(key)
+            ]));
+        return;
+    }
+    const [nodeValue, children2] = tree;
+    if (children2) {
+        forEach(children2, (child, key)=>{
+            traverse(child, walker2, [
+                ...origin,
+                ...parsePath(key)
+            ]);
+        });
+    }
+    walker2(nodeValue, origin);
+}
+function applyValueAnnotations(plain, annotations, superJson) {
+    traverse(annotations, (type, path)=>{
+        plain = setDeep(plain, path, (v)=>untransformValue(v, type, superJson));
+    });
+    return plain;
+}
+function applyReferentialEqualityAnnotations(plain, annotations) {
+    function apply(identicalPaths, path) {
+        const object = getDeep(plain, parsePath(path));
+        identicalPaths.map(parsePath).forEach((identicalObjectPath)=>{
+            plain = setDeep(plain, identicalObjectPath, ()=>object);
+        });
+    }
+    if (isArray(annotations)) {
+        const [root, other] = annotations;
+        root.forEach((identicalPath)=>{
+            plain = setDeep(plain, parsePath(identicalPath), ()=>plain);
+        });
+        if (other) {
+            forEach(other, apply);
+        }
+    } else {
+        forEach(annotations, apply);
+    }
+    return plain;
+}
+var isDeep = (object, superJson)=>isPlainObject(object) || isArray(object) || isMap(object) || isSet(object) || isInstanceOfRegisteredClass(object, superJson);
+function addIdentity(object, path, identities) {
+    const existingSet = identities.get(object);
+    if (existingSet) {
+        existingSet.push(path);
+    } else {
+        identities.set(object, [
+            path
+        ]);
+    }
+}
+function generateReferentialEqualityAnnotations(identitites, dedupe) {
+    const result = {};
+    let rootEqualityPaths = void 0;
+    identitites.forEach((paths)=>{
+        if (paths.length <= 1) {
+            return;
+        }
+        if (!dedupe) {
+            paths = paths.map((path)=>path.map(String)).sort((a, b)=>a.length - b.length);
+        }
+        const [representativePath, ...identicalPaths] = paths;
+        if (representativePath.length === 0) {
+            rootEqualityPaths = identicalPaths.map(stringifyPath);
+        } else {
+            result[stringifyPath(representativePath)] = identicalPaths.map(stringifyPath);
+        }
+    });
+    if (rootEqualityPaths) {
+        if (isEmptyObject(result)) {
+            return [
+                rootEqualityPaths
+            ];
+        } else {
+            return [
+                rootEqualityPaths,
+                result
+            ];
+        }
+    } else {
+        return isEmptyObject(result) ? void 0 : result;
+    }
+}
+var walker = (object, identities, superJson, dedupe, path = [], objectsInThisPath = [], seenObjects = /* @__PURE__ */ new Map())=>{
+    const primitive = isPrimitive(object);
+    if (!primitive) {
+        addIdentity(object, path, identities);
+        const seen = seenObjects.get(object);
+        if (seen) {
+            return dedupe ? {
+                transformedValue: null
+            } : seen;
+        }
+    }
+    if (!isDeep(object, superJson)) {
+        const transformed2 = transformValue(object, superJson);
+        const result2 = transformed2 ? {
+            transformedValue: transformed2.value,
+            annotations: [
+                transformed2.type
+            ]
+        } : {
+            transformedValue: object
+        };
+        if (!primitive) {
+            seenObjects.set(object, result2);
+        }
+        return result2;
+    }
+    if (includes(objectsInThisPath, object)) {
+        return {
+            transformedValue: null
+        };
+    }
+    const transformationResult = transformValue(object, superJson);
+    const transformed = transformationResult?.value ?? object;
+    const transformedValue = isArray(transformed) ? [] : {};
+    const innerAnnotations = {};
+    forEach(transformed, (value, index)=>{
+        if (index === "__proto__" || index === "constructor" || index === "prototype") {
+            throw new Error(`Detected property ${index}. This is a prototype pollution risk, please remove it from your object.`);
+        }
+        const recursiveResult = walker(value, identities, superJson, dedupe, [
+            ...path,
+            index
+        ], [
+            ...objectsInThisPath,
+            object
+        ], seenObjects);
+        transformedValue[index] = recursiveResult.transformedValue;
+        if (isArray(recursiveResult.annotations)) {
+            innerAnnotations[index] = recursiveResult.annotations;
+        } else if (isPlainObject(recursiveResult.annotations)) {
+            forEach(recursiveResult.annotations, (tree, key)=>{
+                innerAnnotations[escapeKey(index) + "." + key] = tree;
+            });
+        }
+    });
+    const result = isEmptyObject(innerAnnotations) ? {
+        transformedValue,
+        annotations: !!transformationResult ? [
+            transformationResult.type
+        ] : void 0
+    } : {
+        transformedValue,
+        annotations: !!transformationResult ? [
+            transformationResult.type,
+            innerAnnotations
+        ] : innerAnnotations
+    };
+    if (!primitive) {
+        seenObjects.set(object, result);
+    }
+    return result;
+};
+// ../../node_modules/.pnpm/is-what@4.1.16/node_modules/is-what/dist/index.js
+function getType2(payload) {
+    return Object.prototype.toString.call(payload).slice(8, -1);
+}
+function isArray2(payload) {
+    return getType2(payload) === "Array";
+}
+function isPlainObject2(payload) {
+    if (getType2(payload) !== "Object") return false;
+    const prototype = Object.getPrototypeOf(payload);
+    return !!prototype && prototype.constructor === Object && prototype === Object.prototype;
+}
+// ../../node_modules/.pnpm/copy-anything@3.0.5/node_modules/copy-anything/dist/index.js
+function assignProp2(carry, key, newVal, originalObject, includeNonenumerable) {
+    const propType = ({}).propertyIsEnumerable.call(originalObject, key) ? "enumerable" : "nonenumerable";
+    if (propType === "enumerable") carry[key] = newVal;
+    if (includeNonenumerable && propType === "nonenumerable") {
+        Object.defineProperty(carry, key, {
+            value: newVal,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        });
+    }
+}
+function copy(target, options = {}) {
+    if (isArray2(target)) {
+        return target.map((item)=>copy(item, options));
+    }
+    if (!isPlainObject2(target)) {
+        return target;
+    }
+    const props = Object.getOwnPropertyNames(target);
+    const symbols = Object.getOwnPropertySymbols(target);
+    return [
+        ...props,
+        ...symbols
+    ].reduce((carry, key)=>{
+        if (isArray2(options.props) && !options.props.includes(key)) {
+            return carry;
+        }
+        const val = target[key];
+        const newVal = copy(val, options);
+        assignProp2(carry, key, newVal, target, options.nonenumerable);
+        return carry;
+    }, {});
+}
+// ../../node_modules/.pnpm/superjson@2.2.2/node_modules/superjson/dist/index.js
+var SuperJSON = class {
+    /**
+   * @param dedupeReferentialEqualities  If true, SuperJSON will make sure only one instance of referentially equal objects are serialized and the rest are replaced with `null`.
+   */ constructor({ dedupe = false } = {}){
+        this.classRegistry = new ClassRegistry();
+        this.symbolRegistry = new Registry((s)=>s.description ?? "");
+        this.customTransformerRegistry = new CustomTransformerRegistry();
+        this.allowedErrorProps = [];
+        this.dedupe = dedupe;
+    }
+    serialize(object) {
+        const identities = /* @__PURE__ */ new Map();
+        const output = walker(object, identities, this, this.dedupe);
+        const res = {
+            json: output.transformedValue
+        };
+        if (output.annotations) {
+            res.meta = {
+                ...res.meta,
+                values: output.annotations
+            };
+        }
+        const equalityAnnotations = generateReferentialEqualityAnnotations(identities, this.dedupe);
+        if (equalityAnnotations) {
+            res.meta = {
+                ...res.meta,
+                referentialEqualities: equalityAnnotations
+            };
+        }
+        return res;
+    }
+    deserialize(payload) {
+        const { json, meta } = payload;
+        let result = copy(json);
+        if (meta?.values) {
+            result = applyValueAnnotations(result, meta.values, this);
+        }
+        if (meta?.referentialEqualities) {
+            result = applyReferentialEqualityAnnotations(result, meta.referentialEqualities);
+        }
+        return result;
+    }
+    stringify(object) {
+        return JSON.stringify(this.serialize(object));
+    }
+    parse(string) {
+        return this.deserialize(JSON.parse(string));
+    }
+    registerClass(v, options) {
+        this.classRegistry.register(v, options);
+    }
+    registerSymbol(v, identifier) {
+        this.symbolRegistry.register(v, identifier);
+    }
+    registerCustom(transformer, name) {
+        this.customTransformerRegistry.register({
+            name,
+            ...transformer
+        });
+    }
+    allowErrorProps(...props) {
+        this.allowedErrorProps.push(...props);
+    }
+};
+SuperJSON.defaultInstance = new SuperJSON();
+SuperJSON.serialize = SuperJSON.defaultInstance.serialize.bind(SuperJSON.defaultInstance);
+SuperJSON.deserialize = SuperJSON.defaultInstance.deserialize.bind(SuperJSON.defaultInstance);
+SuperJSON.stringify = SuperJSON.defaultInstance.stringify.bind(SuperJSON.defaultInstance);
+SuperJSON.parse = SuperJSON.defaultInstance.parse.bind(SuperJSON.defaultInstance);
+SuperJSON.registerClass = SuperJSON.defaultInstance.registerClass.bind(SuperJSON.defaultInstance);
+SuperJSON.registerSymbol = SuperJSON.defaultInstance.registerSymbol.bind(SuperJSON.defaultInstance);
+SuperJSON.registerCustom = SuperJSON.defaultInstance.registerCustom.bind(SuperJSON.defaultInstance);
+SuperJSON.allowErrorProps = SuperJSON.defaultInstance.allowErrorProps.bind(SuperJSON.defaultInstance);
+var serialize = SuperJSON.serialize;
+SuperJSON.deserialize;
+var stringify = SuperJSON.stringify;
+SuperJSON.parse;
+SuperJSON.registerClass;
+SuperJSON.registerCustom;
+SuperJSON.registerSymbol;
+SuperJSON.allowErrorProps;
+// src/utils.tsx
+function getQueryStatusLabel(query) {
+    return query.state.fetchStatus === "fetching" ? "fetching" : !query.getObserversCount() ? "inactive" : query.state.fetchStatus === "paused" ? "paused" : query.isStale() ? "stale" : "fresh";
+}
+function getSidedProp(prop, side) {
+    return `${prop}${side.charAt(0).toUpperCase() + side.slice(1)}`;
+}
+function getQueryStatusColor({ queryState, observerCount, isStale }) {
+    return queryState.fetchStatus === "fetching" ? "blue" : !observerCount ? "gray" : queryState.fetchStatus === "paused" ? "purple" : isStale ? "yellow" : "green";
+}
+function getMutationStatusColor({ status, isPaused }) {
+    return isPaused ? "purple" : status === "error" ? "red" : status === "pending" ? "yellow" : status === "success" ? "green" : "gray";
+}
+function getQueryStatusColorByLabel(label) {
+    return label === "fresh" ? "green" : label === "stale" ? "yellow" : label === "paused" ? "purple" : label === "inactive" ? "gray" : "blue";
+}
+var displayValue = (value, beautify = false)=>{
+    const { json } = serialize(value);
+    return JSON.stringify(json, null, beautify ? 2 : void 0);
+};
+var getStatusRank = (q)=>q.state.fetchStatus !== "idle" ? 0 : !q.getObserversCount() ? 3 : q.isStale() ? 2 : 1;
+var queryHashSort = (a, b)=>a.queryHash.localeCompare(b.queryHash);
+var dateSort = (a, b)=>a.state.dataUpdatedAt < b.state.dataUpdatedAt ? 1 : -1;
+var statusAndDateSort = (a, b)=>{
+    if (getStatusRank(a) === getStatusRank(b)) {
+        return dateSort(a, b);
+    }
+    return getStatusRank(a) > getStatusRank(b) ? 1 : -1;
+};
+var sortFns = {
+    status: statusAndDateSort,
+    "query hash": queryHashSort,
+    "last updated": dateSort
+};
+var getMutationStatusRank = (m)=>m.state.isPaused ? 0 : m.state.status === "error" ? 2 : m.state.status === "pending" ? 1 : 3;
+var mutationDateSort = (a, b)=>a.state.submittedAt < b.state.submittedAt ? 1 : -1;
+var mutationStatusSort = (a, b)=>{
+    if (getMutationStatusRank(a) === getMutationStatusRank(b)) {
+        return mutationDateSort(a, b);
+    }
+    return getMutationStatusRank(a) > getMutationStatusRank(b) ? 1 : -1;
+};
+var mutationSortFns = {
+    status: mutationStatusSort,
+    "last updated": mutationDateSort
+};
+var convertRemToPixels = (rem)=>{
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+};
+var getPreferredColorScheme = ()=>{
+    const [colorScheme, setColorScheme] = createSignal("dark");
+    onMount(()=>{
+        const query = window.matchMedia("(prefers-color-scheme: dark)");
+        setColorScheme(query.matches ? "dark" : "light");
+        const listener = (e)=>{
+            setColorScheme(e.matches ? "dark" : "light");
+        };
+        query.addEventListener("change", listener);
+        onCleanup(()=>query.removeEventListener("change", listener));
+    });
+    return colorScheme;
+};
+var updateNestedDataByPath = (oldData, updatePath, value)=>{
+    if (updatePath.length === 0) {
+        return value;
+    }
+    if (oldData instanceof Map) {
+        const newData = new Map(oldData);
+        if (updatePath.length === 1) {
+            newData.set(updatePath[0], value);
+            return newData;
+        }
+        const [head, ...tail] = updatePath;
+        newData.set(head, updateNestedDataByPath(newData.get(head), tail, value));
+        return newData;
+    }
+    if (oldData instanceof Set) {
+        const setAsArray = updateNestedDataByPath(Array.from(oldData), updatePath, value);
+        return new Set(setAsArray);
+    }
+    if (Array.isArray(oldData)) {
+        const newData = [
+            ...oldData
+        ];
+        if (updatePath.length === 1) {
+            newData[updatePath[0]] = value;
+            return newData;
+        }
+        const [head, ...tail] = updatePath;
+        newData[head] = updateNestedDataByPath(newData[head], tail, value);
+        return newData;
+    }
+    if (oldData instanceof Object) {
+        const newData = {
+            ...oldData
+        };
+        if (updatePath.length === 1) {
+            newData[updatePath[0]] = value;
+            return newData;
+        }
+        const [head, ...tail] = updatePath;
+        newData[head] = updateNestedDataByPath(newData[head], tail, value);
+        return newData;
+    }
+    return oldData;
+};
+var deleteNestedDataByPath = (oldData, deletePath)=>{
+    if (oldData instanceof Map) {
+        const newData = new Map(oldData);
+        if (deletePath.length === 1) {
+            newData.delete(deletePath[0]);
+            return newData;
+        }
+        const [head, ...tail] = deletePath;
+        newData.set(head, deleteNestedDataByPath(newData.get(head), tail));
+        return newData;
+    }
+    if (oldData instanceof Set) {
+        const setAsArray = deleteNestedDataByPath(Array.from(oldData), deletePath);
+        return new Set(setAsArray);
+    }
+    if (Array.isArray(oldData)) {
+        const newData = [
+            ...oldData
+        ];
+        if (deletePath.length === 1) {
+            return newData.filter((_, idx)=>idx.toString() !== deletePath[0]);
+        }
+        const [head, ...tail] = deletePath;
+        newData[head] = deleteNestedDataByPath(newData[head], tail);
+        return newData;
+    }
+    if (oldData instanceof Object) {
+        const newData = {
+            ...oldData
+        };
+        if (deletePath.length === 1) {
+            delete newData[deletePath[0]];
+            return newData;
+        }
+        const [head, ...tail] = deletePath;
+        newData[head] = deleteNestedDataByPath(newData[head], tail);
+        return newData;
+    }
+    return oldData;
+};
+var setupStyleSheet = (nonce, target)=>{
+    if (!nonce) return;
+    const styleExists = document.querySelector("#_goober") || target?.querySelector("#_goober");
+    if (styleExists) return;
+    const styleTag = document.createElement("style");
+    const textNode = document.createTextNode("");
+    styleTag.appendChild(textNode);
+    styleTag.id = "_goober";
+    styleTag.setAttribute("nonce", nonce);
+    if (target) {
+        target.appendChild(styleTag);
+    } else {
+        document.head.appendChild(styleTag);
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-devtools/build/dev.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "TanstackQueryDevtools",
+    ()=>TanstackQueryDevtools,
+    "TanstackQueryDevtoolsPanel",
+    ()=>TanstackQueryDevtoolsPanel
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-devtools/build/chunk/CXOMC62J.js [app-ssr] (ecmascript)");
+;
+// src/TanstackQueryDevtools.tsx
+var TanstackQueryDevtools = class {
+    #client;
+    #onlineManager;
+    #queryFlavor;
+    #version;
+    #isMounted = false;
+    #styleNonce;
+    #shadowDOMTarget;
+    #buttonPosition;
+    #position;
+    #initialIsOpen;
+    #errorTypes;
+    #hideDisabledQueries;
+    #Component;
+    #theme;
+    #dispose;
+    constructor(config){
+        const { client, queryFlavor, version, onlineManager, buttonPosition, position, initialIsOpen, errorTypes, styleNonce, shadowDOMTarget, hideDisabledQueries, theme } = config;
+        this.#client = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(client);
+        this.#queryFlavor = queryFlavor;
+        this.#version = version;
+        this.#onlineManager = onlineManager;
+        this.#styleNonce = styleNonce;
+        this.#shadowDOMTarget = shadowDOMTarget;
+        this.#buttonPosition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(buttonPosition);
+        this.#position = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(position);
+        this.#initialIsOpen = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(initialIsOpen);
+        this.#errorTypes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(errorTypes);
+        this.#hideDisabledQueries = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(hideDisabledQueries);
+        this.#theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(theme);
+    }
+    setButtonPosition(position) {
+        this.#buttonPosition[1](position);
+    }
+    setPosition(position) {
+        this.#position[1](position);
+    }
+    setInitialIsOpen(isOpen) {
+        this.#initialIsOpen[1](isOpen);
+    }
+    setErrorTypes(errorTypes) {
+        this.#errorTypes[1](errorTypes);
+    }
+    setClient(client) {
+        this.#client[1](client);
+    }
+    setTheme(theme) {
+        this.#theme[1](theme);
+    }
+    mount(el) {
+        if (this.#isMounted) {
+            throw new Error("Devtools is already mounted");
+        }
+        const dispose = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["render"])(()=>{
+            const _self$ = this;
+            const [btnPosition] = this.#buttonPosition;
+            const [pos] = this.#position;
+            const [isOpen] = this.#initialIsOpen;
+            const [errors] = this.#errorTypes;
+            const [hideDisabledQueries] = this.#hideDisabledQueries;
+            const [queryClient] = this.#client;
+            const [theme] = this.#theme;
+            let Devtools;
+            if (this.#Component) {
+                Devtools = this.#Component;
+            } else {
+                Devtools = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.A("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-devtools/build/DevtoolsComponent/7HGFFDPC.js [app-ssr] (ecmascript, async loader)"));
+                this.#Component = Devtools;
+            }
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setupStyleSheet"])(this.#styleNonce, this.#shadowDOMTarget);
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createComponent"])(Devtools, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])({
+                get queryFlavor () {
+                    return _self$.#queryFlavor;
+                },
+                get version () {
+                    return _self$.#version;
+                },
+                get onlineManager () {
+                    return _self$.#onlineManager;
+                },
+                get shadowDOMTarget () {
+                    return _self$.#shadowDOMTarget;
+                }
+            }, {
+                get client () {
+                    return queryClient();
+                },
+                get buttonPosition () {
+                    return btnPosition();
+                },
+                get position () {
+                    return pos();
+                },
+                get initialIsOpen () {
+                    return isOpen();
+                },
+                get errorTypes () {
+                    return errors();
+                },
+                get hideDisabledQueries () {
+                    return hideDisabledQueries();
+                },
+                get theme () {
+                    return theme();
+                }
+            }));
+        }, el);
+        this.#isMounted = true;
+        this.#dispose = dispose;
+    }
+    unmount() {
+        if (!this.#isMounted) {
+            throw new Error("Devtools is not mounted");
+        }
+        this.#dispose?.();
+        this.#isMounted = false;
+    }
+};
+// src/TanstackQueryDevtoolsPanel.tsx
+var TanstackQueryDevtoolsPanel = class {
+    #client;
+    #onlineManager;
+    #queryFlavor;
+    #version;
+    #isMounted = false;
+    #styleNonce;
+    #shadowDOMTarget;
+    #buttonPosition;
+    #position;
+    #initialIsOpen;
+    #errorTypes;
+    #hideDisabledQueries;
+    #onClose;
+    #Component;
+    #theme;
+    #dispose;
+    constructor(config){
+        const { client, queryFlavor, version, onlineManager, buttonPosition, position, initialIsOpen, errorTypes, styleNonce, shadowDOMTarget, onClose, hideDisabledQueries, theme } = config;
+        this.#client = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(client);
+        this.#queryFlavor = queryFlavor;
+        this.#version = version;
+        this.#onlineManager = onlineManager;
+        this.#styleNonce = styleNonce;
+        this.#shadowDOMTarget = shadowDOMTarget;
+        this.#buttonPosition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(buttonPosition);
+        this.#position = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(position);
+        this.#initialIsOpen = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(initialIsOpen);
+        this.#errorTypes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(errorTypes);
+        this.#hideDisabledQueries = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(hideDisabledQueries);
+        this.#onClose = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(onClose);
+        this.#theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSignal"])(theme);
+    }
+    setButtonPosition(position) {
+        this.#buttonPosition[1](position);
+    }
+    setPosition(position) {
+        this.#position[1](position);
+    }
+    setInitialIsOpen(isOpen) {
+        this.#initialIsOpen[1](isOpen);
+    }
+    setErrorTypes(errorTypes) {
+        this.#errorTypes[1](errorTypes);
+    }
+    setClient(client) {
+        this.#client[1](client);
+    }
+    setOnClose(onClose) {
+        this.#onClose[1](()=>onClose);
+    }
+    setTheme(theme) {
+        this.#theme[1](theme);
+    }
+    mount(el) {
+        if (this.#isMounted) {
+            throw new Error("Devtools is already mounted");
+        }
+        const dispose = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["render"])(()=>{
+            const _self$ = this;
+            const [btnPosition] = this.#buttonPosition;
+            const [pos] = this.#position;
+            const [isOpen] = this.#initialIsOpen;
+            const [errors] = this.#errorTypes;
+            const [hideDisabledQueries] = this.#hideDisabledQueries;
+            const [queryClient] = this.#client;
+            const [onClose] = this.#onClose;
+            const [theme] = this.#theme;
+            let Devtools;
+            if (this.#Component) {
+                Devtools = this.#Component;
+            } else {
+                Devtools = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.A("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-devtools/build/DevtoolsPanelComponent/ONXD5SSW.js [app-ssr] (ecmascript, async loader)"));
+                this.#Component = Devtools;
+            }
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setupStyleSheet"])(this.#styleNonce, this.#shadowDOMTarget);
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createComponent"])(Devtools, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$chunk$2f$CXOMC62J$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])({
+                get queryFlavor () {
+                    return _self$.#queryFlavor;
+                },
+                get version () {
+                    return _self$.#version;
+                },
+                get onlineManager () {
+                    return _self$.#onlineManager;
+                },
+                get shadowDOMTarget () {
+                    return _self$.#shadowDOMTarget;
+                }
+            }, {
+                get client () {
+                    return queryClient();
+                },
+                get buttonPosition () {
+                    return btnPosition();
+                },
+                get position () {
+                    return pos();
+                },
+                get initialIsOpen () {
+                    return isOpen();
+                },
+                get errorTypes () {
+                    return errors();
+                },
+                get hideDisabledQueries () {
+                    return hideDisabledQueries();
+                },
+                get onClose () {
+                    return onClose();
+                },
+                get theme () {
+                    return theme();
+                }
+            }));
+        }, el);
+        this.#isMounted = true;
+        this.#dispose = dispose;
+    }
+    unmount() {
+        if (!this.#isMounted) {
+            throw new Error("Devtools is not mounted");
+        }
+        this.#dispose?.();
+        this.#isMounted = false;
+    }
+};
+;
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query-devtools/build/modern/ReactQueryDevtools.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ReactQueryDevtools",
+    ()=>ReactQueryDevtools
+]);
+// src/ReactQueryDevtools.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/onlineManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$dev$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-devtools/build/dev.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function ReactQueryDevtools(props) {
+    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])(props.client);
+    const ref = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const { buttonPosition, position, initialIsOpen, errorTypes, styleNonce, shadowDOMTarget, hideDisabledQueries, theme } = props;
+    const [devtools] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$dev$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TanstackQueryDevtools"]({
+        client: queryClient,
+        queryFlavor: "React Query",
+        version: "5",
+        onlineManager: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["onlineManager"],
+        buttonPosition,
+        position,
+        initialIsOpen,
+        errorTypes,
+        styleNonce,
+        shadowDOMTarget,
+        hideDisabledQueries,
+        theme
+    }));
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setClient(queryClient);
+    }, [
+        queryClient,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (buttonPosition) {
+            devtools.setButtonPosition(buttonPosition);
+        }
+    }, [
+        buttonPosition,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (position) {
+            devtools.setPosition(position);
+        }
+    }, [
+        position,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setInitialIsOpen(initialIsOpen || false);
+    }, [
+        initialIsOpen,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setErrorTypes(errorTypes || []);
+    }, [
+        errorTypes,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setTheme(theme);
+    }, [
+        theme,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (ref.current) {
+            devtools.mount(ref.current);
+        }
+        return ()=>{
+            devtools.unmount();
+        };
+    }, [
+        devtools
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+        dir: "ltr",
+        className: "tsqd-parent-container",
+        ref
+    });
+}
+;
+ //# sourceMappingURL=ReactQueryDevtools.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query-devtools/build/modern/ReactQueryDevtoolsPanel.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ReactQueryDevtoolsPanel",
+    ()=>ReactQueryDevtoolsPanel
+]);
+// src/ReactQueryDevtoolsPanel.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-core/build/modern/onlineManager.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$dev$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/query-devtools/build/dev.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function ReactQueryDevtoolsPanel(props) {
+    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])(props.client);
+    const ref = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const { errorTypes, styleNonce, shadowDOMTarget, hideDisabledQueries, theme } = props;
+    const [devtools] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](new __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$devtools$2f$build$2f$dev$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TanstackQueryDevtoolsPanel"]({
+        client: queryClient,
+        queryFlavor: "React Query",
+        version: "5",
+        onlineManager: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$onlineManager$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["onlineManager"],
+        buttonPosition: "bottom-left",
+        position: "bottom",
+        initialIsOpen: true,
+        errorTypes,
+        styleNonce,
+        shadowDOMTarget,
+        onClose: props.onClose,
+        hideDisabledQueries,
+        theme
+    }));
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setClient(queryClient);
+    }, [
+        queryClient,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setOnClose(props.onClose ?? (()=>{}));
+    }, [
+        props.onClose,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setErrorTypes(errorTypes || []);
+    }, [
+        errorTypes,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        devtools.setTheme(theme);
+    }, [
+        theme,
+        devtools
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (ref.current) {
+            devtools.mount(ref.current);
+        }
+        return ()=>{
+            devtools.unmount();
+        };
+    }, [
+        devtools
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+        style: {
+            height: "500px",
+            ...props.style
+        },
+        className: "tsqd-parent-container",
+        ref
+    });
+}
+;
+ //# sourceMappingURL=ReactQueryDevtoolsPanel.js.map
+}),
+"[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query-devtools/build/modern/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ReactQueryDevtools",
+    ()=>ReactQueryDevtools2,
+    "ReactQueryDevtoolsPanel",
+    ()=>ReactQueryDevtoolsPanel2
+]);
+// src/index.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2d$devtools$2f$build$2f$modern$2f$ReactQueryDevtools$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query-devtools/build/modern/ReactQueryDevtools.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2d$devtools$2f$build$2f$modern$2f$ReactQueryDevtoolsPanel$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Next.js-store/Frontend/node_modules/@tanstack/react-query-devtools/build/modern/ReactQueryDevtoolsPanel.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+var ReactQueryDevtools2 = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2d$devtools$2f$build$2f$modern$2f$ReactQueryDevtools$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ReactQueryDevtools"];
+var ReactQueryDevtoolsPanel2 = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f40$tanstack$2f$react$2d$query$2d$devtools$2f$build$2f$modern$2f$ReactQueryDevtoolsPanel$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ReactQueryDevtoolsPanel"];
+;
+ //# sourceMappingURL=index.js.map
+}),
+];
+
+//# sourceMappingURL=90026_cc00bfe0._.js.map

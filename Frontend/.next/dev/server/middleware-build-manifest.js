@@ -8,16 +8,16 @@ globalThis.__BUILD_MANIFEST = {
   ],
   "lowPriorityFiles": [],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_1f1466cd._.js",
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_10fc2e0c._.js",
     "static/chunks/90026_next_dist_compiled_react-dom_53dcee1e._.js",
     "static/chunks/90026_next_dist_compiled_react-server-dom-turbopack_df1c2738._.js",
     "static/chunks/90026_next_dist_compiled_next-devtools_index_0919dd45.js",
     "static/chunks/90026_next_dist_compiled_10d1b9ca._.js",
-    "static/chunks/90026_next_dist_client_e6123071._.js",
-    "static/chunks/90026_next_dist_293df8f5._.js",
+    "static/chunks/90026_next_dist_client_3949397f._.js",
+    "static/chunks/90026_next_dist_edf8308e._.js",
     "static/chunks/90026_@swc_helpers_cjs_ab8381e9._.js",
     "static/chunks/Desktop_Next_js-store_Frontend_a0ff3932._.js",
-    "static/chunks/turbopack-Desktop_Next_js-store_Frontend_010e7c48._.js"
+    "static/chunks/turbopack-Desktop_Next_js-store_Frontend_33df0536._.js"
   ]
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [

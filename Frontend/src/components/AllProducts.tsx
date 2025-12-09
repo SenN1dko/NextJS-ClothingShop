@@ -1,5 +1,7 @@
-import { useProductsQuery } from '@/hooks/useProductsQuery';
+'use client';
 
+import { useProductsQuery } from '@/hooks/useProductsQuery';
+import { Product } from './Product';
 export const AllProducts = () => {
   const { data, error, isLoading, isError } = useProductsQuery();
 
@@ -10,5 +12,13 @@ export const AllProducts = () => {
     return <div>Error: {error?.message}</div>;
   }
 
-  return <></>;
+  return (
+    <>
+      <div className="flex items-center gap-5">
+        {data?.map((product) => (
+          <Product key={product.id} product={product} />
+        ))}
+      </div>
+    </>
+  );
 };
