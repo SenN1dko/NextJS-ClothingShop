@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/amiro/Desktop/Next.js-store/Frontend/src/providers/Providers.tsx"],"sourcesContent":["'use client';\r\n\r\nimport { ThemeProvider } from 'next-themes';\r\nimport { LazyMotion, domAnimation } from 'framer-motion';\r\n\r\nexport function Providers({ children }: { children: React.ReactNode }) {\r\n  return (\r\n    <LazyMotion features={domAnimation}>\r\n      <ThemeProvider attribute=\"class\" defaultTheme=\"system\" enableSystem>\r\n        {children}\r\n      </ThemeProvider>\r\n    </LazyMotion>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAAA;AAHA;;;;AAKO,SAAS,UAAU,EAAE,QAAQ,EAAiC;IACnE,qBACE,4RAAC,gPAAU;QAAC,UAAU,uPAAY;kBAChC,cAAA,4RAAC,+MAAa;YAAC,WAAU;YAAQ,cAAa;YAAS,YAAY;sBAChE;;;;;;;;;;;AAIT","debugId":null}}]
+}

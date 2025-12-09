@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\n  \"app\": {\n    \"[project]/Desktop/Next.js-store/Frontend/src/app/(public)/(home)/page\": [\n      \"static/media/017d9bea37084d9b-s.p.a6d6de71.woff2\",\n      \"static/media/Casual_Regular-s.p.23ad9e1f.ttf\"\n    ]\n  },\n  \"appUsingSizeAdjust\": true,\n  \"pages\": {},\n  \"pagesUsingSizeAdjust\": false\n}"
