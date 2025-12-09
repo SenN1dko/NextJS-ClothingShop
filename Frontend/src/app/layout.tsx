@@ -23,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${BricolageGrotesque.className}  antialiased`}>
+      <body
+        suppressHydrationWarning={true}
+        className={`${BricolageGrotesque.className}  antialiased`}
+      >
         <Providers>{children}</Providers>
       </body>
     </html>

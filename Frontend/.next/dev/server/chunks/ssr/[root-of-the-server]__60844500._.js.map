@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///mnt/diskD/Codding/InternetStore/Frontend/src/providers/Providers.tsx"],"sourcesContent":["'use client';\nimport { QueryClientProvider, QueryClient } from '@tanstack/react-query';\nimport { ThemeProvider } from 'next-themes';\nimport { LazyMotion, domAnimation } from 'framer-motion';\nimport { ReactQueryDevtools } from '@tanstack/react-query-devtools';\nexport function Providers({ children }: { children: React.ReactNode }) {\n  const queryClient = new QueryClient();\n  return (\n    <LazyMotion features={domAnimation}>\n      <ThemeProvider attribute=\"class\" defaultTheme=\"system\" enableSystem>\n        <QueryClientProvider client={queryClient}>\n          {children}\n          <ReactQueryDevtools initialIsOpen={false} />\n        </QueryClientProvider>\n      </ThemeProvider>\n    </LazyMotion>\n  );\n}\n"],"names":[],"mappings":";;;;;AACA;AAAA;AACA;AACA;AAAA;AACA;AAJA;;;;;;AAKO,SAAS,UAAU,EAAE,QAAQ,EAAiC;IACnE,MAAM,cAAc,IAAI,4LAAW;IACnC,qBACE,8OAAC,kMAAU;QAAC,UAAU,yMAAY;kBAChC,cAAA,8OAAC,iKAAa;YAAC,WAAU;YAAQ,cAAa;YAAS,YAAY;sBACjE,cAAA,8OAAC,6MAAmB;gBAAC,QAAQ;;oBAC1B;kCACD,8OAAC,0MAAkB;wBAAC,eAAe;;;;;;;;;;;;;;;;;;;;;;AAK7C"}}]
+}
