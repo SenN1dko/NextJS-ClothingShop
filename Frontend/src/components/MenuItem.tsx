@@ -52,7 +52,7 @@ export function MenuItem({ isActive, menuItem }: Props) {
                       <li key={link}>
                         <Link
                           href="#"
-                          className="text-text font-light text-lg dark:text-text-dark hover:border-b hover:border-white transition-colors "
+                          className="text-text font-light text-lg dark:hover:border-white dark:text-text-dark hover:border-b hover:border-black  "
                         >
                           {link}
                         </Link>
