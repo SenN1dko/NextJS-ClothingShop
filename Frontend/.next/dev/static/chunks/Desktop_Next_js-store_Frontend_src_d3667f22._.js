@@ -136,11 +136,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$sto
 ;
 const Product = (t0)=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(19);
-    if ($[0] !== "4ff0a475d749b2fe695031bf959b96b673ccf1f5bda7a924f728258f4a2681f2") {
+    if ($[0] !== "c836b594915f48f734ac38e66b19bc44bb50bc33acd9f03fd753eb503b3682cc") {
         for(let $i = 0; $i < 19; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "4ff0a475d749b2fe695031bf959b96b673ccf1f5bda7a924f728258f4a2681f2";
+        $[0] = "c836b594915f48f734ac38e66b19bc44bb50bc33acd9f03fd753eb503b3682cc";
     }
     const { product } = t0;
     console.log(product.image_url);
@@ -149,7 +149,7 @@ const Product = (t0)=>{
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
             src: product.image_url,
             alt: product.name,
-            className: "h-[100px] w-[220px] rounded-xl"
+            className: "w-full h-30  rounded-xl"
         }, void 0, false, {
             fileName: "[project]/Desktop/Next.js-store/Frontend/src/components/Product.tsx",
             lineNumber: 21,
@@ -287,6 +287,7 @@ const Product = (t0)=>{
     let t9;
     if ($[16] !== t5 || $[17] !== t8) {
         t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "w-full cursor-pointer",
             children: [
                 t5,
                 t8
@@ -331,11 +332,11 @@ var _s = __turbopack_context__.k.signature();
 const AllProducts = ()=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "07b14c6c43b5774621edd0ac661d97dd01194bca57c32ba37081df40940da284") {
+    if ($[0] !== "03cb7072cfef906593da3cf550857e99a57b9bd47f1c71f316a1065dcf8e199f") {
         for(let $i = 0; $i < 8; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "07b14c6c43b5774621edd0ac661d97dd01194bca57c32ba37081df40940da284";
+        $[0] = "03cb7072cfef906593da3cf550857e99a57b9bd47f1c71f316a1065dcf8e199f";
     }
     const { data, error, isLoading, isError } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$src$2f$hooks$2f$useProductsQuery$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useProductsQuery"])();
     if (isLoading) {
@@ -387,7 +388,7 @@ const AllProducts = ()=>{
     if ($[6] !== t0) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center gap-5",
+                className: "grid grid-cols-[repeat(auto-fill,minmax(185px,1fr))] gap-6",
                 children: t0
             }, void 0, false, {
                 fileName: "[project]/Desktop/Next.js-store/Frontend/src/components/AllProducts.tsx",
