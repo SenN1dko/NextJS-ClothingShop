@@ -7,9 +7,7 @@ export default function layout({ children }: PropsWithChildren<unknown>) {
     <>
       <div className="min-h-screen ">
         <Header />
-        <div className="w-full max-w-xl flex justify-center px-4 py-8">
-          {children}
-        </div>
+        <div className="w-full max-w-7xl mx-auto px-4 py-8">{children}</div>
       </div>
       <div className="fixed bottom-5 right-5">
         <ThemeSwitcher />

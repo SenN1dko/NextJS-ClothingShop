@@ -22,11 +22,11 @@ var _s = __turbopack_context__.k.signature();
 function MenuItem(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(17);
-    if ($[0] !== "73a8a1423d71d8ec1b2611e1f7d114b14bebe6af19da8c1377b82fdde2200666") {
+    if ($[0] !== "5637f1efcc1d34c8e3a41f6ec5077920851a654aecea83fd31d6066944fbf317") {
         for(let $i = 0; $i < 17; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "73a8a1423d71d8ec1b2611e1f7d114b14bebe6af19da8c1377b82fdde2200666";
+        $[0] = "5637f1efcc1d34c8e3a41f6ec5077920851a654aecea83fd31d6066944fbf317";
     }
     const { isActive, menuItem } = t0;
     const [activeMenu, setActiveMenu] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -189,7 +189,7 @@ function _MenuItemMenuItemColumnsMapColLinksMap(link) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Next$2e$js$2d$store$2f$Frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: "#",
-            className: "text-text font-light text-lg dark:text-text-dark hover:border-b hover:border-white transition-colors ",
+            className: "text-text font-light text-lg dark:hover:border-white dark:text-text-dark hover:border-b hover:border-black  ",
             children: link
         }, void 0, false, {
             fileName: "[project]/Desktop/Next.js-store/Frontend/src/components/MenuItem.tsx",

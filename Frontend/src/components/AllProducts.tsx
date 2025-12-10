@@ -14,7 +14,7 @@ export const AllProducts = () => {
 
   return (
     <>
-      <div className="flex items-center gap-5">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(185px,1fr))] gap-6">
         {data?.map((product) => (
           <Product key={product.id} product={product} />
         ))}

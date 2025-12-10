@@ -14,7 +14,7 @@ const myFont = localFont({
 export const Header = () => {
   return (
     <>
-      <header className="backdrop-blur-xs z-51 h-[140px] flex-col flex w-full sticky top-0 ">
+      <header className="bg-background dark:bg-background-dark z-51 h-[140px] flex-col flex w-full sticky top-0 ">
         <div className="flex items-center h-[90px]  w-full border-b border-[#545353]">
           <h1
             className={`text-4xl ${myFont.className} -translate-y-1.5  font-sans text-[#95c0a4] font-medium mx-10`}
@@ -30,21 +30,20 @@ export const Header = () => {
             <input
               type="text"
               placeholder="Search for something interesting ... "
-              className="dark:bg-surface-dark bg-surface pl-9 font-bold transition-border duration-333 ease-in-out dark:placeholder:text-text-dark placeholder:text-text placeholder:font-medium  h-11  w-full   hover:border-[#dfdfdf] rounded-lg border border-[#5d5d5d]"
+              className="dark:bg-surface-dark bg-surface pl-9 font-bold  dark:placeholder:text-text-dark placeholder:text-text placeholder:font-medium  h-11  w-full   hover:border-[#dfdfdf] rounded-lg border border-[#5d5d5d]"
             />
           </div>
-
           <nav className="flex items-center  pr-10 w-90">
-            <div className="flex items-center ">
+            <div className="flex items-center pr-5">
               <Link href={PAGES.CART} className="flex relative w-full h-full">
                 <ShoppingBasket className="hover:rotate-15 w-8 h-8 transition-transform duration-333 ease-in " />
-                <div className="  translate-y-[-5px] font-bold text-[14px] flex items-center justify-center   -top-1 -right-2  w-fit px-2 h-full rounded-full    ">
+                <div className="  translate-y-[-5px] font-bold text-[14px] flex items-center justify-center   -top-1 -right-2  w-fit  h-full rounded-full    ">
                   1
                 </div>
               </Link>
             </div>
             <div className="flex gap-2 items-center  w-full">
-              <div className=" transition-colors duration-333 ease-in-out  text-md font-bold border cursor-pointer  rounded-3xl px-3 py-1.5">
+              <div className="   text-md font-bold border cursor-pointer  rounded-3xl px-3 py-1.5">
                 Login
               </div>
               <div className=" text-md font-bold bg-black dark:bg-white rounded-3xl text-white dark:text-black  cursor-pointer px-3 py-1.5 whitespace-nowrap">

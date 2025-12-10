@@ -5,12 +5,12 @@ import { m } from 'framer-motion';
 export const Product = ({ product }: { product: IProducts }) => {
   console.log(product.image_url);
   return (
-    <div>
+    <div className="w-full cursor-pointer">
       <div className="mb-0.5 relative">
         <img
           src={product.image_url}
           alt={product.name}
-          className="h-[100px] w-[220px] rounded-xl"
+          className="w-full h-30  rounded-xl"
         />
         <m.button
           whileTap={{ scale: 0.85 }}
