@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/amiro/Desktop/Next.js-store/Frontend/src/app/%28public%29/card/%5Bid%5D/page.tsx"],"sourcesContent":["import type { Metadata } from 'next';\r\nexport const metadata: Metadata = {\r\n  title: 'card page',\r\n  description: ' This is the card page ',\r\n\r\n};\r\n\r\nexport default function Page() {\r\n  return <div>card</div>;\r\n}"],"names":[],"mappings":";;;;;;;;AACO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AAEf;AAEe,SAAS;IACtB,qBAAO,4RAAC;kBAAI;;;;;;AACd"}}]
-}
