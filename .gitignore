@@ -19,6 +19,8 @@ instance/
 .coverage
 htmlcov/
 
+*.ruff
+
 # local settings / secrets
 .env
 .env.*
@@ -104,6 +106,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
 *.tsbuildinfo
 next-env.d.ts
