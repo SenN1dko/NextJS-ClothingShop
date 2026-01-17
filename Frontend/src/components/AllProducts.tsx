@@ -2,11 +2,12 @@
 
 import { useProductsQuery } from '@/hooks/useProductsQuery';
 import { Product } from './Product';
+import { SkeletonLoading } from './SkeletonLoading';
 export const AllProducts = () => {
   const { data, error, isLoading, isError } = useProductsQuery();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <SkeletonLoading />;
   }
   if (isError) {
     return <div>Error: {error?.message}</div>;

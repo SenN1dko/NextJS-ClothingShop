@@ -4,7 +4,13 @@ import { ThemeProvider } from 'next-themes';
 import { LazyMotion, domAnimation } from 'framer-motion';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 export function Providers({ children }: { children: React.ReactNode }) {
-  const queryClient = new QueryClient();
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+      },
+    },
+  });
   return (
     <LazyMotion features={domAnimation}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

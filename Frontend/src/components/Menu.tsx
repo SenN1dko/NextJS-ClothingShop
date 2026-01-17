@@ -8,7 +8,7 @@ export function Menu() {
   const pathname = usePathname();
   return (
     <>
-      <nav className="flex item-center justify-center w-full  h-[50px] bg-surface dark:bg-surface-dark ">
+      <nav className="flex item-center justify-center w-full  h-[50px] bg-surface/60 dark:bg-surface-dark ">
         {MenuNav.map((item) => (
           <MenuItem
             key={item.id}

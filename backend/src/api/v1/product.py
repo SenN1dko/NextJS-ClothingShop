@@ -84,3 +84,4 @@ async def get_product_by_id(product_id: int):
             return product
     # если товар не найден — выбрасываем 404
     raise HTTPException(status_code=404, detail="Product not found")
+ 

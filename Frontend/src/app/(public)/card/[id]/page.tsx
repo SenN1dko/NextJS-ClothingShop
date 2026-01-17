@@ -1,26 +1,53 @@
-'use client';
+import { fetchProductById } from '@/services/cardServices';
+import { PRODUCT_QUERY_KEY } from '@/services/cardServices';
+import {
+  dehydrate,
+  HydrationBoundary,
+  QueryClient,
+} from '@tanstack/react-query';
+import { notFound } from 'next/navigation';
+import { ProductClient } from './ProductClient';
 
-import { useProductQuery } from '@/hooks/useProductQuery';
-import { useParams } from 'next/navigation';
-export default function Page() {
-  const { id } = useParams();
+interface Params {
+  params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Params) {
+  const { id } = await params;
   const productId = Number(id);
-  const { data, error, isLoading, isError } = useProductQuery(productId);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
+  try {
+    const product = await fetchProductById(productId);
+
+    return {
+      title: product.name || 'Loading...',
+      description: `Buy ${product.name} for $${product.price}`,
+    };
+  } catch (e) {
+    return { title: 'Error loading product' };
   }
-  if (isError) {
-    if ((error as any).statusCode === 404) {
-      return <div>Товара с таким ID не существует</div>;
-    }
-    return <div>Ошибка: {(error as any).message}</div>;
+}
+
+export default async function ProductPage({ params }: Params) {
+  const queryClient = new QueryClient();
+  const productId = Number((await params).id);
+
+  if (isNaN(productId)) {
+    notFound();
+  }
+
+  try {
+    await queryClient.prefetchQuery({
+      queryKey: [PRODUCT_QUERY_KEY, productId],
+      queryFn: () => fetchProductById(productId),
+    });
+  } catch (error) {
+    notFound();
   }
 
   return (
-    <div>
-      {data?.name}
-      <p>{data?.price}</p>
-    </div>
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <ProductClient id={productId} />
+    </HydrationBoundary>
   );
 }

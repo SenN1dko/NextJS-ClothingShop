@@ -5,7 +5,6 @@ import { Menu } from './Menu';
 import localFont from 'next/font/local';
 
 const myFont = localFont({
-  // my font in public/fonts
   src: '../../public/fonts/Casual-Regular.ttf',
   variable: '--font-myFont',
   display: 'swap',
@@ -30,7 +29,7 @@ export const Header = () => {
             <input
               type="text"
               placeholder="Search for something interesting ... "
-              className="dark:bg-surface-dark bg-surface pl-9 font-bold  dark:placeholder:text-text-dark placeholder:text-text placeholder:font-medium  h-11  w-full   hover:border-[#dfdfdf] rounded-lg border border-[#5d5d5d]"
+              className="dark:bg-surface-dark bg-surface/60 pl-9 font-bold  dark:placeholder:text-text-dark placeholder:text-text placeholder:font-medium  h-11  w-full    rounded-lg  "
             />
           </div>
           <nav className="flex items-center  pr-10 w-90">
