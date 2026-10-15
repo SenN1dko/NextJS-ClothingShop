@@ -132,20 +132,38 @@ jobs:
       # Образы тянутся явно и с повтором: первое скачивание после
       # публикации иногда упирается в репликацию реестра.
       - name: Получение образов
+        id: images
         env:
-          API_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/api:${{ steps.tags.outputs.tag }}
-          FRONTEND_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/frontend:${{ steps.tags.outputs.tag }}
+          SHA_TAG: ${{ steps.tags.outputs.tag }}
         run: |
-          for image in "$API_IMAGE" "$FRONTEND_IMAGE"; do
+          set -euo pipefail
+
+          # Если metadata-action не отдал тег, берём main: иначе
+          # получится имя вроде `ghcr.io/senn1dko/api:` и pull
+          # завершится ошибкой без внятной причины.
+          tag="${SHA_TAG:-main}"
+          api_image="$REGISTRY/$IMAGE_PREFIX/api:$tag"
+          frontend_image="$REGISTRY/$IMAGE_PREFIX/frontend:$tag"
+
+          echo "api image:      $api_image"
+          echo "frontend image: $frontend_image"
+
+          for image in "$api_image" "$frontend_image"; do
             for attempt in 1 2 3; do
               if docker pull "$image"; then
                 break
               fi
               echo "попытка $attempt не удалась для $image"
-              [ "$attempt" = 3 ] && exit 1
+              if [ "$attempt" = 3 ]; then
+                echo "итоговый список образов:"
+                docker images
+                exit 1
+              fi
               sleep 10
             done
           done
+
+          echo "tags=$tag" >> "$GITHUB_OUTPUT"
 
       - name: Подъём стека
         id: up
@@ -155,8 +173,8 @@ jobs:
         env:
           ENVIRONMENT: dev
           AUTH__SECRET_KEY: ci-secret-key-that-is-long-enough-12345
-          API_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/api:${{ steps.tags.outputs.tag }}
-          FRONTEND_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/frontend:${{ steps.tags.outputs.tag }}
+          API_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/api:${{ steps.images.outputs.tags }}
+          FRONTEND_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/frontend:${{ steps.images.outputs.tags }}
         run: docker compose up -d --no-build --wait --wait-timeout 240
 
       # Диагностика обязана выполняться всегда: именно на этом прогоне
