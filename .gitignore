@@ -28,7 +28,7 @@ htmlcov/
 *.db
 
 # ========================
-# ⚛️ React (Vite)
+# ⚛️ React / Node
 # ========================
 # dependencies
 node_modules/
@@ -36,8 +36,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-package-lock.json
 .pnpm-debug.log
+
+# package-lock.json коммитится: без него `npm ci` не работает,
+# а CI не может построить кэш зависимостей.
 
 # production build
 dist/
