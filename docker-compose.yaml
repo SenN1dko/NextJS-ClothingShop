@@ -1,0 +1,112 @@
+volumes:
+  shopdb-data:
+  pgadmin-data:
+
+name: dressly
+
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: dressly-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB__DATABASE:-shop}
+      POSTGRES_USER: ${DB__USER:-user}
+      POSTGRES_PASSWORD: ${DB__PASSWORD:-password}
+    volumes:
+      - shopdb-data:/var/lib/postgresql/data
+    ports:
+      - "${DB__PORT:-5432}:5432"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${DB__USER:-user} -d ${DB__DATABASE:-shop}",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # Разовая миграция при старте: создаёт схему и заполняет её
+  # демо-данными, если база пуста. api стартует только после неё.
+  migrate:
+    # Тот же образ, что у api, — собирается один раз.
+    # Чтобы взять готовый образ из реестра, задайте API_IMAGE:
+    #   API_IMAGE=ghcr.io/owner/repo-api:latest docker compose up -d
+    image: ${API_IMAGE:-dressly-api:latest}
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dressly-migrate
+    restart: "no"
+    command:
+      - sh
+      - -c
+      - |
+        alembic upgrade head
+        python -m scripts.seed
+    environment: &api_env
+      ENVIRONMENT: ${ENVIRONMENT:-dev}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      # Внутри сети compose бэкенд доступен по имени сервиса.
+      DB__HOST: db
+      DB__PORT: 5432
+      DB__USER: ${DB__USER:-user}
+      DB__PASSWORD: ${DB__PASSWORD:-password}
+      DB__DATABASE: ${DB__DATABASE:-shop}
+      AUTH__SECRET_KEY: ${AUTH__SECRET_KEY:-dev-secret-key-change-me-in-production}
+      CORS_ORIGINS: ${CORS_ORIGINS:-["http://localhost:3000"]}
+    depends_on:
+      db:
+        condition: service_healthy
+
+  api:
+    image: ${API_IMAGE:-dressly-api:latest}
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dressly-api
+    restart: unless-stopped
+    environment: *api_env
+    ports:
+      - "8000:8000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  frontend:
+    image: ${FRONTEND_IMAGE:-dressly-frontend:latest}
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+      args:
+        # Значение подставляется на этапе сборки: rewrites
+        # вычисляются в next.config.ts и попадают в бандл.
+        API_INTERNAL_URL: http://api:8000
+        NEXT_PUBLIC_BASE_URL: /api/v1
+    container_name: dressly-frontend
+    restart: unless-stopped
+    environment:
+      # Значение нужно и во время работы: RSC-запросы идут
+      # напрямую, минуя rewrites.
+      API_INTERNAL_URL: http://api:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+  pgadmin:
+    image: dpage/pgadmin4:9
+    container_name: dressly-pgadmin
+    restart: unless-stopped
+    profiles: ["tools"]
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@admin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+    depends_on:
+      db:
+        condition: service_healthy

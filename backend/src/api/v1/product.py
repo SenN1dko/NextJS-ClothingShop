@@ -1,87 +1,156 @@
-from schemas.product import ProductCard
-from fastapi import HTTPException
+"""Эндпоинты товаров."""
 
-from fastapi import APIRouter
+from decimal import Decimal
+from typing import Annotated, Any, Literal
 
-router = APIRouter(tags=["product"])
+from fastapi import APIRouter, Query, status
 
+from api.dependencies import AdminUser, ProductServiceDep
+from models.product import Product
+from schemas.common import MessageResponse, PageMeta, PaginatedResponse
+from schemas.product import (
+    CategoryBrief,
+    ProductCreate,
+    ProductRead,
+    ProductUpdate,
+)
+from services.product_service import calculate_final_price
 
-products = [
-    ProductCard(
-        name="Cat",
-        price=700,
-        image_url="https://blindfacts.com/wp-content/uploads/2018/01/The-Color-White.jpg",
-        id=0,
-    ),
-    ProductCard(
-        name="Koshka",
-        price=902,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=1,
-    ),
-    ProductCard(
-        name="Koshka",
-        price=903,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=2,
-    ),
-    ProductCard(
-        name="Koshka",
-        price=940,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=3,
-    ),
-    ProductCard(
-        name="Koshka",
-        price=950,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=4,
-    ),
-    ProductCard(
-        name="Koshka",
-        price=960,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=5,
-    ),
-        ProductCard(
-        name="Koshka",
-        price=960,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=6,
-    ),
-        ProductCard(
-        name="Koshka",
-        price=960,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=7,
-    ),
-        ProductCard(
-        name="Koshka",
-        price=960,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=8,
-    ),
-    
-        ProductCard(
-        name="Koshka",
-        price=960,
-        image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10",
-        id=9,
-    ),
+router = APIRouter(prefix="/products", tags=["products"])
 
+SortOption = Literal[
+    "newest",
+    "price_asc",
+    "price_desc",
+    "name",
+    "popular",
 ]
 
-
-@router.get("/")
-async def get_product_cards():
-    return products
+MAX_LIMIT = 100
 
 
-@router.get("/{product_id}")
-async def get_product_by_id(product_id: int):
-    for product in products:
-        if product.id == product_id:
-            return product
-    # если товар не найден — выбрасываем 404
-    raise HTTPException(status_code=404, detail="Product not found")
- 
+def to_read_model(product: Product) -> ProductRead:
+    """Конвертирует ORM-объект в схему ответа."""
+    category: CategoryBrief | None = None
+    if product.category is not None:
+        category = CategoryBrief.model_validate(product.category)
+
+    return ProductRead(
+        id=product.id,
+        name=product.name,
+        slug=product.slug,
+        description=product.description,
+        brand=product.brand,
+        price=product.price,
+        discount_percent=product.discount_percent,
+        final_price=calculate_final_price(product),
+        image_url=product.image_url,
+        images=list(product.images or []),
+        sizes=list(product.sizes or []),
+        colors=list(product.colors or []),
+        stock=product.stock,
+        is_active=product.is_active,
+        category_id=product.category_id,
+        category=category,
+        created_at=product.created_at,
+        updated_at=product.updated_at,
+    )
+
+
+@router.get(
+    "",
+    response_model=PaginatedResponse[ProductRead],
+    summary="Список товаров с фильтрами и пагинацией",
+)
+async def list_products(
+    service: ProductServiceDep,
+    limit: Annotated[int, Query(ge=1, le=MAX_LIMIT)] = 20,
+    offset: Annotated[int, Query(ge=0)] = 0,
+    search: Annotated[str | None, Query(max_length=100)] = None,
+    category: Annotated[str | None, Query(max_length=64)] = None,
+    min_price: Annotated[Decimal | None, Query(ge=0)] = None,
+    max_price: Annotated[Decimal | None, Query(ge=0)] = None,
+    in_stock: bool = False,
+    sort: SortOption = "newest",
+) -> PaginatedResponse[ProductRead]:
+    filters: dict[str, Any] = {
+        "search": search,
+        "category_slug": category,
+        "min_price": min_price,
+        "max_price": max_price,
+        "in_stock": in_stock,
+        "sort": sort,
+    }
+
+    products, total = await service.list_products(
+        limit=limit,
+        offset=offset,
+        **filters,
+    )
+
+    return PaginatedResponse[ProductRead](
+        items=[to_read_model(p) for p in products],
+        meta=PageMeta(
+            total=total,
+            limit=limit,
+            offset=offset,
+            has_more=offset + len(products) < total,
+        ),
+    )
+
+
+@router.get(
+    "/{product_id}",
+    response_model=ProductRead,
+    summary="Товар по идентификатору",
+)
+async def get_product(
+    product_id: int,
+    service: ProductServiceDep,
+) -> ProductRead:
+    product = await service.get_product(product_id)
+    return to_read_model(product)
+
+
+@router.post(
+    "",
+    response_model=ProductRead,
+    status_code=status.HTTP_201_CREATED,
+    summary="Создать товар",
+)
+async def create_product(
+    payload: ProductCreate,
+    service: ProductServiceDep,
+    _admin: AdminUser,
+) -> ProductRead:
+    product = await service.create_product(payload)
+    return to_read_model(product)
+
+
+@router.patch(
+    "/{product_id}",
+    response_model=ProductRead,
+    summary="Обновить товар",
+)
+async def update_product(
+    product_id: int,
+    payload: ProductUpdate,
+    service: ProductServiceDep,
+    _admin: AdminUser,
+) -> ProductRead:
+    product = await service.update_product(product_id, payload)
+    return to_read_model(product)
+
+
+@router.delete(
+    "/{product_id}",
+    response_model=MessageResponse,
+    summary="Удалить товар",
+)
+async def delete_product(
+    product_id: int,
+    service: ProductServiceDep,
+    _admin: AdminUser,
+) -> MessageResponse:
+    await service.delete_product(product_id)
+    return MessageResponse(message="Товар удалён")

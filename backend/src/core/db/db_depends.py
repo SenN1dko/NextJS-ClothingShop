@@ -1,6 +1,9 @@
-from typing import Annotated, AsyncGenerator
+"""Зависимость FastAPI для доступа к сессии БД."""
+
+from collections.abc import AsyncGenerator
+from typing import Annotated
+
 from fastapi import Depends
-from sqlalchemy import exc as sa_exc
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.requests import Request
 
@@ -8,20 +11,22 @@ from starlette.requests import Request
 async def get_db_session(
     request: Request,
 ) -> AsyncGenerator[AsyncSession, None]:
-    """Получаем сессию"""
-    session: AsyncSession = (
-        request.app.state.dp_session_factory()
-    )
+    """Выдаёт сессию БД с корректным управлением транзакцией.
+
+    Коммит происходит только при штатном завершении обработчика.
+    При любом исключении транзакция откатывается и сессия закрывается.
+    """
+    session_factory = request.app.state.db_session_factory
+    session: AsyncSession = session_factory()
 
     try:
         yield session
-    except sa_exc.DBAPIError:
-        await session.rollback()
-    finally:
         await session.commit()
+    except Exception:
+        await session.rollback()
+        raise
+    finally:
         await session.close()
 
 
-GetDBSession = Annotated[
-    AsyncSession, Depends(get_db_session)
-]
+GetDBSession = Annotated[AsyncSession, Depends(get_db_session)]

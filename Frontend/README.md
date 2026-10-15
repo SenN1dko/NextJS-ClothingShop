@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dressly — frontend
 
-## Getting Started
+Next.js 16 (App Router) + TanStack Query + Tailwind CSS v4 + Zustand.
+Полная инструкция по запуску — в [README.md](../README.md).
 
-First, run the development server:
+## Запуск
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Docker
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+docker compose up -d --build   # из корня репозитория
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Образ описан в `Frontend/Dockerfile`, сборка в три стадии: `deps`
+(зависимости), `build` (`next build`), `runner`.
 
-## Learn More
+Что важно знать:
 
-To learn more about Next.js, take a look at the following resources:
+- В `next.config.ts` включён `output: 'standalone'` — в образ попадают
+  только реально используемые файлы и зависимости, а не весь
+  `node_modules`. `public` и `.next/static` копируются вручную:
+  standalone их не включает.
+- `API_INTERNAL_URL` нужен и как build-arg, и как environment.
+  Как build-arg — потому что `rewrites()` вычисляются в
+  `next.config.ts` на этапе сборки и попадают в бандл; как environment —
+  потому что серверные компоненты ходят в API напрямую.
+- Контейнер работает от непривилегированного пользователя `nextjs`
+  (uid 1001).
+- В образ не попадают `node_modules`, `.next`, `.env` и git-метаданные
+  (`.dockerignore`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Переменные окружения
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Скопируйте `.env.example` в `.env.local`. Значение по умолчанию подходит
+для локальной разработки.
 
-## Deploy on Vercel
+| Переменная           | Назначение                                      |
+| -------------------- | ----------------------------------------------- |
+| `API_INTERNAL_URL`   | Адрес бэкенда для RSC и для `rewrites`           |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Клиент ходит на относительный `/api/v1`; Next.js проксирует запрос на
+`API_INTERNAL_URL` через `rewrites` в `next.config.ts`. Так обращения
+идут на тот же origin, CORS в разработке не требуется.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Структура
+
+```
+src/
+├── app/
+│   ├── layout.tsx          корневой layout, шрифты, метаданные
+│   ├── error.tsx           граница ошибок верхнего уровня
+│   ├── not-found.tsx       404
+│   └── (public)/           публичные страницы с Header
+│       ├── (home)/page.tsx        каталог
+│       ├── card/[id]/             карточка товара
+│       ├── cart/  login/  register/
+│       └── women/ man/ kids/ brands/
+├── components/         Header, Menu, Product, скелетоны, ошибки
+├── hooks/              обёртки над TanStack Query
+├── services/           запросы к API
+├── lib/apiClient.ts    axios-инстанс, токены, нормализация ошибок
+├── store/              Zustand: auth и корзина
+├── types/              TypeScript-типы API
+└── config/             карта маршрутов
+```
+
+## Данные
+
+Серверные компоненты получают данные через `fetch` из `services/`,
+клиентские — через TanStack Query. На странице товата данные
+предзагружаются на сервере и передаются в клиент через
+`HydrationBoundary`, поэтому первый рендер не мигает.
+
+Ошибки приводятся к единому виду функцией `toApiError` и показываются
+компонентом `ErrorMessage` с кнопкой повтора.
+
+## Авторизация
+
+Токены хранятся в `localStorage` и подставляются интерцептором axios.
+`zustand`-сторы `auth` и `cart` восстанавливают сессию при загрузке
+страницы. Страницы под авторизацией показывают приглашение войти,
+а не редиректят.
+
+## Команды
+
+| Команда             | Назначение       |
+| ------------------- | ---------------- |
+| `npm run dev`       | Дев-сервер       |
+| `npm run build`     | Продакшен-сборка |
+| `npm run typecheck` | Проверка типов   |

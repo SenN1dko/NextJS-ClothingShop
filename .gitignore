@@ -102,9 +102,12 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# Шаблоны без секретов должны попадать в репозиторий.
+!.env.example
 
 # vercel
 .vercel
 
 *.tsbuildinfo
 next-env.d.ts
+dev.env

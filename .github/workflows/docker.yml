@@ -1,0 +1,172 @@
+# Сборка и публикация образов в GitHub Container Registry (ghcr.io).
+name: Docker
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    paths:
+      - "backend/**"
+      - "Frontend/**"
+      - "docker-compose.yaml"
+      - ".github/workflows/docker.yml"
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+  # Имя репозитория приводим к нижнему регистру: ghcr.io его требует,
+  # а в названии репозитория заглавные буквы разрешены.
+  IMAGE_PREFIX: dressly
+
+jobs:
+  # Сборка и проверка образов без публикации.
+  build:
+    name: Сборка ${{ matrix.image.name }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        image:
+          - name: api
+            context: ./backend
+            dockerfile: backend/Dockerfile
+            build-args: |
+              API_INTERNAL_URL=http://api:8000
+          - name: frontend
+            context: ./Frontend
+            dockerfile: Frontend/Dockerfile
+            build-args: |
+              API_INTERNAL_URL=http://api:8000
+              NEXT_PUBLIC_BASE_URL=/api/v1
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Настройка buildx
+        uses: docker/setup-buildx-action@v3
+
+      # На PR образы только собираются: права на запись в
+      # реестр у форков есть не у всех, и публиковать там нечего.
+      - name: Публиковать только для main и тегов
+        id: push
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-${{ matrix.image.name }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=sha,format=short
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Вход в Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Сборка и публикация
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.image.context }}
+          file: ${{ matrix.image.dockerfile }}
+          push: ${{ github.event_name != 'pull_request' }}
+          # Кэш и в GitHub Actions, и локально в ~/.docker/buildx.
+          # Сохраняется в GHA-кэше и переиспользуется между прогонами.
+          cache-from: type=gha,scope=${{ matrix.image.name }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.image.name }}
+          build-args: ${{ matrix.image.build-args }}
+          tags: ${{ steps.push.outputs.tags }}
+          labels: ${{ steps.push.outputs.labels }}
+          provenance: mode=max
+          sbom: true
+
+  # Готовая сборка из реестра: поднимаем стек и проверяем,
+  # что он действительно работает.
+  smoke:
+    name: Проверка стека
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+
+    steps:
+      - uses: actions/checkout@v5
+
+      # Тег sha-XXXX собранных образов: он есть и в main,
+      # и в тегах, поэтому smoke всегда проверяет именно то,
+      # что было опубликовано этим прогоном.
+      - name: Определение тега образов
+        id: tags
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-api
+          tags: type=sha,format=short
+
+      - name: Логин в Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Подъём стека
+        env:
+          ENVIRONMENT: dev
+          AUTH__SECRET_KEY: ci-secret-key-that-is-long-enough-12345
+          IMAGE_TAG: sha-${{ github.sha }}
+          API_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-api:${{ steps.tags.outputs.tag }}
+          FRONTEND_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-frontend:${{ steps.tags.outputs.tag }}
+        run: docker compose up -d --no-build --wait --wait-timeout 180
+
+      - name: Состав сервисов
+        run: docker compose ps -a
+
+      - name: Ожидание готовности API
+        run: |
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:8000/health; then
+              echo ""
+              exit 0
+            fi
+            echo "попытка $i: API не готов"
+            sleep 5
+          done
+          echo "API не поднялся"
+          docker compose logs api
+          exit 1
+
+      - name: Проверка данных
+        run: |
+          curl -fsS "http://localhost:8000/api/v1/products?limit=1" \
+            | tee /dev/stderr \
+            | grep -q '"items"'
+
+      - name: Проверка фронтенда
+        run: |
+          # Прокси /api/v1 на фронтенде должен отвечать данными.
+          curl -fsS "http://localhost:3000/api/v1/products?limit=1" \
+            | grep -q '"items"'
+          for path in / /brands /login /cart; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "http://localhost:3000$path")
+            echo "$path -> $code"
+            test "$code" = "200"
+          done
+
+      - name: Логи при сбое
+        if: failure()
+        run: docker compose logs --no-color
+
+      - name: Остановка стека
+        if: always()
+        run: docker compose down -v || true

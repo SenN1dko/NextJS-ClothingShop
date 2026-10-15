@@ -1,8 +1,12 @@
-from sqlalchemy import MetaData
+"""Базовый декларативный класс для моделей SQLAlchemy."""
+
+from datetime import datetime
+from typing import Any
+
+from sqlalchemy import DateTime, MetaData, func
 from sqlalchemy.orm import (
     DeclarativeBase,
     Mapped,
-    declared_attr,
     mapped_column,
 )
 
@@ -10,16 +14,28 @@ from core.settings import settings
 
 
 class Base(DeclarativeBase):
+    """Общий базовый класс для всех ORM-моделей."""
+
     __abstract__ = True
 
     metadata = MetaData(
-        naming_convention=settings.db.naming_convention
+        naming_convention=settings.db.naming_convention,
     )
 
-    @declared_attr.directive
-    def __tablename__(cls) -> str:
-        return cls.__name__.lower()
+    id: Mapped[int] = mapped_column(primary_key=True)
 
-    id: Mapped[int] = mapped_column(
-        primary_key=True, index=True, unique=True
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        server_default=func.now(),
+        nullable=False,
     )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        server_default=func.now(),
+        onupdate=func.now(),
+        nullable=False,
+    )
+
+    def __repr__(self) -> str:
+        pk: Any = getattr(self, "id", None)
+        return f"<{type(self).__name__} id={pk}>"

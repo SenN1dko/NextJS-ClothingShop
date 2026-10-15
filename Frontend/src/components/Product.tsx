@@ -1,48 +1,74 @@
 'use client';
-import { Heart } from 'lucide-react';
-import { IProducts } from '@/types/card.type';
-import { m } from 'framer-motion';
-import Link from 'next/link';
-export const Product = ({ product }: { product: IProducts }) => {
-  const handleFavoriteClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
 
-    console.log('Добавили в избранное', product.id);
-  };
+import Image from 'next/image';
+import Link from 'next/link';
+import { m } from 'framer-motion';
+
+import type { IProduct } from '@/types/card.type';
+
+function formatPrice(value: number): string {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 2,
+  }).format(value);
+}
+
+export function Product({ product }: { product: IProduct }) {
+  const hasDiscount =
+    product.discount_percent != null && product.discount_percent > 0;
 
   return (
-    <Link href={`/card/${product.id}`}>
-      <div className="w-full cursor-pointer">
-        <div className="mb-0.5 relative">
-          <img
+    <Link href={`/card/${product.id}`} className="group block w-full">
+      <div className="relative mb-0.5">
+        <div className="relative aspect-3/4 w-full overflow-hidden rounded-xl bg-surface dark:bg-surface-dark">
+          <Image
             src={product.image_url}
             alt={product.name}
-            className="w-full h-30  rounded-xl"
+            fill
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <m.button
-            whileTap={{ scale: 0.85 }}
-            onClick={handleFavoriteClick}
-            transition={{
-              type: 'spring',
-
-              stiffness: 300,
-              damping: 10,
-            }}
-            className="absolute z-10 bg-white rounded-full active:bg-neutral-300 hover:bg-neutral-200 transition-colors duration-333 ease-in-out active:scale-96 px-1 py-0.5 top-0.5 right-0.5  "
-          >
-            <Heart color="black" width={20} hanging={20} />
-          </m.button>
         </div>
-        <div className="p-2">
-          <div className=" font-light text-sm">
-            <h2>{product.name}</h2>
-          </div>
-          <div>
-            <p className="text-xl font-bold">${product.price}</p>
-          </div>
+
+        {hasDiscount && (
+          <span className="absolute left-2 top-2 rounded-full bg-red-600 px-2 py-0.5 text-xs font-bold text-white">
+            -{product.discount_percent}%
+          </span>
+        )}
+
+        {product.stock === 0 && (
+          <span className="absolute inset-x-2 bottom-2 rounded-lg bg-black/70 py-1 text-center text-xs font-medium text-white">
+            Нет в наличии
+          </span>
+        )}
+      </div>
+
+      <div className="p-2">
+        {product.brand && (
+          <p className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            {product.brand}
+          </p>
+        )}
+        <h2 className="font-light text-sm text-text dark:text-text-dark">
+          {product.name}
+        </h2>
+        <div className="mt-1 flex items-baseline gap-2">
+          <m.p
+            initial={false}
+            className={`text-xl font-bold ${
+              hasDiscount ? 'text-red-600' : ''
+            }`}
+          >
+            {formatPrice(product.final_price)}
+          </m.p>
+          {hasDiscount && (
+            <span className="text-sm text-neutral-500 line-through">
+              {formatPrice(product.price)}
+            </span>
+          )}
         </div>
       </div>
     </Link>
   );
-};
+}

@@ -1,0 +1,39 @@
+# Виртуальное окружение собирается внутри образа.
+# Локальный .venv создан под пути и версии другой машины —
+# если его скопировать, он перезапишет рабочий venv из слоя выше.
+.venv
+venv
+env
+
+# кэш и байткод
+__pycache__
+*.py[cod]
+*.egg-info
+.ruff_cache
+.pytest_cache
+.mypy_cache
+.coverage
+htmlcov
+
+# окружение: значения передаются через docker compose
+.env
+.env.*
+dev.env
+!.env.example
+
+# VCS и CI
+.git
+.gitignore
+.github
+
+# документация и редактор
+# README.md не исключаем: он нужен на этапе установки зависимостей,
+# потому что указан в pyproject.toml как readme проекта.
+AGENTS.md
+Dockerfile
+.dockerignore
+.vscode
+.idea
+
+# тесты в рантайм-образе не нужны
+tests

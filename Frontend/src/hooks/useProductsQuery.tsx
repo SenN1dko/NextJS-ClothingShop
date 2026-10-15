@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
-import { IProducts } from '@/types/card.type';
-import { PRODUCTS_QUERY_KEY, fetchProducts } from '@/services/cardServices';
 
-export function useProductsQuery() {
-  return useQuery<IProducts[]>({
-    queryKey: [PRODUCTS_QUERY_KEY],
-    queryFn: fetchProducts,
+import { PRODUCTS_QUERY_KEY, fetchPaginatedProducts } from '@/services/cardServices';
+import type { IProductFilters } from '@/types/card.type';
+
+export function useProductsQuery(filters: IProductFilters = {}) {
+  return useQuery({
+    queryKey: [PRODUCTS_QUERY_KEY, filters],
+    queryFn: () => fetchPaginatedProducts(filters),
     staleTime: 1000 * 60 * 5,
     refetchOnWindowFocus: false,
   });
