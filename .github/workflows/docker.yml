@@ -15,8 +15,10 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  # Имя репозитория приводим к нижнему регистру: ghcr.io его требует,
-  # а в названии репозитория заглавные буквы разрешены.
+  # Пространство имён в реестре. ghcr.io требует строчный регистр,
+  # а в названии репозитория есть CamelCase (NextJS-ClothingShop),
+  # поэтому используем нейтральный префикс.
+  # Итоговые имена образов: ghcr.io/dressly/api, ghcr.io/dressly/frontend
   IMAGE_PREFIX: dressly
 
 jobs:
@@ -57,7 +59,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-${{ matrix.image.name }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/${{ matrix.image.name }}
           tags: |
             type=ref,event=branch
             type=ref,event=pr
@@ -110,7 +112,7 @@ jobs:
         id: tags
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-api
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/api
           tags: type=sha,format=short
 
       - name: Логин в Container Registry
@@ -125,8 +127,8 @@ jobs:
           ENVIRONMENT: dev
           AUTH__SECRET_KEY: ci-secret-key-that-is-long-enough-12345
           IMAGE_TAG: sha-${{ github.sha }}
-          API_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-api:${{ steps.tags.outputs.tag }}
-          FRONTEND_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}-frontend:${{ steps.tags.outputs.tag }}
+          API_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/api:${{ steps.tags.outputs.tag }}
+          FRONTEND_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_PREFIX }}/frontend:${{ steps.tags.outputs.tag }}
         run: docker compose up -d --no-build --wait --wait-timeout 180
 
       - name: Состав сервисов

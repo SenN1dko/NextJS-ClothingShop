@@ -38,10 +38,9 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      # Тесты работают на отдельной базе и создают схему сами.
-      - name: Create test database
-        run: docker run --rm --network host postgres:17-alpine \
-          psql -h localhost -U user -c "CREATE DATABASE shop_test"
+      # Отдельную базу shop_test создаёт сама фикстура в conftest.py:
+      # CREATE DATABASE нельзя выполнить внутри транзакции, поэтому
+      # раньше это требовало хрупкого шага с docker run + psql.
 
       - name: Check schema drift
         # alembic.ini лежит в корне backend/, а схема в src/.

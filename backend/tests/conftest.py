@@ -11,6 +11,7 @@ from sqlalchemy.ext.asyncio import (
     async_sessionmaker,
     create_async_engine,
 )
+from yarl import URL
 
 from core.db.base import Base
 from core.db.db_depends import get_db_session
@@ -19,9 +20,10 @@ from main import app
 
 # Тесты работают на обычном PostgreSQL, чтобы проверить ARRAY, ENUM
 # и прочие типы, которые не поддерживает SQLite.
+TEST_DB_NAME = f"{settings.db.database}_test"
 TEST_DB_URL = str(settings.db.url).replace(
     settings.db.database,
-    f"{settings.db.database}_test",
+    TEST_DB_NAME,
 )
 
 # Порядок не важен из-за CASCADE, но перечисляем явно для ясности.
@@ -31,9 +33,56 @@ TABLES_TO_TRUNCATE = ", ".join(
 )
 
 
+def _quote_identifier(name: str) -> str:
+    """Экранирует имя объекта БД для использования в DDL."""
+    if not name.replace("_", "").isalnum():
+        msg = f"Недопустимое имя базы данных: {name}"
+        raise ValueError(msg)
+    return f'"{name}"'
+
+
+async def _ensure_test_database() -> None:
+    """Создаёт тестовую базу, если её ещё нет.
+
+    Раньше базу нужно было создавать отдельным шагом в CI, который
+    ломался вместе с окружением. Теперь это делает сам pytest —
+    шаг одинаково работает локально и в CI.
+    """
+    admin_url = URL.build(
+        scheme="postgresql+asyncpg",
+        user=settings.db.user,
+        password=settings.db.password.get_secret_value(),
+        host=settings.db.host,
+        port=settings.db.port,
+        path="/postgres",
+    )
+
+    # CREATE DATABASE нельзя выполнять внутри транзакции.
+    admin_engine = create_async_engine(
+        str(admin_url),
+        echo=False,
+        isolation_level="AUTOCOMMIT",
+    )
+
+    try:
+        async with admin_engine.connect() as conn:
+            exists = await conn.scalar(
+                text("SELECT 1 FROM pg_database WHERE datname = :name"),
+                {"name": TEST_DB_NAME},
+            )
+            if not exists:
+                await conn.execute(
+                    text(f"CREATE DATABASE {_quote_identifier(TEST_DB_NAME)}"),
+                )
+    finally:
+        await admin_engine.dispose()
+
+
 @pytest_asyncio.fixture(scope="session", loop_scope="session")
 async def engine() -> AsyncGenerator:
     """Движок уровня сессии: схема создаётся один раз на весь прогон."""
+    await _ensure_test_database()
+
     test_engine = create_async_engine(
         TEST_DB_URL,
         echo=False,
