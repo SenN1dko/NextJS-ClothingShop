@@ -15,11 +15,18 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  # Пространство имён в реестре. ghcr.io требует строчный регистр,
-  # а в названии репозитория есть CamelCase (NextJS-ClothingShop),
-  # поэтому используем нейтральный префикс.
-  # Итоговые имена образов: ghcr.io/dressly/api, ghcr.io/dressly/frontend
-  IMAGE_PREFIX: dressly
+  # Пространство имён обязано совпадать с владельцем репозитория:
+  # GITHUB_TOKEN даёт права только на пакеты своего владельца, и при
+  # попытке писать в чужое пространство реестр отвечает
+  # "The requested installation does not exist".
+  #
+  # Имя владельца приводится к нижнему регистру вручную: в выражениях
+  # GitHub Actions нет функции lower(). SenN1dko -> senn1dko.
+  #
+  # Итоговые имена образов:
+  #   ghcr.io/senn1dko/api
+  #   ghcr.io/senn1dko/frontend
+  IMAGE_PREFIX: senn1dko
 
 jobs:
   # Сборка и проверка образов без публикации.
